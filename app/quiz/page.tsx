@@ -26,7 +26,6 @@ export default function QuizPage() {
     answerQuestion,
     nextQuestion,
     previousQuestion,
-    setLanguage,
     setResults,
     toggleImportantQuestion
   } = useQuizStore();
@@ -52,24 +51,8 @@ export default function QuizPage() {
     <main className="mx-auto min-h-screen max-w-2xl px-5 py-6">
       <div className="mb-8 flex items-center justify-between gap-4">
         <p className="text-sm text-slate-600">
-          {currentQuestionIndex + 1} / {questions.length}
+          Pregunta {currentQuestionIndex + 1} / {questions.length}
         </p>
-        <div className="flex rounded-full border border-line bg-white p-1">
-          <button
-            type="button"
-            onClick={() => setLanguage('sv')}
-            className={`rounded-full px-3 py-1 text-sm ${language === 'sv' ? 'bg-ink text-white' : 'text-slate-700'}`}
-          >
-            SV
-          </button>
-          <button
-            type="button"
-            onClick={() => setLanguage('es')}
-            className={`rounded-full px-3 py-1 text-sm ${language === 'es' ? 'bg-ink text-white' : 'text-slate-700'}`}
-          >
-            ES
-          </button>
-        </div>
       </div>
       <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
       <div className="mt-8">
@@ -90,7 +73,7 @@ export default function QuizPage() {
           disabled={currentQuestionIndex === 0}
           className="rounded-xl border border-line bg-white px-5 py-4 font-medium text-ink disabled:opacity-40"
         >
-          {language === 'sv' ? 'Tillbaka' : 'Atrás'}
+          Atrás
         </button>
         <button
           type="button"
@@ -98,7 +81,7 @@ export default function QuizPage() {
           disabled={!selectedAnswer}
           className="rounded-xl bg-ink px-5 py-4 font-semibold text-white disabled:opacity-40"
         >
-          {isLastQuestion ? (language === 'sv' ? 'Visa resultat' : 'Ver resultado') : language === 'sv' ? 'Nästa' : 'Siguiente'}
+          {isLastQuestion ? 'Ver resultado' : 'Siguiente'}
         </button>
       </div>
     </main>

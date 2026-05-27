@@ -13,7 +13,7 @@ export default function ResultPage() {
   return (
     <main className="mx-auto min-h-screen max-w-xl px-5 py-10">
       <p className="text-sm font-medium uppercase tracking-wide text-slate-500">Prisma Suecia</p>
-      <h1 className="mt-4 text-3xl font-semibold text-ink">{language === 'sv' ? 'Ditt resultat' : 'Tu resultado'}</h1>
+      <h1 className="mt-4 text-3xl font-semibold text-ink">Estás más cerca de:</h1>
       <div className="mt-8 grid gap-4">
         {results.map((result) => {
           const party = parties.find((item) => item.id === result.partyId);
@@ -29,7 +29,7 @@ export default function ResultPage() {
                 <p className="text-lg font-semibold text-ink">{result.score}%</p>
               </div>
               <p className="mt-3 text-sm text-slate-600">
-                {language === 'sv' ? 'Jämförda frågor' : 'Preguntas comparadas'}: {result.matchedQuestions}
+                Preguntas comparadas: {result.matchedQuestions}
               </p>
             </article>
           );
@@ -40,7 +40,7 @@ export default function ResultPage() {
         onClick={reset}
         className="mt-8 block rounded-xl border border-line bg-white px-6 py-4 text-center font-semibold text-ink"
       >
-        {language === 'sv' ? 'Börja om' : 'Empezar de nuevo'}
+        Empezar de nuevo
       </Link>
     </main>
   );

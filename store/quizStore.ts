@@ -22,7 +22,7 @@ export const useQuizStore = create<QuizState>((set) => ({
   currentQuestionIndex: 0,
   answers: [],
   importantQuestions: [],
-  language: 'sv',
+  language: 'es',
   results: [],
   setLanguage: (language) => set({language}),
   answerQuestion: (answer) =>
