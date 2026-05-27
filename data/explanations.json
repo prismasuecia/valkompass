@@ -1,0 +1,112 @@
+[
+  {
+    "id": "EXP001",
+    "title": {
+      "sv": "Medborgarskap",
+      "es": "Ciudadanía"
+    },
+    "content": {
+      "sv": "Frågan handlar om vilka krav som ska gälla för att bli svensk medborgare, till exempel språk, tid i landet och egen försörjning.",
+      "es": "La pregunta trata de los requisitos para ser ciudadano sueco, por ejemplo idioma, tiempo en el país y sustento propio."
+    }
+  },
+  {
+    "id": "EXP002",
+    "title": {
+      "sv": "Asylmottagande",
+      "es": "Asilo"
+    },
+    "content": {
+      "sv": "Frågan handlar om hur många personer som söker skydd Sverige bör ta emot jämfört med idag.",
+      "es": "La pregunta trata de cuántas personas que buscan protección debería recibir Suecia en comparación con hoy."
+    }
+  },
+  {
+    "id": "EXP003",
+    "title": {
+      "sv": "Straff",
+      "es": "Penas"
+    },
+    "content": {
+      "sv": "Frågan gäller om allvarliga våldsbrott ska leda till längre straff än idag.",
+      "es": "La pregunta trata de si los delitos violentos graves deben tener penas más largas que hoy."
+    }
+  },
+  {
+    "id": "EXP004",
+    "title": {
+      "sv": "Kameraövervakning",
+      "es": "Cámaras"
+    },
+    "content": {
+      "sv": "Frågan väger polisens möjlighet att förebygga brott mot integritet och kontroll i offentliga miljöer.",
+      "es": "La pregunta compara la posibilidad de prevenir delitos con la privacidad en lugares públicos."
+    }
+  },
+  {
+    "id": "EXP005",
+    "title": {
+      "sv": "Skolans ansvar",
+      "es": "Responsabilidad escolar"
+    },
+    "content": {
+      "sv": "Frågan gäller om staten eller kommunerna ska ha huvudansvaret för skolan.",
+      "es": "La pregunta trata de si el Estado o los municipios deben tener la responsabilidad principal de las escuelas."
+    }
+  },
+  {
+    "id": "EXP006",
+    "title": {
+      "sv": "Vinster i skolan",
+      "es": "Ganancias en escuelas"
+    },
+    "content": {
+      "sv": "Frågan handlar om privata skolor ska få dela ut vinst eller om pengarna ska stanna i verksamheten.",
+      "es": "La pregunta trata de si las escuelas privadas pueden tener ganancias o si el dinero debe quedarse en la educación."
+    }
+  },
+  {
+    "id": "EXP007",
+    "title": {
+      "sv": "Bidrag och krav",
+      "es": "Subsidios y requisitos"
+    },
+    "content": {
+      "sv": "Frågan gäller om ekonomiskt stöd oftare ska kopplas till arbete, studier eller andra aktiviteter.",
+      "es": "La pregunta trata de si el apoyo económico debe estar más conectado con trabajo, estudios u otras actividades."
+    }
+  },
+  {
+    "id": "EXP008",
+    "title": {
+      "sv": "Skatt på höga inkomster",
+      "es": "Impuestos a ingresos altos"
+    },
+    "content": {
+      "sv": "Frågan handlar om personer med höga inkomster ska betala mer i skatt än idag.",
+      "es": "La pregunta trata de si las personas con ingresos altos deben pagar más impuestos que hoy."
+    }
+  },
+  {
+    "id": "EXP009",
+    "title": {
+      "sv": "Kärnkraft",
+      "es": "Energía nuclear"
+    },
+    "content": {
+      "sv": "Frågan gäller om Sverige ska bygga ut kärnkraften som en del av energisystemet.",
+      "es": "La pregunta trata de si Suecia debe ampliar la energía nuclear como parte del sistema energético."
+    }
+  },
+  {
+    "id": "EXP010",
+    "title": {
+      "sv": "Bensinskatt",
+      "es": "Impuesto a la gasolina"
+    },
+    "content": {
+      "sv": "Frågan handlar om kostnaden för bensin och hur skatter påverkar hushåll, företag och klimatmål.",
+      "es": "La pregunta trata del precio de la gasolina y cómo los impuestos afectan a hogares, empresas y metas climáticas."
+    }
+  }
+]
