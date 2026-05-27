@@ -39,7 +39,7 @@ export default function QuizPage() {
     if (!selectedAnswer) return;
 
     if (isLastQuestion) {
-      setResults(calculateResults({answers, importantQuestions, parties, positions}));
+      setResults(calculateResults({answers, importantQuestions, parties, positions, questions}));
       router.push('/result');
       return;
     }

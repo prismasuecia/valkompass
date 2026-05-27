@@ -41,4 +41,17 @@ export type Result = {
   partyId: string;
   score: number;
   matchedQuestions: number;
+  matchingCategories: QuestionCategory[];
+  strongestAgreements: ResultQuestion[];
+  strongestDisagreements: ResultQuestion[];
+  comparisons: ResultQuestion[];
+};
+
+export type ResultQuestion = {
+  questionId: string;
+  category: QuestionCategory;
+  statement: LocalizedText;
+  userValue: AnswerValue;
+  partyValue: AnswerValue;
+  distance: number;
 };
