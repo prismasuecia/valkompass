@@ -22,6 +22,9 @@ export default function HomePage() {
         className="mx-auto mb-7 h-16 w-auto object-contain opacity-90"
       />
       <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">Brújula electoral 2026</h1>
+      <p className="mt-3 text-base leading-7 text-slate-600">
+        Una guía sencilla para comparar tus opiniones con los partidos políticos suecos.
+      </p>
       <p className="mt-5 text-lg leading-8 text-slate-700">
         Valkompas fue creado para ayudar a entender mejor las diferencias entre los partidos políticos suecos de forma sencilla y neutral.
       </p>
@@ -68,6 +71,11 @@ export default function HomePage() {
       <p className="mt-4 text-sm leading-6 text-slate-600">
         Basado en posiciones políticas públicas y actuales de los partidos del parlamento sueco.
       </p>
+      <section className="mt-4 rounded-2xl border border-line bg-white p-5 text-sm leading-6 text-slate-700">
+        <p>Las posiciones de los partidos se basan en programas políticos, propuestas públicas y declaraciones recientes.</p>
+        <p className="mt-3">Las posiciones políticas pueden cambiar y Valkompas se actualiza continuamente.</p>
+        <p className="mt-3">La política es compleja y esta herramienta simplifica algunas posiciones para facilitar la comparación.</p>
+      </section>
       <Link href="/quiz" className="mt-8 rounded-xl bg-ink px-6 py-4 text-center text-lg font-semibold text-white">
         Comenzar ahora
       </Link>
@@ -98,6 +106,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
+        Creado por Prisma Suecia
+      </footer>
     </main>
   );
 }
