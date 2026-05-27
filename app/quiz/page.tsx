@@ -15,6 +15,8 @@ const questions = questionsData as Question[];
 const explanations = explanationsData as Explanation[];
 const parties = partiesData as Party[];
 const positions = positionsData as Position[];
+const displayedTotalQuestions = 20;
+const averageSecondsPerQuestion = 12;
 
 export default function QuizPage() {
   const router = useRouter();
@@ -34,6 +36,11 @@ export default function QuizPage() {
   const selectedAnswer = answers.find((answer) => answer.questionId === question.id);
   const explanation = explanations.find((item) => item.id === question.explanationId);
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
+  const progressPercent = Math.round(((currentQuestionIndex + 1) / displayedTotalQuestions) * 100);
+  const remainingMinutes = Math.max(
+    1,
+    Math.ceil(((displayedTotalQuestions - currentQuestionIndex - 1) * averageSecondsPerQuestion) / 60)
+  );
 
   function handleNext() {
     if (!selectedAnswer) return;
@@ -48,14 +55,16 @@ export default function QuizPage() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-5 py-6">
-      <div className="mb-8 flex items-center justify-between gap-4">
-        <p className="text-sm text-slate-600">
-          Pregunta {currentQuestionIndex + 1} / {questions.length}
+    <main className="mx-auto min-h-screen max-w-2xl px-5 py-8">
+      <div className="mb-4 flex items-center justify-between gap-4">
+        <p className="text-sm font-medium text-slate-700">
+          Pregunta {currentQuestionIndex + 1} de {displayedTotalQuestions}
         </p>
+        <p className="text-sm font-medium text-slate-500">{progressPercent}%</p>
       </div>
-      <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
-      <div className="mt-8">
+      <ProgressBar current={currentQuestionIndex + 1} total={displayedTotalQuestions} />
+      <p className="mt-3 text-sm text-slate-600">Tiempo restante aproximado: {remainingMinutes} minutos</p>
+      <div className="mt-10">
         <QuestionCard
           question={question}
           explanation={explanation}
