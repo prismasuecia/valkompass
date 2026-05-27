@@ -1,7 +1,9 @@
 import {StartQuizLink} from '@/components/StartQuizLink';
+import questionsData from '@/data/questions.json';
 
 const includedTopics = ['migración', 'economía', 'escuela', 'crimen', 'energía', 'bienestar social'];
 const differentiators = ['Explicaciones simples', 'Información actualizada', 'Diseñado para hispanohablantes en Suecia'];
+const questionCount = questionsData.length;
 const partyLogos = [
   {name: 'Socialdemokraterna', src: '/party-logos/s.png'},
   {name: 'Moderaterna', src: '/party-logos/m.svg'},
@@ -49,11 +51,11 @@ export default function HomePage() {
         <dl className="grid gap-4 text-sm">
           <div className="flex items-center justify-between gap-4">
             <dt className="font-medium text-slate-600">Número de preguntas</dt>
-            <dd className="font-semibold text-ink">20</dd>
+            <dd className="font-semibold text-ink">{questionCount}</dd>
           </div>
           <div className="flex items-center justify-between gap-4">
             <dt className="font-medium text-slate-600">Tiempo estimado</dt>
-            <dd className="font-semibold text-ink">3–5 minutos</dd>
+            <dd className="font-semibold text-ink">2–3 minutos</dd>
           </div>
         </dl>
         <div className="mt-5 border-t border-line pt-5">

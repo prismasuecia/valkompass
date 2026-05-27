@@ -15,7 +15,6 @@ const questions = questionsData as Question[];
 const explanations = explanationsData as Explanation[];
 const parties = partiesData as Party[];
 const positions = positionsData as Position[];
-const displayedTotalQuestions = 20;
 const averageSecondsPerQuestion = 12;
 
 export default function QuizPage() {
@@ -36,11 +35,9 @@ export default function QuizPage() {
   const selectedAnswer = answers.find((answer) => answer.questionId === question.id);
   const explanation = explanations.find((item) => item.id === question.explanationId);
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
-  const progressPercent = Math.round(((currentQuestionIndex + 1) / displayedTotalQuestions) * 100);
-  const remainingMinutes = Math.max(
-    1,
-    Math.ceil(((displayedTotalQuestions - currentQuestionIndex - 1) * averageSecondsPerQuestion) / 60)
-  );
+  const progressPercent = Math.round(((currentQuestionIndex + 1) / questions.length) * 100);
+  const remainingSeconds = (questions.length - currentQuestionIndex - 1) * averageSecondsPerQuestion;
+  const remainingTimeText = remainingSeconds < 60 ? 'menos de 1 minuto' : `${Math.ceil(remainingSeconds / 60)} minutos`;
 
   function handleNext() {
     if (!selectedAnswer) return;
@@ -58,12 +55,12 @@ export default function QuizPage() {
     <main className="mx-auto min-h-screen max-w-2xl px-5 py-8">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
-          Pregunta {currentQuestionIndex + 1} de {displayedTotalQuestions}
+          Pregunta {currentQuestionIndex + 1} de {questions.length}
         </p>
         <p className="text-sm font-medium text-slate-500">{progressPercent}%</p>
       </div>
-      <ProgressBar current={currentQuestionIndex + 1} total={displayedTotalQuestions} />
-      <p className="mt-3 text-sm text-slate-600">Tiempo restante aproximado: {remainingMinutes} minutos</p>
+      <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
+      <p className="mt-3 text-sm text-slate-600">Tiempo restante aproximado: {remainingTimeText}</p>
       <div className="mt-10">
         <QuestionCard
           question={question}

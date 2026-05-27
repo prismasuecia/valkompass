@@ -2,11 +2,12 @@
 
 import Link from 'next/link';
 import partiesData from '@/data/parties.json';
+import questionsData from '@/data/questions.json';
 import {useQuizStore} from '@/store/quizStore';
 import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types';
 
 const parties = partiesData as Party[];
-const displayedQuestionCount = 20;
+const displayedQuestionCount = questionsData.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
   migration: 'migración',
@@ -55,6 +56,13 @@ export default function ResultPage() {
           Valkompas compara tus respuestas con posiciones públicas de los partidos políticos suecos. Las coincidencias más cercanas generan un resultado más alto.
         </p>
       </details>
+
+      {topResults.length === 0 ? (
+        <section className="mt-8 rounded-2xl border border-line bg-white p-6">
+          <h2 className="text-xl font-semibold text-ink">No hay resultados todavía</h2>
+          <p className="mt-3 leading-7 text-slate-700">Responde las preguntas para ver una comparación.</p>
+        </section>
+      ) : null}
 
       <div className="mt-8 grid gap-5">
         {topResults.map((result) => {
