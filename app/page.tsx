@@ -4,7 +4,9 @@ const includedTopics = ['migración', 'economía', 'escuela', 'crimen', 'energí
 const differentiators = ['Explicaciones simples', 'Información actualizada', 'Diseñado para hispanohablantes en Suecia'];
 const partyLogos = [
   {name: 'Socialdemokraterna', src: '/party-logos/s.png'},
+  {name: 'Moderaterna', src: '/party-logos/m.svg'},
   {name: 'Liberalerna', src: '/party-logos/l.png'},
+  {name: 'Kristdemokraterna', src: '/party-logos/kd.jpg'},
   {name: 'Vänsterpartiet', src: '/party-logos/v.png'},
   {name: 'Miljöpartiet', src: '/party-logos/mp.png'}
 ];
@@ -79,7 +81,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs leading-5 text-slate-500">Faltan logotipos: Moderaterna, Sverigedemokraterna, Centerpartiet y Kristdemokraterna.</p>
+        <p className="mt-3 text-xs leading-5 text-slate-500">Faltan logotipos: Sverigedemokraterna y Centerpartiet.</p>
       </section>
     </main>
   );
