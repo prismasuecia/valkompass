@@ -4,7 +4,7 @@
     "category": "migration",
     "statement": {
       "sv": "Kraven för svenskt medborgarskap bör skärpas.",
-      "es": "Los requisitos para obtener la ciudadanía sueca deberían ser más estrictos."
+      "es": "Debería ser más difícil obtener la ciudadanía sueca."
     },
     "explanationId": "EXP001",
     "importanceAllowed": true
@@ -14,7 +14,7 @@
     "category": "migration",
     "statement": {
       "sv": "Sverige bör ta emot färre asylsökande än idag.",
-      "es": "Suecia debería recibir menos solicitantes de asilo que hoy."
+      "es": "Suecia debería recibir menos personas que buscan asilo."
     },
     "explanationId": "EXP002",
     "importanceAllowed": true
@@ -24,7 +24,7 @@
     "category": "crime",
     "statement": {
       "sv": "Straffen för grova våldsbrott bör höjas.",
-      "es": "Las penas por delitos violentos graves deberían aumentar."
+      "es": "Los castigos por delitos violentos graves deberían ser más duros."
     },
     "explanationId": "EXP003",
     "importanceAllowed": true
@@ -34,7 +34,7 @@
     "category": "crime",
     "statement": {
       "sv": "Polisen bör få större möjligheter till kameraövervakning.",
-      "es": "La policía debería tener más posibilidades de vigilancia con cámaras."
+      "es": "La policía debería poder usar más cámaras de vigilancia."
     },
     "explanationId": "EXP004",
     "importanceAllowed": true
@@ -44,7 +44,7 @@
     "category": "school",
     "statement": {
       "sv": "Staten bör ta över huvudansvaret för skolan.",
-      "es": "El Estado debería asumir la responsabilidad principal de las escuelas."
+      "es": "El Estado debería tener la responsabilidad principal de las escuelas."
     },
     "explanationId": "EXP005",
     "importanceAllowed": true
@@ -54,7 +54,7 @@
     "category": "school",
     "statement": {
       "sv": "Skolor ska inte kunna ta ut vinst.",
-      "es": "Las escuelas no deberían poder generar ganancias."
+      "es": "Las escuelas no deberían poder sacar ganancias."
     },
     "explanationId": "EXP006",
     "importanceAllowed": true
@@ -64,7 +64,7 @@
     "category": "economy",
     "statement": {
       "sv": "Bidrag bör oftare kopplas till krav på arbete eller studier.",
-      "es": "Los subsidios deberían estar más vinculados al trabajo o estudios."
+      "es": "Las ayudas económicas deberían exigir más trabajo o estudios."
     },
     "explanationId": "EXP007",
     "importanceAllowed": true
@@ -74,7 +74,7 @@
     "category": "economy",
     "statement": {
       "sv": "Skatten för höginkomsttagare bör höjas.",
-      "es": "Los impuestos para personas con altos ingresos deberían aumentar."
+      "es": "Las personas con ingresos altos deberían pagar más impuestos."
     },
     "explanationId": "EXP008",
     "importanceAllowed": true
@@ -84,7 +84,7 @@
     "category": "energy",
     "statement": {
       "sv": "Kärnkraften bör byggas ut i Sverige.",
-      "es": "La energía nuclear debería expandirse en Suecia."
+      "es": "Suecia debería construir más energía nuclear."
     },
     "explanationId": "EXP009",
     "importanceAllowed": true
@@ -94,7 +94,7 @@
     "category": "energy",
     "statement": {
       "sv": "Bensinskatterna bör sänkas.",
-      "es": "Los impuestos a la gasolina deberían reducirse."
+      "es": "Los impuestos a la gasolina deberían bajar."
     },
     "explanationId": "EXP010",
     "importanceAllowed": true

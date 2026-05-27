@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import {StartQuizLink} from '@/components/StartQuizLink';
 
 const includedTopics = ['migración', 'economía', 'escuela', 'crimen', 'energía', 'bienestar social'];
 const differentiators = ['Explicaciones simples', 'Información actualizada', 'Diseñado para hispanohablantes en Suecia'];
@@ -76,9 +76,7 @@ export default function HomePage() {
         <p className="mt-3">Las posiciones políticas pueden cambiar y Valkompas se actualiza continuamente.</p>
         <p className="mt-3">La política es compleja y esta herramienta simplifica algunas posiciones para facilitar la comparación.</p>
       </details>
-      <Link href="/quiz" className="mt-8 rounded-xl bg-ink px-6 py-4 text-center text-lg font-semibold text-white">
-        Comenzar ahora
-      </Link>
+      <StartQuizLink />
       <p className="mt-4 text-center text-sm leading-6 text-slate-600">
         Valkompas compara tus respuestas con posiciones políticas públicas de los partidos suecos.
       </p>

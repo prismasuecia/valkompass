@@ -43,6 +43,7 @@ export const useQuizStore = create<QuizState>((set) => ({
       currentQuestionIndex: 0,
       answers: [],
       importantQuestions: [],
+      language: 'es',
       results: []
     })
 }));
