@@ -5,6 +5,7 @@ const differentiators = ['Explicaciones simples', 'Información actualizada', 'D
 const partyLogos = [
   {name: 'Socialdemokraterna', src: '/party-logos/s.png'},
   {name: 'Moderaterna', src: '/party-logos/m.svg'},
+  {name: 'Sverigedemokraterna', src: '/party-logos/sd.png'},
   {name: 'Liberalerna', src: '/party-logos/l.png'},
   {name: 'Kristdemokraterna', src: '/party-logos/kd.jpg'},
   {name: 'Vänsterpartiet', src: '/party-logos/v.png'},
@@ -81,7 +82,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs leading-5 text-slate-500">Faltan logotipos: Sverigedemokraterna y Centerpartiet.</p>
+        <p className="mt-3 text-xs leading-5 text-slate-500">Falta logotipo: Centerpartiet.</p>
       </section>
     </main>
   );
