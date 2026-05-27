@@ -26,16 +26,15 @@ export default function HomePage() {
         Una guía sencilla para comparar tus opiniones con los partidos políticos suecos.
       </p>
       <p className="mt-5 text-lg leading-8 text-slate-700">
-        Valkompas fue creado para ayudar a entender mejor las diferencias entre los partidos políticos suecos de forma sencilla y neutral.
+        Valkompas fue creado para ayudar a entender mejor cómo piensan los partidos políticos suecos.
       </p>
       <p className="mt-4 text-base leading-7 text-slate-600">
-        Muchos hispanohablantes en Suecia sienten que la política sueca puede ser difícil de entender. Valkompas fue creado para explicar
-        las diferencias entre los partidos de forma sencilla y neutral.
+        Entender la política sueca puede ser difícil, especialmente si el español es tu idioma principal.
       </p>
       <section className="mt-8 rounded-2xl border border-line bg-white p-5">
         <h2 className="text-base font-semibold text-ink">Antes de comenzar</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
-          <li>Esta brújula electoral se basa únicamente en las elecciones parlamentarias suecas (Riksdagen).</li>
+          <li>Esta brújula electoral se basa únicamente en las elecciones al parlamento nacional sueco (Riksdagen).</li>
           <li>No incluye elecciones municipales o regionales.</li>
           <li>El resultado no es una recomendación de voto.</li>
         </ul>
@@ -71,11 +70,12 @@ export default function HomePage() {
       <p className="mt-4 text-sm leading-6 text-slate-600">
         Basado en posiciones políticas públicas y actuales de los partidos del parlamento sueco.
       </p>
-      <section className="mt-4 rounded-2xl border border-line bg-white p-5 text-sm leading-6 text-slate-700">
-        <p>Las posiciones de los partidos se basan en programas políticos, propuestas públicas y declaraciones recientes.</p>
+      <details className="mt-4 rounded-2xl border border-line bg-white p-5 text-sm leading-6 text-slate-700">
+        <summary className="cursor-pointer text-base font-semibold text-ink">¿Cómo funciona Valkompas?</summary>
+        <p className="mt-3">Las posiciones de los partidos se basan en programas políticos, propuestas y declaraciones públicas recientes.</p>
         <p className="mt-3">Las posiciones políticas pueden cambiar y Valkompas se actualiza continuamente.</p>
         <p className="mt-3">La política es compleja y esta herramienta simplifica algunas posiciones para facilitar la comparación.</p>
-      </section>
+      </details>
       <Link href="/quiz" className="mt-8 rounded-xl bg-ink px-6 py-4 text-center text-lg font-semibold text-white">
         Comenzar ahora
       </Link>
