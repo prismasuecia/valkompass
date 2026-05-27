@@ -9,6 +9,7 @@ const partyLogos = [
   {name: 'Liberalerna', src: '/party-logos/l.png'},
   {name: 'Kristdemokraterna', src: '/party-logos/kd.jpg'},
   {name: 'Vänsterpartiet', src: '/party-logos/v.png'},
+  {name: 'Centerpartiet', src: '/party-logos/c.png'},
   {name: 'Miljöpartiet', src: '/party-logos/mp.png'}
 ];
 
@@ -82,7 +83,6 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs leading-5 text-slate-500">Falta logotipo: Centerpartiet.</p>
       </section>
     </main>
   );
