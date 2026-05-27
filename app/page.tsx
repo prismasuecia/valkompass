@@ -23,12 +23,26 @@ export default function HomePage() {
       />
       <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">Brújula electoral 2026</h1>
       <p className="mt-5 text-lg leading-8 text-slate-700">
-        Una guía sencilla para comparar tus opiniones con las posiciones de los partidos suecos antes de las elecciones de 2026.
+        Valkompas fue creado para ayudar a entender mejor las diferencias entre los partidos políticos suecos de forma sencilla y neutral.
       </p>
       <p className="mt-4 text-base leading-7 text-slate-600">
         Muchos hispanohablantes en Suecia sienten que la política sueca puede ser difícil de entender. Valkompas fue creado para explicar
         las diferencias entre los partidos de forma sencilla y neutral.
       </p>
+      <section className="mt-8 rounded-2xl border border-line bg-white p-5">
+        <h2 className="text-base font-semibold text-ink">Antes de comenzar</h2>
+        <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
+          <li>Esta brújula electoral se basa únicamente en las elecciones parlamentarias suecas (Riksdagen).</li>
+          <li>No incluye elecciones municipales o regionales.</li>
+          <li>El resultado no es una recomendación de voto.</li>
+        </ul>
+      </section>
+      <details className="mt-4 rounded-2xl border border-line bg-white p-5">
+        <summary className="cursor-pointer text-base font-semibold text-ink">¿Quién puede votar en las elecciones parlamentarias suecas?</summary>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          Para votar en las elecciones al parlamento sueco normalmente se requiere ciudadanía sueca.
+        </p>
+      </details>
       <section className="mt-8 rounded-2xl border border-line bg-white p-5">
         <dl className="grid gap-4 text-sm">
           <div className="flex items-center justify-between gap-4">
