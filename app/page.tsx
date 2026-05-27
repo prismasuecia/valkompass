@@ -2,6 +2,12 @@ import Link from 'next/link';
 
 const includedTopics = ['migración', 'economía', 'escuela', 'crimen', 'energía', 'bienestar social'];
 const differentiators = ['Explicaciones simples', 'Información actualizada', 'Diseñado para hispanohablantes en Suecia'];
+const partyLogos = [
+  {name: 'Socialdemokraterna', src: '/party-logos/s.png'},
+  {name: 'Liberalerna', src: '/party-logos/l.png'},
+  {name: 'Vänsterpartiet', src: '/party-logos/v.png'},
+  {name: 'Miljöpartiet', src: '/party-logos/mp.png'}
+];
 
 export default function HomePage() {
   return (
@@ -59,6 +65,21 @@ export default function HomePage() {
             </p>
           ))}
         </div>
+      </section>
+      <section className="mt-8 border-t border-line pt-6">
+        <p className="text-sm font-medium text-slate-600">Partidos incluidos en el análisis</p>
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {partyLogos.map((logo) => (
+            <div key={logo.name} className="flex h-20 items-center justify-center rounded-xl bg-white p-3">
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${logo.src}`}
+                alt={logo.name}
+                className="max-h-12 max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+        <p className="mt-3 text-xs leading-5 text-slate-500">Faltan logotipos: Moderaterna, Sverigedemokraterna, Centerpartiet y Kristdemokraterna.</p>
       </section>
     </main>
   );
