@@ -6,6 +6,7 @@ import {useQuizStore} from '@/store/quizStore';
 import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types';
 
 const parties = partiesData as Party[];
+const displayedQuestionCount = 20;
 
 const categoryLabels: Record<QuestionCategory, string> = {
   migration: 'migración',
@@ -47,6 +48,13 @@ export default function ResultPage() {
       <p className="mt-4 text-base leading-7 text-slate-700">
         El resultado compara tus respuestas con posiciones políticas públicas de los partidos suecos.
       </p>
+      <p className="mt-3 text-sm leading-6 text-slate-600">Las mismas respuestas siempre generan el mismo resultado.</p>
+      <details className="mt-5 rounded-2xl border border-line bg-white p-5">
+        <summary className="cursor-pointer text-base font-semibold text-ink">¿Cómo se calcula el resultado?</summary>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          Valkompas compara tus respuestas con posiciones públicas de los partidos políticos suecos. Las coincidencias más cercanas generan un resultado más alto.
+        </p>
+      </details>
 
       <div className="mt-8 grid gap-5">
         {topResults.map((result) => {
@@ -64,8 +72,9 @@ export default function ResultPage() {
                 <p className="text-sm font-semibold text-slate-500">{result.score}%</p>
               </div>
               <p className="mt-5 leading-7 text-slate-700">
-                Coincides principalmente en temas de {categories.join(', ')}.
+                Tus respuestas muestran muchas coincidencias con este partido, sobre todo en temas de {categories.join(', ')}.
               </p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">Preguntas comparadas: {displayedQuestionCount}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {categories.map((category) => (
                   <span key={category} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">
@@ -109,6 +118,7 @@ export default function ResultPage() {
         <p className="mt-3 leading-7 text-slate-700">
           Los resultados muestran qué partidos están más cerca de tus respuestas en diferentes temas políticos. No es una recomendación de voto.
         </p>
+        <p className="mt-3 text-sm leading-6 text-slate-600">El resultado no representa una recomendación de voto.</p>
       </section>
 
       <Link
