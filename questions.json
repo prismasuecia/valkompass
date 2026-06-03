@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": "Q01",
+      "category": "Migración",
+      "question": "Para obtener la ciudadanía sueca debería ser necesario haber vivido más tiempo en Suecia.",
+      "explanationTitle": "Tiempo de residencia para la ciudadanía",
+      "explanation": "Para obtener la ciudadanía sueca, una persona debe haber vivido un cierto número de años en Suecia. Algunos partidos quieren aumentar ese tiempo. Otros creen que las reglas actuales son suficientes."
+    },
+    {
+      "id": "Q02",
+      "category": "Migración",
+      "question": "Suecia debería recibir a menos personas que piden asilo.",
+      "explanationTitle": "Asilo en Suecia",
+      "explanation": "Las personas que huyen de guerras, persecución o situaciones peligrosas pueden solicitar asilo en Suecia. Algunos partidos quieren reducir el número de personas que reciben asilo. Otros creen que Suecia debe seguir ofreciendo protección a quienes la necesitan."
+    },
+    {
+      "id": "Q03",
+      "category": "Migración",
+      "question": "Para obtener la ciudadanía sueca debería ser obligatorio demostrar conocimientos de sueco.",
+      "explanationTitle": "Idioma sueco y ciudadanía",
+      "explanation": "Algunos partidos creen que una persona debería demostrar conocimientos de sueco antes de obtener la ciudadanía. Otros creen que aprender el idioma es importante, pero que no debería ser un requisito obligatorio para todos."
+    },
+    {
+      "id": "Q04",
+      "category": "Migración",
+      "question": "Las personas extranjeras que cometen delitos graves deberían poder ser expulsadas más fácilmente de Suecia.",
+      "explanationTitle": "Expulsión por delitos graves",
+      "explanation": "Algunos partidos quieren facilitar la expulsión de personas extranjeras que cometen delitos graves. Otros creen que las reglas actuales son suficientes o que cada caso debe evaluarse individualmente."
+    },
+    {
+      "id": "Q05",
+      "category": "Crimen y seguridad",
+      "question": "Las personas condenadas por delitos violentos graves deberían recibir castigos más largos.",
+      "explanationTitle": "Castigos por delitos violentos",
+      "explanation": "Algunos partidos creen que castigos más largos aumentan la seguridad y ayudan a combatir el crimen. Otros creen que también es importante invertir en prevención, educación y apoyo social para reducir la delincuencia."
+    },
+    {
+      "id": "Q06",
+      "category": "Crimen y seguridad",
+      "question": "Suecia debería utilizar más cámaras de vigilancia en lugares públicos.",
+      "explanationTitle": "Cámaras de vigilancia",
+      "explanation": "Algunos partidos creen que más cámaras ayudan a prevenir delitos y encontrar responsables. Otros creen que una vigilancia demasiado extensa puede afectar la privacidad de las personas."
+    },
+    {
+      "id": "Q07",
+      "category": "Crimen y seguridad",
+      "question": "La edad para recibir castigos penales debería ser más baja.",
+      "explanationTitle": "Edad de responsabilidad penal",
+      "explanation": "En Suecia existe una edad mínima para recibir castigos penales. Algunos partidos quieren reducir esa edad para poder castigar a jóvenes que cometen delitos graves. Otros creen que el foco debería estar en la prevención y el apoyo a los menores."
+    },
+    {
+      "id": "Q08",
+      "category": "Crimen y seguridad",
+      "question": "La policía debería poder detener y controlar a más personas en zonas con alta criminalidad, incluso si no son sospechosas de un delito.",
+      "explanationTitle": "Zonas de seguridad",
+      "explanation": "Esta pregunta trata sobre las llamadas zonas de seguridad. Algunos partidos quieren que la policía pueda controlar a más personas para prevenir delitos. Otros creen que esto puede afectar los derechos de personas que no han hecho nada ilegal."
+    },
+    {
+      "id": "Q09",
+      "category": "Escuela",
+      "question": "El gobierno nacional debería tener más responsabilidad sobre las escuelas que las municipalidades.",
+      "explanationTitle": "Quién dirige las escuelas",
+      "explanation": "Actualmente las municipalidades tienen una gran responsabilidad sobre las escuelas. Algunos partidos quieren que el gobierno nacional tenga más control para que la educación sea más similar en todo el país. Otros prefieren que las decisiones se tomen más cerca de cada municipio."
+    },
+    {
+      "id": "Q10",
+      "category": "Escuela",
+      "question": "Las empresas que gestionan escuelas financiadas con dinero público no deberían poder obtener ganancias.",
+      "explanationTitle": "Ganancias en escuelas financiadas con dinero público",
+      "explanation": "En Suecia existen escuelas gestionadas por empresas privadas pero financiadas con dinero público. Algunos partidos creen que estas empresas no deberían obtener ganancias. Otros creen que las escuelas privadas pueden formar parte del sistema educativo."
+    },
+    {
+      "id": "Q11",
+      "category": "Escuela",
+      "question": "Los padres deberían poder elegir libremente la escuela de sus hijos.",
+      "explanationTitle": "Libertad para elegir escuela",
+      "explanation": "En Suecia las familias pueden elegir entre diferentes escuelas. Algunos partidos quieren mantener o ampliar esta libertad. Otros creen que el sistema actual aumenta las diferencias entre escuelas y alumnos."
+    },
+    {
+      "id": "Q12",
+      "category": "Escuela",
+      "question": "Los alumnos deberían recibir calificaciones desde edades más tempranas.",
+      "explanationTitle": "Calificaciones a edades más tempranas",
+      "explanation": "Algunos partidos creen que las notas tempranas ayudan a detectar dificultades y mejorar los resultados escolares. Otros creen que los niños deberían centrarse en aprender antes de ser evaluados con calificaciones."
+    },
+    {
+      "id": "Q13",
+      "category": "Dinero y trabajo",
+      "question": "Las personas desempleadas que reciben apoyo económico del Estado deberían cumplir más requisitos para seguir recibiendo esa ayuda.",
+      "explanationTitle": "Apoyo económico y requisitos",
+      "explanation": "En Suecia algunas personas que no tienen trabajo pueden recibir apoyo económico del Estado. Algunos partidos quieren exigir más requisitos para seguir recibiendo esa ayuda, por ejemplo buscar empleo, estudiar o participar en actividades. Otros creen que las reglas actuales ya son suficientemente estrictas."
+    },
+    {
+      "id": "Q14",
+      "category": "Dinero y trabajo",
+      "question": "Las personas con ingresos altos deberían pagar más impuestos.",
+      "explanationTitle": "Impuestos para quienes tienen ingresos altos",
+      "explanation": "Algunos partidos creen que quienes ganan más dinero deberían pagar más impuestos para financiar servicios como salud, educación y bienestar social. Otros creen que impuestos más altos pueden afectar el trabajo, las inversiones y el crecimiento económico."
+    },
+    {
+      "id": "Q15",
+      "category": "Dinero y trabajo",
+      "question": "Las pequeñas empresas deberían pagar menos impuestos.",
+      "explanationTitle": "Impuestos para pequeñas empresas",
+      "explanation": "Las pequeñas empresas son una parte importante de la economía sueca. Algunos partidos quieren reducir impuestos y cargas para facilitar la creación de empleos. Otros creen que los ingresos fiscales son necesarios para financiar los servicios públicos."
+    },
+    {
+      "id": "Q16",
+      "category": "Dinero y trabajo",
+      "question": "Suecia debería gastar más dinero en salud y atención médica, aunque eso signifique impuestos más altos.",
+      "explanationTitle": "Salud pública e impuestos",
+      "explanation": "La atención médica en Suecia se financia principalmente con dinero público. Algunos partidos quieren aumentar la inversión en salud aunque eso implique mayores impuestos. Otros creen que es más importante utilizar mejor los recursos existentes."
+    },
+    {
+      "id": "Q17",
+      "category": "Energía y transporte",
+      "question": "Suecia debería construir más plantas de energía nuclear.",
+      "explanationTitle": "Energía nuclear",
+      "explanation": "Suecia necesita producir más electricidad en los próximos años. Algunos partidos creen que la energía nuclear es necesaria para garantizar un suministro estable. Otros creen que el país debería apostar principalmente por energías renovables como la eólica y la solar."
+    },
+    {
+      "id": "Q18",
+      "category": "Energía y transporte",
+      "question": "El impuesto a la gasolina debería bajar para que manejar cueste menos.",
+      "explanationTitle": "Impuesto a la gasolina",
+      "explanation": "Parte del precio de la gasolina corresponde a impuestos. Algunos partidos quieren reducir esos impuestos para que conducir sea más barato. Otros creen que los impuestos ayudan a reducir las emisiones y a financiar la transición hacia formas de transporte más sostenibles."
+    },
+    {
+      "id": "Q19",
+      "category": "Energía y transporte",
+      "question": "Suecia debería invertir más en energía eólica y solar.",
+      "explanationTitle": "Energía eólica y solar",
+      "explanation": "Algunos partidos quieren aumentar la producción de electricidad mediante energía eólica y solar. Otros creen que Suecia debería dar mayor prioridad a otras fuentes de energía, especialmente la energía nuclear."
+    },
+    {
+      "id": "Q20",
+      "category": "Europa e internacional",
+      "question": "Suecia debería cooperar más con la Unión Europea, incluso si eso significa que algunas decisiones se tomen a nivel europeo.",
+      "explanationTitle": "Cooperación con la Unión Europea",
+      "explanation": "Suecia forma parte de la Unión Europea (UE). Algunos partidos quieren una cooperación más profunda entre los países miembros. Otros creen que más decisiones deberían tomarse directamente en Suecia y no a nivel europeo."
+    }
+  ]
+}

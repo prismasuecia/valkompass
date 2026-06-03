@@ -2,13 +2,15 @@
 
 import {AnswerButtons} from '@/components/AnswerButtons';
 import type {AnswerValue, Explanation, Language, Question} from '@/types';
+import uiText from '@/uiText.json';
 
 const categoryLabels: Record<Question['category'], string> = {
-  migration: 'Migración',
-  crime: 'Seguridad',
-  school: 'Escuela',
-  economy: 'Economía',
-  energy: 'Energía'
+  migration: uiText.categories.migration,
+  crime: uiText.categories.crime,
+  school: uiText.categories.school,
+  economy: uiText.categories.economy,
+  energy: uiText.categories.energy,
+  europe: uiText.categories.europe
 };
 
 export function QuestionCard({
@@ -34,7 +36,7 @@ export function QuestionCard({
       <h1 className="mt-5 text-2xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
       {explanation ? (
         <details className="mt-5 rounded-xl bg-paper p-4">
-          <summary className="cursor-pointer text-sm font-semibold text-ink">¿Qué significa esto?</summary>
+          <summary className="block min-h-6 cursor-pointer text-sm font-semibold text-ink">{uiText.buttons.showExplanation}</summary>
           <h2 className="mt-4 text-sm font-semibold text-ink">{explanation.title[language]}</h2>
           <p className="mt-2 text-sm leading-6 text-slate-700">{explanation.content[language]}</p>
         </details>
@@ -50,7 +52,7 @@ export function QuestionCard({
             important ? 'border-ink bg-slate-100 text-ink' : 'border-line bg-white text-slate-700'
           }`}
         >
-          Pregunta importante
+          {uiText.progress.important}
         </button>
       ) : null}
     </article>

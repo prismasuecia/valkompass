@@ -2,27 +2,29 @@
 
 import Link from 'next/link';
 import partiesData from '@/data/parties.json';
-import questionsData from '@/data/questions.json';
+import {questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
 import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types';
+import uiText from '@/uiText.json';
 
 const parties = partiesData as Party[];
-const displayedQuestionCount = questionsData.length;
+const displayedQuestionCount = questions.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
-  migration: 'migración',
-  crime: 'crimen',
-  school: 'escuela',
-  economy: 'economía',
-  energy: 'energía'
+  migration: uiText.categories.migration,
+  crime: uiText.categories.crime,
+  school: uiText.categories.school,
+  economy: uiText.categories.economy,
+  energy: uiText.categories.energy,
+  europe: uiText.categories.europe
 };
 
 const answerLabels: Record<AnswerValue, string> = {
-  2: 'Totalmente de acuerdo',
-  1: 'Parcialmente de acuerdo',
-  0: 'Neutral / no estoy seguro',
-  [-1]: 'Parcialmente en desacuerdo',
-  [-2]: 'Totalmente en desacuerdo'
+  2: uiText.answers.stronglyAgree,
+  1: uiText.answers.agree,
+  0: uiText.answers.neutral,
+  [-1]: uiText.answers.disagree,
+  [-2]: uiText.answers.stronglyDisagree
 };
 
 function ResultQuestionList({items, marker}: {items: ResultQuestion[]; marker: string}) {
@@ -38,29 +40,31 @@ function ResultQuestionList({items, marker}: {items: ResultQuestion[]; marker: s
   );
 }
 
+function getMatchClassification(score: number) {
+  if (score >= 75) return uiText.highMatch;
+  if (score >= 50) return uiText.mixedMatch;
+  return uiText.noClearMatch;
+}
+
 export default function ResultPage() {
   const {language, results, reset} = useQuizStore();
   const topResults = results.slice(0, 3);
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-5 py-10">
-      <p className="text-sm font-medium uppercase tracking-wide text-slate-500">Prisma Suecia</p>
-      <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">Partidos más cercanos a tus respuestas</h1>
-      <p className="mt-4 text-base leading-7 text-slate-700">
-        El resultado compara tus respuestas con posiciones políticas públicas de los partidos suecos.
-      </p>
-      <p className="mt-3 text-sm leading-6 text-slate-600">Las mismas respuestas siempre generan el mismo resultado.</p>
+    <main className="mx-auto min-h-screen max-w-2xl overflow-x-hidden px-5 py-10">
+      <p className="text-sm font-medium uppercase tracking-wide text-slate-500">{uiText.app.name}</p>
+      <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.results.title}</h1>
+      <p className="mt-4 text-base leading-7 text-slate-700">{uiText.results.description}</p>
+      <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.sameAnswers}</p>
       <details className="mt-5 rounded-2xl border border-line bg-white p-5">
-        <summary className="cursor-pointer text-base font-semibold text-ink">¿Cómo se calcula el resultado?</summary>
-        <p className="mt-3 text-sm leading-6 text-slate-700">
-          Valkompas compara tus respuestas con posiciones públicas de los partidos políticos suecos. Las coincidencias más cercanas generan un resultado más alto.
-        </p>
+        <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.whyResult.title}</summary>
+        <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.whyResult.intro}</p>
       </details>
 
       {topResults.length === 0 ? (
         <section className="mt-8 rounded-2xl border border-line bg-white p-6">
-          <h2 className="text-xl font-semibold text-ink">No hay resultados todavía</h2>
-          <p className="mt-3 leading-7 text-slate-700">Responde las preguntas para ver una comparación.</p>
+          <h2 className="text-xl font-semibold text-ink">{uiText.results.noResults}</h2>
+          <p className="mt-3 leading-7 text-slate-700">{uiText.results.answerQuestions}</p>
         </section>
       ) : null}
 
@@ -69,20 +73,24 @@ export default function ResultPage() {
           const party = parties.find((item) => item.id === result.partyId);
           if (!party) return null;
           const categories = result.matchingCategories.map((category) => categoryLabels[category]);
+          const classification = getMatchClassification(result.score);
 
           return (
-            <article key={result.partyId} className="rounded-2xl border border-line bg-white p-6 shadow-sm">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="h-4 w-4 rounded-full" style={{backgroundColor: party.color}} />
-                  <h2 className="text-2xl font-semibold text-ink">{party.name[language]}</h2>
+            <article key={result.partyId} className="min-w-0 rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6">
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div className="flex min-w-0 items-center gap-3">
+                  <span aria-hidden="true" className="h-4 w-4 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
+                  <h2 className="min-w-0 break-words text-xl font-semibold text-ink sm:text-2xl">{party.name[language]}</h2>
                 </div>
-                <p className="text-sm font-semibold text-slate-500">{result.score}%</p>
+                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-500">
+                  {result.score}%
+                </p>
               </div>
-              <p className="mt-5 leading-7 text-slate-700">
-                Tus respuestas muestran muchas coincidencias con este partido, sobre todo en temas de {categories.join(', ')}.
+              <p className="mt-5 text-sm font-semibold text-slate-500">{classification.title}</p>
+              <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                {uiText.results.comparedQuestions}: {displayedQuestionCount}
               </p>
-              <p className="mt-3 text-sm leading-6 text-slate-600">Preguntas comparadas: {displayedQuestionCount}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {categories.map((category) => (
                   <span key={category} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">
@@ -92,22 +100,26 @@ export default function ResultPage() {
               </div>
 
               <div className="mt-6 grid gap-3">
-                <details className="rounded-xl border border-line p-4">
-                  <summary className="cursor-pointer font-semibold text-ink">Ver coincidencias</summary>
+                <details className="min-w-0 rounded-xl border border-line p-4">
+                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.matches.title}</summary>
+                  <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.matches.text}</p>
                   <ResultQuestionList items={result.strongestAgreements} marker="✓" />
                 </details>
-                <details className="rounded-xl border border-line p-4">
-                  <summary className="cursor-pointer font-semibold text-ink">Ver diferencias</summary>
+                <details className="min-w-0 rounded-xl border border-line p-4">
+                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.differences.title}</summary>
+                  <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.differences.text}</p>
                   <ResultQuestionList items={result.strongestDisagreements} marker="×" />
                 </details>
-                <details className="rounded-xl border border-line p-4">
-                  <summary className="cursor-pointer font-semibold text-ink">Cómo respondió el partido</summary>
+                <details className="min-w-0 rounded-xl border border-line p-4">
+                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">
+                    {uiText.buttons.readMoreAbout} {party.name[language]}
+                  </summary>
                   <div className="mt-4 grid gap-4">
                     {result.comparisons.map((item) => (
-                      <div key={item.questionId} className="rounded-xl bg-paper p-4 text-sm leading-6 text-slate-700">
-                        <p className="font-semibold text-ink">Pregunta:</p>
+                      <div key={item.questionId} className="min-w-0 rounded-xl bg-paper p-4 text-sm leading-6 text-slate-700">
+                        <p className="font-semibold text-ink">{uiText.progress.question}:</p>
                         <p className="mt-1">{item.statement.es}</p>
-                        <p className="mt-3 font-semibold text-ink">Tu respuesta:</p>
+                        <p className="mt-3 font-semibold text-ink">{uiText.results.yourAnswer}:</p>
                         <p>{answerLabels[item.userValue]}</p>
                         <p className="mt-3 font-semibold text-ink">{party.name[language]}:</p>
                         <p>{answerLabels[item.partyValue]}</p>
@@ -122,11 +134,9 @@ export default function ResultPage() {
       </div>
 
       <section className="mt-8 rounded-2xl border border-line bg-white p-6">
-        <h2 className="text-xl font-semibold text-ink">¿Qué significan estos resultados?</h2>
-        <p className="mt-3 leading-7 text-slate-700">
-          Los resultados muestran qué partidos están más cerca de tus respuestas en diferentes temas políticos. No es una recomendación de voto.
-        </p>
-        <p className="mt-3 text-sm leading-6 text-slate-600">El resultado no representa una recomendación de voto.</p>
+        <h2 className="text-xl font-semibold text-ink">{uiText.categoryResults.title}</h2>
+        <p className="mt-3 leading-7 text-slate-700">{uiText.categoryResults.text}</p>
+        <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.recommendation}</p>
       </section>
 
       <Link
@@ -134,8 +144,18 @@ export default function ResultPage() {
         onClick={reset}
         className="mt-8 block rounded-xl border border-line bg-white px-6 py-4 text-center font-semibold text-ink"
       >
-        Empezar de nuevo
+        {uiText.buttons.restart}
       </Link>
+      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
+        <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
+          {uiText.footer.betaBadge}
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/sources" className="inline-block min-h-6 font-medium text-ink">
+            {uiText.footer.sourcesLink}
+          </Link>
+        </div>
+      </footer>
     </main>
   );
 }

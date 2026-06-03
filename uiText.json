@@ -1,0 +1,180 @@
+{
+  "app": {
+    "name": "Valkompas",
+    "title": "Brújula electoral 2026",
+    "subtitle": "Una guía sencilla para comparar tus opiniones con los partidos políticos suecos."
+  },
+
+  "intro": {
+    "title": "Antes de comenzar",
+    "text": "Esta brújula electoral fue creada para ayudar a entender mejor cómo piensan los partidos políticos suecos.\n\nEntender la política sueca puede ser difícil, especialmente si el español es tu idioma principal.\n\nResponde las preguntas y compara tus respuestas con las posiciones públicas de los partidos representados en el parlamento sueco."
+  },
+
+  "importantInfo": {
+    "title": "Información importante",
+    "parliament": "Esta brújula electoral se basa únicamente en las elecciones al parlamento nacional sueco (Riksdagen).",
+    "local": "No incluye elecciones municipales o regionales.",
+    "recommendation": "El resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
+  },
+
+  "votingRights": {
+    "title": "¿Quién puede votar en las elecciones parlamentarias suecas?",
+    "text": "Para votar en las elecciones parlamentarias suecas normalmente se requiere ciudadanía sueca."
+  },
+
+  "quizInfo": {
+    "questionsLabel": "Número de preguntas",
+    "questionsValue": "20",
+    "timeLabel": "Tiempo estimado",
+    "timeValue": "4–6 minutos"
+  },
+
+  "categories": {
+    "migration": "Migración",
+    "crime": "Crimen y seguridad",
+    "school": "Escuela",
+    "economy": "Dinero y trabajo",
+    "energy": "Energía y transporte",
+    "europe": "Europa e internacional"
+  },
+
+  "buttons": {
+    "start": "Comenzar ahora",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Ver resultado",
+    "restart": "Empezar de nuevo",
+    "showExplanation": "¿Qué significa esto?",
+    "showMatches": "Ver coincidencias",
+    "showDifferences": "Ver diferencias",
+    "readMore": "Leer más",
+    "readMoreAbout": "Leer más sobre"
+  },
+
+  "answers": {
+    "stronglyAgree": "Totalmente de acuerdo",
+    "agree": "Parcialmente de acuerdo",
+    "neutral": "Neutral / no estoy seguro",
+    "disagree": "Parcialmente en desacuerdo",
+    "stronglyDisagree": "Totalmente en desacuerdo"
+  },
+
+  "progress": {
+    "question": "Pregunta",
+    "of": "de",
+    "important": "Pregunta importante",
+    "estimatedTime": "Tiempo restante aproximado"
+  },
+
+  "results": {
+    "title": "Partidos más cercanos a tus respuestas",
+    "description": "Este resultado muestra qué partidos están más cerca de tus respuestas en los temas incluidos en esta brújula electoral.",
+    "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
+    "sameAnswers": "Las mismas respuestas siempre generan el mismo resultado.",
+    "comparedQuestions": "Preguntas comparadas",
+    "noResults": "No hay resultados todavía.",
+    "answerQuestions": "Responde las preguntas para ver una comparación.",
+    "yourAnswer": "Tu respuesta",
+    "scoreLabel": "Resultado"
+  },
+
+  "highMatch": {
+    "title": "Coincidencia alta",
+    "text": "Tus respuestas muestran una coincidencia especialmente alta con este partido."
+  },
+
+  "mixedMatch": {
+    "title": "Resultado equilibrado",
+    "text": "Tus respuestas muestran similitudes con varios partidos. Esto puede significar que compartes opiniones de diferentes corrientes políticas."
+  },
+
+  "noClearMatch": {
+    "title": "Sin coincidencia clara",
+    "text": "No existe una coincidencia clara con un solo partido. Tus respuestas se encuentran repartidas entre varias posiciones políticas."
+  },
+
+  "whyResult": {
+    "title": "¿Por qué obtuve este resultado?",
+    "intro": "Tus respuestas coinciden especialmente con este partido en algunos temas importantes."
+  },
+
+  "matches": {
+    "title": "Coincidencias principales",
+    "text": "Estos son algunos temas en los que tus respuestas se parecen más a las posiciones de este partido."
+  },
+
+  "differences": {
+    "title": "Diferencias principales",
+    "text": "Estos son algunos temas en los que tus respuestas se diferencian más de las posiciones de este partido."
+  },
+
+  "categoryResults": {
+    "title": "Tus resultados por tema",
+    "text": "Es posible estar más cerca de un partido en algunos temas y más lejos en otros."
+  },
+
+  "methodology": {
+    "title": "¿Cómo se construyó Valkompas?",
+    "text": "Valkompas compara tus respuestas con posiciones políticas públicas de los partidos representados en el parlamento sueco.\n\nLas preguntas fueron seleccionadas para reflejar debates importantes en la política nacional sueca.\n\nCada respuesta se compara con posiciones generales de los partidos en esos temas.\n\nCuanto más se parece tu respuesta a la posición de un partido, más alto será el resultado.\n\nLa política es compleja y ninguna herramienta puede representar todos los matices de cada partido o de cada persona.\n\nEl resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
+  },
+
+  "sourcesPage": {
+    "title": "Fuentes y metodología",
+    "intro": "Las posiciones de los partidos se basan en información pública disponible.",
+    "basedOnTitle": "Las posiciones se basan en:",
+    "partyPrograms": "programas de los partidos",
+    "officialPolicyProposals": "propuestas políticas oficiales",
+    "officialPartyWebsites": "páginas web oficiales de los partidos",
+    "parliamentaryProposals": "propuestas parlamentarias",
+    "leadershipStatements": "declaraciones públicas de la dirección de los partidos",
+    "disclaimer": "Las posiciones pueden actualizarse cuando los partidos cambian sus propuestas o presentan nuevas políticas.",
+    "notAffiliated": "Valkompas no está afiliada a ningún partido político.",
+    "globalLastReviewed": "Última revisión de fuentes: 2026-06-03",
+    "partySourcesTitle": "Fuentes por partido",
+    "source1": "Source 1",
+    "source2": "Source 2",
+    "source3": "Source 3",
+    "lastReviewed": "Last reviewed",
+    "officialPartyProgram": "Official party program",
+    "officialPolicyPages": "Official policy pages",
+    "officialElectionPlatform": "Official election platform",
+    "back": "Volver"
+  },
+
+  "editorial": {
+    "title": "Principios editoriales",
+    "neutrality": "Neutralidad política",
+    "neutralityText": "Valkompas no favorece a ningún partido político.",
+    "transparency": "Transparencia",
+    "transparencyText": "Las posiciones se basan en información pública y pueden actualizarse cuando los partidos cambian de postura.",
+    "language": "Lenguaje claro",
+    "languageText": "Los textos están escritos para personas que hablan español y viven en Suecia, independientemente de su nivel educativo.",
+    "sources": "Fuentes públicas",
+    "sourcesText": "Las posiciones se basan en programas políticos, propuestas oficiales y declaraciones públicas.",
+    "updates": "Actualización continua",
+    "updatesText": "La política cambia con el tiempo. Por eso Valkompas puede actualizarse antes de las elecciones.",
+    "recommendation": "No es una recomendación de voto",
+    "recommendationText": "El resultado muestra similitudes políticas, pero la decisión final corresponde siempre al votante."
+  },
+
+  "errors": {
+    "generic": "Ha ocurrido un error. Inténtalo nuevamente.",
+    "loadFailed": "No se pudo cargar la información.",
+    "tryAgain": "Por favor, inténtalo nuevamente."
+  },
+
+  "footer": {
+    "createdBy": "Creado por Prisma Suecia",
+    "tagline": "Información sobre Suecia en español.",
+    "sourcesLink": "Fuentes y metodología",
+    "betaBadge": "Beta version"
+  },
+
+  "betaAccess": {
+    "title": "Acceso de prueba",
+    "text": "Esta versión está abierta solo para personas invitadas a probar Valkompas.",
+    "label": "Contraseña",
+    "button": "Entrar",
+    "error": "Contraseña incorrecta."
+  }
+}

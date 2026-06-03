@@ -1,13 +1,14 @@
 'use client';
 
 import type {AnswerValue} from '@/types';
+import uiText from '@/uiText.json';
 
 const labels: {value: AnswerValue; label: string}[] = [
-  {value: 2, label: 'Totalmente de acuerdo'},
-  {value: 1, label: 'Parcialmente de acuerdo'},
-  {value: 0, label: 'Neutral / no estoy seguro'},
-  {value: -1, label: 'Parcialmente en desacuerdo'},
-  {value: -2, label: 'Totalmente en desacuerdo'}
+  {value: 2, label: uiText.answers.stronglyAgree},
+  {value: 1, label: uiText.answers.agree},
+  {value: 0, label: uiText.answers.neutral},
+  {value: -1, label: uiText.answers.disagree},
+  {value: -2, label: uiText.answers.stronglyDisagree}
 ];
 
 export function AnswerButtons({

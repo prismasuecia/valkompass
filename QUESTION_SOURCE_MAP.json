@@ -1,0 +1,102 @@
+{
+  "Q01": [
+    {"source": "Official party policy pages on citizenship, migration and integration", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official party programs covering citizenship and integration principles", "url": "https://www.socialdemokraterna.se/var-politik/arkiv/kongresser/kongress-2025/kongresshandlingar/socialdemokraternas-partiprogram"},
+    {"source": "Official party policy pages and public party statements", "url": "https://www.liberalerna.se/politik"}
+  ],
+  "Q02": [
+    {"source": "Official party policy pages on asylum and migration", "url": "https://www.sd.se/vad-vi-vill/"},
+    {"source": "Official party policy pages on migration and integration", "url": "https://www.socialdemokraterna.se/var-politik"},
+    {"source": "Official party programs and policy pages on migration", "url": "https://www.mp.se/politik/"}
+  ],
+  "Q03": [
+    {"source": "Official policy pages on language, citizenship and integration", "url": "https://www.liberalerna.se/politik"},
+    {"source": "Official policy pages on migration and integration", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official party programs and public policy material", "url": "https://www.sd.se/wp-content/uploads/2024/01/sverigedemokraternas-principprogram-2023-1.pdf"}
+  ],
+  "Q04": [
+    {"source": "Official policy pages on migration and crime", "url": "https://www.sd.se/vad-vi-vill/"},
+    {"source": "Official policy pages on justice, crime and expulsion", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official policy pages on law and migration", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"}
+  ],
+  "Q05": [
+    {"source": "Official policy pages on crime and justice", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official policy pages on law and order", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"},
+    {"source": "Official party policy pages on criminal justice", "url": "https://www.socialdemokraterna.se/var-politik"}
+  ],
+  "Q06": [
+    {"source": "Official policy pages on policing and surveillance", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official policy pages on crime and safety", "url": "https://www.sd.se/vad-vi-vill/"},
+    {"source": "Official policy pages on privacy and justice", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q07": [
+    {"source": "Official policy pages on youth crime and criminal responsibility", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"},
+    {"source": "Official policy pages on crime and justice", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official party policy pages on prevention and social policy", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q08": [
+    {"source": "Official policy pages on safety zones and police powers", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official policy pages on crime and public safety", "url": "https://www.sd.se/vad-vi-vill/"},
+    {"source": "Official policy pages on rights, privacy and justice", "url": "https://www.mp.se/politik/"}
+  ],
+  "Q09": [
+    {"source": "Official policy pages on school governance", "url": "https://www.socialdemokraterna.se/var-politik"},
+    {"source": "Official education policy pages", "url": "https://www.liberalerna.se/politik"},
+    {"source": "Official education policy pages and party programs", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q10": [
+    {"source": "Official policy pages on welfare profits and schools", "url": "https://www.vansterpartiet.se/"},
+    {"source": "Official policy pages on education and school choice", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official party programs and education policy pages", "url": "https://www.socialdemokraterna.se/var-politik"}
+  ],
+  "Q11": [
+    {"source": "Official education policy pages on school choice", "url": "https://www.liberalerna.se/politik"},
+    {"source": "Official education and enterprise policy pages", "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"},
+    {"source": "Official school policy pages", "url": "https://moderaterna.se/var-politik/"}
+  ],
+  "Q12": [
+    {"source": "Official education policy pages on grades and school results", "url": "https://www.liberalerna.se/politik"},
+    {"source": "Official school policy pages", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"},
+    {"source": "Official education policy pages", "url": "https://moderaterna.se/var-politik/"}
+  ],
+  "Q13": [
+    {"source": "Official policy pages on labour market requirements and benefits", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official policy pages on work, welfare and benefits", "url": "https://www.socialdemokraterna.se/var-politik"},
+    {"source": "Official policy pages on social security and welfare", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q14": [
+    {"source": "Official tax and economic policy pages", "url": "https://www.vansterpartiet.se/"},
+    {"source": "Official tax and economic policy pages", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official economic policy pages", "url": "https://www.mp.se/politik/"}
+  ],
+  "Q15": [
+    {"source": "Official enterprise and small business policy pages", "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"},
+    {"source": "Official tax and business policy pages", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official liberal economic policy pages", "url": "https://www.liberalerna.se/politik"}
+  ],
+  "Q16": [
+    {"source": "Official healthcare and welfare policy pages", "url": "https://www.socialdemokraterna.se/var-politik"},
+    {"source": "Official healthcare policy pages", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"},
+    {"source": "Official healthcare and public sector policy pages", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q17": [
+    {"source": "Official energy policy pages on nuclear power", "url": "https://moderaterna.se/var-politik/"},
+    {"source": "Official energy and climate policy pages", "url": "https://www.mp.se/politik/"},
+    {"source": "Official policy pages on energy supply", "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"}
+  ],
+  "Q18": [
+    {"source": "Official policy pages on fuel taxes and transport", "url": "https://www.sd.se/vad-vi-vill/"},
+    {"source": "Official climate and transport policy pages", "url": "https://www.mp.se/politik/"},
+    {"source": "Official rural, transport and tax policy pages", "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"}
+  ],
+  "Q19": [
+    {"source": "Official renewable energy and climate policy pages", "url": "https://www.mp.se/politik/"},
+    {"source": "Official energy policy pages", "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"},
+    {"source": "Official energy and climate policy pages", "url": "https://www.vansterpartiet.se/"}
+  ],
+  "Q20": [
+    {"source": "Official EU policy pages and party programs", "url": "https://www.liberalerna.se/politik"},
+    {"source": "Official party programs and international cooperation policy pages", "url": "https://www.centerpartiet.se/om-centerpartiet"},
+    {"source": "Official party programs and EU policy material", "url": "https://www.sd.se/wp-content/uploads/2024/01/sverigedemokraternas-principprogram-2023-1.pdf"}
+  ]
+}

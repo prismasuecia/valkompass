@@ -1,15 +1,19 @@
 import type {Metadata} from 'next';
+import {BetaGate} from '@/components/BetaGate';
 import './globals.css';
+import uiText from '@/uiText.json';
 
 export const metadata: Metadata = {
-  title: 'Brújula electoral Prisma',
-  description: 'Una brújula electoral neutral en español para las elecciones parlamentarias suecas de 2026.'
+  title: uiText.app.title,
+  description: uiText.app.subtitle
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        <BetaGate>{children}</BetaGate>
+      </body>
     </html>
   );
 }

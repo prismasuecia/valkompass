@@ -2,7 +2,7 @@ export type Language = 'sv' | 'es';
 
 export type LocalizedText = Record<Language, string>;
 
-export type QuestionCategory = 'migration' | 'crime' | 'school' | 'economy' | 'energy';
+export type QuestionCategory = 'migration' | 'crime' | 'school' | 'economy' | 'energy' | 'europe';
 
 export type AnswerValue = -2 | -1 | 0 | 1 | 2;
 

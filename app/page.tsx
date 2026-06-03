@@ -1,65 +1,63 @@
 import {StartQuizLink} from '@/components/StartQuizLink';
-import questionsData from '@/data/questions.json';
+import Link from 'next/link';
+import partyCardsData from '@/partyCards.json';
+import uiText from '@/uiText.json';
 
-const includedTopics = ['migración', 'economía', 'escuela', 'crimen', 'energía', 'bienestar social'];
-const differentiators = ['Explicaciones simples', 'Información actualizada', 'Diseñado para hispanohablantes en Suecia'];
-const questionCount = questionsData.length;
+const includedTopics = Object.values(uiText.categories);
 const partyLogos = [
-  {name: 'Socialdemokraterna', src: '/party-logos/s.png'},
-  {name: 'Moderaterna', src: '/party-logos/m.svg'},
-  {name: 'Sverigedemokraterna', src: '/party-logos/sd.png'},
-  {name: 'Liberalerna', src: '/party-logos/l.png'},
-  {name: 'Kristdemokraterna', src: '/party-logos/kd.jpg'},
-  {name: 'Vänsterpartiet', src: '/party-logos/v.png'},
-  {name: 'Centerpartiet', src: '/party-logos/c.png'},
-  {name: 'Miljöpartiet', src: '/party-logos/mp.png'}
+  {name: partyCardsData.S.name, src: '/party-logos/s.png'},
+  {name: partyCardsData.M.name, src: '/party-logos/m.svg'},
+  {name: partyCardsData.SD.name, src: '/party-logos/sd.png'},
+  {name: partyCardsData.L.name, src: '/party-logos/l.png'},
+  {name: partyCardsData.KD.name, src: '/party-logos/kd.jpg'},
+  {name: partyCardsData.V.name, src: '/party-logos/v.png'},
+  {name: partyCardsData.C.name, src: '/party-logos/c.png'},
+  {name: partyCardsData.MP.name, src: '/party-logos/mp.png'}
 ];
 
 export default function HomePage() {
+  const introParagraphs = uiText.intro.text.split('\n\n');
+  const methodologyParagraphs = uiText.methodology.text.split('\n\n');
+
   return (
     <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-5 py-10 md:py-12">
       <img
         src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/brand/prisma-suecia-logo.jpg`}
-        alt="Prisma Suecia Noticias"
+        alt={uiText.footer.createdBy}
         className="mx-auto mb-7 h-16 w-auto object-contain opacity-90"
       />
-      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">Brújula electoral 2026</h1>
-      <p className="mt-3 text-base leading-7 text-slate-600">
-        Una guía sencilla para comparar tus opiniones con los partidos políticos suecos.
-      </p>
-      <p className="mt-5 text-lg leading-8 text-slate-700">
-        Valkompas fue creado para ayudar a entender mejor cómo piensan los partidos políticos suecos.
-      </p>
-      <p className="mt-4 text-base leading-7 text-slate-600">
-        Entender la política sueca puede ser difícil, especialmente si el español es tu idioma principal.
-      </p>
+      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">{uiText.app.title}</h1>
+      <p className="mt-3 text-base leading-7 text-slate-600">{uiText.app.subtitle}</p>
+      {introParagraphs.map((paragraph, index) => (
+        <p key={paragraph} className={`${index === 0 ? 'mt-5 text-lg leading-8 text-slate-700' : 'mt-4 text-base leading-7 text-slate-600'}`}>
+          {paragraph}
+        </p>
+      ))}
       <section className="mt-8 rounded-2xl border border-line bg-white p-5">
-        <h2 className="text-base font-semibold text-ink">Antes de comenzar</h2>
+        <h2 className="text-base font-semibold text-ink">{uiText.importantInfo.title}</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
-          <li>Esta brújula electoral se basa únicamente en las elecciones al parlamento nacional sueco (Riksdagen).</li>
-          <li>No incluye elecciones municipales o regionales.</li>
-          <li>El resultado no es una recomendación de voto.</li>
+          <li>{uiText.importantInfo.parliament}</li>
+          <li>{uiText.importantInfo.local}</li>
+          <li>{uiText.importantInfo.recommendation}</li>
         </ul>
       </section>
       <details className="mt-4 rounded-2xl border border-line bg-white p-5">
-        <summary className="cursor-pointer text-base font-semibold text-ink">¿Quién puede votar en las elecciones parlamentarias suecas?</summary>
-        <p className="mt-3 text-sm leading-6 text-slate-700">
-          Para votar en las elecciones al parlamento sueco normalmente se requiere ciudadanía sueca.
-        </p>
+        <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.votingRights.title}</summary>
+        <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.votingRights.text}</p>
       </details>
       <section className="mt-8 rounded-2xl border border-line bg-white p-5">
         <dl className="grid gap-4 text-sm">
           <div className="flex items-center justify-between gap-4">
-            <dt className="font-medium text-slate-600">Número de preguntas</dt>
-            <dd className="font-semibold text-ink">{questionCount}</dd>
+            <dt className="font-medium text-slate-600">{uiText.quizInfo.questionsLabel}</dt>
+            <dd className="font-semibold text-ink">{uiText.quizInfo.questionsValue}</dd>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <dt className="font-medium text-slate-600">Tiempo estimado</dt>
-            <dd className="font-semibold text-ink">2–3 minutos</dd>
+            <dt className="font-medium text-slate-600">{uiText.quizInfo.timeLabel}</dt>
+            <dd className="font-semibold text-ink">{uiText.quizInfo.timeValue}</dd>
           </div>
         </dl>
         <div className="mt-5 border-t border-line pt-5">
-          <p className="text-sm font-medium text-slate-600">Temas incluidos:</p>
+          <p className="text-sm font-medium text-slate-600">{uiText.categoryResults.title}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {includedTopics.map((topic) => (
               <span key={topic} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">
@@ -69,23 +67,21 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <p className="mt-4 text-sm leading-6 text-slate-600">
-        Basado en posiciones políticas públicas y actuales de los partidos del parlamento sueco.
-      </p>
+      <p className="mt-4 text-sm leading-6 text-slate-600">{uiText.editorial.sourcesText}</p>
       <details className="mt-4 rounded-2xl border border-line bg-white p-5 text-sm leading-6 text-slate-700">
-        <summary className="cursor-pointer text-base font-semibold text-ink">¿Cómo funciona Valkompas?</summary>
-        <p className="mt-3">Las posiciones de los partidos se basan en programas políticos, propuestas y declaraciones públicas recientes.</p>
-        <p className="mt-3">Las posiciones políticas pueden cambiar y Valkompas se actualiza continuamente.</p>
-        <p className="mt-3">La política es compleja y esta herramienta simplifica algunas posiciones para facilitar la comparación.</p>
+        <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.methodology.title}</summary>
+        {methodologyParagraphs.map((paragraph) => (
+          <p key={paragraph} className="mt-3">
+            {paragraph}
+          </p>
+        ))}
       </details>
       <StartQuizLink />
-      <p className="mt-4 text-center text-sm leading-6 text-slate-600">
-        Valkompas compara tus respuestas con posiciones políticas públicas de los partidos suecos.
-      </p>
+      <p className="mt-4 text-center text-sm leading-6 text-slate-600">{uiText.methodology.text.split('\n\n')[0]}</p>
       <section className="mt-8 border-t border-line pt-6">
-        <h2 className="text-base font-semibold text-ink">¿Qué hace diferente a Valkompas?</h2>
+        <h2 className="text-base font-semibold text-ink">{uiText.editorial.title}</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          {differentiators.map((item) => (
+          {[uiText.editorial.neutralityText, uiText.editorial.transparencyText, uiText.editorial.languageText].map((item) => (
             <p key={item} className="rounded-xl bg-white px-4 py-3 text-sm font-medium leading-6 text-slate-700">
               {item}
             </p>
@@ -93,7 +89,6 @@ export default function HomePage() {
         </div>
       </section>
       <section className="mt-8 border-t border-line pt-6">
-        <p className="text-sm font-medium text-slate-600">Partidos incluidos en el análisis</p>
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {partyLogos.map((logo) => (
             <div key={logo.name} className="flex h-20 items-center justify-center rounded-xl bg-white p-3">
@@ -107,7 +102,15 @@ export default function HomePage() {
         </div>
       </section>
       <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
-        Creado por Prisma Suecia
+        <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
+          {uiText.footer.betaBadge}
+        </p>
+        <p>{uiText.footer.createdBy}</p>
+        <div className="mt-3 flex flex-wrap justify-center gap-4">
+          <Link href="/sources" className="inline-block min-h-6 font-medium text-ink">
+            {uiText.footer.sourcesLink}
+          </Link>
+        </div>
       </footer>
     </main>
   );

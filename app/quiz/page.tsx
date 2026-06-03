@@ -3,18 +3,14 @@
 import {useRouter} from 'next/navigation';
 import {ProgressBar} from '@/components/ProgressBar';
 import {QuestionCard} from '@/components/QuestionCard';
-import explanationsData from '@/data/explanations.json';
 import partiesData from '@/data/parties.json';
-import positionsData from '@/data/positions.json';
-import questionsData from '@/data/questions.json';
 import {calculateResults} from '@/lib/calculateResults';
+import {explanations, positions, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
-import type {Explanation, Party, Position, Question} from '@/types';
+import type {Party} from '@/types';
+import uiText from '@/uiText.json';
 
-const questions = questionsData as Question[];
-const explanations = explanationsData as Explanation[];
 const parties = partiesData as Party[];
-const positions = positionsData as Position[];
 const averageSecondsPerQuestion = 12;
 
 export default function QuizPage() {
@@ -37,7 +33,8 @@ export default function QuizPage() {
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
   const progressPercent = Math.round(((currentQuestionIndex + 1) / questions.length) * 100);
   const remainingSeconds = (questions.length - currentQuestionIndex - 1) * averageSecondsPerQuestion;
-  const remainingTimeText = remainingSeconds < 60 ? 'menos de 1 minuto' : `${Math.ceil(remainingSeconds / 60)} minutos`;
+  const timeUnit = uiText.quizInfo.timeValue.split(' ').at(-1);
+  const remainingTimeText = `${Math.ceil(remainingSeconds / 60)} ${timeUnit}`;
 
   function handleNext() {
     if (!selectedAnswer) return;
@@ -55,12 +52,14 @@ export default function QuizPage() {
     <main className="mx-auto min-h-screen max-w-2xl px-5 py-8">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
-          Pregunta {currentQuestionIndex + 1} de {questions.length}
+          {uiText.progress.question} {currentQuestionIndex + 1} {uiText.progress.of} {questions.length}
         </p>
         <p className="text-sm font-medium text-slate-500">{progressPercent}%</p>
       </div>
       <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
-      <p className="mt-3 text-sm text-slate-600">Tiempo restante aproximado: {remainingTimeText}</p>
+      <p className="mt-3 text-sm text-slate-600">
+        {uiText.progress.estimatedTime}: {remainingTimeText}
+      </p>
       <div className="mt-10">
         <QuestionCard
           question={question}
@@ -79,7 +78,7 @@ export default function QuizPage() {
           disabled={currentQuestionIndex === 0}
           className="rounded-xl border border-line bg-white px-5 py-4 font-medium text-ink disabled:opacity-40"
         >
-          Atrás
+          {uiText.buttons.back}
         </button>
         <button
           type="button"
@@ -87,7 +86,7 @@ export default function QuizPage() {
           disabled={!selectedAnswer}
           className="rounded-xl bg-ink px-5 py-4 font-semibold text-white disabled:opacity-40"
         >
-          {isLastQuestion ? 'Ver resultado' : 'Siguiente'}
+          {isLastQuestion ? uiText.buttons.finish : uiText.buttons.next}
         </button>
       </div>
     </main>

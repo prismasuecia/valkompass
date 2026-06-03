@@ -3,55 +3,55 @@
     "id": "EXP001",
     "title": {
       "sv": "Medborgarskap",
-      "es": "Ciudadanía"
+      "es": "Ciudadanía sueca"
     },
     "content": {
       "sv": "Frågan handlar om vilka krav som ska gälla för att bli svensk medborgare, till exempel språk, tid i landet och egen försörjning.",
-      "es": "La pregunta trata de los requisitos para ser ciudadano sueco, por ejemplo idioma, tiempo en el país y sustento propio."
+      "es": "Algunos partidos quieren exigir más cosas, como idioma, más años en Suecia o poder mantenerse económicamente. Otros creen que las reglas no deberían ser tan duras."
     }
   },
   {
     "id": "EXP002",
     "title": {
       "sv": "Asylmottagande",
-      "es": "Asilo"
+      "es": "Asilo en Suecia"
     },
     "content": {
       "sv": "Frågan handlar om hur många personer som söker skydd Sverige bör ta emot jämfört med idag.",
-      "es": "La pregunta trata de cuántas personas que buscan protección debería recibir Suecia en comparación con hoy."
+      "es": "Algunos partidos quieren que Suecia reciba a menos personas que buscan protección. Otros creen que Suecia debe seguir ayudando a personas que huyen de guerra o peligro."
     }
   },
   {
     "id": "EXP003",
     "title": {
       "sv": "Straff",
-      "es": "Penas"
+      "es": "Castigos por violencia"
     },
     "content": {
       "sv": "Frågan gäller om allvarliga våldsbrott ska leda till längre straff än idag.",
-      "es": "La pregunta trata de si los delitos violentos graves deben tener penas más largas que hoy."
+      "es": "Algunos partidos creen que castigos más largos dan más seguridad. Otros creen que también se necesita más prevención, apoyo social y trabajo contra las causas del crimen."
     }
   },
   {
     "id": "EXP004",
     "title": {
       "sv": "Kameraövervakning",
-      "es": "Cámaras"
+      "es": "Cámaras en lugares públicos"
     },
     "content": {
       "sv": "Frågan väger polisens möjlighet att förebygga brott mot integritet och kontroll i offentliga miljöer.",
-      "es": "La pregunta compara la posibilidad de prevenir delitos con la privacidad en lugares públicos."
+      "es": "Algunos partidos creen que más cámaras ayudan a prevenir delitos y encontrar responsables. Otros se preocupan por la privacidad y por tener demasiada vigilancia."
     }
   },
   {
     "id": "EXP005",
     "title": {
       "sv": "Skolans ansvar",
-      "es": "Responsabilidad escolar"
+      "es": "Quién dirige la escuela"
     },
     "content": {
       "sv": "Frågan gäller om staten eller kommunerna ska ha huvudansvaret för skolan.",
-      "es": "La pregunta trata de si el Estado o los municipios deben tener la responsabilidad principal de las escuelas."
+      "es": "Hoy las municipalidades tienen mucho poder sobre las escuelas. Algunos partidos quieren que el gobierno nacional decida más para que la escuela sea más igual en todo el país."
     }
   },
   {
@@ -62,29 +62,29 @@
     },
     "content": {
       "sv": "Frågan handlar om privata skolor ska få dela ut vinst eller om pengarna ska stanna i verksamheten.",
-      "es": "La pregunta trata de si las escuelas privadas pueden tener ganancias o si el dinero debe quedarse en la educación."
+      "es": "En Suecia hay escuelas manejadas por empresas. Algunos partidos quieren que todo el dinero se use en la educación. Otros creen que las escuelas privadas pueden existir y tener ganancias."
     }
   },
   {
     "id": "EXP007",
     "title": {
       "sv": "Bidrag och krav",
-      "es": "Subsidios y requisitos"
+      "es": "Ayudas económicas y requisitos"
     },
     "content": {
       "sv": "Frågan gäller om ekonomiskt stöd oftare ska kopplas till arbete, studier eller andra aktiviteter.",
-      "es": "La pregunta trata de si el apoyo económico debe estar más conectado con trabajo, estudios u otras actividades."
+      "es": "En Suecia, algunas personas que no tienen trabajo pueden recibir apoyo económico del Estado. Algunos partidos quieren que, para seguir recibiendo esa ayuda, se exijan más cosas, por ejemplo buscar empleo, estudiar o participar en actividades. Otros partidos creen que las reglas actuales ya son suficientemente estrictas."
     }
   },
   {
     "id": "EXP008",
     "title": {
       "sv": "Skatt på höga inkomster",
-      "es": "Impuestos a ingresos altos"
+      "es": "Impuestos para quienes ganan más"
     },
     "content": {
       "sv": "Frågan handlar om personer med höga inkomster ska betala mer i skatt än idag.",
-      "es": "La pregunta trata de si las personas con ingresos altos deben pagar más impuestos que hoy."
+      "es": "Algunos partidos creen que quienes ganan más deben pagar más para financiar servicios como salud, escuela y bienestar. Otros creen que impuestos más altos pueden afectar el trabajo y la economía."
     }
   },
   {
@@ -95,18 +95,18 @@
     },
     "content": {
       "sv": "Frågan gäller om Sverige ska bygga ut kärnkraften som en del av energisystemet.",
-      "es": "La pregunta trata de si Suecia debe ampliar la energía nuclear como parte del sistema energético."
+      "es": "Algunos partidos ven la energía nuclear como una forma estable de producir electricidad. Otros prefieren invertir más en energías renovables, como viento y sol."
     }
   },
   {
     "id": "EXP010",
     "title": {
       "sv": "Bensinskatt",
-      "es": "Impuesto a la gasolina"
+      "es": "Precio de la gasolina"
     },
     "content": {
       "sv": "Frågan handlar om kostnaden för bensin och hur skatter påverkar hushåll, företag och klimatmål.",
-      "es": "La pregunta trata del precio de la gasolina y cómo los impuestos afectan a hogares, empresas y metas climáticas."
+      "es": "Algunos partidos quieren bajar el impuesto para ayudar a quienes dependen del auto. Otros creen que el impuesto ayuda a reducir emisiones y pagar cambios hacia transporte más limpio."
     }
   }
 ]

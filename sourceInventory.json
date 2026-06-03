@@ -1,0 +1,162 @@
+{
+  "S": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Socialdemokraternas partiprogram",
+        "url": "https://www.socialdemokraterna.se/var-politik/arkiv/kongresser/kongress-2025/kongresshandlingar/socialdemokraternas-partiprogram"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Vår politik",
+        "url": "https://www.socialdemokraterna.se/var-politik"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Socialdemokraternas valmanifest 2022",
+        "url": "https://www.socialdemokraterna.se/nyheter/nyheter/2022-08-25-socialdemokraternas-valmanifest-2022"
+      }
+    ]
+  },
+  "M": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Vårt idéprogram och det moderata löftet",
+        "url": "https://moderaterna.se/ideprogram/"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Moderaternas politik",
+        "url": "https://moderaterna.se/var-politik/"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Moderaternas valmanifest 2022",
+        "url": "https://moderaterna.se/nyhet/moderaternasvalmanifest/"
+      }
+    ]
+  },
+  "SD": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Sverigedemokraternas principprogram",
+        "url": "https://www.sd.se/wp-content/uploads/2024/01/sverigedemokraternas-principprogram-2023-1.pdf"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Sverigedemokraterna: Vad vi vill",
+        "url": "https://www.sd.se/vad-vi-vill/"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Valmanifest 2022-2026, official local/district material",
+        "url": "https://www.sd.se/sodermanland/valmanifest-2022-2026/"
+      }
+    ]
+  },
+  "V": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Vänsterpartiets partiprogram",
+        "url": "https://www.vansterpartiet.se/resursbank/partiprogram/"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Politik A-Ö",
+        "url": "https://www.vansterpartiet.se/"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Vänsterpartiets valplattform, proposal material",
+        "url": "https://www.vansterpartiet.se/wp-content/uploads/2025/11/Partistyrelsens-forslag-pa-valplattform.pdf"
+      }
+    ]
+  },
+  "C": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Om Centerpartiet",
+        "url": "https://www.centerpartiet.se/om-centerpartiet"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Centerpartiets politik",
+        "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Centerpartiets politik och valinriktning",
+        "url": "https://www.centerpartiet.se/var-politik/centerpartiet-gor-skillnad"
+      }
+    ]
+  },
+  "KD": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Ideologi och principprogram",
+        "url": "https://kristdemokraterna.se/var-politik/ideologi-och-principprogram/"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Politik A till Ö",
+        "url": "https://kristdemokraterna.se/var-politik/politik-a-till-o"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "KD presenterar valmanifest 2022",
+        "url": "https://kristdemokraterna.se/arkiv/nyheter/2022/2022-08-09-kd-presenterar-valmanifest"
+      }
+    ]
+  },
+  "L": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Program och rapporter",
+        "url": "https://www.liberalerna.se/program-och-rapporter"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Vår politik",
+        "url": "https://www.liberalerna.se/politik"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Valmanifest 2026",
+        "url": "https://www.liberalerna.se/valmanifest-2026"
+      }
+    ]
+  },
+  "MP": {
+    "lastReviewed": "2026-06-03",
+    "sources": [
+      {
+        "type": "officialPartyProgram",
+        "title": "Miljöpartiets partiprogram",
+        "url": "https://www.mp.se/partiprogram/"
+      },
+      {
+        "type": "officialPolicyPages",
+        "title": "Miljöpartiets politik",
+        "url": "https://www.mp.se/politik/"
+      },
+      {
+        "type": "officialElectionPlatform",
+        "title": "Valmanifest 2022",
+        "url": "https://www.mp.se/valmanifest2022/"
+      }
+    ]
+  }
+}
