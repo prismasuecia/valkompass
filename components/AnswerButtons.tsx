@@ -24,12 +24,21 @@ export function AnswerButtons({
         <button
           key={item.value}
           type="button"
+          aria-pressed={selectedValue === item.value}
           onClick={() => onSelect(item.value)}
-          className={`min-h-14 rounded-xl border px-5 py-4 text-left text-base font-medium ${
-            selectedValue === item.value ? 'border-ink bg-ink text-white' : 'border-line bg-white text-ink'
+          className={`flex min-h-14 w-full items-center justify-between gap-4 rounded-2xl border px-5 py-4 text-left text-base font-medium transition-colors ${
+            selectedValue === item.value ? 'border-ink bg-slate-100 text-ink shadow-sm' : 'border-line bg-white text-ink hover:border-slate-300 hover:bg-paper'
           }`}
         >
-          {item.label}
+          <span>{item.label}</span>
+          <span
+            aria-hidden="true"
+            className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-sm font-semibold ${
+              selectedValue === item.value ? 'bg-ink text-white' : 'border border-line text-transparent'
+            }`}
+          >
+            ✓
+          </span>
         </button>
       ))}
     </div>

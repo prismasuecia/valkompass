@@ -49,6 +49,7 @@ function getMatchClassification(score: number) {
 export default function ResultPage() {
   const {language, results, reset} = useQuizStore();
   const topResults = results.slice(0, 3);
+  const remainingResults = results.slice(3);
 
   return (
     <main className="mx-auto min-h-screen max-w-2xl overflow-x-hidden px-5 py-10">
@@ -69,18 +70,25 @@ export default function ResultPage() {
       ) : null}
 
       <div className="mt-8 grid gap-5">
-        {topResults.map((result) => {
+        {topResults.map((result, index) => {
           const party = parties.find((item) => item.id === result.partyId);
           if (!party) return null;
           const categories = result.matchingCategories.map((category) => categoryLabels[category]);
           const classification = getMatchClassification(result.score);
 
           return (
-            <article key={result.partyId} className="min-w-0 rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6">
+            <article
+              key={result.partyId}
+              className={`min-w-0 rounded-2xl border border-line bg-white shadow-sm ${
+                index === 0 ? 'p-6 sm:p-7' : 'p-5 sm:p-6'
+              }`}
+            >
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="flex min-w-0 items-center gap-3">
-                  <span aria-hidden="true" className="h-4 w-4 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
-                  <h2 className="min-w-0 break-words text-xl font-semibold text-ink sm:text-2xl">{party.name[language]}</h2>
+                  <span aria-hidden="true" className={`${index === 0 ? 'h-5 w-5' : 'h-4 w-4'} shrink-0 rounded-full`} style={{backgroundColor: party.color}} />
+                  <h2 className={`min-w-0 break-words font-semibold text-ink ${index === 0 ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'}`}>
+                    {party.name[language]}
+                  </h2>
                 </div>
                 <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-500">
                   {result.score}%
@@ -132,6 +140,27 @@ export default function ResultPage() {
           );
         })}
       </div>
+
+      {remainingResults.length > 0 ? (
+        <div className="mt-5 grid gap-2">
+          {remainingResults.map((result) => {
+            const party = parties.find((item) => item.id === result.partyId);
+            if (!party) return null;
+
+            return (
+              <article key={result.partyId} className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-line bg-white px-4 py-3">
+                <div className="flex min-w-0 items-center gap-3">
+                  <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
+                  <h2 className="min-w-0 break-words text-sm font-semibold text-ink">{party.name[language]}</h2>
+                </div>
+                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-500">
+                  {result.score}%
+                </p>
+              </article>
+            );
+          })}
+        </div>
+      ) : null}
 
       <section className="mt-8 rounded-2xl border border-line bg-white p-6">
         <h2 className="text-xl font-semibold text-ink">{uiText.categoryResults.title}</h2>

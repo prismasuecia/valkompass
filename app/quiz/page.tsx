@@ -49,7 +49,7 @@ export default function QuizPage() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-5 py-8">
+    <main className="mx-auto min-h-screen max-w-[560px] px-4 py-7 sm:px-5 sm:py-8">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
           {uiText.progress.question} {currentQuestionIndex + 1} {uiText.progress.of} {questions.length}
@@ -60,7 +60,7 @@ export default function QuizPage() {
       <p className="mt-3 text-sm text-slate-600">
         {uiText.progress.estimatedTime}: {remainingTimeText}
       </p>
-      <div className="mt-10">
+      <div className="mt-8">
         <QuestionCard
           question={question}
           explanation={explanation}
@@ -71,12 +71,12 @@ export default function QuizPage() {
           onToggleImportant={() => toggleImportantQuestion(question.id)}
         />
       </div>
-      <div className="mx-auto mt-6 grid max-w-xl grid-cols-2 gap-3">
+      <div className="mx-auto mt-6 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-2">
         <button
           type="button"
           onClick={previousQuestion}
           disabled={currentQuestionIndex === 0}
-          className="rounded-xl border border-line bg-white px-5 py-4 font-medium text-ink disabled:opacity-40"
+          className="min-h-[52px] rounded-2xl border border-line bg-white px-5 py-4 font-medium text-ink transition-colors hover:border-slate-300 hover:bg-paper disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400 disabled:opacity-70"
         >
           {uiText.buttons.back}
         </button>
@@ -84,7 +84,7 @@ export default function QuizPage() {
           type="button"
           onClick={handleNext}
           disabled={!selectedAnswer}
-          className="rounded-xl bg-ink px-5 py-4 font-semibold text-white disabled:opacity-40"
+          className="min-h-[52px] rounded-2xl bg-ink px-5 py-4 font-semibold text-white transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
         >
           {isLastQuestion ? uiText.buttons.finish : uiText.buttons.next}
         </button>

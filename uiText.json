@@ -63,6 +63,8 @@
     "question": "Pregunta",
     "of": "de",
     "important": "Pregunta importante",
+    "importantCard": "⭐ Esta pregunta es importante para mí",
+    "importantSubtext": "Tu respuesta pesará más en el resultado.",
     "estimatedTime": "Tiempo restante aproximado"
   },
 
