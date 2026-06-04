@@ -170,13 +170,5 @@
     "tagline": "Información sobre Suecia en español.",
     "sourcesLink": "Fuentes y metodología",
     "betaBadge": "Beta version"
-  },
-
-  "betaAccess": {
-    "title": "Acceso de prueba",
-    "text": "Esta versión está abierta solo para personas invitadas a probar Valkompas.",
-    "label": "Contraseña",
-    "button": "Entrar",
-    "error": "Contraseña incorrecta."
   }
 }
