@@ -49,7 +49,7 @@ export default function QuizPage() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-4 py-7 sm:px-5 sm:py-8">
+    <main className="mx-auto min-h-screen max-w-2xl px-4 pb-28 pt-4 sm:px-5 sm:py-8">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
           {uiText.progress.question} {currentQuestionIndex + 1} {uiText.progress.of} {questions.length}
@@ -57,10 +57,10 @@ export default function QuizPage() {
         <p className="text-sm font-semibold text-slate-700">{progressPercent}%</p>
       </div>
       <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
-      <p className="mt-3 text-sm text-slate-600">
+      <p className="mt-2 text-sm text-slate-600">
         {uiText.progress.estimatedTime}: {remainingTimeText}
       </p>
-      <div className="mt-8">
+      <div className="mt-4 sm:mt-8">
         <QuestionCard
           question={question}
           explanation={explanation}
@@ -71,7 +71,7 @@ export default function QuizPage() {
           onToggleImportant={() => toggleImportantQuestion(question.id)}
         />
       </div>
-      <div className="mx-auto mt-6 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-2">
+      <div className="fixed inset-x-0 bottom-0 z-10 grid grid-cols-2 gap-3 border-t border-line bg-white/95 px-4 py-3 sm:static sm:mx-auto sm:mt-6 sm:max-w-xl sm:border-0 sm:bg-transparent sm:px-0 sm:py-0">
         <button
           type="button"
           onClick={previousQuestion}

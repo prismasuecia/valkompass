@@ -60,43 +60,41 @@ export function QuestionCard({
   onToggleImportant: () => void;
 }) {
   return (
-    <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-5 shadow-sm sm:p-6">
+    <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-6">
       <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
-      <h1 className="mt-5 text-2xl font-semibold leading-tight text-ink sm:text-3xl">{question.statement[language]}</h1>
-      <div className="mt-6">
+      <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
+      <div className="mt-4 sm:mt-6">
         <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
       </div>
       {question.importanceAllowed ? (
         <button
           type="button"
-          aria-pressed={important}
+          role="switch"
+          aria-checked={important}
           onClick={onToggleImportant}
-          className={`mt-6 flex w-full items-center justify-between gap-4 rounded-2xl border px-5 py-4 text-left transition-colors ${
-            important
-              ? 'border-amber-600 bg-amber-100 text-ink shadow-sm ring-2 ring-amber-300'
-              : 'border-slate-300 bg-paper text-slate-700 hover:border-amber-500 hover:bg-amber-50'
-          }`}
+          className="mt-4 flex max-h-[72px] w-full items-center justify-between gap-4 rounded-2xl border border-[#CBD5E1] bg-[#F8FAFC] p-4 text-left"
         >
-          <span>
-            <span className={`block text-base ${important ? 'font-semibold' : 'font-medium'}`}>{uiText.progress.importantCard}</span>
-            <span className="mt-1 block text-sm leading-5 text-slate-600">{uiText.progress.importantSubtext}</span>
+          <span className="min-w-0">
+            <span className="block text-base font-semibold leading-5 text-ink">{uiText.progress.important}</span>
+            <span className="mt-1 block text-[13px] leading-4 text-slate-600">{uiText.progress.importantSubtext}</span>
           </span>
           <span
             aria-hidden="true"
-            className={`grid h-7 w-7 shrink-0 place-items-center rounded-full text-sm font-semibold ${
-              important ? 'bg-amber-700 text-white' : 'border border-line text-transparent'
+            className={`flex h-6 w-11 shrink-0 items-center rounded-full border p-0.5 ${
+              important ? 'justify-end border-ink bg-ink' : 'justify-start border-slate-400 bg-slate-200'
             }`}
           >
-            ✓
+            <span className="block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
           </span>
         </button>
       ) : null}
       {explanation ? (
-        <details className="mt-5 rounded-2xl border border-line bg-white">
-          <summary className="flex min-h-14 cursor-pointer items-center px-5 py-4 text-base font-semibold text-ink hover:bg-paper">
-            {uiText.buttons.showExplanation}
+        <details className="mt-3 rounded-2xl border border-[#BFDBFE] bg-[#EFF6FF]">
+          <summary className="flex h-12 cursor-pointer list-none flex-col justify-center px-4 text-left">
+            <span className="block text-base font-semibold leading-4 text-ink">{uiText.buttons.showExplanation}</span>
+            <span className="mt-0.5 block text-[13px] leading-4 text-slate-600">{uiText.buttons.explanationSubtext}</span>
           </summary>
-          <div className="border-t border-line bg-paper p-4">
+          <div className="border-t border-[#BFDBFE] bg-paper p-4">
             <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
             <ExplanationSections content={explanation.content[language]} />
           </div>
