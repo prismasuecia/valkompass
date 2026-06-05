@@ -23,7 +23,7 @@
 
   "votingRights": {
     "title": "¿Quién puede votar en las elecciones parlamentarias suecas?",
-    "text": "Para votar en las elecciones parlamentarias suecas normalmente se requiere ciudadanía sueca."
+    "text": "Solo las personas con ciudadanía sueca pueden votar en las elecciones parlamentarias suecas."
   },
 
   "quizInfo": {
@@ -49,7 +49,8 @@
     "finish": "Ver resultado",
     "restart": "Empezar de nuevo",
     "showExplanation": "▼ Ver explicación",
-    "explanationSubtext": "Información sencilla sobre esta propuesta.",
+    "hideExplanation": "▲ Ocultar explicación",
+    "explanationPrompt": "No estoy seguro de lo que significa esta propuesta",
     "showMatches": "Ver coincidencias",
     "showDifferences": "Ver diferencias",
     "readMore": "Leer más",

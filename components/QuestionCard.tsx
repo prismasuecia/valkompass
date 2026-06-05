@@ -63,6 +63,19 @@ export function QuestionCard({
     <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-6">
       <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
       <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
+      {explanation ? (
+        <details className="group mt-4">
+          <summary className="cursor-pointer list-none py-1">
+            <span className="block text-sm font-normal leading-5 text-[#64748B]">{uiText.buttons.explanationPrompt}</span>
+            <span className="mt-1 block text-base font-semibold leading-5 text-ink group-open:hidden">{uiText.buttons.showExplanation}</span>
+            <span className="mt-1 hidden text-base font-semibold leading-5 text-ink group-open:block">{uiText.buttons.hideExplanation}</span>
+          </summary>
+          <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
+            <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
+            <ExplanationSections content={explanation.content[language]} />
+          </div>
+        </details>
+      ) : null}
       <div className="mt-4 sm:mt-6">
         <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
       </div>
@@ -87,18 +100,6 @@ export function QuestionCard({
             <span className="block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
           </span>
         </button>
-      ) : null}
-      {explanation ? (
-        <details className="mt-3 rounded-2xl border border-[#BFDBFE] bg-[#EFF6FF]">
-          <summary className="flex h-12 cursor-pointer list-none flex-col justify-center px-4 text-left">
-            <span className="block text-base font-semibold leading-4 text-ink">{uiText.buttons.showExplanation}</span>
-            <span className="mt-0.5 block text-[13px] leading-4 text-slate-600">{uiText.buttons.explanationSubtext}</span>
-          </summary>
-          <div className="border-t border-[#BFDBFE] bg-paper p-4">
-            <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
-            <ExplanationSections content={explanation.content[language]} />
-          </div>
-        </details>
       ) : null}
     </article>
   );
