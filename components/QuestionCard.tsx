@@ -42,11 +42,26 @@ function ExplanationSections({content}: {content: string}) {
   );
 }
 
-function ExplanationControl({explanation, language, desktopCard = false}: {explanation?: Explanation; language: Language; desktopCard?: boolean}) {
+function ExplanationControl({
+  explanation,
+  language,
+  onOpened,
+  desktopCard = false
+}: {
+  explanation?: Explanation;
+  language: Language;
+  onOpened: () => void;
+  desktopCard?: boolean;
+}) {
   if (!explanation) return null;
 
   return (
-    <details className={`group ${desktopCard ? 'rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-4' : ''}`}>
+    <details
+      onToggle={(event) => {
+        if (event.currentTarget.open) onOpened();
+      }}
+      className={`group ${desktopCard ? 'rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-4' : ''}`}
+    >
       <summary className={`cursor-pointer list-none ${desktopCard ? '' : 'py-1'}`}>
         <span className={`block leading-5 ${desktopCard ? 'text-base font-semibold text-ink' : 'text-sm font-normal text-[#64748B]'}`}>
           {desktopCard ? uiText.buttons.explanationCardTitle : uiText.buttons.explanationPrompt}
@@ -87,11 +102,24 @@ function ImportantSetting({important, onToggleImportant}: {important: boolean; o
   );
 }
 
-function MobileExplanationControl({explanation, language}: {explanation?: Explanation; language: Language}) {
+function MobileExplanationControl({
+  explanation,
+  language,
+  onOpened
+}: {
+  explanation?: Explanation;
+  language: Language;
+  onOpened: () => void;
+}) {
   if (!explanation) return null;
 
   return (
-    <details className="group">
+    <details
+      onToggle={(event) => {
+        if (event.currentTarget.open) onOpened();
+      }}
+      className="group"
+    >
       <summary className="cursor-pointer list-none rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-[14px] text-base font-semibold leading-5 text-ink">
         <span className="block group-open:hidden">{uiText.buttons.mobileShowExplanation}</span>
         <span className="hidden group-open:block">{uiText.buttons.mobileHideExplanation}</span>
@@ -133,7 +161,8 @@ export function QuestionCard({
   selectedValue,
   important,
   onAnswer,
-  onToggleImportant
+  onToggleImportant,
+  onExplanationOpened
 }: {
   question: Question;
   explanation?: Explanation;
@@ -142,6 +171,7 @@ export function QuestionCard({
   important: boolean;
   onAnswer: (value: AnswerValue) => void;
   onToggleImportant: () => void;
+  onExplanationOpened: () => void;
 }) {
   return (
     <>
@@ -149,7 +179,7 @@ export function QuestionCard({
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
         <div className="mt-4">
-          <MobileExplanationControl explanation={explanation} language={language} />
+          <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
         {question.importanceAllowed ? (
           <div className="mt-2">
@@ -170,7 +200,7 @@ export function QuestionCard({
           </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">
-          <ExplanationControl explanation={explanation} language={language} desktopCard />
+          <ExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} desktopCard />
           {question.importanceAllowed ? (
             <div className="mt-8">
               <ImportantSetting important={important} onToggleImportant={onToggleImportant} />

@@ -4,6 +4,7 @@ import {useRouter} from 'next/navigation';
 import {ProgressBar} from '@/components/ProgressBar';
 import {QuestionCard} from '@/components/QuestionCard';
 import partiesData from '@/data/parties.json';
+import {trackEvent} from '@/lib/analytics';
 import {calculateResults} from '@/lib/calculateResults';
 import {explanations, positions, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
@@ -41,11 +42,21 @@ export default function QuizPage() {
 
     if (isLastQuestion) {
       setResults(calculateResults({answers, importantQuestions, parties, positions, questions}));
+      trackEvent('quiz_completed', {question_count: questions.length});
       router.push('/result');
       return;
     }
 
     nextQuestion();
+  }
+
+  function handleToggleImportant() {
+    const isImportant = importantQuestions.includes(question.id);
+    toggleImportantQuestion(question.id);
+
+    if (!isImportant) {
+      trackEvent('important_question_used', {question_id: question.id});
+    }
   }
 
   return (
@@ -68,7 +79,8 @@ export default function QuizPage() {
           selectedValue={selectedAnswer?.value}
           important={importantQuestions.includes(question.id)}
           onAnswer={(value) => answerQuestion({questionId: question.id, value})}
-          onToggleImportant={() => toggleImportantQuestion(question.id)}
+          onToggleImportant={handleToggleImportant}
+          onExplanationOpened={() => trackEvent('explanation_opened', {question_id: question.id})}
         />
       </div>
       <div className="fixed inset-x-0 bottom-0 z-10 grid grid-cols-2 gap-3 border-t border-line bg-white/95 px-4 py-3 sm:static sm:mx-auto sm:mt-6 sm:max-w-xl sm:border-0 sm:bg-transparent sm:px-0 sm:py-0 min-[1200px]:ml-0 min-[1200px]:mr-auto min-[1200px]:w-[66%] min-[1200px]:max-w-none">
