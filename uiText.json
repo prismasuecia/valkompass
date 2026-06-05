@@ -10,6 +10,10 @@
     "text": "Esta brújula electoral fue creada para ayudar a entender mejor cómo piensan los partidos políticos suecos.\n\nEntender la política sueca puede ser difícil, especialmente si el español es tu idioma principal.\n\nResponde las preguntas y compara tus respuestas con las posiciones públicas de los partidos representados en el parlamento sueco."
   },
 
+  "home": {
+    "partiesIncluded": "Partidos incluidos"
+  },
+
   "importantInfo": {
     "title": "Información importante",
     "parliament": "Esta brújula electoral se basa únicamente en las elecciones al parlamento nacional sueco (Riksdagen).",
