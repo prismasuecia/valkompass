@@ -52,16 +52,11 @@ export default function ResultPage() {
   const remainingResults = results.slice(3);
 
   return (
-    <main className="mx-auto min-h-screen max-w-2xl overflow-x-hidden px-5 py-10">
-      <p className="text-sm font-medium uppercase tracking-wide text-slate-500">{uiText.app.name}</p>
+    <main className="mx-auto min-h-screen max-w-4xl overflow-x-hidden px-5 py-10">
+      <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{uiText.app.name}</p>
       <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.results.title}</h1>
       <p className="mt-4 text-base leading-7 text-slate-700">{uiText.results.description}</p>
       <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.sameAnswers}</p>
-      <details className="mt-5 rounded-2xl border border-line bg-white p-5">
-        <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.whyResult.title}</summary>
-        <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.whyResult.intro}</p>
-      </details>
-
       {topResults.length === 0 ? (
         <section className="mt-8 rounded-2xl border border-line bg-white p-6">
           <h2 className="text-xl font-semibold text-ink">{uiText.results.noResults}</h2>
@@ -69,7 +64,7 @@ export default function ResultPage() {
         </section>
       ) : null}
 
-      <div className="mt-8 grid gap-5">
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
         {topResults.map((result, index) => {
           const party = parties.find((item) => item.id === result.partyId);
           if (!party) return null;
@@ -79,8 +74,8 @@ export default function ResultPage() {
           return (
             <article
               key={result.partyId}
-              className={`min-w-0 rounded-2xl border border-line bg-white shadow-sm ${
-                index === 0 ? 'p-6 sm:p-7' : 'p-5 sm:p-6'
+              className={`min-w-0 rounded-2xl bg-white shadow-sm ${
+                index === 0 ? 'border-2 border-slate-300 p-6 sm:p-8 md:col-span-2' : 'border border-line p-5 sm:p-6'
               }`}
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
@@ -90,11 +85,15 @@ export default function ResultPage() {
                     {party.name[language]}
                   </h2>
                 </div>
-                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-500">
+                <p
+                  aria-label={`${uiText.results.scoreLabel}: ${result.score}%`}
+                  className={`shrink-0 font-semibold text-slate-700 ${index === 0 ? 'text-xl sm:text-2xl' : 'text-base'}`}
+                >
                   {result.score}%
                 </p>
               </div>
-              <p className="mt-5 text-sm font-semibold text-slate-500">{classification.title}</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.scoreExplanation}</p>
+              <p className="mt-5 text-sm font-semibold text-slate-600">{classification.title}</p>
               <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
               <p className="mt-3 text-sm leading-6 text-slate-600">
                 {uiText.results.comparedQuestions}: {displayedQuestionCount}
@@ -141,8 +140,13 @@ export default function ResultPage() {
         })}
       </div>
 
+      <details className="mt-6 rounded-2xl border border-line bg-white p-5">
+        <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.whyResult.title}</summary>
+        <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.whyResult.intro}</p>
+      </details>
+
       {remainingResults.length > 0 ? (
-        <div className="mt-5 grid gap-2">
+        <div className="mt-5 grid gap-2 md:grid-cols-2">
           {remainingResults.map((result) => {
             const party = parties.find((item) => item.id === result.partyId);
             if (!party) return null;
@@ -153,7 +157,7 @@ export default function ResultPage() {
                   <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
                   <h2 className="min-w-0 break-words text-sm font-semibold text-ink">{party.name[language]}</h2>
                 </div>
-                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-500">
+                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-700">
                   {result.score}%
                 </p>
               </article>
@@ -175,7 +179,7 @@ export default function ResultPage() {
       >
         {uiText.buttons.restart}
       </Link>
-      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
+      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-600">
         <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
           {uiText.footer.betaBadge}
         </p>

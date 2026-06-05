@@ -20,7 +20,7 @@ export default function HomePage() {
   const methodologyParagraphs = uiText.methodology.text.split('\n\n');
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-5 py-10 md:py-12">
+    <main className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-5 py-10 md:py-12">
       <img
         src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/brand/prisma-suecia-logo.jpg`}
         alt={uiText.footer.createdBy}
@@ -28,8 +28,11 @@ export default function HomePage() {
       />
       <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">{uiText.app.title}</h1>
       <p className="mt-3 text-base leading-7 text-slate-600">{uiText.app.subtitle}</p>
-      {introParagraphs.map((paragraph, index) => (
-        <p key={paragraph} className={`${index === 0 ? 'mt-5 text-lg leading-8 text-slate-700' : 'mt-4 text-base leading-7 text-slate-600'}`}>
+      <p className="mt-5 text-lg leading-8 text-slate-700">{introParagraphs[0]}</p>
+      <StartQuizLink />
+      <p className="mt-4 text-center text-sm leading-6 text-slate-600">{uiText.methodology.text.split('\n\n')[0]}</p>
+      {introParagraphs.slice(1).map((paragraph) => (
+        <p key={paragraph} className="mt-4 text-base leading-7 text-slate-600">
           {paragraph}
         </p>
       ))}
@@ -58,9 +61,9 @@ export default function HomePage() {
         </dl>
         <div className="mt-5 border-t border-line pt-5">
           <p className="text-sm font-medium text-slate-600">{uiText.categoryResults.title}</p>
-          <div className="mt-3 flex flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap gap-3">
             {includedTopics.map((topic) => (
-              <span key={topic} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">
+              <span key={topic} className="rounded-full border border-line bg-paper px-3 py-1 text-sm font-medium text-slate-700">
                 {topic}
               </span>
             ))}
@@ -76,8 +79,6 @@ export default function HomePage() {
           </p>
         ))}
       </details>
-      <StartQuizLink />
-      <p className="mt-4 text-center text-sm leading-6 text-slate-600">{uiText.methodology.text.split('\n\n')[0]}</p>
       <section className="mt-8 border-t border-line pt-6">
         <h2 className="text-base font-semibold text-ink">{uiText.editorial.title}</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -101,7 +102,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
+      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-600">
         <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
           {uiText.footer.betaBadge}
         </p>

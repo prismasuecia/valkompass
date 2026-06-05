@@ -25,8 +25,8 @@ const parties = Object.entries(partyCardsData).map(([id, party]) => ({
 
 export default function SourcesPage() {
   return (
-    <main className="mx-auto min-h-screen max-w-2xl px-5 py-10">
-      <p className="text-sm font-medium uppercase tracking-wide text-slate-500">{uiText.app.name}</p>
+    <main className="mx-auto min-h-screen max-w-3xl px-5 py-10">
+      <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{uiText.app.name}</p>
       <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.sourcesPage.title}</h1>
       <p className="mt-4 text-base leading-7 text-slate-700">{uiText.sourcesPage.intro}</p>
       <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.sourcesPage.notAffiliated}</p>
@@ -66,7 +66,7 @@ export default function SourcesPage() {
         </div>
       </section>
 
-      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-500">
+      <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-600">
         <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
           {uiText.footer.betaBadge}
         </p>

@@ -44,7 +44,7 @@
     "next": "Siguiente",
     "finish": "Ver resultado",
     "restart": "Empezar de nuevo",
-    "showExplanation": "¿Qué significa esto?",
+    "showExplanation": "Ver explicación",
     "showMatches": "Ver coincidencias",
     "showDifferences": "Ver diferencias",
     "readMore": "Leer más",
@@ -63,9 +63,15 @@
     "question": "Pregunta",
     "of": "de",
     "important": "Pregunta importante",
-    "importantCard": "⭐ Esta pregunta es importante para mí",
-    "importantSubtext": "Tu respuesta pesará más en el resultado.",
+    "importantCard": "Esta pregunta es importante para mí",
+    "importantSubtext": "Esta pregunta tendrá más peso en tu resultado.",
     "estimatedTime": "Tiempo restante aproximado"
+  },
+
+  "explanationSections": {
+    "currentSituation": "Situación actual",
+    "discussion": "¿Qué se discute?",
+    "example": "Ejemplo concreto"
   },
 
   "results": {
@@ -77,7 +83,8 @@
     "noResults": "No hay resultados todavía.",
     "answerQuestions": "Responde las preguntas para ver una comparación.",
     "yourAnswer": "Tu respuesta",
-    "scoreLabel": "Resultado"
+    "scoreLabel": "Resultado",
+    "scoreExplanation": "Este resultado muestra qué tan parecidas son tus respuestas a las posiciones del partido. No significa que compartas el mismo porcentaje de toda su política."
   },
 
   "highMatch": {
@@ -133,13 +140,13 @@
     "notAffiliated": "Valkompas no está afiliada a ningún partido político.",
     "globalLastReviewed": "Última revisión de fuentes: 2026-06-03",
     "partySourcesTitle": "Fuentes por partido",
-    "source1": "Source 1",
-    "source2": "Source 2",
-    "source3": "Source 3",
-    "lastReviewed": "Last reviewed",
-    "officialPartyProgram": "Official party program",
-    "officialPolicyPages": "Official policy pages",
-    "officialElectionPlatform": "Official election platform",
+    "source1": "Fuente 1",
+    "source2": "Fuente 2",
+    "source3": "Fuente 3",
+    "lastReviewed": "Última revisión",
+    "officialPartyProgram": "Programa oficial del partido",
+    "officialPolicyPages": "Páginas oficiales de políticas",
+    "officialElectionPlatform": "Programa electoral oficial",
     "back": "Volver"
   },
 
@@ -169,6 +176,6 @@
     "createdBy": "Creado por Prisma Suecia",
     "tagline": "Información sobre Suecia en español.",
     "sourcesLink": "Fuentes y metodología",
-    "betaBadge": "Beta version"
+    "betaBadge": "Versión beta"
   }
 }

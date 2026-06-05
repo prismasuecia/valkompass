@@ -10,9 +10,9 @@ export function ProgressBar({current, total}: {current: number; total: number}) 
       aria-valuemin={0}
       aria-valuemax={100}
       aria-valuenow={value}
-      className="h-1.5 w-full rounded-full bg-line"
+      className="h-2 w-full rounded-full bg-slate-200"
     >
-      <div className="h-1.5 rounded-full bg-ink transition-[width] duration-300 ease-out" style={{width: `${value}%`}} />
+      <div className="h-2 rounded-full bg-ink transition-[width] duration-300 ease-out" style={{width: `${value}%`}} />
     </div>
   );
 }

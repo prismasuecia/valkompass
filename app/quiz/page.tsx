@@ -49,12 +49,12 @@ export default function QuizPage() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-[560px] px-4 py-7 sm:px-5 sm:py-8">
+    <main className="mx-auto min-h-screen max-w-2xl px-4 py-7 sm:px-5 sm:py-8">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
           {uiText.progress.question} {currentQuestionIndex + 1} {uiText.progress.of} {questions.length}
         </p>
-        <p className="text-sm font-medium text-slate-500">{progressPercent}%</p>
+        <p className="text-sm font-semibold text-slate-700">{progressPercent}%</p>
       </div>
       <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
       <p className="mt-3 text-sm text-slate-600">
