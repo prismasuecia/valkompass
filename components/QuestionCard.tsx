@@ -42,13 +42,15 @@ function ExplanationSections({content}: {content: string}) {
   );
 }
 
-function ExplanationControl({explanation, language}: {explanation?: Explanation; language: Language}) {
+function ExplanationControl({explanation, language, desktopCard = false}: {explanation?: Explanation; language: Language; desktopCard?: boolean}) {
   if (!explanation) return null;
 
   return (
-    <details className="group">
-      <summary className="cursor-pointer list-none py-1">
-        <span className="block text-sm font-normal leading-5 text-[#64748B]">{uiText.buttons.explanationPrompt}</span>
+    <details className={`group ${desktopCard ? 'rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-4' : ''}`}>
+      <summary className={`cursor-pointer list-none ${desktopCard ? '' : 'py-1'}`}>
+        <span className={`block leading-5 ${desktopCard ? 'text-base font-semibold text-ink' : 'text-sm font-normal text-[#64748B]'}`}>
+          {desktopCard ? uiText.buttons.explanationCardTitle : uiText.buttons.explanationPrompt}
+        </span>
         <span className="mt-1 block text-base font-semibold leading-5 text-ink group-open:hidden">{uiText.buttons.showExplanation}</span>
         <span className="mt-1 hidden text-base font-semibold leading-5 text-ink group-open:block">{uiText.buttons.hideExplanation}</span>
       </summary>
@@ -85,6 +87,45 @@ function ImportantSetting({important, onToggleImportant}: {important: boolean; o
   );
 }
 
+function MobileExplanationControl({explanation, language}: {explanation?: Explanation; language: Language}) {
+  if (!explanation) return null;
+
+  return (
+    <details className="group">
+      <summary className="cursor-pointer list-none rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-[14px] text-base font-semibold leading-5 text-ink">
+        <span className="block group-open:hidden">{uiText.buttons.mobileShowExplanation}</span>
+        <span className="hidden group-open:block">{uiText.buttons.mobileHideExplanation}</span>
+      </summary>
+      <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
+        <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
+        <ExplanationSections content={explanation.content[language]} />
+      </div>
+    </details>
+  );
+}
+
+function MobileImportantSetting({important, onToggleImportant}: {important: boolean; onToggleImportant: () => void}) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={important}
+      onClick={onToggleImportant}
+      className="flex min-h-11 items-center gap-3 text-left"
+    >
+      <span
+        aria-hidden="true"
+        className={`flex h-6 w-11 shrink-0 items-center rounded-full border p-0.5 ${
+          important ? 'justify-end border-ink bg-ink' : 'justify-start border-slate-400 bg-slate-200'
+        }`}
+      >
+        <span className="block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
+      </span>
+      <span className="text-base font-semibold text-ink">{uiText.progress.important}</span>
+    </button>
+  );
+}
+
 export function QuestionCard({
   question,
   explanation,
@@ -108,16 +149,16 @@ export function QuestionCard({
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
         <div className="mt-4">
-          <ExplanationControl explanation={explanation} language={language} />
-        </div>
-        <div className="mt-4 sm:mt-6">
-          <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+          <MobileExplanationControl explanation={explanation} language={language} />
         </div>
         {question.importanceAllowed ? (
-          <div className="mt-4">
-            <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+          <div className="mt-2">
+            <MobileImportantSetting important={important} onToggleImportant={onToggleImportant} />
           </div>
         ) : null}
+        <div className="mt-3 sm:mt-6">
+          <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+        </div>
       </article>
 
       <article className="hidden w-full grid-cols-[minmax(0,1.35fr)_minmax(340px,0.65fr)] gap-8 rounded-2xl border border-line bg-white p-8 shadow-sm min-[1200px]:grid">
@@ -129,7 +170,7 @@ export function QuestionCard({
           </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">
-          <ExplanationControl explanation={explanation} language={language} />
+          <ExplanationControl explanation={explanation} language={language} desktopCard />
           {question.importanceAllowed ? (
             <div className="mt-8">
               <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
