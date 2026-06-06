@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Valkompas",
+    "name": "Brújula electoral 2026",
     "title": "Brújula electoral 2026",
     "subtitle": "Una guía sencilla para comparar tus opiniones con los partidos políticos suecos."
   },
@@ -132,8 +132,8 @@
   },
 
   "methodology": {
-    "title": "¿Cómo se construyó Valkompas?",
-    "text": "Valkompas compara tus respuestas con posiciones políticas públicas de los partidos representados en el parlamento sueco.\n\nLas preguntas fueron seleccionadas para reflejar debates importantes en la política nacional sueca.\n\nCada respuesta se compara con posiciones generales de los partidos en esos temas.\n\nCuanto más se parece tu respuesta a la posición de un partido, más alto será el resultado.\n\nLa política es compleja y ninguna herramienta puede representar todos los matices de cada partido o de cada persona.\n\nEl resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
+    "title": "¿Cómo se construyó esta brújula electoral?",
+    "text": "Esta brújula electoral compara tus respuestas con posiciones políticas públicas de los partidos representados en el parlamento sueco.\n\nLas preguntas fueron seleccionadas para reflejar debates importantes en la política nacional sueca.\n\nCada respuesta se compara con posiciones generales de los partidos en esos temas.\n\nCuanto más se parece tu respuesta a la posición de un partido, más alto será el resultado.\n\nLa política es compleja y ninguna herramienta puede representar todos los matices de cada partido o de cada persona.\n\nEl resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
   },
 
   "sourcesPage": {
@@ -146,7 +146,7 @@
     "parliamentaryProposals": "propuestas parlamentarias",
     "leadershipStatements": "declaraciones públicas de la dirección de los partidos",
     "disclaimer": "Las posiciones pueden actualizarse cuando los partidos cambian sus propuestas o presentan nuevas políticas.",
-    "notAffiliated": "Valkompas no está afiliada a ningún partido político.",
+    "notAffiliated": "Esta brújula electoral no está afiliada a ningún partido político.",
     "globalLastReviewed": "Última revisión de fuentes: 2026-06-03",
     "partySourcesTitle": "Fuentes por partido",
     "source1": "Fuente 1",
@@ -162,7 +162,7 @@
   "editorial": {
     "title": "Principios editoriales",
     "neutrality": "Neutralidad política",
-    "neutralityText": "Valkompas no favorece a ningún partido político.",
+    "neutralityText": "Esta brújula electoral no favorece a ningún partido político.",
     "transparency": "Transparencia",
     "transparencyText": "Las posiciones se basan en información pública y pueden actualizarse cuando los partidos cambian de postura.",
     "language": "Lenguaje claro",
@@ -170,7 +170,7 @@
     "sources": "Fuentes públicas",
     "sourcesText": "Las posiciones se basan en programas políticos, propuestas oficiales y declaraciones públicas.",
     "updates": "Actualización continua",
-    "updatesText": "La política cambia con el tiempo. Por eso Valkompas puede actualizarse antes de las elecciones.",
+    "updatesText": "La política cambia con el tiempo. Por eso esta brújula electoral puede actualizarse antes de las elecciones.",
     "recommendation": "No es una recomendación de voto",
     "recommendationText": "El resultado muestra similitudes políticas, pero la decisión final corresponde siempre al votante."
   },
