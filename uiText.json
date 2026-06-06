@@ -71,7 +71,7 @@
   "progress": {
     "question": "Pregunta",
     "of": "de",
-    "important": "Pregunta importante",
+    "important": "Marcar como pregunta importante",
     "importantCard": "Esta pregunta es importante para mí",
     "importantSubtext": "Esta pregunta tendrá más peso en tu resultado.",
     "estimatedTime": "Tiempo restante aproximado"

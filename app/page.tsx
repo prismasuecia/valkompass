@@ -121,9 +121,6 @@ export default function HomePage() {
         </details>
       </section>
       <footer className="mt-8 border-t border-line pt-6 text-center text-sm text-slate-600">
-        <p className="mx-auto mb-3 inline-flex rounded-full border border-line bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
-          {uiText.footer.betaBadge}
-        </p>
         <p>{uiText.footer.createdBy}</p>
         <div className="mt-3 flex flex-wrap justify-center gap-4">
           <Link href="/sources" className="inline-block min-h-6 font-medium text-ink">
