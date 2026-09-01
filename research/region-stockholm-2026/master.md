@@ -1,6 +1,6 @@
 # Region Stockholm 2026 – masterunderlag
 
-Status: **redaktionellt arbetsunderlag, inte publiceringsklart**. Researchfrysning: 31 augusti 2026. En sista aktualitetskontroll krävs före publicering.
+Status: **redaktionellt arbetsunderlag för förhandsvisning, inte publiceringsklart**. Bred research frystes 31 augusti 2026 och underlaget aktualitetskontrollerades 1 september 2026. En sista kontroll krävs nära offentlig publicering.
 
 ## Omfattning
 

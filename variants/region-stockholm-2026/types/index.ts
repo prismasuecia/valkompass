@@ -11,11 +11,13 @@ export type QuestionCategory =
   | 'cultureInvestment';
 
 export type AnswerValue = -2 | -1 | 0 | 1 | 2;
+export type AnswerSelection = AnswerValue | 'skip';
 
 export type Question = {
   id: string;
   category: QuestionCategory;
   statement: LocalizedText;
+  context: LocalizedText;
   explanationId: string;
   importanceAllowed: boolean;
 };
@@ -35,12 +37,15 @@ export type Position = {
 export type Explanation = {
   id: string;
   title: LocalizedText;
-  content: LocalizedText;
+  sections: {
+    title: LocalizedText;
+    content: LocalizedText;
+  }[];
 };
 
 export type QuizAnswer = {
   questionId: string;
-  value: AnswerValue;
+  value: AnswerSelection;
 };
 
 export type Result = {

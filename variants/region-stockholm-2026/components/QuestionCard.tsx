@@ -1,7 +1,7 @@
 'use client';
 
 import {AnswerButtons} from '@/components/AnswerButtons';
-import type {AnswerValue, Explanation, Language, Question} from '@/types';
+import type {AnswerSelection, Explanation, Language, Question} from '@/types';
 import uiText from '@/uiText.json';
 
 const categoryLabels: Record<Question['category'], string> = {
@@ -13,29 +13,13 @@ const categoryLabels: Record<Question['category'], string> = {
   cultureInvestment: uiText.categories.cultureInvestment
 };
 
-function ExplanationSections({content}: {content: string}) {
-  const currentSituationLabel = uiText.explanationSections.currentSituation;
-  const discussionLabel = uiText.explanationSections.discussion;
-  const exampleLabel = uiText.explanationSections.example;
-  const discussionMarker = ` ${discussionLabel}: `;
-  const exampleMarker = ` ${exampleLabel}: `;
-  const [currentSituation, rest] = content.split(discussionMarker);
-  const [discussion, example] = rest?.split(exampleMarker) ?? [];
-
-  if (!currentSituation || !discussion || !example) {
-    return <p className="mt-2 text-sm leading-6 text-slate-700">{content}</p>;
-  }
-
+function ExplanationSections({explanation, language}: {explanation: Explanation; language: Language}) {
   return (
     <div className="mt-4 grid gap-3">
-      {[
-        [currentSituationLabel, currentSituation.replace(`${currentSituationLabel}: `, '')],
-        [discussionLabel, discussion],
-        [exampleLabel, example]
-      ].map(([title, text]) => (
-        <section key={title} className="rounded-xl border border-line bg-white p-4">
-          <h3 className="text-sm font-semibold text-ink">{title}</h3>
-          <p className="mt-2 text-sm leading-6 text-slate-700">{text}</p>
+      {explanation.sections.map((section) => (
+        <section key={section.title[language]} className="rounded-xl border border-line bg-white p-4">
+          <h3 className="text-sm font-semibold text-ink">{section.title[language]}</h3>
+          <p className="mt-2 text-sm leading-6 text-slate-700">{section.content[language]}</p>
         </section>
       ))}
     </div>
@@ -71,7 +55,7 @@ function ExplanationControl({
       </summary>
       <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
         <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
-        <ExplanationSections content={explanation.content[language]} />
+        <ExplanationSections explanation={explanation} language={language} />
       </div>
     </details>
   );
@@ -126,7 +110,7 @@ function MobileExplanationControl({
       </summary>
       <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
         <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
-        <ExplanationSections content={explanation.content[language]} />
+        <ExplanationSections explanation={explanation} language={language} />
       </div>
     </details>
   );
@@ -167,9 +151,9 @@ export function QuestionCard({
   question: Question;
   explanation?: Explanation;
   language: Language;
-  selectedValue?: AnswerValue;
+  selectedValue?: AnswerSelection;
   important: boolean;
-  onAnswer: (value: AnswerValue) => void;
+  onAnswer: (value: AnswerSelection) => void;
   onToggleImportant: () => void;
   onExplanationOpened: () => void;
 }) {
@@ -178,6 +162,7 @@ export function QuestionCard({
       <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-6 min-[1200px]:hidden">
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
+        <p className="mt-3 text-sm leading-6 text-slate-600">{question.context[language]}</p>
         <div className="mt-4">
           <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
@@ -195,6 +180,7 @@ export function QuestionCard({
         <section className="min-w-0">
           <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
+          <p className="mt-4 text-base leading-7 text-slate-600">{question.context[language]}</p>
           <div className="mt-7">
             <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
           </div>

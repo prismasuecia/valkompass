@@ -34,7 +34,7 @@ Kopiera bara den minsta fungerande filuppsättningen: sidflöde, komponenter, CS
 
 `questions.json` är ett researchschema, inte direkt produktionsschema. Gör en liten validerad adapter eller generera produktionsdata inom variantens katalog. `null`-positioner ska helt saknas ur listan som skickas till scoringmotorn; de får aldrig bli `0`.
 
-Spanska texter är ännu `null`. Hitta inte på eller maskinöversätt sluttexter utan redaktionellt godkännande.
+De spanska frågorna och de pedagogiska förklaringarna finns i variantens produktionsdata. Bevara skillnaden mellan korrekt vuxen spanska och pedagogisk svensk samhällskontext; förenkla inte språket till barnnivå och återinför inte svenska myndighetskonstruktioner genom ordagrann översättning.
 
 ## Definition of done för första kod-PR
 

@@ -38,9 +38,11 @@ Den befintliga motorn kan återanvändas: likhet per jämförbar fråga är `4 -
 
 Resultatsidan måste visa både procent och täckning, exempelvis ”baserat på 4 av 6 frågor”. Partier med mycket låg täckning ska märkas tydligt; en miniminivå beslutas redaktionellt före publicering.
 
+Användarens uttryckligt neutrala svar (`0`) är en politisk position och räknas. Svaret ”jag har inte tillräcklig information” är inte en politisk mittenposition och ska utelämnas helt ur både täljare och nämnare.
+
 ## 6. Frågekvalitet
 
-Varje fråga ska vara neutral, begriplig utan specialistkunskap, endimensionell och tillräckligt särskiljande. Förklaringen ska skilja nuläge från politisk konflikt. Tekniska begrepp ska beskrivas utan att argumentera för något svar.
+Varje fråga ska vara neutral, begriplig utan specialistkunskap, endimensionell och tillräckligt särskiljande. Användaren ska inte behöva följa svenska nyheter eller känna till svenska institutioner. Varje förklaring ska kort skilja mellan nuläge, möjlig förändring, huvudargumenten och vad frågan inte omfattar. Språket ska vara naturlig vuxen spanska, inte förenklad spanska eller ordagrann översättning från svenska.
 
 ## 7. QA
 

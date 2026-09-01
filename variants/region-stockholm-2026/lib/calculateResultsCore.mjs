@@ -2,7 +2,9 @@ const MAX_DISTANCE = 4;
 
 export function calculateResultsCore({answers, importantQuestions, parties, positions, questions}) {
   const importantSet = new Set(importantQuestions);
-  const answersByQuestion = new Map(answers.map((answer) => [answer.questionId, answer.value]));
+  const answersByQuestion = new Map(
+    answers.filter((answer) => typeof answer.value === 'number').map((answer) => [answer.questionId, answer.value])
+  );
   const questionsById = new Map(questions.map((question) => [question.id, question]));
 
   return [...parties].sort((a, b) => a.id.localeCompare(b.id)).map((party) => {

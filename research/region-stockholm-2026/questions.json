@@ -9,48 +9,48 @@
     {
       "id": "RS26-Q01",
       "category": "regional-tax",
-      "statementSv": "Region Stockholm bör sänka regionskatten.",
-      "statementEs": null,
+      "statementSv": "Bör Region Stockholm sänka regionskatten?",
+      "statementEs": "¿Debería la Región de Estocolmo reducir el impuesto regional?",
       "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0},
       "verificationStatus": "needs-direct-url-audit"
     },
     {
       "id": "RS26-Q02",
       "category": "child-and-youth-psychiatry",
-      "statementSv": "Privata vårdgivare bör få öppna psykiatrimottagningar för barn och unga i Region Stockholm.",
-      "statementEs": null,
+      "statementSv": "Bör privata vårdgivare få öppna fler psykiatrimottagningar för barn och unga i Region Stockholm?",
+      "statementEs": "¿Debería permitirse que proveedores privados abran más centros de atención psiquiátrica para niños y jóvenes en la Región de Estocolmo?",
       "positions": {"S": 1, "M": 2, "SD": 1, "V": -2, "C": 2, "KD": 2, "L": 2, "MP": 1},
       "verificationStatus": "verified-in-2026-party-answers"
     },
     {
       "id": "RS26-Q03",
       "category": "healthcare-operations",
-      "statementSv": "Region Stockholm bör driva den specialiserade ätstörningsvården i egen regi.",
-      "statementEs": null,
+      "statementSv": "Bör Region Stockholm fortsätta driva den specialiserade ätstörningsvården i egen regi?",
+      "statementEs": "¿Debería la Región de Estocolmo seguir gestionando directamente la atención especializada para los trastornos alimentarios?",
       "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 1, "KD": -1, "L": -1, "MP": 2},
       "verificationStatus": "needs-direct-url-audit"
     },
     {
       "id": "RS26-Q04",
       "category": "public-transport",
-      "statementSv": "Region Stockholm bör sänka den ordinarie prisnivån i SL-trafiken.",
-      "statementEs": null,
+      "statementSv": "Bör Region Stockholm sänka de ordinarie priserna på SL-biljetter?",
+      "statementEs": "¿Debería la Región de Estocolmo reducir los precios normales de los billetes de SL?",
       "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null},
       "verificationStatus": "incomplete-party-coverage"
     },
     {
       "id": "RS26-Q05",
       "category": "healthcare-access",
-      "statementSv": "Region Stockholm bör fortsätta erbjuda avgiftsfri språktolk i vården för patienter som behöver det.",
-      "statementEs": null,
+      "statementSv": "Bör språktolk i vården fortsätta vara kostnadsfri för patienter som behöver det?",
+      "statementEs": "¿Debería seguir siendo gratuita para el paciente la interpretación lingüística necesaria durante la atención sanitaria?",
       "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2},
       "verificationStatus": "needs-direct-url-audit"
     },
     {
       "id": "RS26-Q06",
       "category": "culture-and-investment",
-      "statementSv": "Region Stockholm bör avsätta en procent av byggkostnaderna till konst vid ny- och ombyggnationer.",
-      "statementEs": null,
+      "statementSv": "När Region Stockholm bygger eller renoverar sjukhus, stationer och andra offentliga miljöer, bör ungefär en procent av byggkostnaden reserveras för konst?",
+      "statementEs": "Cuando la Región de Estocolmo construye o reforma hospitales, estaciones y otros espacios públicos, ¿debería reservar aproximadamente el 1 % del coste de la obra para arte?",
       "positions": {"S": 1, "M": -2, "SD": -2, "V": 2, "C": 1, "KD": -2, "L": 2, "MP": 2},
       "verificationStatus": "needs-direct-url-audit"
     }

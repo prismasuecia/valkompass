@@ -5,7 +5,11 @@ type SourceQuestion = {
   id: string;
   category: QuestionCategory;
   statement: {sv: string; es: string};
-  explanation: {title: {sv: string; es: string}; content: {sv: string; es: string}};
+  context: {sv: string; es: string};
+  explanation: {
+    title: {sv: string; es: string};
+    sections: {title: {sv: string; es: string}; content: {sv: string; es: string}}[];
+  };
   positions: Record<string, number | null>;
 };
 
@@ -15,6 +19,7 @@ export const questions: Question[] = sourceQuestions.map((item) => ({
   id: item.id,
   category: item.category,
   statement: item.statement,
+  context: item.context,
   explanationId: `EXP-${item.id}`,
   importanceAllowed: true
 }));
@@ -22,7 +27,7 @@ export const questions: Question[] = sourceQuestions.map((item) => ({
 export const explanations: Explanation[] = sourceQuestions.map((item) => ({
   id: `EXP-${item.id}`,
   title: item.explanation.title,
-  content: item.explanation.content
+  sections: item.explanation.sections
 }));
 
 export const positions: Position[] = sourceQuestions.flatMap((question) =>

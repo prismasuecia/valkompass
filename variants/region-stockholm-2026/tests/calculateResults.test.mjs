@@ -29,3 +29,18 @@ test('important questions double earned and possible points', () => {
   assert.equal(result.score, 67);
   assert.equal(result.matchedQuestions, 2);
 });
+
+test('insufficient information is excluded instead of treated as neutral', () => {
+  const [result] = calculateResultsCore({
+    answers: [{questionId: 'Q1', value: 2}, {questionId: 'Q2', value: 'skip'}],
+    importantQuestions: [],
+    parties: [parties[0]],
+    questions,
+    positions: [
+      {partyId: 'A', questionId: 'Q1', value: 2},
+      {partyId: 'A', questionId: 'Q2', value: 0}
+    ]
+  });
+  assert.equal(result.score, 100);
+  assert.equal(result.matchedQuestions, 1);
+});

@@ -48,8 +48,9 @@ function getMatchClassification(score: number) {
 
 export default function ResultPage() {
   const {language, results, reset} = useQuizStore();
-  const topResults = results.slice(0, 3);
-  const remainingResults = results.slice(3);
+  const comparableResults = results.filter((result) => result.matchedQuestions > 0);
+  const topResults = comparableResults.slice(0, 3);
+  const remainingResults = comparableResults.slice(3);
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl overflow-x-hidden px-5 py-10">

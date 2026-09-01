@@ -1,22 +1,23 @@
 'use client';
 
-import type {AnswerValue} from '@/types';
+import type {AnswerSelection} from '@/types';
 import uiText from '@/uiText.json';
 
-const labels: {value: AnswerValue; label: string}[] = [
+const labels: {value: AnswerSelection; label: string}[] = [
   {value: 2, label: uiText.answers.stronglyAgree},
   {value: 1, label: uiText.answers.agree},
   {value: 0, label: uiText.answers.neutral},
   {value: -1, label: uiText.answers.disagree},
-  {value: -2, label: uiText.answers.stronglyDisagree}
+  {value: -2, label: uiText.answers.stronglyDisagree},
+  {value: 'skip', label: uiText.answers.insufficientInformation}
 ];
 
 export function AnswerButtons({
   selectedValue,
   onSelect
 }: {
-  selectedValue?: AnswerValue;
-  onSelect: (value: AnswerValue) => void;
+  selectedValue?: AnswerSelection;
+  onSelect: (value: AnswerSelection) => void;
 }) {
   return (
     <div className="grid gap-2 sm:gap-3">

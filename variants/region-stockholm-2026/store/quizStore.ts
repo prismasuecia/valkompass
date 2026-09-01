@@ -51,7 +51,7 @@ export const useQuizStore = create<QuizState>()(
         })
     }),
     {
-      name: 'brujula-region-stockholm-2026-session',
+      name: 'brujula-region-stockholm-2026-session-v2',
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         currentQuestionIndex: state.currentQuestionIndex,

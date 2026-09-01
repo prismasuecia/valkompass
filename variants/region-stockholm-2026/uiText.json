@@ -2,12 +2,12 @@
   "app": {
     "name": "Brújula regional 2026",
     "title": "Brújula electoral: Región de Estocolmo 2026",
-    "subtitle": "Compara tus opiniones sobre la sanidad, el transporte y otras decisiones regionales con las posiciones de los partidos."
+    "subtitle": "Comprende seis decisiones políticas de la Región de Estocolmo y compara tu opinión con las posiciones documentadas de los partidos."
   },
 
   "intro": {
     "title": "Antes de comenzar",
-    "text": "Esta brújula electoral ayuda a entender las diferencias entre los partidos que participan en las elecciones de la Región de Estocolmo.\n\nLa región decide principalmente sobre la sanidad, el transporte público y el impuesto regional.\n\nResponde las preguntas y compara tus respuestas con las posiciones públicas y documentadas de los partidos."
+    "text": "Suecia tiene tres niveles políticos: nacional, regional y municipal. Esta brújula trata exclusivamente de las elecciones de la Región de Estocolmo.\n\nLa región es responsable principalmente de la atención sanitaria, el transporte público y el impuesto regional. No decide sobre cuestiones nacionales como las pensiones o la policía, ni sobre servicios municipales como las escuelas y el cuidado de personas mayores.\n\nCada pregunta explica la situación actual, qué podría cambiar y los principales argumentos políticos. No necesitas seguir las noticias suecas para participar."
   },
 
   "home": {
@@ -48,12 +48,12 @@
     "next": "Siguiente",
     "finish": "Ver resultado",
     "restart": "Empezar de nuevo",
-    "showExplanation": "▼ Ver explicación",
-    "hideExplanation": "▲ Ocultar explicación",
-    "explanationPrompt": "No estoy seguro de lo que significa esta propuesta",
-    "explanationCardTitle": "¿No estás seguro de lo que significa esta propuesta?",
-    "mobileShowExplanation": "▶ Explicar esta pregunta",
-    "mobileHideExplanation": "▼ Ocultar explicación",
+    "showExplanation": "▼ Ver contexto y explicación",
+    "hideExplanation": "▲ Ocultar contexto y explicación",
+    "explanationPrompt": "Entender la propuesta antes de responder",
+    "explanationCardTitle": "Contexto para tomar una posición",
+    "mobileShowExplanation": "▶ Ver contexto y explicación",
+    "mobileHideExplanation": "▼ Ocultar contexto y explicación",
     "showMatches": "Ver coincidencias",
     "showDifferences": "Ver diferencias",
     "readMore": "Leer más",
@@ -62,10 +62,11 @@
 
   "answers": {
     "stronglyAgree": "Totalmente de acuerdo",
-    "agree": "Parcialmente de acuerdo",
-    "neutral": "Neutral / no estoy seguro",
-    "disagree": "Parcialmente en desacuerdo",
-    "stronglyDisagree": "Totalmente en desacuerdo"
+    "agree": "Más bien de acuerdo",
+    "neutral": "Ni de acuerdo ni en desacuerdo",
+    "disagree": "Más bien en desacuerdo",
+    "stronglyDisagree": "Totalmente en desacuerdo",
+    "insufficientInformation": "No tengo suficiente información"
   },
 
   "progress": {
@@ -74,7 +75,8 @@
     "important": "Marcar como pregunta importante",
     "importantCard": "Esta pregunta es importante para mí",
     "importantSubtext": "Esta pregunta tendrá más peso en tu resultado.",
-    "estimatedTime": "Tiempo restante aproximado"
+    "estimatedTime": "Tiempo restante aproximado",
+    "answerInstruction": "Responde según tu propia opinión sobre la propuesta. Si no tienes suficiente información, esa pregunta no se incluirá en el cálculo."
   },
 
   "explanationSections": {
@@ -84,16 +86,16 @@
   },
 
   "results": {
-    "title": "Partidos más cercanos a tus respuestas",
-    "description": "Este resultado muestra qué partidos están más cerca de tus respuestas en los temas incluidos en esta brújula electoral.",
+    "title": "Coincidencia con las posiciones documentadas de los partidos",
+    "description": "El resultado compara tus respuestas únicamente con las posiciones documentadas de los partidos en estas seis preguntas regionales.",
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
-    "sameAnswers": "Las mismas respuestas siempre generan el mismo resultado.",
+    "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
     "comparedQuestions": "Preguntas comparadas para este partido",
-    "noResults": "No hay resultados todavía.",
-    "answerQuestions": "Responde las preguntas para ver una comparación.",
+    "noResults": "No hay respuestas suficientes para calcular una coincidencia.",
+    "answerQuestions": "Responde al menos una pregunta con una posición para obtener una comparación.",
     "yourAnswer": "Tu respuesta",
     "scoreLabel": "Resultado",
-    "scoreExplanation": "Este resultado muestra qué tan parecidas son tus respuestas a las posiciones del partido. No significa que compartas el mismo porcentaje de toda su política."
+    "scoreExplanation": "El porcentaje se refiere solo a las preguntas que pudieron compararse. No representa toda la política del partido ni indica qué partido deberías votar."
   },
 
   "highMatch": {
@@ -133,7 +135,7 @@
 
   "methodology": {
     "title": "¿Cómo se construyó esta brújula electoral?",
-    "text": "Esta brújula electoral compara tus respuestas con posiciones públicas y documentadas de los partidos en la Región de Estocolmo.\n\nLas preguntas se refieren a decisiones regionales y fueron seleccionadas para mostrar diferencias políticas claras.\n\nCuanto más se parece tu respuesta a la posición documentada de un partido, más alto será el resultado. Una pregunta marcada como importante cuenta el doble.\n\nCuando no existe información suficiente sobre la posición de un partido, esa pregunta se excluye del cálculo para ese partido. El resultado indica cuántas preguntas pudieron compararse.\n\nLa política es compleja y ninguna herramienta puede representar todos sus matices. El resultado no constituye una recomendación de voto."
+    "text": "Esta brújula compara tus respuestas con posiciones públicas y documentadas de los partidos en la Región de Estocolmo. No deducimos posiciones a partir de la ideología general de un partido.\n\nCada pregunta presenta una decisión regional concreta, la situación actual en septiembre de 2026 y los principales argumentos a favor y en contra.\n\nCuanto más se parece tu respuesta a la posición documentada de un partido, más alto es el resultado. Una pregunta marcada como importante cuenta el doble.\n\nSi tú eliges «No tengo suficiente información», la pregunta se excluye. Si no existe una posición suficientemente clara de un partido, tampoco se utiliza esa comparación.\n\nEl resultado se limita a estas seis preguntas y no constituye una recomendación de voto."
   },
 
   "sourcesPage": {
@@ -147,7 +149,7 @@
     "leadershipStatements": "declaraciones públicas identificables de representantes regionales",
     "disclaimer": "Las posiciones pueden actualizarse cuando los partidos cambian sus propuestas o presentan nuevas políticas.",
     "notAffiliated": "Esta brújula electoral no está afiliada a ningún partido político.",
-    "globalLastReviewed": "Fecha de congelación de la investigación: 2026-08-31",
+    "globalLastReviewed": "Información y posiciones revisadas: 1 de septiembre de 2026",
     "partySourcesTitle": "Fuentes por partido",
     "source1": "Fuente 1",
     "source2": "Fuente 2",
