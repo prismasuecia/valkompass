@@ -1,58 +1,21 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "jurisdiction": "region-stockholm",
   "electionYear": 2026,
-  "status": "editorial-draft",
+  "reviewedAt": "2026-09-01",
+  "status": "verified-four-question-preview",
   "scale": {"min": -2, "max": 2, "missing": null},
   "parties": ["S", "M", "SD", "V", "C", "KD", "L", "MP"],
   "questions": [
-    {
-      "id": "RS26-Q01",
-      "category": "regional-tax",
-      "statementSv": "Bör Region Stockholm sänka regionskatten?",
-      "statementEs": "¿Debería la Región de Estocolmo reducir el impuesto regional?",
-      "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0},
-      "verificationStatus": "needs-direct-url-audit"
-    },
-    {
-      "id": "RS26-Q02",
-      "category": "child-and-youth-psychiatry",
-      "statementSv": "Bör privata vårdgivare få öppna fler psykiatrimottagningar för barn och unga i Region Stockholm?",
-      "statementEs": "¿Debería permitirse que proveedores privados abran más centros de atención psiquiátrica para niños y jóvenes en la Región de Estocolmo?",
-      "positions": {"S": 1, "M": 2, "SD": 1, "V": -2, "C": 2, "KD": 2, "L": 2, "MP": 1},
-      "verificationStatus": "verified-in-2026-party-answers"
-    },
-    {
-      "id": "RS26-Q03",
-      "category": "healthcare-operations",
-      "statementSv": "Bör Region Stockholm fortsätta driva den specialiserade ätstörningsvården i egen regi?",
-      "statementEs": "¿Debería la Región de Estocolmo seguir gestionando directamente la atención especializada para los trastornos alimentarios?",
-      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 1, "KD": -1, "L": -1, "MP": 2},
-      "verificationStatus": "needs-direct-url-audit"
-    },
-    {
-      "id": "RS26-Q04",
-      "category": "public-transport",
-      "statementSv": "Bör Region Stockholm sänka de ordinarie priserna på SL-biljetter?",
-      "statementEs": "¿Debería la Región de Estocolmo reducir los precios normales de los billetes de SL?",
-      "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null},
-      "verificationStatus": "incomplete-party-coverage"
-    },
-    {
-      "id": "RS26-Q05",
-      "category": "healthcare-access",
-      "statementSv": "Bör språktolk i vården fortsätta vara kostnadsfri för patienter som behöver det?",
-      "statementEs": "¿Debería seguir siendo gratuita para el paciente la interpretación lingüística necesaria durante la atención sanitaria?",
-      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2},
-      "verificationStatus": "needs-direct-url-audit"
-    },
-    {
-      "id": "RS26-Q06",
-      "category": "culture-and-investment",
-      "statementSv": "När Region Stockholm bygger eller renoverar sjukhus, stationer och andra offentliga miljöer, bör ungefär en procent av byggkostnaden reserveras för konst?",
-      "statementEs": "Cuando la Región de Estocolmo construye o reforma hospitales, estaciones y otros espacios públicos, ¿debería reservar aproximadamente el 1 % del coste de la obra para arte?",
-      "positions": {"S": 1, "M": -2, "SD": -2, "V": 2, "C": 1, "KD": -2, "L": 2, "MP": 2},
-      "verificationStatus": "needs-direct-url-audit"
-    }
+    {"id": "RS26-Q01", "statementSv": "Bör Region Stockholm sänka regionskatten?", "positions": {"S": 1, "M": 2, "SD": 2, "V": -2, "C": 1, "KD": 2, "L": 2, "MP": 1}, "coverage": "8/8"},
+    {"id": "RS26-Q02", "statementSv": "Vid upphandling av specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan godkända anbud.", "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}, "coverage": "4/8"},
+    {"id": "RS26-Q03", "statementSv": "Bör Region Stockholm stoppa ytterligare avveckling och omvandling av vårdval inom specialiserad öppenvård?", "positions": {"S": -2, "M": 2, "SD": null, "V": -2, "C": -2, "KD": 2, "L": null, "MP": -2}, "coverage": "6/8"},
+    {"id": "RS26-Q04", "statementSv": "Bör Region Stockholm sänka den ordinarie prisnivån i SL-trafiken?", "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}, "coverage": "3/8"}
+  ],
+  "excludedAfterAudit": [
+    {"topic": "privata BUP-mottagningar", "reason": "full partitäckning kunde inte verifieras"},
+    {"topic": "specialiserad ätstörningsvård", "reason": "dubblett av vårdvalsfrågan"},
+    {"topic": "kostnadsfri språktolk", "reason": "endast en partiposition verifierad"},
+    {"topic": "enprocentsprincipen för konst", "reason": "regional 2026-konflikt kunde inte verifieras"}
   ]
 }

@@ -4,6 +4,7 @@ export type LocalizedText = Record<Language, string>;
 
 export type QuestionCategory =
   | 'regionalTax'
+  | 'psychiatryProcurement'
   | 'childYouthPsychiatry'
   | 'healthcareOperations'
   | 'publicTransport'

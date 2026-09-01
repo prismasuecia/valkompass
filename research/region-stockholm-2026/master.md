@@ -8,7 +8,13 @@ Kompassen gäller endast val till Region Stockholm. Den ska handla om regionalt 
 
 De åtta nuvarande partierna i arbetsdatasetet är S, M, SD, V, C, KD, L och MP. Deltagande partier ska kontrolleras mot Valmyndighetens slutliga register före publicering.
 
-## Kärnfrågor
+## Revisionsstatus 1 september 2026
+
+Efter jämförelse med den fullständiga checkpoint-researchen består det verifierade förhandsvisningsdatasetet av fyra frågor: regionskatt, psykiatriupphandlingens rangordningskriterier, omställningsplanen för specialiserade vårdval och SL:s ordinarie prisnivå. Den tidigare BUP-frågan kunde inte verifieras, den separata ätstörningsfrågan dubblerade omställningsplanen, språktolk hade bara en verifierad partiposition och konstfrågans regionala konflikt kunde inte beläggas. Dessa fyra frågor är därför borttagna ur appdatasetet.
+
+Filen nedanför denna revisionsnotering beskriver det äldre sexfrågorsutkastet och ska inte användas för produktion. `questions.json` är det gällande maskinläsbara revisionsunderlaget.
+
+## Äldre kärnfrågor (arkiv, ej produktion)
 
 ### RS26-Q01 – regionskatten
 

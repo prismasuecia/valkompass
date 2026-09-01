@@ -13,6 +13,7 @@ const displayedQuestionCount = questions.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
   regionalTax: uiText.categories.regionalTax,
+  psychiatryProcurement: uiText.categories.psychiatryProcurement,
   childYouthPsychiatry: uiText.categories.childYouthPsychiatry,
   healthcareOperations: uiText.categories.healthcareOperations,
   publicTransport: uiText.categories.publicTransport,

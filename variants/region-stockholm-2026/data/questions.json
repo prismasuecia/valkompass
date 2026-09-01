@@ -1,104 +1,49 @@
 {
-  "schemaVersion": 2,
-  "jurisdiction": "region-stockholm",
-  "electionYear": 2026,
-  "reviewedAt": "2026-09-01",
+  "schemaVersion": 1, "jurisdiction": "region-stockholm", "electionYear": 2026, "reviewedAt": "2026-09-01", "status": "verified-four-question-preview",
   "questions": [
     {
-      "id": "RS26-Q01",
-      "category": "regionalTax",
+      "id": "RS26-Q01", "category": "regionalTax",
       "statement": {"sv": "Bör Region Stockholm sänka regionskatten?", "es": "¿Debería la Región de Estocolmo reducir el impuesto regional?"},
-      "context": {"sv": "Regionskatten finansierar framför allt vård och kollektivtrafik.", "es": "Con este dinero, la región financia principalmente la atención sanitaria y el transporte público."},
-      "explanation": {
-        "title": {"sv": "Regionskatten i korthet", "es": "El impuesto regional, en breve"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Den som betalar inkomstskatt i Stockholms län betalar en del till regionen. Skattesatsen är 12,33 kronor per hundralapp i beskattningsbar inkomst.", "es": "Una parte del impuesto sobre tus ingresos va a la región. Por cada 100 coronas sobre las que se calcula el impuesto, 12,33 coronas corresponden a la Región de Estocolmo."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "En sänkning skulle ge invånarna mer kvar efter skatt och samtidigt minska regionens skatteintäkter, om de inte ersätts på annat sätt.", "es": "Una reducción dejaría más dinero después de impuestos a los habitantes y, al mismo tiempo, reduciría los ingresos de la región si no se compensan de otra manera."}},
-          {"title": {"sv": "Huvudargumenten", "es": "Los argumentos principales"}, "content": {"sv": "De som vill sänka skatten betonar hushållens ekonomi och effektivare användning av offentliga pengar. Motståndarna betonar behovet av stabil finansiering till vård och kollektivtrafik.", "es": "Quienes apoyan la reducción destacan la economía de los hogares y un uso más eficiente del dinero público. Quienes se oponen subrayan la necesidad de una financiación estable para la atención sanitaria y el transporte público."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller bara den del av inkomstskatten som går till Region Stockholm, inte statlig skatt eller kommunalskatten som kommunen beslutar om.", "es": "La pregunta se refiere únicamente a la parte del impuesto que recibe la Región de Estocolmo, no al impuesto estatal ni a la parte que decide cada municipio."}}
-        ]
-      },
-      "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0}
+      "context": {"sv": "Regionskatten finansierar framför allt vård och kollektivtrafik.", "es": "Una parte del impuesto sobre tus ingresos va a la región y financia principalmente la sanidad y el transporte público."},
+      "explanation": {"title": {"sv": "Regionskatten i korthet", "es": "¿Qué es el impuesto regional?"}, "sections": [
+        {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Skattesatsen är 12,33 kronor per hundralapp i beskattningsbar inkomst. Det är 5 öre lägre än 2025.", "es": "Por cada 100 coronas sobre las que se calcula el impuesto, 12,33 coronas van a la Región de Estocolmo. La cantidad se redujo en 5 öre respecto a 2025."}},
+        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja betyder lägre regionskatt. Ett nej kan betyda oförändrad eller högre skatt.", "es": "Estar a favor significa bajar este impuesto. Estar en contra puede significar mantenerlo o subirlo."}},
+        {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare vill lämna mer pengar till hushållen. Motståndare vill säkra mer finansiering till vård och kollektivtrafik.", "es": "Quienes quieren bajarlo dicen que las familias conservarían más dinero. Quienes se oponen quieren asegurar más recursos para la sanidad y el transporte público."}},
+        {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller inte statlig skatt eller kommunalskatt.", "es": "No se refiere al impuesto estatal ni a la parte que decide cada municipio."}}
+      ]}, "positions": {"S": 1, "M": 2, "SD": 2, "V": -2, "C": 1, "KD": 2, "L": 2, "MP": 1}
     },
     {
-      "id": "RS26-Q02",
-      "category": "childYouthPsychiatry",
-      "statement": {"sv": "Bör privata vårdgivare få öppna fler psykiatrimottagningar för barn och unga i Region Stockholm?", "es": "¿Debería la región permitir que haya más centros privados de salud mental para niños y jóvenes?"},
-      "context": {"sv": "BUP är den vård som hjälper barn och unga med allvarlig psykisk ohälsa.", "es": "BUP es el servicio de salud mental para niños y jóvenes en Suecia."},
-      "explanation": {
-        "title": {"sv": "Privata mottagningar inom BUP", "es": "Centros privados de psiquiatría infantil y juvenil"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Region Stockholm ansvarar för BUP. Vården kan ges av regionens egna mottagningar eller av privata vårdgivare som arbetar på regionens uppdrag.", "es": "La región es responsable de BUP. Algunos centros los gestiona la propia región y otros son privados, pero trabajan por encargo de la región y con financiación pública."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "Förslaget skulle ge privata vårdgivare större möjlighet att öppna mottagningar för barn och unga inom den offentligt finansierade vården.", "es": "Si se aprueba la propuesta, más centros privados podrían atender a niños y jóvenes dentro del sistema financiado por la región."}},
-          {"title": {"sv": "Huvudargumenten", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare menar att fler vårdgivare kan öka tillgänglighet och valfrihet. Motståndare vill undvika fri etablering och anser att regionen behöver större kontroll över utbud, resurser och kvalitet.", "es": "Quienes están a favor creen que más centros pueden reducir las esperas y dar más opciones a las familias. Quienes están en contra quieren que la región controle dónde se abren los centros y cómo se reparten el personal y el dinero."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Privat driven vård behöver inte betalas direkt av patienten. En privat mottagning kan finansieras av regionen och följa ett regionalt avtal.", "es": "Que un centro sea privado no significa necesariamente que el paciente pague la atención. Puede estar financiado por la región y trabajar bajo un contrato público."}}
-        ]
-      },
-      "positions": {"S": 1, "M": 2, "SD": 1, "V": -2, "C": 2, "KD": 2, "L": 2, "MP": 1}
+      "id": "RS26-Q02", "category": "psychiatryProcurement",
+      "statement": {"sv": "Vid upphandling av specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan godkända anbud.", "es": "Cuando la región contrata servicios de psiquiatría especializada, ¿deberían compararse la calidad y el precio, en vez de decidir únicamente por el precio entre las ofertas aprobadas?"},
+      "context": {"sv": "Alla anbud måste först klara regionens kvalitetskrav. Frågan gäller hur regionen sedan väljer mellan de godkända anbuden.", "es": "Todas las ofertas deben cumplir primero unos requisitos mínimos de calidad. La pregunta es cómo elegir después entre las ofertas aprobadas."},
+      "explanation": {"title": {"sv": "Hur väljs en vårdgivare?", "es": "¿Cómo elige la región a una empresa sanitaria?"}, "sections": [
+        {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "I den omdiskuterade upphandlingen behövde anbuden klara obligatoriska kvalitetskrav. Bland de godkända anbuden avgjorde lägsta pris.", "es": "En la contratación discutida, todas las ofertas tenían que cumplir requisitos obligatorios de calidad. Entre las ofertas aprobadas, ganó la de menor precio."}},
+        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja innebär att även kvalitet ska kunna ge fördel mellan godkända anbud. Ett nej innebär att minimikraven räcker och att priset sedan kan avgöra.", "es": "Estar a favor significa que una calidad superior también podría influir entre las ofertas aprobadas. Estar en contra significa que basta con exigir una calidad mínima clara y que después puede decidir el precio."}},
+        {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare vill minska risken att ett mycket lågt pris försämrar vården. Motståndare menar att konkreta minimikrav är lättare att kontrollera än kvalitetslöften.", "es": "Quienes están a favor quieren reducir el riesgo de que un precio muy bajo perjudique la atención. Quienes se oponen dicen que los requisitos concretos son más fáciles de controlar que las promesas de calidad."}},
+        {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Den nuvarande modellen saknar inte kvalitetskrav. Konflikten gäller bara hur redan godkända anbud rangordnas.", "es": "El modelo actual sí incluye requisitos de calidad. El desacuerdo se refiere únicamente a cómo se comparan las ofertas que ya los cumplen."}}
+      ]}, "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}
     },
     {
-      "id": "RS26-Q03",
-      "category": "healthcareOperations",
-      "statement": {"sv": "Bör Region Stockholm fortsätta driva den specialiserade ätstörningsvården i egen regi?", "es": "¿Debería la propia región seguir a cargo de la atención especializada para los trastornos alimentarios?"},
-      "context": {"sv": "Frågan handlar om vem som ska driva vården – regionen själv eller även privata vårdgivare.", "es": "La pregunta trata de quién debe gestionar esta atención: la propia región o también proveedores privados."},
-      "explanation": {
-        "title": {"sv": "Vem ska driva ätstörningsvården?", "es": "¿Quién debe gestionar esta atención?"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Den specialiserade ätstörningsvården drivs huvudsakligen av Region Stockholm. Regionen ansvarar för verksamheten och personalen.", "es": "Hoy, la propia Región de Estocolmo gestiona la mayor parte de esta atención y es responsable de los centros y del personal."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "Ett ja innebär att regionen även fortsättningsvis ska ha huvudansvaret för att driva den specialiserade vården. Ett nej öppnar för att en större del kan drivas av privata vårdgivare.", "es": "Responder a favor significa que la región debería seguir siendo la principal gestora de esta atención especializada. Responder en contra abre la posibilidad de que una parte mayor sea gestionada por proveedores privados."}},
-          {"title": {"sv": "Huvudargumenten", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare betonar sammanhållen vård och offentlig kontroll. Motståndare menar att fler utförare kan ge fler mottagningar, större valfrihet och bättre tillgänglighet.", "es": "Quienes quieren que la región siga al mando destacan la continuidad y el control público. Quienes prefieren más participación privada creen que así puede haber más centros, más opciones y menos esperas."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Alla partier anser att ätstörningsvård ska finnas. Konflikten gäller främst vem som ska driva den.", "es": "Todos los partidos consideran que esta atención debe existir. El desacuerdo se refiere principalmente a quién debe gestionarla."}}
-        ]
-      },
-      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 1, "KD": -1, "L": -1, "MP": 2}
+      "id": "RS26-Q03", "category": "healthcareOperations",
+      "statement": {"sv": "Bör Region Stockholm stoppa ytterligare avveckling och omvandling av vårdval inom specialiserad öppenvård?", "es": "¿Debería la Región de Estocolmo detener nuevas eliminaciones o transformaciones del sistema de libre elección en la atención especializada sin hospitalización?"},
+      "context": {"sv": "Vårdval innebär att godkända mottagningar kan ansluta sig och att patienten själv väljer mottagning.", "es": "El sistema de libre elección permite que centros que cumplen los requisitos se incorporen y que el paciente elija dónde recibir atención."},
+      "explanation": {"title": {"sv": "Förändringar av specialiserade vårdval", "es": "Cambios en la libre elección de atención especializada"}, "sections": [
+        {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Regionens omställningsplan förändrar flera vårdval. Vissa revideras och andra ersätts av upphandling eller vård i regionens egen verksamhet. Genomförandet pågår fortfarande.", "es": "El plan regional está cambiando varios sistemas de libre elección. Algunos se modifican y otros se sustituyen por contratos con un número limitado de centros o por atención gestionada por la propia región. El proceso sigue en marcha."}},
+        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja innebär att stoppa fler sådana förändringar. Ett nej innebär att omställningen kan fortsätta.", "es": "Estar a favor significa detener nuevas transformaciones de este tipo. Estar en contra significa permitir que el plan continúe."}},
+        {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare för ett stopp betonar patientens valfrihet och risken att mottagningar försvinner. Motståndare vill styra vården mer efter behov och planera resurser bättre.", "es": "Quienes quieren detener los cambios destacan la libertad del paciente y el riesgo de que desaparezcan centros. Quienes apoyan el plan quieren distribuir la atención según las necesidades y planificar mejor los recursos."}},
+        {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller specialiserad öppenvård, inte rätten att välja vanlig vårdcentral.", "es": "Se refiere a la atención especializada sin ingreso hospitalario, no al derecho a elegir una clínica de atención primaria."}}
+      ]}, "positions": {"S": -2, "M": 2, "SD": null, "V": -2, "C": -2, "KD": 2, "L": null, "MP": -2}
     },
     {
-      "id": "RS26-Q04",
-      "category": "publicTransport",
-      "statement": {"sv": "Bör Region Stockholm sänka de ordinarie priserna på SL-biljetter?", "es": "¿Debería la Región de Estocolmo reducir los precios normales de los billetes de SL?"},
-      "context": {"sv": "SL är regionens kollektivtrafik. Frågan gäller vanliga biljettpriser, inte bara rabatter för vissa grupper.", "es": "SL es el sistema de transporte público de la región. La pregunta se refiere a los precios normales, no solo a descuentos para determinados grupos."},
-      "explanation": {
-        "title": {"sv": "Priset på vanliga SL-biljetter", "es": "El precio normal de los billetes de SL"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Det regionalt beslutade ordinarie priset för ett 30-dagarskort för vuxna är 1 060 kronor. Ett tillfälligt statligt stöd halverar priset på vissa periodbiljetter under andra halvåret 2026.", "es": "El precio normal de un abono de 30 días para adultos es de 1.060 coronas. Durante la segunda mitad de 2026, una ayuda temporal del Estado reduce a la mitad el precio de algunos abonos."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "Förslaget gäller en varaktig sänkning av de ordinarie regionala priserna, även när tillfälliga stöd upphör.", "es": "La propuesta se refiere a una reducción duradera de los precios normales fijados por la región, también después de que terminen las ayudas temporales."}},
-          {"title": {"sv": "Huvudargumenten", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare menar att lägre priser gör kollektivtrafiken tillgänglig för fler. Motståndare vill prioritera pengarna till fler avgångar, underhåll och annan trafik i stället för en generell prissänkning.", "es": "Quienes están a favor creen que billetes más baratos permiten que más personas usen el transporte público. Quienes están en contra prefieren usar el dinero para aumentar la frecuencia de autobuses y trenes, mantener la red y mejorar el servicio."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Riktade rabatter, gratisresor för vissa grupper, längre giltighetstid och pristak är andra förslag och räknas inte automatiskt som en generell prissänkning.", "es": "Los descuentos para grupos concretos, los viajes gratuitos para determinadas personas, una mayor validez del billete y los límites de gasto son propuestas diferentes y no equivalen automáticamente a una reducción general."}}
-        ]
-      },
-      "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}
-    },
-    {
-      "id": "RS26-Q05",
-      "category": "healthcareAccess",
-      "statement": {"sv": "Bör språktolk i vården fortsätta vara kostnadsfri för patienter som behöver det?", "es": "¿Debería seguir siendo gratis para el paciente contar con un intérprete durante una consulta médica cuando sea necesario?"},
-      "context": {"sv": "En språktolk hjälper patient och vårdpersonal att förstå varandra när patienten inte kan tillräckligt mycket svenska.", "es": "Un intérprete ayuda al paciente y al personal sanitario a entenderse cuando el paciente no domina suficientemente el sueco."},
-      "explanation": {
-        "title": {"sv": "Språktolk i vården", "es": "Interpretación lingüística en la atención sanitaria"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "En patient kan få språktolk när det behövs för att vården ska fungera säkert. Patienten betalar normalt inte själv för tolken.", "es": "Hoy, un paciente puede contar con un intérprete cuando sea necesario para recibir una atención segura. Normalmente, el paciente no paga por este servicio."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "Ett ja innebär att nödvändig språktolk fortsatt ska vara kostnadsfri för patienten. Ett nej kan innebära avgift eller begränsningar i vissa situationer.", "es": "Responder a favor significa que la interpretación necesaria debería seguir siendo gratuita para el paciente. Responder en contra puede implicar el cobro de una tarifa o restricciones en determinadas situaciones."}},
-          {"title": {"sv": "Huvudargumenten", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare betonar patientsäkerhet och lika tillgång till vård. Motståndare betonar kostnader och menar att vissa personer efter lång tid i Sverige bör kunna betala själva.", "es": "Quienes están a favor dicen que el intérprete es necesario para que el paciente y el personal sanitario se entiendan y la atención sea segura. Quienes están en contra señalan el coste y creen que algunas personas deberían pagar el servicio después de muchos años en Suecia."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller talad språktolk i vården. Den gäller inte teckenspråkstolkning eller tolkning för personer med hörselnedsättning.", "es": "La pregunta se refiere a la interpretación de idiomas hablados en la atención sanitaria. No se refiere a la interpretación en lengua de signos ni a servicios para personas con discapacidad auditiva."}}
-        ]
-      },
-      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2}
-    },
-    {
-      "id": "RS26-Q06",
-      "category": "cultureInvestment",
-      "statement": {"sv": "När Region Stockholm bygger eller renoverar sjukhus, stationer och andra offentliga miljöer, bör ungefär en procent av byggkostnaden reserveras för konst?", "es": "Cuando la Región de Estocolmo construye o reforma hospitales, estaciones y otros espacios públicos, ¿debería reservar aproximadamente el 1 % del coste de la obra para arte?"},
-      "context": {"sv": "Det kallas enprocentsregeln och gäller konst i eller omkring vissa regionala byggprojekt.", "es": "Esta medida se conoce como la regla del uno por ciento y se aplica al arte integrado en determinados proyectos regionales."},
-      "explanation": {
-        "title": {"sv": "Enprocentsregeln för konst", "es": "La regla del uno por ciento para el arte"},
-        "sections": [
-          {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Regionen använder en princip där ungefär en procent av kostnaden i vissa ny- och ombyggnadsprojekt avsätts till konstnärlig gestaltning.", "es": "Hoy, en algunas obras nuevas y reformas, la región reserva aproximadamente el 1 % del coste para arte en el edificio o en el espacio público."}},
-          {"title": {"sv": "Vad skulle förändras?", "es": "¿Qué cambiaría?"}, "content": {"sv": "Ett ja innebär att en fast andel även fortsättningsvis reserveras. Ett nej innebär att regionen ska kunna besluta om konst och belopp från projekt till projekt utan en fast procentsats.", "es": "Responder a favor significa mantener una proporción fija. Responder en contra significa que la región decidiría en cada proyecto si destina dinero al arte y cuánto, sin un porcentaje predeterminado."}},
-          {"title": {"sv": "Huvudargumenten", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare menar att konst förbättrar sjukhus, stationer och andra offentliga miljöer. Motståndare anser att en fast andel begränsar möjligheten att prioritera vård, trafik eller själva byggnaden.", "es": "Quienes están a favor creen que el arte hace más agradables los hospitales, las estaciones y otros lugares públicos. Quienes están en contra prefieren que no haya una cantidad fija y que el dinero pueda usarse en la atención sanitaria, el transporte o el propio edificio."}},
-          {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Det handlar inte om en procent av hela regionens eller sjukvårdens budget, utan om en andel av kostnaden i vissa byggprojekt.", "es": "No se trata del 1 % de todo el presupuesto regional o sanitario, sino de una parte del coste de determinados proyectos de construcción."}}
-        ]
-      },
-      "positions": {"S": 1, "M": -2, "SD": -2, "V": 2, "C": 1, "KD": -2, "L": 2, "MP": 2}
+      "id": "RS26-Q04", "category": "publicTransport",
+      "statement": {"sv": "Bör Region Stockholm sänka den ordinarie prisnivån i SL-trafiken?", "es": "¿Debería la Región de Estocolmo reducir de forma permanente los precios ordinarios de SL?"},
+      "context": {"sv": "Frågan gäller de ordinarie regionala priserna efter att det tillfälliga statliga stödet upphör.", "es": "Se refiere a los precios normales que decide la región, no al descuento estatal temporal de 2026."},
+      "explanation": {"title": {"sv": "SL:s ordinarie priser", "es": "Los precios ordinarios de SL"}, "sections": [
+        {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Ordinarie pris för ett 30-dagarskort för vuxna är 1 060 kronor. Ett statligt stöd sänker vissa periodbiljetter tillfälligt under andra halvåret 2026.", "es": "El precio ordinario de un abono de 30 días para adultos es de 1.060 coronas. Una ayuda estatal reduce temporalmente algunos abonos durante la segunda mitad de 2026."}},
+        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja innebär en varaktig regional prissänkning. Ett neutralt svar kan innebära oförändrat pris. Ett nej kan innebära att priset får höjas.", "es": "Estar a favor significa una reducción permanente decidida por la región. Una posición intermedia puede mantener el precio. Estar en contra puede permitir una subida."}},
+        {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare menar att lägre priser gör kollektivtrafiken tillgänglig för fler. Motståndare vill kunna prioritera fler avgångar, underhåll och annan trafik.", "es": "Quienes están a favor creen que precios más bajos permiten que más personas usen el transporte público. Quienes se oponen prefieren poder priorizar más salidas, mantenimiento y mejoras del servicio."}},
+        {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Riktade rabatter och tillfälliga statliga stöd är separata frågor.", "es": "Los descuentos para grupos concretos y las ayudas estatales temporales son cuestiones diferentes."}}
+      ]}, "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}
     }
   ]
 }

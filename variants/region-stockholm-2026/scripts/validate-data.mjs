@@ -2,10 +2,10 @@ import fs from 'node:fs';
 
 const data = JSON.parse(fs.readFileSync(new URL('../data/questions.json', import.meta.url), 'utf8'));
 const partyIds = ['S', 'M', 'SD', 'V', 'C', 'KD', 'L', 'MP'];
-const validCategories = new Set(['regionalTax', 'childYouthPsychiatry', 'healthcareOperations', 'publicTransport', 'healthcareAccess', 'cultureInvestment']);
+const validCategories = new Set(['regionalTax', 'psychiatryProcurement', 'healthcareOperations', 'publicTransport']);
 const ids = new Set();
 
-if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 6) throw new Error('Expected six Region Stockholm questions');
+if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 4) throw new Error('Expected four verified Region Stockholm questions');
 if (data.reviewedAt !== '2026-09-01') throw new Error('Expected a September 2026 review date');
 for (const question of data.questions) {
   if (ids.has(question.id)) throw new Error(`Duplicate question id: ${question.id}`);

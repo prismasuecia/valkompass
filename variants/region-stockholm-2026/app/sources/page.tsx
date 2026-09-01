@@ -12,9 +12,9 @@ const sourceBasis = [
 ];
 const thematicSources = [
   {
-    title: 'SVT: Flera partier vill sänka SL-priserna eller införa pristak',
-    url: 'https://www.svt.se/nyheter/lokalt/stockholm/flera-partier-vill-sanka-sl-priserna-eller-infora-pristak',
-    note: 'Compara las propuestas de los ocho partidos sobre los precios y los billetes de SL.'
+    title: 'Socialdemokraterna: presupuesto 2026 y precio ordinario de SL',
+    url: 'https://socialdemokraternaistockholm.se/stockholm/nyheter/artiklar/2025-10-13-en-budget-som-bygger-stockholmsregionen-starkare',
+    note: 'Documenta la decisión de mantener sin cambios los precios ordinarios de SL durante 2026.'
   },
   {
     title: 'Region Stockholm: presupuesto regional para 2026',
@@ -22,9 +22,14 @@ const thematicSources = [
     note: 'Documenta el nivel del impuesto regional y los precios ordinarios de SL para 2026.'
   },
   {
-    title: 'Region Stockholm: servicios de interpretación',
-    url: 'https://vard.regionstockholm.se/tolktjanster/',
-    note: 'Describe la situación actual de la interpretación lingüística en la atención sanitaria.'
+    title: 'Region Stockholm: plan de transformación del sistema de libre elección sanitaria',
+    url: 'https://www.regionstockholm.se/nyheter/2023/06/forslag-till-omstallningsplan-vardval-klar/',
+    note: 'Describe qué sistemas de libre elección se modifican y cómo funciona el proceso regional.'
+  },
+  {
+    title: 'Läkartidningen: criterios en la contratación de psiquiatría especializada',
+    url: 'https://lakartidningen.se/nyheter/psykiatriupphandling-sagas-av-oppositionen-dumpade-priser/',
+    note: 'Explica la diferencia entre los requisitos mínimos de calidad y el precio como criterio de selección.'
   }
 ];
 
