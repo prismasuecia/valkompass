@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import partiesData from '@/data/parties.json';
-import {questions} from '@/lib/valkompasData';
+import {calculateResults} from '@/lib/calculateResults';
+import {positions, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
 import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types';
 import uiText from '@/uiText.json';
@@ -47,7 +48,8 @@ function getMatchClassification(score: number) {
 }
 
 export default function ResultPage() {
-  const {language, results, reset} = useQuizStore();
+  const {language, answers, importantQuestions, reset} = useQuizStore();
+  const results = calculateResults({answers, importantQuestions, parties, positions, questions});
   const comparableResults = results.filter((result) => result.matchedQuestions > 0);
   const topResults = comparableResults.slice(0, 3);
   const remainingResults = comparableResults.slice(3);
@@ -58,6 +60,9 @@ export default function ResultPage() {
       <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.results.title}</h1>
       <p className="mt-4 text-base leading-7 text-slate-700">{uiText.results.description}</p>
       <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.sameAnswers}</p>
+      <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
+        {uiText.results.importantQuestionsUsed}: {importantQuestions.length}
+      </p>
       {topResults.length === 0 ? (
         <section className="mt-8 rounded-2xl border border-line bg-white p-6">
           <h2 className="text-xl font-semibold text-ink">{uiText.results.noResults}</h2>

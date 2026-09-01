@@ -72,9 +72,9 @@
   "progress": {
     "question": "Pregunta",
     "of": "de",
-    "important": "Marcar como pregunta importante",
+    "important": "¿Esta pregunta es especialmente importante para ti?",
     "importantCard": "Esta pregunta es importante para mí",
-    "importantSubtext": "Esta pregunta tendrá más peso en tu resultado.",
+    "importantSubtext": "Activa esta opción para que cuente el doble en tu resultado.",
     "estimatedTime": "Tiempo restante aproximado",
     "answerInstruction": "Responde según tu propia opinión sobre la propuesta. Si no tienes suficiente información, esa pregunta no se incluirá en el cálculo."
   },
@@ -90,6 +90,7 @@
     "description": "El resultado compara tus respuestas únicamente con las posiciones documentadas de los partidos en estas seis preguntas regionales.",
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
     "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
+    "importantQuestionsUsed": "Preguntas que contaron el doble en este resultado",
     "comparedQuestions": "Preguntas comparadas para este partido",
     "noResults": "No hay respuestas suficientes para calcular una coincidencia.",
     "answerQuestions": "Responde al menos una pregunta con una posición para obtener una comparación.",

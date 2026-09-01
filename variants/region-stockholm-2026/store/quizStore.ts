@@ -2,20 +2,18 @@
 
 import {create} from 'zustand';
 import {createJSONStorage, persist} from 'zustand/middleware';
-import type {Language, QuizAnswer, Result} from '@/types';
+import type {Language, QuizAnswer} from '@/types';
 
 type QuizState = {
   currentQuestionIndex: number;
   answers: QuizAnswer[];
   importantQuestions: string[];
   language: Language;
-  results: Result[];
   setLanguage: (language: Language) => void;
   answerQuestion: (answer: QuizAnswer) => void;
   toggleImportantQuestion: (questionId: string) => void;
   nextQuestion: () => void;
   previousQuestion: () => void;
-  setResults: (results: Result[]) => void;
   reset: () => void;
 };
 
@@ -26,7 +24,6 @@ export const useQuizStore = create<QuizState>()(
       answers: [],
       importantQuestions: [],
       language: 'es',
-      results: [],
       setLanguage: (language) => set({language}),
       answerQuestion: (answer) =>
         set((state) => ({
@@ -40,24 +37,21 @@ export const useQuizStore = create<QuizState>()(
         })),
       nextQuestion: () => set((state) => ({currentQuestionIndex: state.currentQuestionIndex + 1})),
       previousQuestion: () => set((state) => ({currentQuestionIndex: Math.max(0, state.currentQuestionIndex - 1)})),
-      setResults: (results) => set({results}),
       reset: () =>
         set({
           currentQuestionIndex: 0,
           answers: [],
           importantQuestions: [],
           language: 'es',
-          results: []
         })
     }),
     {
-      name: 'brujula-region-stockholm-2026-session-v2',
+      name: 'brujula-region-stockholm-2026-session-v3',
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         currentQuestionIndex: state.currentQuestionIndex,
         answers: state.answers,
-        importantQuestions: state.importantQuestions,
-        results: state.results
+        importantQuestions: state.importantQuestions
       }),
       skipHydration: true
     }

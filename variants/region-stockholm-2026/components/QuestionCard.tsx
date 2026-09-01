@@ -68,11 +68,13 @@ function ImportantSetting({important, onToggleImportant}: {important: boolean; o
       role="switch"
       aria-checked={important}
       onClick={onToggleImportant}
-      className="flex max-h-[72px] w-full items-center justify-between gap-4 rounded-2xl border border-[#CBD5E1] bg-[#F8FAFC] p-4 text-left"
+      className={`flex w-full items-center justify-between gap-4 rounded-2xl border-2 p-4 text-left transition-colors ${
+        important ? 'border-amber-500 bg-amber-50' : 'border-amber-200 bg-amber-50/60 hover:border-amber-400'
+      }`}
     >
       <span className="min-w-0">
         <span className="block text-base font-semibold leading-5 text-ink">{uiText.progress.important}</span>
-        <span className="mt-1 block text-[13px] leading-4 text-slate-600">{uiText.progress.importantSubtext}</span>
+        <span className="mt-1 block text-sm leading-5 text-slate-700">{uiText.progress.importantSubtext}</span>
       </span>
       <span
         aria-hidden="true"
@@ -116,28 +118,6 @@ function MobileExplanationControl({
   );
 }
 
-function MobileImportantSetting({important, onToggleImportant}: {important: boolean; onToggleImportant: () => void}) {
-  return (
-    <button
-      type="button"
-      role="switch"
-      aria-checked={important}
-      onClick={onToggleImportant}
-      className="flex min-h-11 items-center gap-3 text-left"
-    >
-      <span
-        aria-hidden="true"
-        className={`flex h-6 w-11 shrink-0 items-center rounded-full border p-0.5 ${
-          important ? 'justify-end border-ink bg-ink' : 'justify-start border-slate-400 bg-slate-200'
-        }`}
-      >
-        <span className="block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
-      </span>
-      <span className="text-base font-semibold text-ink">{uiText.progress.important}</span>
-    </button>
-  );
-}
-
 export function QuestionCard({
   question,
   explanation,
@@ -163,14 +143,14 @@ export function QuestionCard({
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
         <p className="mt-3 text-sm leading-6 text-slate-600">{question.context[language]}</p>
+        {question.importanceAllowed ? (
+          <div className="mt-4">
+            <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+          </div>
+        ) : null}
         <div className="mt-4">
           <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
-        {question.importanceAllowed ? (
-          <div className="mt-2">
-            <MobileImportantSetting important={important} onToggleImportant={onToggleImportant} />
-          </div>
-        ) : null}
         <div className="mt-3 sm:mt-6">
           <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
         </div>
@@ -181,17 +161,17 @@ export function QuestionCard({
           <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
           <p className="mt-4 text-base leading-7 text-slate-600">{question.context[language]}</p>
+          {question.importanceAllowed ? (
+            <div className="mt-6">
+              <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+            </div>
+          ) : null}
           <div className="mt-7">
             <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
           </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">
           <ExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} desktopCard />
-          {question.importanceAllowed ? (
-            <div className="mt-8">
-              <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
-            </div>
-          ) : null}
         </aside>
       </article>
     </>

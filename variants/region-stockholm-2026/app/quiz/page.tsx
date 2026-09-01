@@ -3,15 +3,11 @@
 import {useRouter} from 'next/navigation';
 import {ProgressBar} from '@/components/ProgressBar';
 import {QuestionCard} from '@/components/QuestionCard';
-import partiesData from '@/data/parties.json';
 import {trackEvent} from '@/lib/analytics';
-import {calculateResults} from '@/lib/calculateResults';
-import {explanations, positions, questions} from '@/lib/valkompasData';
+import {explanations, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
-import type {Party} from '@/types';
 import uiText from '@/uiText.json';
 
-const parties = partiesData as Party[];
 const averageSecondsPerQuestion = 12;
 
 export default function QuizPage() {
@@ -24,7 +20,6 @@ export default function QuizPage() {
     answerQuestion,
     nextQuestion,
     previousQuestion,
-    setResults,
     toggleImportantQuestion
   } = useQuizStore();
 
@@ -41,7 +36,6 @@ export default function QuizPage() {
     if (!selectedAnswer) return;
 
     if (isLastQuestion) {
-      setResults(calculateResults({answers, importantQuestions, parties, positions, questions}));
       trackEvent('quiz_completed', {question_count: questions.length});
       router.push('/result');
       return;
