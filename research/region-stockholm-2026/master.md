@@ -10,7 +10,7 @@ De åtta nuvarande partierna i arbetsdatasetet är S, M, SD, V, C, KD, L och MP.
 
 ## Revisionsstatus 1 september 2026
 
-Efter jämförelse med den fullständiga checkpoint-researchen består det verifierade förhandsvisningsdatasetet av fem frågor: regionskatt, psykiatriupphandlingens rangordningskriterier, omställningsplanen för specialiserade vårdval, SL:s ordinarie prisnivå och kostnadsfri språktolk. Språktolk låstes i checkpoint 32 efter att samtliga åtta partiers svar hade verifierats. Den tidigare BUP-frågan kunde inte verifieras, den separata ätstörningsfrågan dubblerade omställningsplanen och konstfrågans regionala konflikt kunde inte beläggas.
+Efter jämförelse med den fullständiga checkpoint-researchen består det verifierade förhandsvisningsdatasetet av sex frågor: regionskatt, psykiatriupphandlingens rangordningskriterier, omställningsplanen för specialiserade vårdval, SL:s ordinarie prisnivå, kostnadsfri språktolk och avgiftsfri SL-trafik för barn och unga. Den sjätte frågan låstes 1 september efter kontroll av samtliga åtta partiers direkta 2026-svar och Region Stockholms aktuella biljettregler. Den tidigare BUP-frågan kunde inte verifieras och den separata ätstörningsfrågan dubblerade omställningsplanen.
 
 Filen nedanför denna revisionsnotering beskriver det äldre sexfrågorsutkastet och ska inte användas för produktion. `questions.json` är det gällande maskinläsbara revisionsunderlaget.
 
@@ -46,7 +46,7 @@ Riktade rabatter, pristak, längre giltighetstid och tillfälligt statligt priss
 
 V, MP, L och C är starkt för; S är för; M och KD är emot; SD är starkt emot. Formuleringen gäller språktolk och får inte blandas ihop med teckenspråkstolkning eller andra lagreglerade tolktjänster.
 
-### RS26-Q06 – enprocentsregeln för konst
+### Äldre reservutkast – enprocentsregeln för konst
 
 **Proposition:** Region Stockholm bör avsätta en procent av byggkostnaderna till konst vid ny- och ombyggnationer.
 
@@ -54,7 +54,7 @@ V, MP och L är starkt för; S och C är för; M, KD och SD är starkt emot. Fr�
 
 ## Reservmaterial
 
-Gratis kollektivtrafik för barn och unga, tågvärdar och specialistpsykiatrisk upphandling sparas som reservfrågor. De får inte läggas i produktionsdatasetet utan en separat propositions- och källkontroll.
+Tågvärdar och enprocentsprincipen för konst sparas som reservfrågor. De får inte läggas i produktionsdatasetet utan en separat propositions- och källkontroll.
 
 ## Redaktionella spärrar
 

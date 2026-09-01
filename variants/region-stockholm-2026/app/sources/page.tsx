@@ -40,6 +40,16 @@ const thematicSources = [
     title: 'Socialstyrelsen: responsabilidad de proporcionar un intérprete',
     url: 'https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/vem-far-gora-vad/tolk/',
     note: 'Describe la obligación de la región o del proveedor sanitario de disponer de un intérprete cuando sea necesario.'
+  },
+  {
+    title: 'Region Stockholm: billete gratuito para jóvenes durante las vacaciones escolares de 2026',
+    url: 'https://www.regionstockholm.se/nyheter/2026/01/sls-lovbiljett-till-unga-har-borjat-skickas-ut/',
+    note: 'Documenta quién puede viajar gratis durante las vacaciones escolares y en qué fechas se aplica.'
+  },
+  {
+    title: 'SVT: respuestas de los ocho partidos sobre viajes gratuitos para niños y jóvenes',
+    url: 'https://valkompass.svt.se/2026/stockholm/start-region/',
+    note: 'Reúne las respuestas directas de los partidos a la misma propuesta regional.'
   }
 ];
 

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1, "jurisdiction": "region-stockholm", "electionYear": 2026, "reviewedAt": "2026-09-01", "status": "verified-four-question-preview",
+  "schemaVersion": 1, "jurisdiction": "region-stockholm", "electionYear": 2026, "reviewedAt": "2026-09-01", "status": "verified-six-question-preview",
   "questions": [
     {
       "id": "RS26-Q01", "category": "regionalTax",
@@ -55,6 +55,17 @@
         {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare betonar patientsäkerhet och rätten att förstå sin vård. Motståndare betonar kostnaden och vill att vissa personer som bott länge i Sverige ska betala själva.", "es": "Quienes defienden la gratuidad destacan la seguridad del paciente y el derecho a entender la atención. Quienes quieren limitarla señalan el coste y consideran que algunas personas que llevan mucho tiempo en Suecia deberían pagar."}},
         {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Teckenspråkstolkning ingår inte. Nationell lag kräver att vårdpersonalen säkerställer att patienten förstår sin vård. Eventuella avgifter måste därför utformas utan att äventyra patientsäkerheten eller strida mot lagen.", "es": "No incluye la lengua de signos. La ley nacional exige que el personal se asegure de que el paciente entiende su atención. Cualquier tarifa tendría que respetar esta obligación y no poner en peligro la seguridad del paciente."}}
       ]}, "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2}
+    },
+    {
+      "id": "RS26-Q06", "category": "publicTransport",
+      "statement": {"sv": "Bör barn och ungdomar få resa gratis med SL året runt?", "es": "¿Deberían los niños y jóvenes viajar gratis con SL durante todo el año?"},
+      "context": {"sv": "I dag finns riktade gratisresor. Frågan gäller om barn och unga ska kunna resa utan biljettavgift även utanför skolloven.", "es": "Hoy ya existen algunos viajes gratuitos. La pregunta es si los niños y jóvenes deberían viajar sin pagar también fuera de las vacaciones escolares."},
+      "explanation": {"title": {"sv": "Gratis SL-resor för barn och unga", "es": "Viajes gratuitos para niños y jóvenes"}, "sections": [
+        {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Unga födda 2008–2014 och folkbokförda i länet har en kostnadsfri SL-biljett under skolloven 2026. Barn som ännu inte fyllt 12 år får också resa gratis tillsammans med en vuxen som har giltig biljett. I övriga fall behöver barn och unga normalt en rabatterad biljett.", "es": "En 2026, los jóvenes nacidos entre 2008 y 2014 y empadronados en el condado pueden viajar gratis durante las vacaciones escolares. Los menores de 12 años también pueden viajar gratis si van con un adulto que tenga un billete válido. En los demás casos, normalmente necesitan un billete con descuento."}},
+        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja innebär att gratisresorna utökas till vanliga dagar. Ett nej innebär att barn och unga även fortsättningsvis betalar ett rabatterat pris utanför de undantag som finns.", "es": "Estar a favor significa ampliar los viajes gratuitos a los días normales. Estar en contra significa mantener el precio reducido para niños y jóvenes fuera de las excepciones actuales."}},
+        {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare menar att gratis resor ger barn större frihet och gör att familjens ekonomi spelar mindre roll. Motståndare vill hellre använda biljettintäkterna till fler avgångar, trygghet och underhåll.", "es": "Quienes apoyan la medida creen que daría más libertad a los menores y reduciría la importancia de la economía familiar. Quienes se oponen prefieren usar los ingresos de los billetes para aumentar las salidas, mejorar la seguridad y mantener el servicio."}},
+        {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller inte skolskjuts, som kommunerna ansvarar för, och inte heller den tillfälliga statliga prissänkningen på vissa periodbiljetter under 2026.", "es": "No se refiere al transporte escolar, que es responsabilidad de los municipios, ni a la reducción estatal temporal de algunos abonos durante 2026."}}
+      ]}, "positions": {"S": 2, "M": -1, "SD": 2, "V": 2, "C": 1, "KD": -1, "L": 2, "MP": 2}
     }
   ]
 }

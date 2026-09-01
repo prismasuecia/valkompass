@@ -5,7 +5,7 @@ const partyIds = ['S', 'M', 'SD', 'V', 'C', 'KD', 'L', 'MP'];
 const validCategories = new Set(['regionalTax', 'psychiatryProcurement', 'healthcareOperations', 'publicTransport', 'healthcareAccess']);
 const ids = new Set();
 
-if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 5) throw new Error('Expected five verified Region Stockholm questions');
+if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 6) throw new Error('Expected six verified Region Stockholm questions');
 if (data.reviewedAt !== '2026-09-01') throw new Error('Expected a September 2026 review date');
 for (const question of data.questions) {
   if (ids.has(question.id)) throw new Error(`Duplicate question id: ${question.id}`);
