@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "jurisdiction": "region-stockholm",
+  "electionYear": 2026,
+  "status": "editorial-draft",
+  "scale": {"min": -2, "max": 2, "missing": null},
+  "parties": ["S", "M", "SD", "V", "C", "KD", "L", "MP"],
+  "questions": [
+    {
+      "id": "RS26-Q01",
+      "category": "regional-tax",
+      "statementSv": "Region Stockholm bör sänka regionskatten.",
+      "statementEs": null,
+      "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0},
+      "verificationStatus": "needs-direct-url-audit"
+    },
+    {
+      "id": "RS26-Q02",
+      "category": "healthcare-procurement",
+      "statementSv": "När Region Stockholm upphandlar specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan anbud som uppfyller kvalitetskraven.",
+      "statementEs": null,
+      "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2},
+      "verificationStatus": "incomplete-party-coverage"
+    },
+    {
+      "id": "RS26-Q03",
+      "category": "healthcare-operations",
+      "statementSv": "Region Stockholm bör driva den specialiserade ätstörningsvården i egen regi.",
+      "statementEs": null,
+      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 1, "KD": -1, "L": -1, "MP": 2},
+      "verificationStatus": "needs-direct-url-audit"
+    },
+    {
+      "id": "RS26-Q04",
+      "category": "public-transport",
+      "statementSv": "Region Stockholm bör sänka den ordinarie prisnivån i SL-trafiken.",
+      "statementEs": null,
+      "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null},
+      "verificationStatus": "incomplete-party-coverage"
+    },
+    {
+      "id": "RS26-Q05",
+      "category": "healthcare-access",
+      "statementSv": "Region Stockholm bör fortsätta erbjuda avgiftsfri språktolk i vården för patienter som behöver det.",
+      "statementEs": null,
+      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2},
+      "verificationStatus": "needs-direct-url-audit"
+    },
+    {
+      "id": "RS26-Q06",
+      "category": "culture-and-investment",
+      "statementSv": "Region Stockholm bör avsätta en procent av byggkostnaderna till konst vid ny- och ombyggnationer.",
+      "statementEs": null,
+      "positions": {"S": 1, "M": -2, "SD": -2, "V": 2, "C": 1, "KD": -2, "L": 2, "MP": 2},
+      "verificationStatus": "needs-direct-url-audit"
+    }
+  ]
+}
