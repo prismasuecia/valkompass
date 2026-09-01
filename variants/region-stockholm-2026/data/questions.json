@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "jurisdiction": "region-stockholm",
+  "electionYear": 2026,
+  "questions": [
+    {
+      "id": "RS26-Q01", "category": "regionalTax",
+      "statement": {"sv": "Region Stockholm bör sänka regionskatten.", "es": "La Región de Estocolmo debería reducir el impuesto regional."},
+      "explanation": {
+        "title": {"sv": "Vad betyder regionskatten?", "es": "¿Qué es el impuesto regional?"},
+        "content": {
+          "sv": "Nuläge: Regionskatten finansierar bland annat sjukvård och kollektivtrafik. Diskussion: Partierna är oense om skatten bör sänkas, ligga kvar eller höjas. Exempel: En sänkning ger invånarna mer kvar efter skatt men minskar regionens skatteintäkter om den inte kompenseras på annat sätt.",
+          "es": "Situación actual: El impuesto regional financia, entre otras cosas, la sanidad y el transporte público. ¿Qué se discute?: Los partidos discrepan sobre si debe bajar, mantenerse o subir. Ejemplo concreto: Una reducción deja más dinero a los contribuyentes, pero reduce los ingresos de la región si no se compensa de otra manera."
+        }
+      },
+      "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0}
+    },
+    {
+      "id": "RS26-Q02", "category": "healthcareProcurement",
+      "statement": {"sv": "När Region Stockholm upphandlar specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan anbud som uppfyller kvalitetskraven.", "es": "Cuando la Región de Estocolmo contrata atención psiquiátrica especializada, el precio no debería ser el único criterio para elegir entre las ofertas que cumplen los requisitos de calidad."},
+      "explanation": {
+        "title": {"sv": "Pris och kvalitet i upphandling", "es": "Precio y calidad en una contratación pública"},
+        "content": {
+          "sv": "Nuläge: Vårdgivare måste uppfylla obligatoriska kvalitetskrav för att deras anbud ska godkännas. Diskussion: Konflikten gäller hur godkända anbud därefter rangordnas och om fler kvalitetsfaktorer än pris ska påverka valet. Exempel: Två anbud kan båda klara minimikraven men skilja sig i pris och i kvalitet utöver kraven.",
+          "es": "Situación actual: Los proveedores deben cumplir requisitos obligatorios de calidad para que sus ofertas sean aceptadas. ¿Qué se discute?: El conflicto trata de cómo ordenar después las ofertas aceptadas y si otros aspectos de calidad, además del precio, deben influir en la elección. Ejemplo concreto: Dos ofertas pueden cumplir los requisitos mínimos, pero diferir en precio y en la calidad que ofrecen por encima de esos requisitos."
+        }
+      },
+      "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}
+    },
+    {
+      "id": "RS26-Q03", "category": "healthcareOperations",
+      "statement": {"sv": "Region Stockholm bör driva den specialiserade ätstörningsvården i egen regi.", "es": "La Región de Estocolmo debería gestionar directamente la atención especializada para los trastornos alimentarios."},
+      "explanation": {
+        "title": {"sv": "Vem ska driva ätstörningsvården?", "es": "¿Quién debe gestionar la atención para los trastornos alimentarios?"},
+        "content": {
+          "sv": "Nuläge: Den specialiserade ätstörningsvården bedrivs i regionens egen regi. Diskussion: Partierna är oense om vården bör fortsätta drivas enbart av regionen eller om fler privata vårdgivare bör kunna delta. Exempel: Egen regi betyder att regionen själv ansvarar för verksamheten i stället för att köpa vården av ett privat företag.",
+          "es": "Situación actual: La atención especializada para los trastornos alimentarios se gestiona directamente por la región. ¿Qué se discute?: Los partidos discrepan sobre si debe seguir gestionándose únicamente por la región o si deberían participar más proveedores privados. Ejemplo concreto: Gestión directa significa que la propia región dirige el servicio en vez de contratar la atención a una empresa privada."
+        }
+      },
+      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 1, "KD": -1, "L": -1, "MP": 2}
+    },
+    {
+      "id": "RS26-Q04", "category": "publicTransport",
+      "statement": {"sv": "Region Stockholm bör sänka den ordinarie prisnivån i SL-trafiken.", "es": "La Región de Estocolmo debería reducir los precios ordinarios del transporte público de SL."},
+      "explanation": {
+        "title": {"sv": "Ordinarie SL-priser", "es": "Precios ordinarios de SL"},
+        "content": {
+          "sv": "Nuläge: Region Stockholm beslutar om SL:s biljettsystem och regionala prisnivåer. Diskussion: Partierna prioriterar olika mellan lägre ordinarie priser, oförändrade priser och mer pengar till trafikutbudet. Exempel: Frågan gäller vanliga biljetter och inte enbart rabatter för en särskild grupp, tillfälliga stöd eller pristak.",
+          "es": "Situación actual: La Región de Estocolmo decide el sistema de billetes de SL y sus niveles regionales de precios. ¿Qué se discute?: Los partidos priorizan de manera diferente entre precios ordinarios más bajos, precios sin cambios y más recursos para aumentar el servicio. Ejemplo concreto: La pregunta se refiere a los billetes normales, no solamente a descuentos para un grupo, ayudas temporales o límites de gasto."
+        }
+      },
+      "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}
+    },
+    {
+      "id": "RS26-Q05", "category": "healthcareAccess",
+      "statement": {"sv": "Region Stockholm bör fortsätta erbjuda avgiftsfri språktolk i vården för patienter som behöver det.", "es": "La Región de Estocolmo debería seguir ofreciendo interpretación lingüística gratuita en la atención sanitaria a los pacientes que la necesiten."},
+      "explanation": {
+        "title": {"sv": "Språktolk i vården", "es": "Interpretación lingüística en la sanidad"},
+        "content": {
+          "sv": "Nuläge: En patient som behöver språktolk kan få det i vården. Diskussion: Partierna är oense om tjänsten även fortsättningsvis ska vara avgiftsfri eller om vissa patienter bör betala eller möta begränsningar. Exempel: Behovet av tolk bedöms för att patient och vårdpersonal ska kunna förstå varandra.",
+          "es": "Situación actual: Un paciente que necesite interpretación lingüística puede recibirla en la atención sanitaria. ¿Qué se discute?: Los partidos discrepan sobre si el servicio debe seguir siendo gratuito o si algunos pacientes deberían pagar o estar sujetos a restricciones. Ejemplo concreto: La necesidad de interpretación se evalúa para que el paciente y el personal sanitario puedan entenderse."
+        }
+      },
+      "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2}
+    },
+    {
+      "id": "RS26-Q06", "category": "cultureInvestment",
+      "statement": {"sv": "Region Stockholm bör avsätta en procent av byggkostnaderna till konst vid ny- och ombyggnationer.", "es": "La Región de Estocolmo debería destinar el uno por ciento de los costes de construcción al arte en las obras nuevas y las reformas."},
+      "explanation": {
+        "title": {"sv": "Enprocentsregeln för konst", "es": "La regla del uno por ciento para el arte"},
+        "content": {
+          "sv": "Nuläge: Enprocentsregeln innebär att en del av kostnaden vid byggprojekt avsätts till konstnärlig gestaltning. Diskussion: Partierna är oense om en fast andel ska reserveras eller om pengarna ska kunna prioriteras fritt. Exempel: Regeln kan användas när regionen bygger eller renoverar vårdmiljöer och kollektivtrafikmiljöer.",
+          "es": "Situación actual: La regla del uno por ciento significa que una parte del coste de un proyecto de construcción se reserva para intervenciones artísticas. ¿Qué se discute?: Los partidos discrepan sobre si debe reservarse una proporción fija o si el dinero debe poder destinarse libremente a otras prioridades. Ejemplo concreto: La regla puede aplicarse cuando la región construye o reforma espacios sanitarios o del transporte público."
+        }
+      },
+      "positions": {"S": 1, "M": -2, "SD": -2, "V": 2, "C": 1, "KD": -2, "L": 2, "MP": 2}
+    }
+  ]
+}
