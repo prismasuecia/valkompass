@@ -30,6 +30,16 @@ const thematicSources = [
     title: 'Läkartidningen: criterios en la contratación de psiquiatría especializada',
     url: 'https://lakartidningen.se/nyheter/psykiatriupphandling-sagas-av-oppositionen-dumpade-priser/',
     note: 'Explica la diferencia entre los requisitos mínimos de calidad y el precio como criterio de selección.'
+  },
+  {
+    title: 'SVT: respuestas de los partidos de la Región de Estocolmo sobre intérpretes',
+    url: 'https://valkompass.svt.se/2026/stockholm/start-region/',
+    note: 'Da acceso a las respuestas de los ocho partidos a la misma propuesta sobre interpretación gratuita.'
+  },
+  {
+    title: 'Socialstyrelsen: responsabilidad de proporcionar un intérprete',
+    url: 'https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/vem-far-gora-vad/tolk/',
+    note: 'Describe la obligación de la región o del proveedor sanitario de disponer de un intérprete cuando sea necesario.'
   }
 ];
 

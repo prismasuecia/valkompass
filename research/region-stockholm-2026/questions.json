@@ -10,12 +10,12 @@
     {"id": "RS26-Q01", "statementSv": "Bör Region Stockholm sänka regionskatten?", "positions": {"S": 1, "M": 2, "SD": 2, "V": -2, "C": 1, "KD": 2, "L": 2, "MP": 1}, "coverage": "8/8"},
     {"id": "RS26-Q02", "statementSv": "Vid upphandling av specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan godkända anbud.", "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}, "coverage": "4/8"},
     {"id": "RS26-Q03", "statementSv": "Bör Region Stockholm stoppa ytterligare avveckling och omvandling av vårdval inom specialiserad öppenvård?", "positions": {"S": -2, "M": 2, "SD": null, "V": -2, "C": -2, "KD": 2, "L": null, "MP": -2}, "coverage": "6/8"},
-    {"id": "RS26-Q04", "statementSv": "Bör Region Stockholm sänka den ordinarie prisnivån i SL-trafiken?", "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}, "coverage": "3/8"}
+    {"id": "RS26-Q04", "statementSv": "Bör Region Stockholm sänka den ordinarie prisnivån i SL-trafiken?", "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}, "coverage": "3/8"},
+    {"id": "RS26-Q05", "statementSv": "Bör Region Stockholm även fortsättningsvis erbjuda kostnadsfri språktolk i vården när det behövs för att patienten och vårdpersonalen ska förstå varandra?", "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2}, "coverage": "8/8", "legalNote": "Eventuella avgifter eller begränsningar måste följa nationell lag och får inte äventyra patientsäkerheten."}
   ],
   "excludedAfterAudit": [
     {"topic": "privata BUP-mottagningar", "reason": "full partitäckning kunde inte verifieras"},
     {"topic": "specialiserad ätstörningsvård", "reason": "dubblett av vårdvalsfrågan"},
-    {"topic": "kostnadsfri språktolk", "reason": "endast en partiposition verifierad"},
     {"topic": "enprocentsprincipen för konst", "reason": "regional 2026-konflikt kunde inte verifieras"}
   ]
 }

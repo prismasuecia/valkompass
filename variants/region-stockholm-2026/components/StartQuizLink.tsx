@@ -10,7 +10,7 @@ export function StartQuizLink() {
 
   function handleStart() {
     reset();
-    trackEvent('quiz_started', {question_count: 4});
+    trackEvent('quiz_started', {question_count: 5});
   }
 
   return (

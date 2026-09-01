@@ -73,7 +73,7 @@ test('a clearly right-leaning profile does not rank Vänsterpartiet first', () =
       value === null ? [] : [{partyId, questionId: question.id, value}]
     )
   );
-  const rightProfile = [2, 2, 2, -2].map((value, index) => ({
+  const rightProfile = [2, 2, 2, -2, -2].map((value, index) => ({
     questionId: productionQuestions[index].id, value
   }));
   const results = calculateResultsCore({

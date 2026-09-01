@@ -2,7 +2,7 @@
   "app": {
     "name": "Brújula regional 2026",
     "title": "Brújula electoral: Región de Estocolmo 2026",
-    "subtitle": "Comprende cuatro decisiones políticas verificadas de la Región de Estocolmo y compara tu opinión con las posiciones documentadas de los partidos."
+    "subtitle": "Comprende cinco decisiones políticas verificadas de la Región de Estocolmo y compara tu opinión con las posiciones documentadas de los partidos."
   },
 
   "intro": {
@@ -28,7 +28,7 @@
 
   "quizInfo": {
     "questionsLabel": "Número de preguntas",
-    "questionsValue": "4",
+    "questionsValue": "5",
     "timeLabel": "Tiempo estimado",
     "timeValue": "2–3 minutos"
   },
@@ -88,7 +88,7 @@
 
   "results": {
     "title": "Coincidencia con las posiciones documentadas de los partidos",
-    "description": "El resultado compara tus respuestas únicamente con las posiciones documentadas de los partidos en estas cuatro preguntas regionales verificadas.",
+    "description": "El resultado compara tus respuestas únicamente con las posiciones documentadas de los partidos en estas cinco preguntas regionales verificadas.",
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
     "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
     "importantQuestionsUsed": "Preguntas que contaron el doble en este resultado",
@@ -137,7 +137,7 @@
 
   "methodology": {
     "title": "¿Cómo se construyó esta brújula electoral?",
-    "text": "Esta brújula compara tus respuestas con posiciones públicas y documentadas de los partidos en la Región de Estocolmo. No deducimos posiciones a partir de la ideología general de un partido.\n\nCada pregunta presenta una decisión regional concreta, la situación actual en septiembre de 2026 y los principales argumentos a favor y en contra.\n\nCuanto más se parece tu respuesta a la posición documentada de un partido, más alto es el resultado. Una pregunta marcada como importante cuenta el doble.\n\nSi tú eliges «No tengo suficiente información», la pregunta se excluye. Si no existe una posición suficientemente clara de un partido, tampoco se utiliza esa comparación.\n\nEl resultado se limita a estas cuatro preguntas verificadas y no constituye una recomendación de voto."
+    "text": "Esta brújula compara tus respuestas con posiciones públicas y documentadas de los partidos en la Región de Estocolmo. No deducimos posiciones a partir de la ideología general de un partido.\n\nCada pregunta presenta una decisión regional concreta, la situación actual en septiembre de 2026 y los principales argumentos a favor y en contra.\n\nCuanto más se parece tu respuesta a la posición documentada de un partido, más alto es el resultado. Una pregunta marcada como importante cuenta el doble.\n\nSi tú eliges «No tengo suficiente información», la pregunta se excluye. Si no existe una posición suficientemente clara de un partido, tampoco se utiliza esa comparación.\n\nEl resultado se limita a estas cinco preguntas verificadas y no constituye una recomendación de voto."
   },
 
   "sourcesPage": {

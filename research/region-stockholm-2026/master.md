@@ -10,7 +10,7 @@ De åtta nuvarande partierna i arbetsdatasetet är S, M, SD, V, C, KD, L och MP.
 
 ## Revisionsstatus 1 september 2026
 
-Efter jämförelse med den fullständiga checkpoint-researchen består det verifierade förhandsvisningsdatasetet av fyra frågor: regionskatt, psykiatriupphandlingens rangordningskriterier, omställningsplanen för specialiserade vårdval och SL:s ordinarie prisnivå. Den tidigare BUP-frågan kunde inte verifieras, den separata ätstörningsfrågan dubblerade omställningsplanen, språktolk hade bara en verifierad partiposition och konstfrågans regionala konflikt kunde inte beläggas. Dessa fyra frågor är därför borttagna ur appdatasetet.
+Efter jämförelse med den fullständiga checkpoint-researchen består det verifierade förhandsvisningsdatasetet av fem frågor: regionskatt, psykiatriupphandlingens rangordningskriterier, omställningsplanen för specialiserade vårdval, SL:s ordinarie prisnivå och kostnadsfri språktolk. Språktolk låstes i checkpoint 32 efter att samtliga åtta partiers svar hade verifierats. Den tidigare BUP-frågan kunde inte verifieras, den separata ätstörningsfrågan dubblerade omställningsplanen och konstfrågans regionala konflikt kunde inte beläggas.
 
 Filen nedanför denna revisionsnotering beskriver det äldre sexfrågorsutkastet och ska inte användas för produktion. `questions.json` är det gällande maskinläsbara revisionsunderlaget.
 
