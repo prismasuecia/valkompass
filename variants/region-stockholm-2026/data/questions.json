@@ -16,16 +16,16 @@
       "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0}
     },
     {
-      "id": "RS26-Q02", "category": "healthcareProcurement",
-      "statement": {"sv": "När Region Stockholm upphandlar specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan anbud som uppfyller kvalitetskraven.", "es": "Cuando la Región de Estocolmo contrata atención psiquiátrica especializada, el precio no debería ser el único criterio para elegir entre las ofertas que cumplen los requisitos de calidad."},
+      "id": "RS26-Q02", "category": "childYouthPsychiatry",
+      "statement": {"sv": "Privata vårdgivare bör få öppna psykiatrimottagningar för barn och unga i Region Stockholm.", "es": "Los proveedores privados deberían poder abrir centros de atención psiquiátrica para niños y jóvenes en la Región de Estocolmo."},
       "explanation": {
-        "title": {"sv": "Pris och kvalitet i upphandling", "es": "Precio y calidad en una contratación pública"},
+        "title": {"sv": "Privata mottagningar inom BUP", "es": "Centros privados de psiquiatría infantil y juvenil"},
         "content": {
-          "sv": "Nuläge: Vårdgivare måste uppfylla obligatoriska kvalitetskrav för att deras anbud ska godkännas. Diskussion: Konflikten gäller hur godkända anbud därefter rangordnas och om fler kvalitetsfaktorer än pris ska påverka valet. Exempel: Två anbud kan båda klara minimikraven men skilja sig i pris och i kvalitet utöver kraven.",
-          "es": "Situación actual: Los proveedores deben cumplir requisitos obligatorios de calidad para que sus ofertas sean aceptadas. ¿Qué se discute?: El conflicto trata de cómo ordenar después las ofertas aceptadas y si otros aspectos de calidad, además del precio, deben influir en la elección. Ejemplo concreto: Dos ofertas pueden cumplir los requisitos mínimos, pero diferir en precio y en la calidad que ofrecen por encima de esos requisitos."
+          "sv": "Nuläge: Region Stockholm ansvarar för barn- och ungdomspsykiatrin, BUP, och kan låta både offentliga och privata vårdgivare utföra vård. Diskussion: Partierna är oense om privata vårdgivare bör få öppna fler psykiatrimottagningar för barn och unga och under vilka regler det i så fall ska ske. Exempel: En privat mottagning kan arbeta på uppdrag av regionen och få offentlig ersättning för vården.",
+          "es": "Situación actual: La Región de Estocolmo es responsable de la psiquiatría infantil y juvenil, BUP, y puede encargar la atención a proveedores públicos y privados. ¿Qué se discute?: Los partidos discrepan sobre si los proveedores privados deberían poder abrir más centros para niños y jóvenes y bajo qué reglas. Ejemplo concreto: Un centro privado puede trabajar por encargo de la región y recibir financiación pública por la atención prestada."
         }
       },
-      "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}
+      "positions": {"S": 1, "M": 2, "SD": 1, "V": -2, "C": 2, "KD": 2, "L": 2, "MP": 1}
     },
     {
       "id": "RS26-Q03", "category": "healthcareOperations",

@@ -6,7 +6,7 @@ import uiText from '@/uiText.json';
 
 const categoryLabels: Record<Question['category'], string> = {
   regionalTax: uiText.categories.regionalTax,
-  healthcareProcurement: uiText.categories.healthcareProcurement,
+  childYouthPsychiatry: uiText.categories.childYouthPsychiatry,
   healthcareOperations: uiText.categories.healthcareOperations,
   publicTransport: uiText.categories.publicTransport,
   healthcareAccess: uiText.categories.healthcareAccess,

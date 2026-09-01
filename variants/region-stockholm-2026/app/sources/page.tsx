@@ -10,6 +10,23 @@ const sourceBasis = [
   uiText.sourcesPage.parliamentaryProposals,
   uiText.sourcesPage.leadershipStatements
 ];
+const thematicSources = [
+  {
+    title: 'SVT: Flera partier vill sänka SL-priserna eller införa pristak',
+    url: 'https://www.svt.se/nyheter/lokalt/stockholm/flera-partier-vill-sanka-sl-priserna-eller-infora-pristak',
+    note: 'Compara las propuestas de los ocho partidos sobre los precios y los billetes de SL.'
+  },
+  {
+    title: 'Region Stockholm: presupuesto regional para 2026',
+    url: 'https://www.regionstockholm.se/nyheter/2025/10/regionstyrelsens-forslag-till-budget-2026-for-region-stockholm/',
+    note: 'Documenta el nivel del impuesto regional y los precios ordinarios de SL para 2026.'
+  },
+  {
+    title: 'Region Stockholm: servicios de interpretación',
+    url: 'https://vard.regionstockholm.se/tolktjanster/',
+    note: 'Describe la situación actual de la interpretación lingüística en la atención sanitaria.'
+  }
+];
 
 const sourceTypeLabels = {
   officialPartyProgram: uiText.sourcesPage.officialPartyProgram,
@@ -40,6 +57,18 @@ export default function SourcesPage() {
           ))}
         </ul>
         <p className="mt-5 text-sm leading-6 text-slate-600">{uiText.sourcesPage.disclaimer}</p>
+      </section>
+
+      <section className="mt-8 border-t border-line pt-6">
+        <h2 className="text-xl font-semibold text-ink">Fuentes temáticas y situación actual</h2>
+        <div className="mt-5 grid gap-4">
+          {thematicSources.map((source) => (
+            <article key={source.url} className="rounded-2xl border border-line bg-white p-5">
+              <a href={source.url} className="font-semibold text-ink underline underline-offset-4">{source.title}</a>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{source.note}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="mt-8 border-t border-line pt-6">

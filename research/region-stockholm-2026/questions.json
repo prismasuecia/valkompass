@@ -16,11 +16,11 @@
     },
     {
       "id": "RS26-Q02",
-      "category": "healthcare-procurement",
-      "statementSv": "När Region Stockholm upphandlar specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan anbud som uppfyller kvalitetskraven.",
+      "category": "child-and-youth-psychiatry",
+      "statementSv": "Privata vårdgivare bör få öppna psykiatrimottagningar för barn och unga i Region Stockholm.",
       "statementEs": null,
-      "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2},
-      "verificationStatus": "incomplete-party-coverage"
+      "positions": {"S": 1, "M": 2, "SD": 1, "V": -2, "C": 2, "KD": 2, "L": 2, "MP": 1},
+      "verificationStatus": "verified-in-2026-party-answers"
     },
     {
       "id": "RS26-Q03",

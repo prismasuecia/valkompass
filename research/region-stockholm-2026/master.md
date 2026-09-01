@@ -16,11 +16,11 @@ De åtta nuvarande partierna i arbetsdatasetet är S, M, SD, V, C, KD, L och MP.
 
 Färska 2026-svar ger tydlig spridning: M och SD vill ha mycket lägre skatt; C, KD och L lite lägre; S och MP samma nivå; V lite högre. Koderna i `questions.json` är vända mot propositionen, så högre skatt blir negativt värde.
 
-### RS26-Q02 – specialistpsykiatrisk upphandling
+### RS26-Q02 – privata BUP-mottagningar
 
-**Proposition:** När Region Stockholm upphandlar specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan anbud som uppfyller kvalitetskraven.
+**Proposition:** Privata vårdgivare bör få öppna psykiatrimottagningar för barn och unga i Region Stockholm.
 
-Frågan måste förklaras exakt: obligatoriska kvalitetskrav fanns redan. Konflikten gäller hur godkända anbud rangordnas. Endast fyra partikoder är tillräckligt belagda i det överförda underlaget; övriga är `null` tills direkta källor finns.
+Alla åtta partier har lämnat direkta 2026-svar. M, L, C och KD är starkt för; SD, S och MP är för med reservationer eller svagare styrka; V är starkt emot. Frågan ersatte upphandlingsfrågan efter slutkontroll eftersom den ger full partit­äckning och mindre metodrisk.
 
 ### RS26-Q03 – specialiserad ätstörningsvård
 
@@ -48,7 +48,7 @@ V, MP och L är starkt för; S och C är för; M, KD och SD är starkt emot. Fr�
 
 ## Reservmaterial
 
-Gratis kollektivtrafik för barn och unga, tågvärdar och privata BUP-mottagningar sparas som reservfrågor. De får inte läggas i produktionsdatasetet utan en separat propositions- och källkontroll.
+Gratis kollektivtrafik för barn och unga, tågvärdar och specialistpsykiatrisk upphandling sparas som reservfrågor. De får inte läggas i produktionsdatasetet utan en separat propositions- och källkontroll.
 
 ## Redaktionella spärrar
 

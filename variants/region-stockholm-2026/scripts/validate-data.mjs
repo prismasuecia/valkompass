@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 const data = JSON.parse(fs.readFileSync(new URL('../data/questions.json', import.meta.url), 'utf8'));
 const partyIds = ['S', 'M', 'SD', 'V', 'C', 'KD', 'L', 'MP'];
-const validCategories = new Set(['regionalTax', 'healthcareProcurement', 'healthcareOperations', 'publicTransport', 'healthcareAccess', 'cultureInvestment']);
+const validCategories = new Set(['regionalTax', 'childYouthPsychiatry', 'healthcareOperations', 'publicTransport', 'healthcareAccess', 'cultureInvestment']);
 const ids = new Set();
 
 if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 6) throw new Error('Expected six Region Stockholm questions');
