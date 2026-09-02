@@ -1,0 +1,110 @@
+# Samlad granskning inför 12 frågor
+
+Granskad 2026-09-02. **PUBLICERINGSSPÄRR KVARSTÅR.** Detta är en granskningslista med sex befintliga frågor och sex nya kandidater, inte ett låst tolvpunktsdataset. Appen har inte ändrats i denna granskning. Tidigare formuleringar som ”verifierade sex frågor” eller ”produktionslåst” räcker inte som godkännande.
+
+## 1. De sex inlagda frågorna
+
+Täckning nedan betyder antal icke-null-värden i appen, inte antal slutgodkända positioner.
+
+| ID | Ämne | Inlagd täckning | Granskningsbeslut och exakt återstående arbete |
+|---|---|---|---|
+| Q01 | Regionskatt | 8/8 | **Rätta före låsning.** Äldre budgetpositioner har blandats med framtida valpositioner. Använd samma öppna förändringsskala för väljare och partier. Se jämförelsen nedan. |
+| Q02 | Psykiatriupphandling | 4/8 | **Aktualitetslucka.** Den återfunna huvudartikeln är från 2024, inte 2026. Granskning av upphandlingarna rapporterades 2025. Kontrollera dess utfall och om partierna fortfarande stöder exakt denna urvalsmodell. Kritiska röster om vården är inte automatiskt stöd för en särskild anbudsrangordning. |
+| Q03 | Stoppa ändringar i specialiserade vårdval | 6/8 | **Propositionslucka.** Belägg varje partis aktuella stöd för att fortsätta respektive stoppa ytterligare förändringar. En historisk koalitionsplan är inte automatiskt fyra självständiga framtida nej till ett stopp. Skilj permanent stopp från paus, omprövning och stöd för enstaka vårdval. |
+| Q04 | Ordinarie SL-priser | 3/8 | **Tidshorisont och täckning måste rättas.** S:s budgetutsaga för 2026 bevisar inte oförändrade priser efter 2026. M:s höjningslinje och V:s sänkningslinje återfinns i SVT:s partirundfråga, men styrkegrader får inte hittas på. Behåll riktade rabatter och tillfälligt stöd utanför frågan. |
+| Q05 | Språktolk | 8/8 | **Behåll ämnet, kontrollera ordalydelsen.** SVT frågar om restriktivitet; appen om fortsatt avgiftsfrihet när tolk behövs. Det är närliggande men inte en ordagrann omvänd proposition. Koppla varje kod till även fritext och undantag, inte bara ett omvänt svarsvärde. Juridisk not ska omprövas nära publicering. |
+| Q06 | Gratis SL för unga året runt | 8/8 | **Stoppa produktionslåsningen.** ”Året runt” är ett tillägg från appen. C beskriver främst dagens undantag; S och L har finansierings-/omfattningsförbehåll. Åtta svar på SVT:s bredare fråga bevisar inte åtta svar på appens mer precisa förslag. Åldrar, perioder och finansiering måste låsas före omkodning. |
+
+### Q01: konkret kodningsskillnad
+
+Partiernas direkta 2026-svar på [SVT:s regionala partisidor](#källor) ger följande under en **gemensam förändringsskala**, där sänkning kodas positivt. Detta är ett rättningsförslag för ett framtida öppet svarsfält, inte en ändring av appen eller ett godkännande av dess nuvarande instämmandeskala.
+
+| Parti | I appen | Föreslaget från aktuell svarsskala |
+|---|---:|---:|
+| S | +1 | 0 |
+| M | +2 | +2 |
+| SD | +2 | +2 |
+| V | -2 | -1 |
+| C | +1 | +1 |
+| KD | +2 | +1 |
+| L | +2 | +1 |
+| MP | +1 | 0 |
+
+Skalan ska då visas som mycket lägre, lite lägre, oförändrad, lite högre, mycket högre. Instämmande i ”sänk” kan annars inte skilja oförändrat från höjning på ett entydigt sätt.
+
+## 2. Sex kompletterande kandidater
+
+K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
+
+| ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
+|---|---|---|---|
+| K01 | Procentregel för konst i regionala byggprojekt | **Lovande.** SVT har svar från åtta partier; tydlig skillnad mellan stöd och motstånd. | Nuläget är inte generellt 1 procent: regionens informationssida anger 2 procent för vårdlokaler och särskild beräkning över 100 miljoner. Kontrollera gällande beslut; skriv inte ”behåll dagens enprocentsregel överallt”. |
+| K02 | Återinför tågvärdar eller motsvarande funktion | **Lovande, 7 sakpositioner.** SD/V för; S/M/C/L/MP annan lösning; KD ingen åsikt. | Bevara källfrågans omfattning. Gör inte ett nej till tågvärdar till ett nej till tillgänglighet. KD får inte automatiskt politisk mittenkod. Kontrollera aktuell bemanning mot SL. |
+| K03 | Ta bort gränsen för förskrivning av fritidshjälpmedel | **Lovande, 8 svar.** S annan lösning; övriga stödjer, med olika förbehåll. | Skilj förskrivning från föreningslån och hjälpmedelsanvändning. Nuvarande 1177-regel har undantag för vissa barnhjälpmedel. Ett nej får inte beskrivas som nej till aktiv fritid. |
+| K04 | Funkisdiplomering av vårdcentraler | **Reserv, 8 svar.** L/M/SD/V stödjer; S/C/KD/MP föreslår annat. | Visa vilken konkret utbildning/ändring patienten får. Avvisa om det bara blir en administrativ etikett. Lägg inte till obligatorisk diplomering av varje mottagning utan belägg. |
+| K05 | Kortare arbetstid med bibehållen lön i regional vård | **Ofullständig.** V:s regionala material och MP:s SVT-svar ger ingångar; inte en full konfliktmatris. | Avgränsa personalgrupp, timmar och kostnad. Håll schemalagd återhämtning, pilotprojekt och generell arbetstidsförkortning isär. Aktuella motpositioner saknas i denna granskning. |
+| K06 | Klimatneutralitet 2035 för regionens egna verksamheter | **Ofullständig.** Regionens mål och MP:s stöd finns. KD-kritik har identifierats i ett dokumentutdrag, inte slutkontrollerats. | Läs hela beslutsunderlaget/reservationerna och sök fler självständiga partipositioner. Skilj regionorganisationen från hela länets utsläpp. Kritik mot kostnader räcker inte som kod för ett annat målår. |
+
+K02–K04 bygger på de fullständiga svaren i Funktionsrätts enkät (svarsperiod 20 maj–14 juni). Använd inte majutfrågningens svar som ersättning: flera skiljer sig. Enkätsammanfattningen innehåller också en summeringsmiss för hjälpmedelsfrågan; utgå från originalets åtta partisvar. Svar om aktivt arbete, stöd och annan lösning sparas som råsvar tills en gemensam kodningsregel är godkänd.
+
+### Nuläge som faktiskt kontrollerats
+
+- **Konst:** regionens sida anger 1 procent generellt, 2 procent i vårdlokaler samt undantag för stora projekt. Sidan är uppdaterad 2023; den är en saklig varning mot förenkling, inte ensam slutkontroll av budget 2026.
+- **Hjälpmedel:** 1177:s Stockholmsavsnitt, uppdaterat 2026-02-01, anger att fritidshjälpmedel normalt inte förskrivs, med undantag för vissa hjälpmedel för barns lek och utveckling.
+- **Arbetsvillkor:** regionen beskriver ett pilotprojekt med återhämtning under arbetstid och flera befintliga arbetstidsavtal. Säg därför inte att alla vårdanställda arbetar 40 timmar eller att försöket automatiskt är en generell förkortning.
+- **Klimat:** regional klimathandlingsplan antogs 6 maj 2025. MP:s aktuella text skiljer uttryckligen egna verksamheters 2035-mål från hela länets 2045-mål.
+
+## 3. Vad vi väljer bort just nu
+
+- Färdtjänstbokning efter önskad ankomsttid och handlingsplan för övergång till vuxenvård: senaste enkät visar stöd från alla. Kan förklaras redaktionellt men ska inte pressas in som skenkonflikter.
+- SL-biljett på regionaltåg: bred samsyn i SVT-svaren; inte förstahandsval för att särskilja partier.
+- Ytterligare generell privat/offentlig vårdfråga: stor överlappningsrisk med Q02–Q03.
+- Bostäder, grundskola och äldreomsorg läggs inte till för ämnesbreddens skull; kommunernas ansvar får inte blandas in.
+
+## 4. Gemensamma publiceringsspärrar
+
+1. Varje slutlig fråga ska ha identisk saklig innebörd i svenska, spanska, svarsskala och kodningsunderlag. Frågornas exakta innebörd låses före översättning och scoringtest.
+2. Varje icke-null-värde behöver direkt URL, källdatum eller ”datum saknas”, kontrolltid, kort sakstöd och eventuellt förbehåll. Ett läsdatum är inte ett publiceringsdatum.
+3. Föreslaget kvalitetsmål är minst 6/8 sakpositioner per fråga och en belagd motposition. Det är ett arbetsförslag, inte ett redan beslutat kriterium. Svag täckning ska inte lösas med gissade koder.
+4. Appens nuvarande numeriska täckning är S 5/6, M 6/6, SD 3/6, V 5/6, C 4/6, KD 5/6, L 4/6, MP 5/6. Därför räcker inte deterministiska tester: även olika jämförelseunderlag måste granskas. Ingen ändring får göras för att skapa ett förväntat höger–vänsterresultat.
+5. Kontrollera slutlig deltagarlista hos Valmyndigheten och besluta ett transparent partiurval. De åtta representerade partierna är inte automatiskt samtliga deltagande partier.
+6. Hela paketets ämnesbalans, källaktualitet och spanska måste godkännas innan appen märks slutversion. Tolv kandidater kan behöva bli färre frågor eller bytas ut.
+
+## Källor
+
+Återöppnade 2026-09-02 om inget annat anges. Publiceringsdatum på SVT:s partisidor framgick inte; ”2026” är valomgång, inte exakt källdatum. Konstsvar användes även i föregående granskning 2026-09-01. Dessa källor belägger avgränsade fakta/råsvar, inte att hela paketet är färdigverifierat.
+
+### Direkt inskickade regionala partisvar hos SVT
+
+- [S](https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/)
+- [M](https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/)
+- [SD](https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/)
+- [V](https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/)
+- [C](https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/)
+- [KD](https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/)
+- [L](https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/)
+- [MP](https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/)
+
+### Externa kontroller
+
+- [Läkartidningen: upphandlingskritik, 2024-06-20](https://lakartidningen.se/nyheter/psykiatriupphandling-sagas-av-oppositionen-dumpade-priser/). Läsbar via sökresultat efter fel vid direktöppning; sekundärkälla.
+- [Läkartidningen: beslut om granskning, 2025-11-14](https://lakartidningen.se/nyheter/kritiserade-psykiatriupphandlingar-i-region-stockholm-ska-granskas/). Sekundärkälla, inte granskningsresultatet.
+- [SVT:s SL-rundfråga, uppdaterad 2026-05-19](https://www.svt.se/nyheter/lokalt/stockholm/flera-partier-vill-sanka-sl-priserna-eller-infora-pristak). Sekundärkälla; skiljer ordinarie och riktade prisförslag.
+- [Funktionsrätt: fullständiga enkätsvar](https://funktionsrattstockholmslan.se/intressepolitik/temaar/regionvalet-2026/valenkat-till-regionpolitikerna/). Partiernas inskickade svar hos intresseorganisation, 20 maj–14 juni 2026; inte oberoende belägg för sakpåståenden i fritexten.
+- [Funktionsrätt: tidigare utfrågning, publicerad 2026-05-13](https://funktionsrattstockholmslan.se/2026/05/13/politikerutfragning-infor-valet/). Historisk jämförelse, inte ersättning för senare svar.
+- [Region Stockholm: procentregeln](https://www.regionstockholm.se/kultur/konst-i-vardmiljo/konstnarlig-gestaltning/procentregeln/). Officiell information, uppdaterad 2023-11-07.
+- [1177 Stockholm: fritidshjälpmedel](https://www.1177.se/Stockholm/undersokning-behandling/hjalpmedel/sa-far-du-ett-hjalpmedel/fritidshjalpmedel/). Officiellt regionalt tillägg, uppdaterad 2026-02-01.
+- [SL: rampservice per station](https://sl.se/reseplanering/tillganglighet/sl-trafikens-tillganglighet/pendeltagens-tillganglighet/rampservice-pa-pendeltagsstationerna). Identifierad nulägeskälla; full stationsgenomgång återstår.
+- [Region Stockholm: återhämtningspilot](https://www.regionstockholm.se/nyheter/2025/09/pilotprojekt-ska-underlatta-aterhamtning-for-operationspersonal/). Officiell information, september 2025.
+- [Region Stockholm: arbetstid och avtal](https://www.regionstockholm.se/jobb/dina-formaner/arbetstid-lon-och-ersattning/). Officiell information, uppdaterad 2026-01-19.
+- [V:s regionala arbetstidsmaterial, 2026-04-07](https://sll.vansterpartiet.se/2026/04/07/vardpersonal-jobbar-34-timmars-veckor-orkar-inte-annars/). Partikälla; styrker inte andra partiers positioner.
+- [Region Stockholm: antagen klimatplan, maj 2025](https://www.regionstockholm.se/nyheter/2025/05/klimathandlingsplan-ska-visa-vagen-for-minskade-utslapp/). Officiell information.
+- [MP: klimatmål, uppdaterad 2026-05-08](https://www.mp.se/stockholmsdistriktet/politik/fossilfritt-i-regionen-och-kommuner/). Egen regional partikälla.
+- [Locum: styrelsehandlingar 2026-01-28](https://www.locum.se/globalassets/global/5.-om-oss/styrelsen-dokument/2026-01-28-styrelsen-arkiv/2026-01-28styrelseprotokoll---signerad-for-publicering.pdf). **Sökutdrag identifierat**, innehåller KD:s särskilda uttalande om klimatplanen. Full dokumentkontroll återstår; inga slutkoder härleds från utdraget.
+
+## Nästa arbetsordning
+
+1. Lås gemensam svarsskala och rättning av Q01; lös omfattningen i Q06.
+2. Komplettera Q02–Q05 med aktuella källor och stäng kodningsluckorna.
+3. Slutkontrollera K01–K03; pröva om K04 tillför tillräckligt sakligt värde. K05–K06 behöver flerpartiresearch.
+4. Först efter denna grind: välj slutliga 10–12 frågor och uppdatera appen i ett samlat, testat steg på separat branch.

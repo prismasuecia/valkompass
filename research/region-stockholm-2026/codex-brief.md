@@ -6,6 +6,8 @@ Bygg en separat Region Stockholm 2026-variant med samma visuella språk, flöde 
 
 ## Läsordning
 
+**Revisionsspärr 2026-09-02:** Läs `research/region-stockholm-2026/review-12-questions.md` före implementation. Inlagda koder är inte slutgodkända och nya kandidater får inte automatiskt bli appfrågor. Slutpaketet ska väljas och sakgranskas samlat.
+
 Läs endast följande först:
 
 1. `research/region-stockholm-2026/architecture.md`

@@ -1,5 +1,9 @@
 # Region Stockholm 2026 – masterunderlag
 
+## Gällande revisionsspärr 2 september 2026
+
+Läs [den samlade granskningen inför 12 frågor](review-12-questions.md) först. Den identifierar kodnings-, aktualitets- och propositionsproblem i det inlagda sexfrågorsdatasetet och sex nya kandidater med olika kvarstående luckor. Äldre verifieringspåståenden nedan är historik, inte publiceringsgodkännande. Appen är fortfarande en förhandsvisning och har inte ändrats av denna researchgranskning.
+
 Status: **redaktionellt arbetsunderlag för förhandsvisning, inte publiceringsklart**. Bred research frystes 31 augusti 2026 och underlaget aktualitetskontrollerades 1 september 2026. En sista kontroll krävs nära offentlig publicering.
 
 ## Omfattning

@@ -3,7 +3,8 @@
   "jurisdiction": "region-stockholm",
   "electionYear": 2026,
   "reviewedAt": "2026-09-01",
-  "status": "verified-six-question-preview",
+  "status": "preview-under-revision-not-publication-ready",
+  "auditRef": "review-12-questions.md",
   "scale": {"min": -2, "max": 2, "missing": null},
   "parties": ["S", "M", "SD", "V", "C", "KD", "L", "MP"],
   "questions": [
