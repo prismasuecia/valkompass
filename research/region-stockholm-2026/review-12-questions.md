@@ -44,6 +44,18 @@ Checkpoint 34 löser inte Q02–Q06 eller K01–K06. Publiceringsspärren för h
 
 ## 2. Sex kompletterande kandidater
 
+### Mottagningskontroll: checkpoint 35, daterad 2026-09-02
+
+**Q06 kvarstår som ej godkänd för slutpaketet.** Den nya tabellens 7/8 är inte verifierad täckning för total avgiftsfrihet året runt. Följande återkoppling ersätter checkpointens slutbedömning, inte dess sparade råsvar:
+
+- C:s `null` är ett försiktigt val för den utvidgade propositionen. Det betyder otillräckligt underlag, inte att partiet uttryckligen motsätter sig total avgiftsfrihet.
+- [L:s svar](https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/) avser gratis fritidskort med statlig medfinansiering. Finansieringsvillkor motiverar inte automatiskt en svagare kod, men ”fritidskort” bevisar heller inte alla resor hela året. L:s +2 kan sparas som råsvar på SVT-frågan, inte godkännas för en mer långtgående appfråga utan ytterligare belägg.
+- [S:s svar](https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/) nämner statsbidrag och fler barn/unga. Checkpointens beskrivning av S som utan strukturella villkor är därför fel. SD:s allmänt hållna motivering måste också prövas mot samma precisa omfattning; inget automatiskt stöd för ”alla, alltid”.
+- Den korrigerade regeln om medföljande 7–11-åringar ska hänvisa direkt till SL-länken ovan. Datera inte införandet till 2026: [regionens budgetpresentation för 2024](https://www.regionstockholm.se/nyheter/2023/11/budget-2024-i-sammanfattning/) beskriver redan utökningen till alla veckodagar.
+- KD:s basårsrättning är användbar. Den bevisar inte checkpointens tillägg att M, SD, KD och L alla har samma slutmål 12,08. Varje parti kräver eget sakstöd; ingen sådan gemensam slutsats godkänns här.
+
+**Arbetsbeslut:** spara Q06 som revisionskrävande reserv utan att dela upp den i två snarlika frågor. Ingen appändring görs. Fortsätt nu med Q02:s aktuella upphandlingsunderlag, därefter Q03–Q05. Återvänd till Q06 först när exakta ålders-, tids- och finansieringsvillkor kan beläggas eller en likvärdig omformulering hittats. Inget nytt godkännande behövs för att fortsätta researchen.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
