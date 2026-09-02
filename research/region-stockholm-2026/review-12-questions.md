@@ -78,6 +78,19 @@ Checkpoint 34 löser inte Q02–Q06 eller K01–K06. Publiceringsspärren för h
 
 **Nästa avgränsade block:** granska K01–K03 med exakta propositioner, direktlänkade partisvar och aktuellt nuläge. Parkera Q02, breda Q03, Q03b, Q04 och Q06 tills detta block är klart; starta inte om all tidigare research. Därefter görs ett samlat urval utifrån kvalitet och ämnesbalans, inte en garanti om tolv frågor. Detta mottagningsbeslut ändrar endast researchanteckningen, inte appen eller dess poäng.
 
+### Mottagningskontroll: checkpoint 38, daterad 2026-09-02
+
+**K01–K03 kan gå vidare som kandidater till slutredigering, men checkpointens färdiga numeriska matriser godkänns inte som ett paket.**
+
+- **K01:** råsvaren stämmer med tidigare SVT-kontroll: S/C +1, V/L/MP +2, M/SD/KD −2 på originalets enprocentsförslag. Bevara skillnaden mellan detta förslag och dagens differentierade procentregel. Svaren belägger inte automatiskt stöd för att sänka vårdlokalernas nivå från två till en procent, eller en exakt omskriven regel med alla undantag. Officiella procentsidan kunde inte återöppnas i denna kontroll; tidigare läsning daterad 2023 räcker inte som ny budgetkontroll. Partimatrisen är användbar, medan gällande regel och likvärdig slutformulering återstår. SVT:s valår ska inte anges som exakt publiceringsdatum.
+- **K02:** originalenkäten återläst. Åtta svar men **sju sakpositioner**: KD anger ingen åsikt och ska vara `null`, inte politisk mittenkod 0. Fem partier anger annan lösning, inte sex nej. Bevara även ”motsvarande funktion” i sakomfattningen; frågan gäller inte tillgänglighet generellt.
+- **K03:** råsvaren är korrekt återgivna: sju stödjer, S föreslår en annan metod. S:s alternativ får inte beskrivas som motstånd mot fritidshjälpmedel generellt.
+- **Gemensam skalfråga för K02/K03:** enkäten skiljer aktivt drivande från stöd. Detta är inte automatiskt stark respektive svag instämman på appens skala. Även ”annan lösning” saknar uppmätt motståndsintensitet. Behåll råkategori, riktning och prioritering separat. Innan implementering krävs en dokumenterad gemensam metod för kategoriska svar, med kontroll att den inte ger systematisk fördel åt partier som lovar att driva frågor aktivt. Inga nya siffervärden fastställs genom denna anteckning.
+
+K02/K03-källa: [Funktionsrätts fullständiga enkät](https://funktionsrattstockholmslan.se/intressepolitik/temaar/regionvalet-2026/valenkat-till-regionpolitikerna/), svarsperiod 20 maj–14 juni 2026, återöppnad 2026-09-02. Partiernas nulägespåståenden i fritext är inte oberoende kontroller av dagens tillgänglighet. K02 behöver en aktuell SL-kontroll; K03:s tidigare 1177-kontroll kvarstår men ersätts inte av enkäten.
+
+**Nästa block:** K04–K06, med samma uppdelning mellan källsvar, nuläge och kodning. Leverera därefter en samlad statuslista för alla kandidater: redo för slutredigering, kräver avgränsad komplettering eller reserv. Inget löfte om tolv godkända frågor. Q01/Q05 och K01–K03 är fem ämnen som kan bearbetas vidare, inte fem publiceringsklara appfrågor. App och poäng lämnas oförändrade.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
