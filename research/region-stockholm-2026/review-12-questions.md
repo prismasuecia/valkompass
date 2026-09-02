@@ -91,6 +91,19 @@ K02/K03-källa: [Funktionsrätts fullständiga enkät](https://funktionsrattstoc
 
 **Nästa block:** K04–K06, med samma uppdelning mellan källsvar, nuläge och kodning. Leverera därefter en samlad statuslista för alla kandidater: redo för slutredigering, kräver avgränsad komplettering eller reserv. Inget löfte om tolv godkända frågor. Q01/Q05 och K01–K03 är fem ämnen som kan bearbetas vidare, inte fem publiceringsklara appfrågor. App och poäng lämnas oförändrade.
 
+### Mottagningskontroll: checkpoint 39, daterad 2026-09-02
+
+**Sex kandidater kan bearbetas vidare: Q01, Q05 och K01–K04. Det betyder inte sex publiceringsklara frågor, och det finns inte tolv godkända frågor.** Denna kontroll jämför checkpointen med redan lästa källor och dokumenterade rättningar; inga nya källor för K05/K06 har verifierats här.
+
+- **K04:** de redovisade svarskategorierna överensstämmer med den tidigare genomlästa originalenkäten. Ämnet kan gå vidare som kandidat, men behöver konkret förklaring av diplomeringens innehåll, aktuellt nuläge och avgränsning. Gör inte en generell fråga till krav på obligatorisk diplomering av varje mottagning; C:s stöd för ett frivilligt alternativ måste bevaras. Överlappning och ämnesbalans ska vägas innan sluturval.
+- **Skalrättningen är inte genomförd:** checkpointen behåller +2 för aktivt drivande och +1 för stöd i K02–K04. Det är fortfarande prioritet omsatt till instämmandegrad. Kategorierna ska sparas som namngivna råsvar med separat prioriteringsfält, utan slutligt appvärde tills en gemensam metod fastställts. KD:s `null` i K02 är däremot korrekt rättat.
+- **Q03b:** tabellen återinför den tidigare avvisade slutsatsen om C:s interna motsägelse. Den ska strykas. Åtta råsvar finns på SVT:s originalfråga; täckning för en omformulerad proposition är ännu inte fastställd. Ange inte 7/8 godkända positioner.
+- **K05:** MP:s och V:s olika slags förslag får inte kodas +2/+1 enbart utifrån konkretionsgrad. Påverkan på SKR och regional implementering är olika handlingar. Två källspår är inte två verifierade positioner på en gemensam exakt proposition. Kandidaten förblir reserv.
+- **K06:** hänvisningen till granskningsdokumentet är fel. Vår identifierade Locum-källa är styrelseprotokollet **2026-01-28**, direktlänkat i källförteckningen, inte en remiss från december 2024. Ett misslyckat försök med ett annat dokument avgör inte tillgängligheten till rätt PDF. Ingen KD-position godkänns. Checkpointens nya utsläppstal återverifieras inte här och förs inte in som nulägesfakta. Kandidaten förblir reserv.
+- **Statusmåtten:** Q02:s 4/8, breda Q03:s 6/8, Q04:s 3/8 och Q06:s 7/8 får inte presenteras som verifierad täckning i slutpaketet. De är äldre arbetsmatriser med öppna frågor om innebörd, tid eller belägg. Q05:s partimatris är kontrollerad, men aktuell sak-/juridiknot och redaktionell kontroll återstår.
+
+**Korrigerad arbetsordning:** leverera nu ett sammanhållet redigeringsunderlag för de sex kandidaterna med tydliga kvarstående luckor, inte ännu en kumulativ checkpoint som återinför äldre fel. Separera råsvar, föreslagen kod och godkänd kod. Därefter prioriteras en avgränsad komplettering av Q04 (ordinarie SL-priser och tidsperiod); strukturerade enkätsvar är inte ett krav när direkta regionala partiförslag ger jämförbart stöd. Övriga reserver väntar. Målet 10–12 är fortfarande ett urvalsmål, inte uppnådd research. Ingen app- eller poängändring görs i denna kontroll.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
