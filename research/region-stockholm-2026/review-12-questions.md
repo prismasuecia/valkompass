@@ -56,6 +56,17 @@ Checkpoint 34 löser inte Q02–Q06 eller K01–K06. Publiceringsspärren för h
 
 **Arbetsbeslut:** spara Q06 som revisionskrävande reserv utan att dela upp den i två snarlika frågor. Ingen appändring görs. Fortsätt nu med Q02:s aktuella upphandlingsunderlag, därefter Q03–Q05. Återvänd till Q06 först när exakta ålders-, tids- och finansieringsvillkor kan beläggas eller en likvärdig omformulering hittats. Inget nytt godkännande behövs för att fortsätta researchen.
 
+### Mottagningskontroll: checkpoint 36, daterad 2026-09-02
+
+**Q02 är aktualiserad men inte slutgodkänd.** Checkpointens fyra oförändrade koder är inte fyra självständigt återverifierade positioner om exakt anbudsrangordning.
+
+- Nulägesuppdateringen är användbar: [SVT, 21 maj 2026](https://www.svt.se/nyheter/lokalt/stockholm/ny-oberoende-rapport-om-psykiatrin-inga-vasentliga-avtalsbrott?lokalmeny=1) rapporterar att KPMG inte kunnat styrka väsentliga avtalsbrott, men identifierat brister. Detta är en sekundär återgivning, inte en här genomläst originalrapport. Det innebär inte att vårdkvaliteten är problemfri: arbetsmiljön undersöktes inte och tillförlitliga uppgifter saknades för väntetidsanalys.
+- [KD:s eget pressmeddelande, 16 juni 2026](https://www.mynewsdesk.com/se/kristdemokraterna_stockholms_laens_landsting/pressreleases/kd-entlediga-psykiatriutskottets-ordfoerande-sandra-ivanovic-rubin-mp-3454315) bekräftar uttryckligen fortsatt kritik mot lägstaprisavtal. Det är ett aktuellt sakstöd; exakt skalvärde måste fortfarande följa den gemensamma kodningsregeln.
+- [Åtgärdspaketet i MP:s pressrum, 2 juni 2026](https://www.mynewsdesk.com/se/mp-sll/pressreleases/mittenkoalitionen-presenterar-aatgaerdspaket-efter-granskning-av-vuxenpsykiatrin-3451743) beskriver förstärkt uppföljning och beredskap för övertagande eller ny upphandling om juridiska skäl uppstår. Att inte omedelbart säga upp avtalen belägger inte MP:s −2 på frågan om pris kontra kvalitet vid anbudsrangordning. Slutsatsen bygger på utebliven förändring, inte ett direkt svar om kriteriet.
+- M:s och L:s citat i checkpointen kritiserar upphandlingen respektive avtalen generellt. Utan mer sammanhang bevisar de inte vilket specifikt rangordningskriterium partierna förespråkar. Direkta länkar till den åberopade Mitt i-artikeln saknas i checkpointen; dessa citat är inte separat återverifierade här. Äldre belägg får behållas med sina ursprungliga datum, inte märkas som återbekräftade genom dessa citat.
+
+**Arbetsbeslut:** parkera Q02:s slutkodning tills den exakta motsättningen har tillräckligt stöd. Ändra inte appvärden genom detta mottagningsbeslut. Q06 förblir revisionskrävande reserv; checkpointens formulering att Q01/Q06/Q02 alla har fullständig primärverifiering godkänns inte. Fortsätt med Q03–Q05 utan ytterligare godkännandesteg. Redovisa exakt proposition, aktuellt nuläge, råsvar och direktlänkar; lämna obelagda värden öppna. Därefter prövas K01–K03, inte ännu en generell omstart av researchen.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
