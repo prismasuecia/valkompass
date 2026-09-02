@@ -8,7 +8,7 @@ Täckning nedan betyder antal icke-null-värden i appen, inte antal slutgodkänd
 
 | ID | Ämne | Inlagd täckning | Granskningsbeslut och exakt återstående arbete |
 |---|---|---|---|
-| Q01 | Regionskatt | 8/8 | **Rätta före låsning.** Äldre budgetpositioner har blandats med framtida valpositioner. Använd samma öppna förändringsskala för väljare och partier. Se jämförelsen nedan. |
+| Q01 | Regionskatt | 8/8 | **Omkodningen bekräftad i checkpoint 34; implementation återstår.** Använd öppen nivåfråga och identisk förändringsskala för väljare och partier. Ändra inte enbart koderna under den gamla sänkningsfrågan. Se mottagningskontrollen nedan. |
 | Q02 | Psykiatriupphandling | 4/8 | **Aktualitetslucka.** Den återfunna huvudartikeln är från 2024, inte 2026. Granskning av upphandlingarna rapporterades 2025. Kontrollera dess utfall och om partierna fortfarande stöder exakt denna urvalsmodell. Kritiska röster om vården är inte automatiskt stöd för en särskild anbudsrangordning. |
 | Q03 | Stoppa ändringar i specialiserade vårdval | 6/8 | **Propositionslucka.** Belägg varje partis aktuella stöd för att fortsätta respektive stoppa ytterligare förändringar. En historisk koalitionsplan är inte automatiskt fyra självständiga framtida nej till ett stopp. Skilj permanent stopp från paus, omprövning och stöd för enstaka vårdval. |
 | Q04 | Ordinarie SL-priser | 3/8 | **Tidshorisont och täckning måste rättas.** S:s budgetutsaga för 2026 bevisar inte oförändrade priser efter 2026. M:s höjningslinje och V:s sänkningslinje återfinns i SVT:s partirundfråga, men styrkegrader får inte hittas på. Behåll riktade rabatter och tillfälligt stöd utanför frågan. |
@@ -31,6 +31,16 @@ Partiernas direkta 2026-svar på [SVT:s regionala partisidor](#källor) ger föl
 | MP | +1 | 0 |
 
 Skalan ska då visas som mycket lägre, lite lägre, oförändrad, lite högre, mycket högre. Instämmande i ”sänk” kan annars inte skilja oförändrat från höjning på ett entydigt sätt.
+
+### Mottagningskontroll: checkpoint 34, daterad 2026-09-02
+
+Det uppladdade kumulativa underlaget slutar med checkpoint 34. Dess nya taxeskala och samtliga åtta koder matchar vår tidigare direktkontroll. Äldre checkpoints i samma fil ersätter inte denna revision. Inga appkoder har ändrats vid mottagandet.
+
+- **Accepterad riktning:** Q01 ska vara en öppen nivåfråga, exempelvis ”Hur bör Region Stockholms skattesats förändras jämfört med dagens nivå?” Spanskt arbetsförslag: ”¿Cómo debería cambiar el impuesto regional respecto al nivel actual?” Behåll inte ”bör sänka” tillsammans med nivåalternativ; även frågetext och förklaring måste ändras.
+- **KD:s påstådda siffermotsägelse är inte styrkt:** [regionens budgetpresentation](https://www.regionstockholm.se/nyheter/2025/10/regionstyrelsens-forslag-till-budget-2026-for-region-stockholm/) beskriver ändringen från 12,38 till 12,33. [Regionens aktuella skatteinformation](https://www.regionstockholm.se/om-region-stockholm/ekonomi-och-budget/sa-anvands-dina-skattepengar/) bekräftar 12,33. Då blir 12,38 − 0,30 = 12,08 och 12,33 − 0,25 = 12,08. Det är en möjlig basårsförklaring, inte bevis för ett ändrat mål. [KD:s SVT-svar](https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/) anger 25 öre och lite lägre. Den äldre budgetuppgiften är ärvd från checkpointen och inte separat återverifierad här; slutlig historisk jämförelse måste ange basår. Detta hindrar inte den direktbelagda valkoden +1.
+- **Nästa block Q06:** återanvänd inte checkpoint 33:s helgregel. [SL:s aktuella regler](https://sl.se/reseplanering/att-resa-med-sl/barns-resor-och-res-med-barn) medger att en resenär över 18 med SL-biljett tar med upp till sex barn 7–11 år gratis alla veckodagar året om, med angivna biljettundantag. Bevara råsvar och finansieringsvillkor separat; sänk inte L:s kod godtyckligt från +2 till +1 och tolka inte C:s stöd för befintliga undantag som stöd för total avgiftsfrihet.
+
+Checkpoint 34 löser inte Q02–Q06 eller K01–K06. Publiceringsspärren för hela paketet kvarstår.
 
 ## 2. Sex kompletterande kandidater
 
