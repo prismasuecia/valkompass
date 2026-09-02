@@ -104,6 +104,26 @@ K02/K03-källa: [Funktionsrätts fullständiga enkät](https://funktionsrattstoc
 
 **Korrigerad arbetsordning:** leverera nu ett sammanhållet redigeringsunderlag för de sex kandidaterna med tydliga kvarstående luckor, inte ännu en kumulativ checkpoint som återinför äldre fel. Separera råsvar, föreslagen kod och godkänd kod. Därefter prioriteras en avgränsad komplettering av Q04 (ordinarie SL-priser och tidsperiod); strukturerade enkätsvar är inte ett krav när direkta regionala partiförslag ger jämförbart stöd. Övriga reserver väntar. Målet 10–12 är fortfarande ett urvalsmål, inte uppnådd research. Ingen app- eller poängändring görs i denna kontroll.
 
+### Mottagningskontroll: checkpoint 40, daterad 2026-09-02
+
+**Accepterad förbättring:** K02–K04 har nu namngivna råkategorier utan påhittad instämmandegrad; KD i K02 är `null`. Tidigare fel om C i Q03b och V:s SKR-förslag har rättats. Sex kandidater kvarstår för slutbearbetning, inte sex publiceringsklara frågor.
+
+**Redaktionella och faktiska rättningar innan underlaget får bli appdata:**
+
+- **K01:** spanskans ”un porcentaje” tappar originalets exakta 1 procent. Det är en förändrad proposition, inte bara pedagogisk översättning. Bevara beloppet i arbetsöversättningen och lös sedan uttryckligen hur frågan förhåller sig till den differentierade gällande regeln. Märk inte detta ”ingen research återstår”.
+- **K02:** 2021 avser beslutet, inte genomförd avveckling. [Sveriges Radio, 24 januari 2023](https://www.sverigesradio.se/artikel/beslutet-avvecklingen-av-tagvardarna-pausas), beskriver paus i avvecklingen och ursprungsbeslutet 2021. [Mitt i:s återblick på 2023](https://www.mitti.se/nyheter/fyrdubbling-av-klagomalen-pa-pendeln-6.3.196894.c30b01b832) placerar avvecklingen 2023. Dessa sekundära källor kontrollerades via sökresultat. Använd inte 2021 som genomförandeår. Fem partier, inte sex, anger annan lösning. Beskriv inte all rampservice som förbokad; villkoren varierar mellan stationer och kräver SL-källa.
+- **K03:** ”ampliando su disponibilidad” behöver återge förskrivning, inte bara större allmän tillgång. Förklara först vad hjälpmedlet möjliggör i vardagen och därefter att vården kan förskriva det. Inga nya löften om avgiftsfrihet eller viss utrustning utan sakstöd.
+- **K04:** påståendet att diplomering inte finns på några vanliga vårdcentraler saknar direkt belägg i leveransen. Beskriv det inte som fastslaget nuläge. Förklara utbildning och bemötande snarare än en odefinierad ”certifiering i tillgänglighet”; specificera endast moment som beläggs av programbeskrivningen.
+- **Spårbarhet:** `[partido]` är en platshållare, inte åtta fungerande källänkar. Använd de fullständiga länkarna i denna gransknings källförteckning. Skilj originalfråga från bearbetad arbetsformulering och markera förkortade utdrag som utdrag. Bevara M/KD/SD:s tolkförbehåll även i slutpaketet. Q05:s aktuella regel kräver fortfarande officiell källa; partisvaren ensamma verifierar inte nuläget.
+
+**Q04, avgränsad kontroll:**
+
+- [V:s eget besked, 26 maj 2026](https://sll.vansterpartiet.se/2026/05/26/v-gor-busskortet-billigare-aven-nar-det-inte-ar-valar/) stöder varaktiga sänkningar efter valåret. [SVT:s artikel om halverad biljett](https://www.svt.se/nyheter/lokalt/stockholm/en-manad-med-halverad-sl-biljett-sa-tycker-politikerna?lokalmeny=1) återger M:s vallinje om ytterligare ordinarie prishöjningar. Båda kontrollerades genom sökresultat; SVT:s direktöppning misslyckades. M-texten är journalistens återgivning, inte det ordagranna Conradi-citat checkpointen påstår. Exakt period 2026–2030 och förändringens styrka är inte belagda av detta utdrag.
+- S:s besked om enbart 2026 får inte räknas som mittenposition för tiden därefter. För en gemensam efter-2026-fråga finns här två riktningar att arbeta vidare med, inte tre verifierade partikoder. Ange `null` för S i den nya arbetsmatrisen tills ett relevant besked finns. Ingen appkod ändras här.
+- [SL:s tillfälliga prissänkning](https://sl.se/biljetter/sortiment-och-regler/tillfallig-prissankning), sida uppdaterad 1 juli och kontrollerad 2026-09-02, gäller vissa periodbiljetter, inte alla biljetter. Sidan skiljer köp av 30-dagarsbiljett senast 1 december från att prissänkningen pågår till och med december. Skriv inte att alla kan köpa halverade biljetter fram till 31 december. Återgång till ordinarie pris efter stödet är inte samma sak som en politiskt beslutad höjning av ordinarie pris.
+
+**Nästa leverans ska vara ett avgränsat slutredigeringspaket, inte återstartad partisvarsresearch:** rätta ovanstående sex kandidaters formuleringar och komplettera endast deras saknade officiella nulägeskällor. K02–K04:s numeriska metod hanteras separat före implementation. Q04 och övriga reserver räknas inte in som klara. Appen lämnas oförändrad.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
