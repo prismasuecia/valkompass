@@ -1,5 +1,17 @@
 # Resultatspärr och nästa genomförbara steg
 
+**Aktuell status:** Se release-candidate-ten.md. Tre ersättare ger nu tio gemensamma frågor i appdata. Resultatspärren kvarstår. Följande avsnitt är tidigare arbetssteg, inte nuvarande antal.
+
+**Senare genomförande samma datum:** Se implementation-ten.md. Gemensam jämförelsegrund är nu införd i regionvariantens kod bakom fortsatt publiceringsspärr. Tio frågor visas i förhandsversionen, sju har gemensam poänggrund. Nedanstående formuleringar om att modellen enbart är prototyp är historik.
+
+## Aktuell status efter ti frågegranskningen, 2026-09-03
+
+Se editorial-ten.md för aktuellt urval, formuleringar och källstatus. Sexfrågetabellen nedan är historik. De fyra namngivna nulägesluckorna har fått belägg: Q03b organisation, Q05 regional kostnadsfri språktolk, Q06 SL-villkor och N01 blandad vårddrift. Det innebär inte att alla tio är poänggodkända: Q03b och K01 kräver fortfarande semantisk slutbedömning, och K02 saknar KD-position.
+
+Researchprototypen kräver nu uttryckligen scoringApproved === true utöver gemensamma partisvar. Ogranskad eller tvetydig fråga räknas inte som neutral och får inte komma in i procenten bara för att åtta svar finns. Detta är INTE infört i appen. Fjorton tester passerar, inklusive syntetiskt ti frågeurval där två ogranskade och en ofullständig fråga lämnar sju gemensamma. Det testet godkänner inte sju verkliga frågor och validerar inte urvalets politiska balans.
+
+Slutligt metodbeslut, maskinläsbara slutdata och appintegration återstår. Ingen publiceringsspärr har lyfts.
+
 Arbetsbeslut/prototyp 2026-09-03. Inte inkopplat i någon app. Kompletterar editorial-six.md och methodology.md.
 
 ## Problemet

@@ -2,7 +2,9 @@ import questionsSource from '@/data/questions.json';
 import type {AnswerValue, Explanation, Position, Question, QuestionCategory} from '@/types';
 
 type SourceQuestion = {
-  answerScale?: 'agreement' | 'tax-level';
+  answerScale?: Question['answerScale'];
+  scoringApproved?: boolean;
+  comparisonNote?: string | null;
   id: string;
   category: QuestionCategory;
   statement: {sv: string; es: string};
@@ -17,13 +19,15 @@ type SourceQuestion = {
 const sourceQuestions = questionsSource.questions as SourceQuestion[];
 
 export const questions: Question[] = sourceQuestions.map((item) => ({
+  scoringApproved: item.scoringApproved === true,
+  comparisonNote: item.comparisonNote,
   answerScale: item.answerScale ?? 'agreement',
   id: item.id,
   category: item.category,
   statement: item.statement,
   context: item.context,
   explanationId: `EXP-${item.id}`,
-  importanceAllowed: true
+  importanceAllowed: item.scoringApproved === true && !item.comparisonNote
 }));
 
 export const explanations: Explanation[] = sourceQuestions.map((item) => ({

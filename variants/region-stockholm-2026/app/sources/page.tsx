@@ -3,6 +3,7 @@ import {ReviewNotice} from '@/components/ReviewNotice';
 import partyCardsData from '@/partyCards.json';
 import sourceInventory from '@/sourceInventory.json';
 import uiText from '@/uiText.json';
+import questionData from '@/data/questions.json';
 
 const sourceBasis = [
   uiText.sourcesPage.partyPrograms,
@@ -76,6 +77,20 @@ export default function SourcesPage() {
       <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.sourcesPage.notAffiliated}</p>
       <p className="mt-2 text-sm leading-6 text-slate-600">{uiText.sourcesPage.globalLastReviewed}</p>
 
+      <section className="mt-8 grid gap-4">
+        <h2 className="text-xl font-semibold text-ink">Fuentes de las diez preguntas actuales</h2>
+        <p className="text-sm leading-6 text-slate-600">Las diez preguntas tienen respuestas de los ocho partidos. No todas marcan grandes diferencias: la del centro de salud de las mujeres refleja principalmente acuerdo. La publicación del resultado continúa bloqueada mientras terminamos la revisión.</p>
+        {questionData.questions.map(question => (
+          <details key={question.id} className="rounded-2xl border border-line bg-white p-5">
+            <summary className="cursor-pointer font-semibold">{question.statement.es}</summary>
+            {question.comparisonNote && <p className="mt-3 text-sm text-amber-900">{question.comparisonNote}</p>}
+            <ul className="mt-4 grid gap-3 text-sm">
+              {question.sourceUrls.map((url, index) => <li key={url}><a className="break-words underline" href={url}>Fuente {index + 1}: {new URL(url).hostname}{new URL(url).pathname.includes('/parti/') ? ` — ${new URL(url).pathname.split('/').filter(Boolean).pop()}` : ''}</a></li>)}
+            </ul>
+          </details>
+        ))}
+      </section>
+
       <section className="mt-8 rounded-2xl border border-line bg-white p-6">
         <h2 className="text-xl font-semibold text-ink">{uiText.sourcesPage.basedOnTitle}</h2>
         <ul className="mt-4 grid gap-3 text-sm leading-6 text-slate-700">
@@ -87,7 +102,7 @@ export default function SourcesPage() {
       </section>
 
       <section className="mt-8 border-t border-line pt-6">
-        <h2 className="text-xl font-semibold text-ink">Fuentes temáticas y situación actual</h2>
+        <h2 className="text-xl font-semibold text-ink">Archivo de investigación — no todas estas propuestas siguen en el cuestionario</h2>
         <div className="mt-5 grid gap-4">
           {thematicSources.map((source) => (
             <article key={source.url} className="rounded-2xl border border-line bg-white p-5">

@@ -31,8 +31,8 @@ export default function QuizPage() {
   const isLastQuestion = safeIndex === questions.length - 1;
   const progressPercent = Math.round(((safeIndex + 1) / questions.length) * 100);
   const remainingSeconds = (questions.length - safeIndex - 1) * averageSecondsPerQuestion;
-  const timeUnit = uiText.quizInfo.timeValue.split(' ').at(-1);
-  const remainingTimeText = `${Math.ceil(remainingSeconds / 60)} ${timeUnit}`;
+  const remainingMinutes = Math.ceil(remainingSeconds / 60);
+  const remainingTimeText = remainingMinutes <= 1 ? 'Menos de un minuto' : `${remainingMinutes} minutos`;
 
   function handleNext() {
     if (!selectedAnswer) return;

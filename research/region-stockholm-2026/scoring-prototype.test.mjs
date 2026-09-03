@@ -86,7 +86,8 @@ function commonBasis(questions, partyIds, minimum = 6) {
     }));
     return {...q, scores};
   });
-  const common = scored.filter(q => q.answer !== null && partyIds.every(id => q.scores[id] !== null));
+  // Coverage is not editorial approval. Unknown or false approval fails closed.
+  const common = scored.filter(q => q.scoringApproved === true && q.answer !== null && partyIds.every(id => q.scores[id] !== null));
   const ready = common.length >= minimum;
   const totalWeight = common.reduce((n,q) => n + (q.important ? 2 : 1), 0);
   return {
@@ -101,7 +102,7 @@ function commonBasis(questions, partyIds, minimum = 6) {
   };
 }
 const complete = () => Array.from({length: 6}, (_,i) => ({
-  id: `T${i}`, kind: 'categorical', answer: 1, important: false,
+  id: `T${i}`, kind: 'categorical', answer: 1, important: false, scoringApproved: true,
   positions: {A: 'support', B: 'support', C: 'alternative'}
 }));
 test('no ranking score below six common answers; importance cannot bypass gate', () => {
@@ -141,4 +142,27 @@ test('duplicate data and unknown categories fail closed', () => {
   rows[0].positions.A = 'unverified';
   assert.throws(() => commonBasis(rows, ['A','B']));
   assert.throws(() => commonBasis([...complete(), complete()[0]], ['A','B']));
+});
+
+test('complete party coverage cannot admit an editorially unapproved question', () => {
+  const rows = complete();
+  rows[0].scoringApproved = false;
+  assert.equal(commonBasis(rows, ['A', 'B', 'C']).status, 'insufficient_common_basis');
+  delete rows[0].scoringApproved;
+  assert.equal(commonBasis(rows, ['A', 'B', 'C']).status, 'insufficient_common_basis');
+  rows[0].scoringApproved = 'true';
+  assert.equal(commonBasis(rows, ['A', 'B', 'C']).status, 'insufficient_common_basis');
+});
+
+test('ten synthetic candidates with two unapproved and one missing position share seven questions', () => {
+  const rows = Array.from({length: 10}, (_, i) => ({
+    ...complete()[0], id: `X${i}`, positions: {...complete()[0].positions},
+    scoringApproved: i > 1
+  }));
+  rows[2].positions.B = 'no_opinion';
+  const result = commonBasis(rows, ['A', 'B', 'C']);
+  assert.equal(result.questionIds.length, 7);
+  assert.deepEqual(result.parties.map(p => p.score), [100, 100, 0]);
+  rows[3].important = true;
+  assert.equal(commonBasis(rows, ['C', 'B', 'A']).questionIds.length, 7);
 });

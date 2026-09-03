@@ -1,14 +1,39 @@
-const MAX_DISTANCE = 4;
+// Six is an editorial minimum, not a statistical guarantee of reliability.
+export const MIN_COMMON_ANSWERS = 6;
 
-export function calculateResultsCore({answers, importantQuestions, parties, positions, questions}) {
+export function calculateResultsCore({answers, importantQuestions, parties, positions, questions, minimumCommonAnswers = MIN_COMMON_ANSWERS}) {
+  if (!Number.isInteger(minimumCommonAnswers) || minimumCommonAnswers < 1) throw new Error('Invalid minimum');
+  const unique = (rows, key) => {
+    const keys = rows.map(key);
+    if (new Set(keys).size !== keys.length) throw new Error('Duplicate input');
+  };
+  unique(questions, q => q.id);
+  unique(parties, p => p.id);
+  unique(answers, a => a.questionId);
+  unique(positions, p => JSON.stringify([p.partyId, p.questionId]));
   const importantSet = new Set(importantQuestions);
+  const questionsById = new Map(questions.map((question) => [question.id, question]));
+  const validValue = (value, question) => Number.isInteger(value) && Math.abs(value) <= (question.answerScale === 'categorical' ? 1 : 2);
+  for (const answer of answers) {
+    const question = questionsById.get(answer.questionId);
+    if (!question || (answer.value !== 'skip' && !validValue(answer.value, question))) throw new Error('Invalid answer');
+  }
+  const partyIds = new Set(parties.map(p => p.id));
+  for (const position of positions) {
+    const question = questionsById.get(position.questionId);
+    if (!question || !partyIds.has(position.partyId) || (position.value !== null && !validValue(position.value, question))) throw new Error('Invalid position');
+  }
   const answersByQuestion = new Map(
     answers.filter((answer) => typeof answer.value === 'number').map((answer) => [answer.questionId, answer.value])
   );
-  const questionsById = new Map(questions.map((question) => [question.id, question]));
+  const commonIds = new Set(questions.filter(q => q.scoringApproved === true && answersByQuestion.has(q.id) &&
+    parties.every(p => positions.some(position => position.partyId === p.id && position.questionId === q.id && position.value !== null))
+  ).map(q => q.id));
+  // No score is preferable to presenting absent evidence as zero agreement.
+  if (parties.length < 2 || commonIds.size < minimumCommonAnswers) return [];
 
-  return [...parties].sort((a, b) => a.id.localeCompare(b.id)).map((party) => {
-    const partyPositions = positions.filter((position) => position.partyId === party.id)
+  const results = [...parties].sort((a, b) => a.id.localeCompare(b.id)).map((party) => {
+    const partyPositions = positions.filter((position) => position.partyId === party.id && commonIds.has(position.questionId))
       .sort((a, b) => a.questionId.localeCompare(b.questionId));
     let earned = 0;
     let possible = 0;
@@ -20,13 +45,14 @@ export function calculateResultsCore({answers, importantQuestions, parties, posi
       const question = questionsById.get(position.questionId);
       if (answer === undefined || !question) continue;
       const weight = importantSet.has(position.questionId) ? 2 : 1;
-      const distance = Math.abs(answer - position.value);
-      const points = (MAX_DISTANCE - distance) * weight;
+      const maxDistance = question.answerScale === 'categorical' ? 2 : 4;
+      const distance = Math.abs(answer - position.value) / maxDistance;
+      const points = (1 - distance) * weight;
       const category = categoryTotals.get(question.category) ?? {earned: 0, possible: 0};
       earned += points;
-      possible += MAX_DISTANCE * weight;
+      possible += weight;
       category.earned += points;
-      category.possible += MAX_DISTANCE * weight;
+      category.possible += weight;
       categoryTotals.set(question.category, category);
       comparisons.push({questionId: question.id, category: question.category, statement: question.statement,
         userValue: answer, partyValue: position.value, distance});
@@ -44,4 +70,8 @@ export function calculateResultsCore({answers, importantQuestions, parties, posi
       comparisons: [...comparisons].sort((a, b) => a.questionId.localeCompare(b.questionId))
     };
   }).sort((a, b) => b.score - a.score || a.partyId.localeCompare(b.partyId));
+  return results.map((result, index) => ({...result,
+    rank: results.findIndex(other => other.score === result.score) + 1,
+    tied: results.some((other, otherIndex) => otherIndex !== index && other.score === result.score)
+  }));
 }

@@ -3,6 +3,7 @@ export type Language = 'sv' | 'es';
 export type LocalizedText = Record<Language, string>;
 
 export type QuestionCategory =
+  | 'regionalEmployment'
   | 'regionalTax'
   | 'psychiatryProcurement'
   | 'childYouthPsychiatry'
@@ -15,7 +16,9 @@ export type AnswerValue = -2 | -1 | 0 | 1 | 2;
 export type AnswerSelection = AnswerValue | 'skip';
 
 export type Question = {
-  answerScale?: 'agreement' | 'tax-level';
+  answerScale?: 'agreement' | 'tax-level' | 'private-share' | 'categorical';
+  scoringApproved?: boolean;
+  comparisonNote?: string | null;
   id: string;
   category: QuestionCategory;
   statement: LocalizedText;
@@ -51,6 +54,8 @@ export type QuizAnswer = {
 };
 
 export type Result = {
+  rank: number;
+  tied: boolean;
   partyId: string;
   score: number;
   matchedQuestions: number;

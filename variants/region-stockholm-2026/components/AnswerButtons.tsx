@@ -1,6 +1,6 @@
 'use client';
 
-import type {AnswerSelection} from '@/types';
+import type {AnswerSelection, Question} from '@/types';
 import uiText from '@/uiText.json';
 
 const labels: {value: AnswerSelection; label: string}[] = [
@@ -17,13 +17,19 @@ export function AnswerButtons({
   selectedValue,
   onSelect
 }: {
-  answerScale?: 'agreement' | 'tax-level';
+  answerScale?: Question['answerScale'];
   selectedValue?: AnswerSelection;
   onSelect: (value: AnswerSelection) => void;
 }) {
   const taxLabels: Record<number, string> = {2: 'Bajar mucho', 1: 'Bajar algo', 0: 'Mantenerse', [-1]: 'Subir algo', [-2]: 'Subir mucho'};
+  const shareLabels: Record<number, string> = {2: 'Mucho mayor', 1: 'Algo mayor', 0: 'La misma', [-1]: 'Algo menor', [-2]: 'Mucho menor'};
+  const categoricalLabels: Record<number, string> = {1: 'A favor', 0: 'Ni a favor ni en contra', [-1]: 'En contra'};
   const options = answerScale === 'tax-level'
     ? labels.map(item => ({...item, label: item.value === 'skip' ? item.label : taxLabels[item.value]}))
+    : answerScale === 'private-share'
+    ? [...labels].reverse().filter(item => item.value !== 'skip').map(item => ({...item, label: shareLabels[item.value as number]})).concat(labels.filter(item => item.value === 'skip'))
+    : answerScale === 'categorical'
+    ? labels.filter(item => item.value === 'skip' || Math.abs(item.value) <= 1).map(item => ({...item, label: item.value === 'skip' ? item.label : categoricalLabels[item.value]}))
     : labels;
   return (
     <div className="grid gap-2 sm:gap-3">

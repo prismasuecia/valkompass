@@ -5,6 +5,7 @@ import type {AnswerSelection, Explanation, Language, Question} from '@/types';
 import uiText from '@/uiText.json';
 
 const categoryLabels: Record<Question['category'], string> = {
+  regionalEmployment: 'Empleo en los servicios regionales',
   regionalTax: uiText.categories.regionalTax,
   psychiatryProcurement: uiText.categories.psychiatryProcurement,
   childYouthPsychiatry: uiText.categories.childYouthPsychiatry,
@@ -144,6 +145,7 @@ export function QuestionCard({
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
         <p className="mt-3 text-sm leading-6 text-slate-600">{question.context[language]}</p>
+        {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
         {question.importanceAllowed ? (
           <div className="mt-4">
             <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
@@ -162,6 +164,7 @@ export function QuestionCard({
           <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
           <p className="mt-4 text-base leading-7 text-slate-600">{question.context[language]}</p>
+          {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
           {question.importanceAllowed ? (
             <div className="mt-6">
               <ImportantSetting important={important} onToggleImportant={onToggleImportant} />

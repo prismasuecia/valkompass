@@ -14,6 +14,7 @@ const parties = partiesData as Party[];
 const displayedQuestionCount = questions.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
+  regionalEmployment: 'Empleo en los servicios regionales',
   regionalTax: uiText.categories.regionalTax,
   psychiatryProcurement: uiText.categories.psychiatryProcurement,
   childYouthPsychiatry: uiText.categories.childYouthPsychiatry,
@@ -50,6 +51,14 @@ function getMatchClassification(score: number) {
   return uiText.noClearMatch;
 }
 
+function comparisonLabel(questionId: string, value: AnswerValue) {
+  const scale = questions.find(q => q.id === questionId)?.answerScale;
+  if (scale === 'tax-level') return ({2:'Bajar mucho',1:'Bajar algo',0:'Mantenerse',[-1]:'Subir algo',[-2]:'Subir mucho'})[value];
+  if (scale === 'private-share') return ({2:'Mucho mayor',1:'Algo mayor',0:'La misma',[-1]:'Algo menor',[-2]:'Mucho menor'})[value];
+  if (scale === 'categorical') return value === 1 ? 'A favor' : value === -1 ? 'En contra' : 'Ni a favor ni en contra';
+  return answerLabels[value];
+}
+
 export default function ResultPage() {
   const {language, answers, importantQuestions, reset} = useQuizStore();
   if (!canShowResults(questionsData.status)) {
@@ -66,8 +75,8 @@ export default function ResultPage() {
   }
   const results = calculateResults({answers, importantQuestions, parties, positions, questions});
   const comparableResults = results.filter((result) => result.matchedQuestions > 0);
-  const topResults = comparableResults.slice(0, 3);
-  const remainingResults = comparableResults.slice(3);
+  const topResults = comparableResults.filter(result => result.rank <= 3);
+  const remainingResults = comparableResults.filter(result => result.rank > 3);
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl overflow-x-hidden px-5 py-10">
@@ -75,40 +84,42 @@ export default function ResultPage() {
       <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.results.title}</h1>
       <p className="mt-4 text-base leading-7 text-slate-700">{uiText.results.description}</p>
       <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.sameAnswers}</p>
+      {comparableResults.length > 0 && <p className="mt-3 text-sm leading-6 text-slate-600">Comparamos a todos los partidos en las mismas {comparableResults[0].matchedQuestions} preguntas. El porcentaje no resume toda su política ni te dice a quién votar.</p>}
       <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
         {uiText.results.importantQuestionsUsed}: {importantQuestions.length}
       </p>
       {topResults.length === 0 ? (
         <section className="mt-8 rounded-2xl border border-line bg-white p-6">
           <h2 className="text-xl font-semibold text-ink">{uiText.results.noResults}</h2>
-          <p className="mt-3 leading-7 text-slate-700">{uiText.results.answerQuestions}</p>
+          <p className="mt-3 leading-7 text-slate-700">Necesitamos al menos seis preguntas respondidas por ti, revisadas y con posiciones verificadas de todos los partidos. Marcar una pregunta como importante no aumenta ese número.</p>
         </section>
       ) : null}
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
-        {topResults.map((result, index) => {
+        {topResults.map((result) => {
           const party = parties.find((item) => item.id === result.partyId);
           if (!party) return null;
           const categories = result.matchingCategories.map((category) => categoryLabels[category]);
           const classification = getMatchClassification(result.score);
+          const isUniqueFirst = result.rank === 1 && !result.tied;
 
           return (
             <article
               key={result.partyId}
               className={`min-w-0 rounded-2xl bg-white shadow-sm ${
-                index === 0 ? 'border-2 border-slate-300 p-6 sm:p-8 md:col-span-2' : 'border border-line p-5 sm:p-6'
+                isUniqueFirst ? 'border-2 border-slate-300 p-6 sm:p-8 md:col-span-2' : 'border border-line p-5 sm:p-6'
               }`}
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="flex min-w-0 items-center gap-3">
-                  <span aria-hidden="true" className={`${index === 0 ? 'h-5 w-5' : 'h-4 w-4'} shrink-0 rounded-full`} style={{backgroundColor: party.color}} />
-                  <h2 className={`min-w-0 break-words font-semibold text-ink ${index === 0 ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'}`}>
+                  <span aria-hidden="true" className={`${isUniqueFirst ? 'h-5 w-5' : 'h-4 w-4'} shrink-0 rounded-full`} style={{backgroundColor: party.color}} />
+                  <h2 className={`min-w-0 break-words font-semibold text-ink ${isUniqueFirst ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'}`}>
                     {party.name[language]}
                   </h2>
                 </div>
                 <p
                   aria-label={`${uiText.results.scoreLabel}: ${result.score}%`}
-                  className={`shrink-0 font-semibold text-slate-700 ${index === 0 ? 'text-xl sm:text-2xl' : 'text-base'}`}
+                  className={`shrink-0 font-semibold text-slate-700 ${isUniqueFirst ? 'text-xl sm:text-2xl' : 'text-base'}`}
                 >
                   {result.score}%
                 </p>
@@ -148,9 +159,9 @@ export default function ResultPage() {
                         <p className="font-semibold text-ink">{uiText.progress.question}:</p>
                         <p className="mt-1">{item.statement.es}</p>
                         <p className="mt-3 font-semibold text-ink">{uiText.results.yourAnswer}:</p>
-                        <p>{answerLabels[item.userValue]}</p>
+                        <p>{comparisonLabel(item.questionId, item.userValue)}</p>
                         <p className="mt-3 font-semibold text-ink">{party.name[language]}:</p>
-                        <p>{answerLabels[item.partyValue]}</p>
+                        <p>{comparisonLabel(item.questionId, item.partyValue)}</p>
                       </div>
                     ))}
                   </div>

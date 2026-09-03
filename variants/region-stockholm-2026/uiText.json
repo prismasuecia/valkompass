@@ -88,7 +88,7 @@
 
   "results": {
     "title": "Coincidencia con las posiciones documentadas de los partidos",
-    "description": "El resultado compara tus respuestas únicamente con las posiciones documentadas de los partidos en estas seis preguntas regionales verificadas.",
+    "description": "La comparación utiliza las mismas preguntas revisadas para todos los partidos. Las preguntas excluidas se indican por separado.",
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
     "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
     "importantQuestionsUsed": "Preguntas que contaron el doble en este resultado",
