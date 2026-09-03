@@ -1,5 +1,21 @@
 # Ti frågors lokala releasekandidat — 2026-09-03
 
+## Uppföljning av Claudes granskning
+
+### Genomförd webbläsarkontroll efter rättningarna
+
+Regionvarianten byggdes och testades lokalt i in-app-webbläsaren, inte mot produktion. Mobilflöde genom tio frågor vid 390×844; ytterligare kontroll av svarsknappar och layout vid 320×740; desktop-layout vid 1366×900. Ingen horisontell överströmning i de breddkontrollerade frågevyerna. Förklaringen öppnades/stängdes, svar ändrades med tillbaka-navigation, viktmarkering och ändrat svar återställdes efter ny sidladdning. Informationsskip kontrollerades via knappens aria-pressed och efter återgång från resultat. BUP/privatandel visar överlappningsnot utan viktreglage. Slutknappen leder till förväntad spärrad resultatsida.
+
+Startsidan visade även inaktuella ämnesetiketter; ämneslistan härleds nu från aktuella frågor. Regional sysselsättning har centraliserad etikett. Obelagd nedräkning i minuter togs bort även ur quizvyn. Senaste byggets startsida och quiztext kontrollerades igen efter omladdning. Arton tester och produktionsbygge inklusive typkontroll passerar.
+
+Detta är responsiv kontroll i en webbläsare, inte fysisk iPhone-/Android- eller Safari-verifiering. Den aktiverade resultatrankningens visuella flöde har inte testats här eftersom publiceringsspärren ligger kvar; beräkningen är testad separat. Slutligt beslut om aktivering och separat driftsättning återstår. Rättningarna förs till befintlig region-PR, aldrig direkt till main eller gh-pages.
+
+Claude rapporterade granskning av commit 002e839, inklusive körda tester och bygge men utan fungerande webbläsartest. Rapporten är extern återkoppling, inte ersättning för egen verifiering. Två innehållsfel bekräftades lokalt och rättades: startsidans frågeantal hämtas nu från datasetet; N01 hänvisar till BUP-frågan i stället för borttagen ätstörningsfråga. Den obeprövade tidsuppskattningen på startsidan ersattes med en uppmaning att svara i egen takt.
+
+N01 och N03 har nu synlig överlappningsnot. Båda ingår fortsatt med grundvikt, men kan inte dubbelviktas. Begränsningen verkställs även i beräkningskärnan för tidigare sparade viktmarkeringar. Detta eliminerar inte tematisk överlappning och är inte en statistiskt validerad korrigering av ämnesbalansen. Partipositioner och godkännandestatus ändrades inte. Arton tester passerar, inklusive nya regressionstester. Resultatspärren är kvar; mobilgranskning och slutligt publiceringsbeslut kvarstår.
+
+Nedanstående beskrivning av ingen push avser den ursprungliga lokala arbetsomgången. Releasekandidaten lades därefter på separat regionbranch som commit 002e839 för granskning, utan merge eller publicering. Dessa uppföljande rättningar är ännu lokala.
+
 Detta dokument ersätter urvalsstatusen i editorial-ten.md, implementation-ten.md och result-readiness.md. Historiska researchfiler är inte appens aktuella dataset och får inte återimporteras utan granskning.
 
 ## Aktuellt läge

@@ -2,8 +2,9 @@ import {StartQuizLink} from '@/components/StartQuizLink';
 import Link from 'next/link';
 import partyCardsData from '@/partyCards.json';
 import uiText from '@/uiText.json';
+import {questions} from '@/lib/valkompasData';
 
-const includedTopics = Object.values(uiText.categories);
+const includedTopics = [...new Set(questions.map(question => uiText.categories[question.category]))];
 const partyLogos = [
   {name: partyCardsData.S.name, src: '/party-logos/s.png'},
   {name: partyCardsData.M.name, src: '/party-logos/m.svg'},
@@ -49,7 +50,7 @@ export default function HomePage() {
             <dl className="mt-5 grid gap-4 border-t border-line pt-5 text-sm">
               <div className="flex items-center justify-between gap-4">
                 <dt className="font-medium text-slate-600">{uiText.quizInfo.questionsLabel}</dt>
-                <dd className="font-semibold text-ink">{uiText.quizInfo.questionsValue}</dd>
+                <dd className="font-semibold text-ink">{questions.length}</dd>
               </div>
               <div className="flex items-center justify-between gap-4">
                 <dt className="font-medium text-slate-600">{uiText.quizInfo.timeLabel}</dt>
@@ -57,7 +58,7 @@ export default function HomePage() {
               </div>
             </dl>
             <div className="mt-5 border-t border-line pt-5">
-              <p className="text-sm font-medium text-slate-600">{uiText.categoryResults.title}</p>
+              <p className="text-sm font-medium text-slate-600">Temas de este cuestionario</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 {includedTopics.map((topic) => (
                   <span key={topic} className="rounded-full border border-line bg-paper px-3 py-1 text-sm font-medium text-slate-700">

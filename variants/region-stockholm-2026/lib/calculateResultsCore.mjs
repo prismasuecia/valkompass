@@ -44,7 +44,8 @@ export function calculateResultsCore({answers, importantQuestions, parties, posi
       const answer = answersByQuestion.get(position.questionId);
       const question = questionsById.get(position.questionId);
       if (answer === undefined || !question) continue;
-      const weight = importantSet.has(position.questionId) ? 2 : 1;
+      // Enforce editorial limits even for previously saved importance selections.
+      const weight = importantSet.has(position.questionId) && !question.comparisonNote && question.importanceAllowed !== false ? 2 : 1;
       const maxDistance = question.answerScale === 'categorical' ? 2 : 4;
       const distance = Math.abs(answer - position.value) / maxDistance;
       const points = (1 - distance) * weight;

@@ -46,6 +46,25 @@ test('categorical questions have equal weight and normalized distance', () => {
   const result=calculateResultsCore(input)[0];
   assert.equal(result.score,83); assert.equal(result.strongestDisagreements[0].distance,1);
 });
+
+test('editorial weight restrictions also apply to saved importance selections', () => {
+  for (const restriction of [{comparisonNote:'Shared topic'}, {importanceAllowed:false}]) {
+    const input=fixture(); Object.assign(input.questions[0],restriction);
+    input.answers[0].value=-2;
+    const baseline=calculateResultsCore(input);
+    input.importantQuestions=['Q0'];
+    assert.deepEqual(calculateResultsCore(input),baseline);
+  }
+});
+
+test('current content has a dynamic question count and correct overlap references', () => {
+  const data=JSON.parse(fs.readFileSync(new URL('../data/questions.json',import.meta.url),'utf8'));
+  const home=fs.readFileSync(new URL('../app/page.tsx',import.meta.url),'utf8');
+  assert.ok(home.includes('{questions.length}'));
+  assert.ok(!home.includes('quizInfo.questionsValue'));
+  for(const id of ['RS26-N01','RS26-N03']) assert.ok(data.questions.find(q=>q.id===id).comparisonNote);
+  assert.doesNotMatch(JSON.stringify(data.questions.find(q=>q.id==='RS26-N01')),/ätstörningsfrågan|trastornos alimentarios/);
+});
 test('reordered identical inputs preserve results and ties without mutation', () => {
   const input=fixture(); const before=JSON.stringify(input); const result=calculateResultsCore(input);
   assert.equal(JSON.stringify(input),before);

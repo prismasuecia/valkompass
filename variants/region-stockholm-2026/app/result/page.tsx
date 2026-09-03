@@ -14,7 +14,7 @@ const parties = partiesData as Party[];
 const displayedQuestionCount = questions.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
-  regionalEmployment: 'Empleo en los servicios regionales',
+  regionalEmployment: uiText.categories.regionalEmployment,
   regionalTax: uiText.categories.regionalTax,
   psychiatryProcurement: uiText.categories.psychiatryProcurement,
   childYouthPsychiatry: uiText.categories.childYouthPsychiatry,

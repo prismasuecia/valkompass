@@ -5,7 +5,7 @@ import type {AnswerSelection, Explanation, Language, Question} from '@/types';
 import uiText from '@/uiText.json';
 
 const categoryLabels: Record<Question['category'], string> = {
-  regionalEmployment: 'Empleo en los servicios regionales',
+  regionalEmployment: uiText.categories.regionalEmployment,
   regionalTax: uiText.categories.regionalTax,
   psychiatryProcurement: uiText.categories.psychiatryProcurement,
   childYouthPsychiatry: uiText.categories.childYouthPsychiatry,

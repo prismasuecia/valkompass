@@ -28,12 +28,12 @@
 
   "quizInfo": {
     "questionsLabel": "Número de preguntas",
-    "questionsValue": "5",
-    "timeLabel": "Tiempo estimado",
-    "timeValue": "2–3 minutos"
+    "timeLabel": "Duración",
+    "timeValue": "A tu ritmo; puedes consultar las explicaciones"
   },
 
   "categories": {
+    "regionalEmployment": "Empleo en los servicios regionales",
     "regionalTax": "Impuesto regional",
     "psychiatryProcurement": "Contratación de psiquiatría",
     "childYouthPsychiatry": "Psiquiatría infantil y juvenil",

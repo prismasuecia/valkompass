@@ -151,7 +151,7 @@
         "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
         "https://www.1177.se/hitta-vard/kontaktkort/PRIMA-barn-och-ungdomspsykiatri-Handen/"
       ],
-      "comparisonNote": null
+      "comparisonNote": "Esta pregunta y la de gestión privada de la sanidad comparten parte del tema. Ambas cuentan en el resultado, pero ninguna permite duplicar su peso."
     },
     {
       "id": "RS26-Q05",
@@ -621,8 +621,8 @@
               "es": "Matices de las posiciones"
             },
             "content": {
-              "sv": "Inga exakta andelar tillskrivs partierna. Viss tematisk överlappning med ätstörningsfrågan finns.",
-              "es": "No se atribuye un porcentaje concreto a ningún partido. Esta cuestión y la de trastornos alimentarios comparten parte del tema de gestión pública y privada."
+              "sv": "Inga exakta andelar tillskrivs partierna. Frågan överlappar delvis den om privata BUP-mottagningar, men gäller vården som helhet.",
+              "es": "No se atribuye un porcentaje concreto a ningún partido. Esta pregunta comparte parte del tema con la de consultas privadas de psiquiatría infantil y juvenil, pero se refiere al conjunto de la atención sanitaria."
             }
           }
         ]
@@ -648,7 +648,7 @@
         "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
         "https://vard.regionstockholm.se/om-var-vard/"
       ],
-      "comparisonNote": null
+      "comparisonNote": "Esta pregunta y la de consultas privadas de psiquiatría infantil y juvenil comparten parte del tema. Ambas cuentan en el resultado, pero ninguna permite duplicar su peso."
     },
     {
       "id": "RS26-N02",

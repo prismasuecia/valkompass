@@ -9,8 +9,6 @@ import {explanations, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
 import uiText from '@/uiText.json';
 
-const averageSecondsPerQuestion = 12;
-
 export default function QuizPage() {
   const router = useRouter();
   const {
@@ -30,9 +28,6 @@ export default function QuizPage() {
   const explanation = explanations.find((item) => item.id === question.explanationId);
   const isLastQuestion = safeIndex === questions.length - 1;
   const progressPercent = Math.round(((safeIndex + 1) / questions.length) * 100);
-  const remainingSeconds = (questions.length - safeIndex - 1) * averageSecondsPerQuestion;
-  const remainingMinutes = Math.ceil(remainingSeconds / 60);
-  const remainingTimeText = remainingMinutes <= 1 ? 'Menos de un minuto' : `${remainingMinutes} minutos`;
 
   function handleNext() {
     if (!selectedAnswer) return;
@@ -66,7 +61,7 @@ export default function QuizPage() {
       </div>
       <ProgressBar current={safeIndex + 1} total={questions.length} />
       <p className="mt-2 text-sm text-slate-600">
-        {uiText.progress.estimatedTime}: {remainingTimeText}
+        {uiText.quizInfo.timeValue}
       </p>
       {currentQuestionIndex === 0 ? (
         <p className="mt-3 rounded-xl border border-line bg-white px-4 py-3 text-sm leading-6 text-slate-600">
