@@ -15,6 +15,7 @@ export type AnswerValue = -2 | -1 | 0 | 1 | 2;
 export type AnswerSelection = AnswerValue | 'skip';
 
 export type Question = {
+  answerScale?: 'agreement' | 'tax-level';
   id: string;
   category: QuestionCategory;
   statement: LocalizedText;

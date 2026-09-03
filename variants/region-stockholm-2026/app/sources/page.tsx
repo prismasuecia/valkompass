@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import {ReviewNotice} from '@/components/ReviewNotice';
 import partyCardsData from '@/partyCards.json';
 import sourceInventory from '@/sourceInventory.json';
 import uiText from '@/uiText.json';
@@ -68,6 +69,7 @@ const parties = Object.entries(partyCardsData).map(([id, party]) => ({
 export default function SourcesPage() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-5 py-10">
+      <ReviewNotice />
       <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{uiText.app.name}</p>
       <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{uiText.sourcesPage.title}</h1>
       <p className="mt-4 text-base leading-7 text-slate-700">{uiText.sourcesPage.intro}</p>

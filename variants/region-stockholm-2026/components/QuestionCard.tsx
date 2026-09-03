@@ -153,7 +153,7 @@ export function QuestionCard({
           <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
         <div className="mt-3 sm:mt-6">
-          <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+          <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
         </div>
       </article>
 
@@ -168,7 +168,7 @@ export function QuestionCard({
             </div>
           ) : null}
           <div className="mt-7">
-            <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+            <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
           </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">

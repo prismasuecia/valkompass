@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import partiesData from '@/data/parties.json';
+import questionsData from '@/data/questions.json';
+import {canShowResults} from '@/lib/publicationGate.mjs';
 import {calculateResults} from '@/lib/calculateResults';
 import {positions, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
@@ -50,6 +52,18 @@ function getMatchClassification(score: number) {
 
 export default function ResultPage() {
   const {language, answers, importantQuestions, reset} = useQuizStore();
+  if (!canShowResults(questionsData.status)) {
+    return (
+      <main className="mx-auto min-h-screen max-w-2xl px-5 py-10">
+        <p className="text-sm font-semibold uppercase tracking-wide text-slate-600">Versión de prueba</p>
+        <h1 className="mt-4 text-3xl font-semibold text-ink">El resultado aún no está disponible</h1>
+        <p className="mt-4 leading-7 text-slate-700">Estamos revisando las preguntas, las posiciones de los partidos y la forma de compararlas. Por eso esta versión no muestra porcentajes ni una clasificación de partidos.</p>
+        <p className="mt-3 leading-7 text-slate-700">Puedes probar el cuestionario, pero todavía no debe utilizarse como orientación de voto.</p>
+        <Link href="/quiz" className="mt-6 block rounded-xl border border-line bg-white p-4 font-semibold">Volver al cuestionario</Link>
+        <Link href="/sources" className="mt-4 inline-block underline">Consultar las fuentes y el estado de la revisión</Link>
+      </main>
+    );
+  }
   const results = calculateResults({answers, importantQuestions, parties, positions, questions});
   const comparableResults = results.filter((result) => result.matchedQuestions > 0);
   const topResults = comparableResults.slice(0, 3);

@@ -2,6 +2,7 @@
 
 import {useRouter} from 'next/navigation';
 import {ProgressBar} from '@/components/ProgressBar';
+import {ReviewNotice} from '@/components/ReviewNotice';
 import {QuestionCard} from '@/components/QuestionCard';
 import {trackEvent} from '@/lib/analytics';
 import {explanations, questions} from '@/lib/valkompasData';
@@ -23,12 +24,13 @@ export default function QuizPage() {
     toggleImportantQuestion
   } = useQuizStore();
 
-  const question = questions[currentQuestionIndex];
+  const safeIndex = Math.max(0, Math.min(currentQuestionIndex, questions.length - 1));
+  const question = questions[safeIndex];
   const selectedAnswer = answers.find((answer) => answer.questionId === question.id);
   const explanation = explanations.find((item) => item.id === question.explanationId);
-  const isLastQuestion = currentQuestionIndex === questions.length - 1;
-  const progressPercent = Math.round(((currentQuestionIndex + 1) / questions.length) * 100);
-  const remainingSeconds = (questions.length - currentQuestionIndex - 1) * averageSecondsPerQuestion;
+  const isLastQuestion = safeIndex === questions.length - 1;
+  const progressPercent = Math.round(((safeIndex + 1) / questions.length) * 100);
+  const remainingSeconds = (questions.length - safeIndex - 1) * averageSecondsPerQuestion;
   const timeUnit = uiText.quizInfo.timeValue.split(' ').at(-1);
   const remainingTimeText = `${Math.ceil(remainingSeconds / 60)} ${timeUnit}`;
 
@@ -55,13 +57,14 @@ export default function QuizPage() {
 
   return (
     <main className="mx-auto min-h-screen max-w-2xl px-4 pb-28 pt-4 sm:px-5 sm:py-8 min-[1200px]:max-w-[1200px] min-[1200px]:px-6">
+      <ReviewNotice />
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-sm font-medium text-slate-700">
-          {uiText.progress.question} {currentQuestionIndex + 1} {uiText.progress.of} {questions.length}
+          {uiText.progress.question} {safeIndex + 1} {uiText.progress.of} {questions.length}
         </p>
         <p className="text-sm font-semibold text-slate-700">{progressPercent}%</p>
       </div>
-      <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
+      <ProgressBar current={safeIndex + 1} total={questions.length} />
       <p className="mt-2 text-sm text-slate-600">
         {uiText.progress.estimatedTime}: {remainingTimeText}
       </p>

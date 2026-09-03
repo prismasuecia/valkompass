@@ -13,15 +13,21 @@ const labels: {value: AnswerSelection; label: string}[] = [
 ];
 
 export function AnswerButtons({
+  answerScale = 'agreement',
   selectedValue,
   onSelect
 }: {
+  answerScale?: 'agreement' | 'tax-level';
   selectedValue?: AnswerSelection;
   onSelect: (value: AnswerSelection) => void;
 }) {
+  const taxLabels: Record<number, string> = {2: 'Bajar mucho', 1: 'Bajar algo', 0: 'Mantenerse', [-1]: 'Subir algo', [-2]: 'Subir mucho'};
+  const options = answerScale === 'tax-level'
+    ? labels.map(item => ({...item, label: item.value === 'skip' ? item.label : taxLabels[item.value]}))
+    : labels;
   return (
     <div className="grid gap-2 sm:gap-3">
-      {labels.map((item) => (
+      {options.map((item) => (
         <button
           key={item.value}
           type="button"

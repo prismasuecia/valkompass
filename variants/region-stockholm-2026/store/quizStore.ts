@@ -46,7 +46,9 @@ export const useQuizStore = create<QuizState>()(
         })
     }),
     {
-      name: 'brujula-region-stockholm-2026-session-v3',
+      // Old answers used a different tax proposition: keep them in their old key,
+      // but never silently reinterpret them as answers on the new level scale.
+      name: 'brujula-region-stockholm-2026-session-v4',
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         currentQuestionIndex: state.currentQuestionIndex,

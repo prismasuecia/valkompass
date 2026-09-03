@@ -62,28 +62,9 @@ test('identical complete inputs always produce identical results', () => {
   assert.deepEqual(calculateResultsCore(input), calculateResultsCore(input));
 });
 
-test('a clearly right-leaning profile does not rank Vänsterpartiet first', () => {
+test('tax uses documented level answers rather than an ideological expected winner', () => {
   const data = JSON.parse(fs.readFileSync(new URL('../data/questions.json', import.meta.url), 'utf8'));
-  const partyIds = ['S', 'M', 'SD', 'V', 'C', 'KD', 'L', 'MP'];
-  const productionQuestions = data.questions.map((question) => ({
-    id: question.id, category: question.category, statement: question.statement
-  }));
-  const productionPositions = data.questions.flatMap((question) =>
-    Object.entries(question.positions).flatMap(([partyId, value]) =>
-      value === null ? [] : [{partyId, questionId: question.id, value}]
-    )
-  );
-  const rightProfile = [2, 2, 2, -2, -2].map((value, index) => ({
-    questionId: productionQuestions[index].id, value
-  }));
-  const results = calculateResultsCore({
-    answers: rightProfile,
-    importantQuestions: [],
-    parties: partyIds.map((id) => ({id})),
-    positions: productionPositions,
-    questions: productionQuestions
-  });
-
-  assert.notEqual(results[0].partyId, 'V');
-  assert.notEqual(results[0].partyId, 'V');
+  const tax = data.questions.find(q => q.id === 'RS26-Q01');
+  assert.equal(tax.answerScale, 'tax-level');
+  assert.deepEqual(tax.positions, {S:0, M:2, SD:2, V:-1, C:1, KD:1, L:1, MP:0});
 });

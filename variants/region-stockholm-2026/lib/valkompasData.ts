@@ -2,6 +2,7 @@ import questionsSource from '@/data/questions.json';
 import type {AnswerValue, Explanation, Position, Question, QuestionCategory} from '@/types';
 
 type SourceQuestion = {
+  answerScale?: 'agreement' | 'tax-level';
   id: string;
   category: QuestionCategory;
   statement: {sv: string; es: string};
@@ -16,6 +17,7 @@ type SourceQuestion = {
 const sourceQuestions = questionsSource.questions as SourceQuestion[];
 
 export const questions: Question[] = sourceQuestions.map((item) => ({
+  answerScale: item.answerScale ?? 'agreement',
   id: item.id,
   category: item.category,
   statement: item.statement,

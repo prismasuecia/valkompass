@@ -1,16 +1,16 @@
 {
-  "schemaVersion": 1, "jurisdiction": "region-stockholm", "electionYear": 2026, "reviewedAt": "2026-09-01", "status": "verified-six-question-preview",
+  "schemaVersion": 1, "jurisdiction": "region-stockholm", "electionYear": 2026, "reviewedAt": "2026-09-03", "status": "preview-under-revision-not-publication-ready",
   "questions": [
     {
-      "id": "RS26-Q01", "category": "regionalTax",
-      "statement": {"sv": "Bör Region Stockholm sänka regionskatten?", "es": "¿Debería la Región de Estocolmo reducir el impuesto regional?"},
+      "id": "RS26-Q01", "category": "regionalTax", "answerScale": "tax-level",
+      "statement": {"sv": "Bör regionskatten sänkas, vara oförändrad eller höjas jämfört med dagens nivå?", "es": "¿El impuesto regional debería bajar, mantenerse o subir respecto al nivel actual?"},
       "context": {"sv": "Regionskatten finansierar framför allt vård och kollektivtrafik.", "es": "Una parte del impuesto sobre tus ingresos va a la región y financia principalmente la sanidad y el transporte público."},
       "explanation": {"title": {"sv": "Regionskatten i korthet", "es": "¿Qué es el impuesto regional?"}, "sections": [
         {"title": {"sv": "Nuläge – september 2026", "es": "Así funciona hoy — septiembre de 2026"}, "content": {"sv": "Skattesatsen är 12,33 kronor per hundralapp i beskattningsbar inkomst. Det är 5 öre lägre än 2025.", "es": "Por cada 100 coronas sobre las que se calcula el impuesto, 12,33 coronas van a la Región de Estocolmo. La cantidad se redujo en 5 öre respecto a 2025."}},
-        {"title": {"sv": "Vad innebär ett ja eller nej?", "es": "¿Qué significan las opciones?"}, "content": {"sv": "Ett ja betyder lägre regionskatt. Ett nej kan betyda oförändrad eller högre skatt.", "es": "Estar a favor significa bajar este impuesto. Estar en contra puede significar mantenerlo o subirlo."}},
+        {"title": {"sv": "Vad betyder svaren?", "es": "¿Qué se está decidiendo?"}, "content": {"sv": "Du väljer lägre, oförändrad eller högre regionskatt jämfört med dagens nivå. Oförändrat är ett eget svar, inte motstånd mot all skattepolitik.", "es": "Elige si esa parte del impuesto debe bajar, mantenerse o subir. Mantener el nivel actual es una opción propia, distinta de subirlo."}},
         {"title": {"sv": "Varför finns det en konflikt?", "es": "¿Por qué hay debate?"}, "content": {"sv": "Förespråkare vill lämna mer pengar till hushållen. Motståndare vill säkra mer finansiering till vård och kollektivtrafik.", "es": "Quienes quieren bajarlo dicen que las familias conservarían más dinero. Quienes se oponen quieren asegurar más recursos para la sanidad y el transporte público."}},
         {"title": {"sv": "Vad gäller frågan inte?", "es": "¿Qué no incluye esta pregunta?"}, "content": {"sv": "Frågan gäller inte statlig skatt eller kommunalskatt.", "es": "No se refiere al impuesto estatal ni a la parte que decide cada municipio."}}
-      ]}, "positions": {"S": 1, "M": 2, "SD": 2, "V": -2, "C": 1, "KD": 2, "L": 2, "MP": 1}
+      ]}, "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0}
     },
     {
       "id": "RS26-Q02", "category": "psychiatryProcurement",
