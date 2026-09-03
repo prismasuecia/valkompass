@@ -137,6 +137,16 @@ K02/K03-källa: [Funktionsrätts fullständiga enkät](https://funktionsrattstoc
 
 **Kvar före implementation:** direkt avgiftsbelägg för Q05, aktuell procentregel och dess relation till K01:s exakta proposition, slutlig pedagogisk spanska och dokumenterad poängmetod för kategoriska svar. Fullständiga partilänkar och förbehåll ska hämtas från redan granskade källor: checkpointen har fortfarande en platshållare och förkortar bort exempelvis KD:s dispenser. Q04 förblir reserv med tidigare källbegränsningar; formuleringen ”utan ändringar från checkpoint 40” återgodkänner inte de fel som rättades i vår kontroll av den checkpointen. Ingen appändring görs.
 
+### Mottagningskontroll: checkpoint 42 (daterad 2026-09-02), kontrollerad 2026-09-03
+
+**Den avgränsade leveransen accepteras som källstatus, inte som ett färdigt publiceringspaket.**
+
+- **Q05:** avsaknaden av läst avgiftsbelägg redovisas nu korrekt. Vår egen öppning av [Vårdgivarguidens avtalssida](https://vardgivarguiden.se/administration/patientadministration/tolktjanster/tolk-i-talade-sprak/avtal-och-villkor/) gav metadata och navigation, inte kostnadsansvarsavsnittet. Det bevisar varken avgift eller avgiftsfrihet. Vårdens beställningsansvar är inte ensamt ett avgiftsbeslut. Skriv inte att alla åtta partier uttryckligen bekräftar dagens avgiftsregler; S saknar sådan fritext. Datumet 23 juni 2026 på regionens tolksida är uppdateringsdatum, inte belagt konsultationsdatum. Nästa kontroll bör söka det faktiska avgifts-/kostnadsunderlaget, inte samma sammanfattningssidor ännu en gång.
+- **K01:** [regionens procentsida](https://www.regionstockholm.se/kultur/konst-i-vardmiljo/konstnarlig-gestaltning/procentregeln/) kunde nu läsas direkt. Den beskriver en procent generellt, två procent för vårdlokaler och särskild beräkning över 100 miljoner; uppdaterad 7 november 2023. Detta godkänns som återkontrollerad officiell nulägesbeskrivning, inte som ett nyfunnet beslut för budget 2026. Ingen ytterligare allmän sökning behövs enbart för att sidans datum är äldre.
+- **K01:s mätning:** originalets enprocentsfråga och partisvar kan bevaras som källmaterial. Att enkäten använde den formuleringen löser dock inte automatiskt dess tvetydighet i vår app. Sluttext och förklaring får varken antyda sänkning av vårdlokalernas nivå eller ändras till en annan exakt regel med ärvda koder. Kvar är en redaktionell/metodisk avgränsning, inte ännu en insamling av samma partisvar.
+
+**Nästa arbete ligger i det egna slutpaketet:** samla godkända belägg, bestäm och testa metoden för kategoriska svar, slutredigera spanska samt hantera de uttryckligt kvarvarande sakluckorna. Skicka inte samma två allmänna researchfrågor till Claude igen. Q05:s avgiftsbelägg kvarstår; K01:s källkontroll är gjord men appformuleringen är inte låst. Sex kandidater är fortfarande arbetsurvalet, inte sex publiceringsklara frågor eller uppnått mål om 10–12. Appen och dess poäng har inte ändrats.
+
 K-ID är research-ID, **inte nya app-ID:n**. Alla kräver en sista aktualitets- och propositionskontroll. Ingen ska läggas in enbart för att nå tolv.
 
 | ID | Avgränsat ämne | Belägg/status | Kvar före låsning |
