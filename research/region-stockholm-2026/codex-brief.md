@@ -6,6 +6,8 @@ Bygg en separat Region Stockholm 2026-variant med samma visuella språk, flöde 
 
 ## Läsordning
 
+**Slutredigeringsunderlag 2026-09-03:** Börja med `research/region-stockholm-2026/editorial-six.md` för sex kandidaters arbetsformuleringar, källor, öppna spärrar och separat testmodell. Dokumentet är inte publiceringsgodkännande eller appdata.
+
 **Revisionsspärr 2026-09-02:** Läs `research/region-stockholm-2026/review-12-questions.md` före implementation. Inlagda koder är inte slutgodkända och nya kandidater får inte automatiskt bli appfrågor. Slutpaketet ska väljas och sakgranskas samlat.
 
 Läs endast följande först:

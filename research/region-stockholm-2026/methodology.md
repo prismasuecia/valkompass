@@ -1,5 +1,7 @@
 # Metod
 
+**Arbetsrevision 2026-09-03:** Läs editorial-six.md och senaste mottagningsbeslut i review-12-questions.md före implementation. Nedanstående femgradiga kodning gäller inte automatiskt Funktionsrätts kategoriska svar. Den separata testmodellen är ett förslag och har inte kopplats till appen.
+
 ## 1. Nivå
 
 Varje proposition ska vara konkret beslutbar eller tydligt påverkbar av Region Stockholm. Nationella, kommunala och rent administrativa frågor utesluts eller formuleras om utan att deras politiska innebörd ändras.
@@ -17,7 +19,7 @@ En koalitions gemensamma dokument får beskriva koalitionens beslut men är inte
 
 ## 3. Aktualitet
 
-Senaste tydliga regionala position inför valet styr normalt över äldre material. Äldre källor behålls för historik och motsägelsekontroll. Researchen fryses 31 augusti 2026 och kontrolleras igen nära publicering.
+Senaste tydliga regionala position inför valet styr normalt över äldre material. Äldre källor behålls för historik och motsägelsekontroll. Ingen giltig researchfrysning är ännu fastställd: granskning har fortsatt efter 31 augusti 2026. Ange källdatum och faktiskt kontroll-/frysningsdatum separat och gör en aktualitetskontroll nära publicering.
 
 ## 4. Kodning
 
