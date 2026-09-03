@@ -72,3 +72,73 @@ test('invalid values fail instead of silently inventing positions', () => {
   assert.throws(() => similarity('categorical', 2, 'support'));
   assert.throws(() => similarity('ordered', 1, 3));
 });
+
+// Proposed editorial gate; six is a conservative policy choice, not a validated
+// statistical threshold. Apply to all displayed parties, not a preferred subset.
+function commonBasis(questions, partyIds, minimum = 6) {
+  if (partyIds.length < 2 || new Set(partyIds).size !== partyIds.length) throw new Error('Invalid parties');
+  if (!Number.isInteger(minimum) || minimum < 1) throw new Error('Invalid minimum');
+  if (new Set(questions.map(q => q.id)).size !== questions.length) throw new Error('Duplicate question');
+  const scored = questions.map(q => {
+    const scores = Object.fromEntries(partyIds.map(id => {
+      const raw = Object.hasOwn(q.positions, id) ? q.positions[id] : null;
+      return [id, raw === null ? null : similarity(q.kind, q.answer, raw)];
+    }));
+    return {...q, scores};
+  });
+  const common = scored.filter(q => q.answer !== null && partyIds.every(id => q.scores[id] !== null));
+  const ready = common.length >= minimum;
+  const totalWeight = common.reduce((n,q) => n + (q.important ? 2 : 1), 0);
+  return {
+    status: ready ? 'comparable' : 'insufficient_common_basis',
+    questionIds: common.map(q => q.id).sort(),
+    parties: partyIds.map(id => ({
+      partyId: id,
+      commonCount: common.length,
+      documentedAnsweredCount: scored.filter(q => q.scores[id] !== null).length,
+      score: ready ? 100 * common.reduce((n,q) => n + q.scores[id] * (q.important ? 2 : 1), 0) / totalWeight : null
+    })).sort((a,b) => a.partyId.localeCompare(b.partyId))
+  };
+}
+const complete = () => Array.from({length: 6}, (_,i) => ({
+  id: `T${i}`, kind: 'categorical', answer: 1, important: false,
+  positions: {A: 'support', B: 'support', C: 'alternative'}
+}));
+test('no ranking score below six common answers; importance cannot bypass gate', () => {
+  const rows = complete();
+  rows[0].positions.B = 'no_opinion';
+  rows.forEach(q => { q.important = true; });
+  const result = commonBasis(rows, ['A','B','C']);
+  assert.equal(result.status, 'insufficient_common_basis');
+  assert.equal(result.questionIds.length, 5);
+  assert.ok(result.parties.every(p => p.score === null));
+  assert.equal(result.parties.find(p => p.partyId === 'A').documentedAnsweredCount, 6);
+});
+test('missing position excludes the same question for every party', () => {
+  const rows = complete();
+  rows.push({id:'extra', kind:'categorical', answer:1, important:true, positions:{A:'oppose', C:'support'}});
+  assert.deepEqual(commonBasis(rows, ['A','B','C']).questionIds, complete().map(q=>q.id));
+  assert.deepEqual(commonBasis(rows, ['A','B','C']).parties.map(p=>p.score), [100,100,0]);
+});
+test('skip, neutral and unanswered positions remain distinct on common basis', () => {
+  const rows = complete();
+  rows[0].answer = null;
+  assert.equal(commonBasis(rows, ['A','B']).status, 'insufficient_common_basis');
+  rows[0].answer = 0;
+  const result = commonBasis(rows, ['A','B']);
+  assert.equal(result.status, 'comparable');
+  assert.ok(result.parties.every(p => p.score === 100 * 5.5 / 6));
+});
+test('party order cannot change shared basis or break ties', () => {
+  const a = commonBasis(complete(), ['A','B','C']);
+  const b = commonBasis(complete(), ['C','B','A']);
+  assert.deepEqual(a,b);
+  assert.equal(a.parties[0].score, a.parties[1].score);
+});
+test('duplicate data and unknown categories fail closed', () => {
+  assert.throws(() => commonBasis(complete(), ['A','A']));
+  const rows = complete();
+  rows[0].positions.A = 'unverified';
+  assert.throws(() => commonBasis(rows, ['A','B']));
+  assert.throws(() => commonBasis([...complete(), complete()[0]], ['A','B']));
+});

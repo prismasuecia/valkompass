@@ -100,6 +100,8 @@ Direktlänkar till partisvar finns samlat i review-12-questions.md, under ”Dir
 
 ## Metodbeslut att pröva separat från appen
 
+Se även result-readiness.md för föreslagen gemensam jämförelsegrund och publiceringsspärr. Enbart visad täckning löser inte risken med skilda nämnare. Det nuvarande sexfrågeurvalet räcker inte för modellens föreslagna sex gemensamma frågor.
+
 För K02–K04 föreslås riktning, inte uppfunnen styrka: aktivt ja och stöd får samma jämförelseriktning +1, nej/annan lösning −1, ingen åsikt `null`. Prioritet och alternativtext sparas separat. Detta är en föreslagen jämförelsemodell, inte en ny tolkning av vad partiet sagt.
 
 Användaren får på dessa frågor Stödjer / Varken för eller emot / Motsätter mig samt informationsskip, på spanska A favor / Ni a favor ni en contra / En contra. Likhet = 1 − |användarriktning − partiriktning| / 2. På nivåfrågor behålls 1 − |användarvärde − partivärde| / 4. Därmed har varje fråga samma maximala vikt; användarmarkerad viktig fråga dubblas. Den kategoriska modellen kan inte mäta styrka som källan inte innehåller.
