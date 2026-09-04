@@ -7,10 +7,12 @@ import {QuestionCard} from '@/components/QuestionCard';
 import {trackEvent} from '@/lib/analytics';
 import {explanations, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
+import {useQuizHydrated} from '@/store/useQuizHydrated';
 import uiText from '@/uiText.json';
 
 export default function QuizPage() {
   const router = useRouter();
+  const hydrated = useQuizHydrated();
   const {
     currentQuestionIndex,
     answers,
@@ -21,6 +23,8 @@ export default function QuizPage() {
     previousQuestion,
     toggleImportantQuestion
   } = useQuizStore();
+
+  if (!hydrated) return <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 text-slate-700">Cargando el cuestionario…</main>;
 
   const safeIndex = Math.max(0, Math.min(currentQuestionIndex, questions.length - 1));
   const question = questions[safeIndex];

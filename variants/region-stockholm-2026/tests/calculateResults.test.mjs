@@ -68,6 +68,16 @@ test('current content has a dynamic question count and correct overlap reference
   for(const id of ['RS26-N01','RS26-N03']) assert.ok(data.questions.find(q=>q.id===id).comparisonNote);
   assert.doesNotMatch(JSON.stringify(data.questions.find(q=>q.id==='RS26-N01')),/ätstörningsfrågan|trastornos alimentarios/);
 });
+
+test('quiz and approved result wait for persisted state before rendering', () => {
+  const quiz=fs.readFileSync(new URL('../app/quiz/page.tsx',import.meta.url),'utf8');
+  const result=fs.readFileSync(new URL('../app/result/page.tsx',import.meta.url),'utf8');
+  assert.match(quiz,/if \(!hydrated\).*Cargando el cuestionario/);
+  assert.ok(result.indexOf('if (!canShowResults') < result.indexOf('if (!hydrated)'));
+  assert.match(result,/if \(!hydrated\).*Cargando tu resultado/);
+  assert.match(result,/Empate en el primer puesto/);
+  assert.match(result,/Empate · puesto/);
+});
 test('reordered identical inputs preserve results and ties without mutation', () => {
   const input=fixture(); const before=JSON.stringify(input); const result=calculateResultsCore(input);
   assert.equal(JSON.stringify(input),before);

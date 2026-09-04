@@ -2,6 +2,14 @@
 
 ## Slutkontroll 2026-09-04
 
+### Isolerat test av aktiverad resultatvy
+
+Resultatstatus ändrades endast i ett frikopplat worktree under `/private/tmp`; branchens dataset förblev spärrat. En exakt S-profil gav S 100 procent över tio frågor. En profil med de sex frågor där S och MP delar position gav båda 100 procent och delad placering 1, följt av placering 3. Resultatdetaljerna visade rätt skaltexter för skatt, privatandel och kategoriska svar. Resultatsidan testades vid 390 och 1366 pixlar utan horisontell överströmning och utan konsolfel.
+
+Två visuella brister rättades efter testet. Resultatsidan väntar nu på återläsning av sparade svar och visar `Cargando tu resultado…` i stället för ett kortvarigt felaktigt meddelande om för få svar. Quizsidan använder motsvarande laddningsskydd. Delade placeringar märks uttryckligen, inklusive `Empate en el primer puesto`. Övriga kort visar faktisk placering och delade placeringar. Regressionstest tillagt; totalt 19 tester passerar.
+
+En npm-säkerhetskontroll uppdaterade kompatibla beroenden, bland annat Next.js 15.5.18 till 15.5.25 i låsfilen. Därefter återstår en hög och en måttlig varning i Next.js inbyggda PostCSS-kedja; npm erbjuder endast en brytande huvuduppgradering till Next 16.3.4. Regionvarianten exporteras som statiska filer och använder inte en publicerad Next-server, Server Actions eller dynamisk bildoptimering. Varningen är därför dokumenterad men ska omprövas separat inför framtida framework-uppgradering; `npm audit fix --force` har inte körts. Datavalidering, 19 tester, typkontroll och statisk produktionsbuild passerar med Next 15.5.25.
+
 Hela den isolerade regionvarianten kontrollerades åter på branch `region-stockholm-2026` från commit 0514552. Alla tio frågor genomfördes i samma session med vanlig femgradig skala, skattenivå, privatandel, kategoriska svar, neutralitet och informationsskip. Framåt/bakåt bevarade valt svar. Omladdning mitt i frågeflödet återställde fråga 3, informationsskip och viktmarkering efter klientens hydrering. Den korta initiala serverrenderingen visar fråga 1 innan lagrad klientstatus har lästs in; ingen inmatning kan göras under den automatiserade omladdningen, men detta är en känd visuell hydreringsegenskap och inte dataförlust.
 
 Både N03 och N01 visar överlappningsinformationen och saknar viktreglage. Tangentbordsfokus nådde svarsalternativ; mellanslag valde svar och aktiverade nästa knapp. Resultatsidan visade endast den avsedda publiceringsspärren. Startsidan kontrollerades vid 320, 390, 768 och 1366 CSS-pixlar utan horisontell överströmning. Quiz kontrollerades visuellt i smal mobil- och bred desktoplayout. Webbläsarens zoomkortkommando gav ingen mätbar zoomförändring i testmiljön; faktisk 200-procentszoom är därför inte verifierad som en separat webbläsarinställning. Reflow vid 320 pixlar är verifierat och är strängare i tillgänglig bredd än 200 procent på normal desktop, men är inte samma test.

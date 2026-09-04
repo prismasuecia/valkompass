@@ -7,6 +7,7 @@ import {canShowResults} from '@/lib/publicationGate.mjs';
 import {calculateResults} from '@/lib/calculateResults';
 import {positions, questions} from '@/lib/valkompasData';
 import {useQuizStore} from '@/store/quizStore';
+import {useQuizHydrated} from '@/store/useQuizHydrated';
 import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types';
 import uiText from '@/uiText.json';
 
@@ -61,6 +62,7 @@ function comparisonLabel(questionId: string, value: AnswerValue) {
 
 export default function ResultPage() {
   const {language, answers, importantQuestions, reset} = useQuizStore();
+  const hydrated = useQuizHydrated();
   if (!canShowResults(questionsData.status)) {
     return (
       <main className="mx-auto min-h-screen max-w-2xl px-5 py-10">
@@ -73,6 +75,7 @@ export default function ResultPage() {
       </main>
     );
   }
+  if (!hydrated) return <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 text-slate-700">Cargando tu resultado…</main>;
   const results = calculateResults({answers, importantQuestions, parties, positions, questions});
   const comparableResults = results.filter((result) => result.matchedQuestions > 0);
   const topResults = comparableResults.filter(result => result.rank <= 3);
@@ -125,6 +128,9 @@ export default function ResultPage() {
                 </p>
               </div>
               <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.scoreExplanation}</p>
+              <p className="mt-3 text-sm font-semibold text-slate-700">
+                {result.rank === 1 ? (result.tied ? 'Empate en el primer puesto' : 'Primer puesto') : `Puesto ${result.rank}`}
+              </p>
               <p className="mt-5 text-sm font-semibold text-slate-600">{classification.title}</p>
               <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
               <p className="mt-3 text-sm leading-6 text-slate-600">
@@ -185,9 +191,12 @@ export default function ResultPage() {
 
             return (
               <article key={result.partyId} className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-line bg-white px-4 py-3">
-                <div className="flex min-w-0 items-center gap-3">
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold text-slate-500">{result.tied ? `Empate · puesto ${result.rank}` : `Puesto ${result.rank}`}</p>
+                  <div className="mt-1 flex min-w-0 items-center gap-3">
                   <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
                   <h2 className="min-w-0 break-words text-sm font-semibold text-ink">{party.name[language]}</h2>
+                  </div>
                 </div>
                 <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-700">
                   {result.score}%
