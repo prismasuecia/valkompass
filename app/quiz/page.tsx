@@ -19,11 +19,9 @@ export default function QuizPage() {
   const {
     currentQuestionIndex,
     answers,
-    skippedQuestions,
     importantQuestions,
     language,
     answerQuestion,
-    skipQuestion,
     nextQuestion,
     previousQuestion,
     setResults,
@@ -32,7 +30,6 @@ export default function QuizPage() {
 
   const question = questions[currentQuestionIndex];
   const selectedAnswer = answers.find((answer) => answer.questionId === question.id);
-  const isSkipped = skippedQuestions.includes(question.id);
   const explanation = explanations.find((item) => item.id === question.explanationId);
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
   const progressPercent = Math.round(((currentQuestionIndex + 1) / questions.length) * 100);
@@ -41,20 +38,16 @@ export default function QuizPage() {
   const remainingTimeText = `${Math.ceil(remainingSeconds / 60)} ${timeUnit}`;
 
   function handleNext() {
-    if (!selectedAnswer && !isSkipped) return;
+    if (!selectedAnswer) return;
 
     if (isLastQuestion) {
-      setResults(answers.length === 0 ? [] : calculateResults({answers, importantQuestions, parties, positions, questions}));
+      setResults(calculateResults({answers, importantQuestions, parties, positions, questions}));
       trackEvent('quiz_completed', {question_count: questions.length});
       router.push('/result');
       return;
     }
 
     nextQuestion();
-  }
-
-  function handleSkip() {
-    skipQuestion(question.id);
   }
 
   function handleToggleImportant() {
@@ -84,10 +77,8 @@ export default function QuizPage() {
           explanation={explanation}
           language={language}
           selectedValue={selectedAnswer?.value}
-          skipped={isSkipped}
           important={importantQuestions.includes(question.id)}
           onAnswer={(value) => answerQuestion({questionId: question.id, value})}
-          onSkip={handleSkip}
           onToggleImportant={handleToggleImportant}
           onExplanationOpened={() => trackEvent('explanation_opened', {question_id: question.id})}
         />
@@ -104,7 +95,7 @@ export default function QuizPage() {
         <button
           type="button"
           onClick={handleNext}
-          disabled={!selectedAnswer && !isSkipped}
+          disabled={!selectedAnswer}
           className="min-h-[52px] rounded-2xl bg-ink px-5 py-4 font-semibold text-white transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
         >
           {isLastQuestion ? uiText.buttons.finish : uiText.buttons.next}

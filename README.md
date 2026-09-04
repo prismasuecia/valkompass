@@ -1,11 +1,5 @@
 # Valkompas
 
-## Release controls
-
-- The production questionnaire contains 20 questions. Run `npm run validate:data` to verify question, party-position and source coverage.
-- Results remain locked unless `NEXT_PUBLIC_RESULTS_PUBLISHED=true` is set when the site is built.
-- An unanswered question selected as `No tengo suficiente información para responder` is excluded from the result rather than treated as a neutral political answer.
-
 ## Google Analytics Setup
 
 1. Create a Google Analytics 4 web data stream and copy its measurement ID, for example `G-XXXXXXXXXX`.

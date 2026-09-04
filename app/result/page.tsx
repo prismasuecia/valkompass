@@ -8,7 +8,7 @@ import type {AnswerValue, Party, QuestionCategory, ResultQuestion} from '@/types
 import uiText from '@/uiText.json';
 
 const parties = partiesData as Party[];
-const resultsPublished = process.env.NEXT_PUBLIC_RESULTS_PUBLISHED === 'true';
+const displayedQuestionCount = questions.length;
 
 const categoryLabels: Record<QuestionCategory, string> = {
   migration: uiText.categories.migration,
@@ -47,33 +47,9 @@ function getMatchClassification(score: number) {
 }
 
 export default function ResultPage() {
-  const {hasHydrated, language, results, reset} = useQuizStore();
+  const {language, results, reset} = useQuizStore();
   const topResults = results.slice(0, 3);
   const remainingResults = results.slice(3);
-
-  if (!hasHydrated) {
-    return (
-      <main className="mx-auto min-h-screen max-w-4xl px-5 py-10">
-        <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{uiText.app.name}</p>
-        <p className="mt-6 text-base text-slate-700">Cargando resultados…</p>
-      </main>
-    );
-  }
-
-  if (!resultsPublished) {
-    return (
-      <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-5 py-10">
-        <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{uiText.app.name}</p>
-        <section className="mt-6 rounded-2xl border border-line bg-white p-6 sm:p-8">
-          <h1 className="text-3xl font-semibold leading-tight text-ink">{uiText.publicationGate.title}</h1>
-          <p className="mt-4 leading-7 text-slate-700">{uiText.publicationGate.text}</p>
-          <Link href="/" className="mt-6 block rounded-xl bg-ink px-6 py-4 text-center font-semibold text-white">
-            Volver al inicio
-          </Link>
-        </section>
-      </main>
-    );
-  }
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl overflow-x-hidden px-5 py-10">
@@ -120,7 +96,7 @@ export default function ResultPage() {
               <p className="mt-5 text-sm font-semibold text-slate-600">{classification.title}</p>
               <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
               <p className="mt-3 text-sm leading-6 text-slate-600">
-                {uiText.results.comparedQuestions}: {result.matchedQuestions} {uiText.results.ofQuestions} {questions.length}
+                {uiText.results.comparedQuestions}: {displayedQuestionCount}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {categories.map((category) => (

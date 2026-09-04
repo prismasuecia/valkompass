@@ -63,8 +63,7 @@
   "answers": {
     "stronglyAgree": "Totalmente de acuerdo",
     "agree": "Parcialmente de acuerdo",
-    "neutral": "Neutral",
-    "insufficientInformation": "No tengo suficiente información para responder",
+    "neutral": "Neutral / no estoy seguro",
     "disagree": "Parcialmente en desacuerdo",
     "stronglyDisagree": "Totalmente en desacuerdo"
   },
@@ -90,16 +89,11 @@
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
     "sameAnswers": "Las mismas respuestas siempre generan el mismo resultado.",
     "comparedQuestions": "Preguntas comparadas",
-    "ofQuestions": "de",
     "noResults": "No hay resultados todavía.",
     "answerQuestions": "Responde las preguntas para ver una comparación.",
     "yourAnswer": "Tu respuesta",
     "scoreLabel": "Resultado",
     "scoreExplanation": "Este resultado muestra qué tan parecidas son tus respuestas a las posiciones del partido. No significa que compartas el mismo porcentaje de toda su política."
-  },
-  "publicationGate": {
-    "title": "Los resultados todavía no están publicados",
-    "text": "Tus respuestas se han guardado. Los resultados estarán disponibles cuando Prisma Suecia publique oficialmente la brújula electoral."
   },
 
   "highMatch": {

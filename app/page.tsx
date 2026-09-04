@@ -30,29 +30,6 @@ export default function HomePage() {
       <p className="mt-3 text-base leading-7 text-slate-600">{uiText.app.subtitle}</p>
       <StartQuizLink />
 
-      <section className="mt-8 rounded-2xl border border-line bg-white p-5">
-        <dl className="grid gap-4 text-sm">
-          <div className="flex items-center justify-between gap-4">
-            <dt className="font-medium text-slate-600">{uiText.quizInfo.questionsLabel}</dt>
-            <dd className="font-semibold text-ink">{uiText.quizInfo.questionsValue}</dd>
-          </div>
-          <div className="flex items-center justify-between gap-4 border-t border-line pt-4">
-            <dt className="font-medium text-slate-600">{uiText.quizInfo.timeLabel}</dt>
-            <dd className="font-semibold text-ink">{uiText.quizInfo.timeValue}</dd>
-          </div>
-        </dl>
-        <div className="mt-5 border-t border-line pt-5">
-          <p className="text-sm font-medium text-slate-600">{uiText.categoryResults.title}</p>
-          <div className="mt-3 flex flex-wrap gap-3">
-            {includedTopics.map((topic) => (
-              <span key={topic} className="rounded-full border border-line bg-paper px-3 py-1 text-sm font-medium text-slate-700">
-                {topic}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="mt-8 grid gap-3">
         <details className="rounded-2xl border border-line bg-white">
           <summary className="flex min-h-14 cursor-pointer items-center px-5 py-4 text-base font-semibold text-ink hover:bg-paper">
@@ -69,6 +46,26 @@ export default function HomePage() {
               <li>{uiText.importantInfo.local}</li>
               <li>{uiText.importantInfo.recommendation}</li>
             </ul>
+            <dl className="mt-5 grid gap-4 border-t border-line pt-5 text-sm">
+              <div className="flex items-center justify-between gap-4">
+                <dt className="font-medium text-slate-600">{uiText.quizInfo.questionsLabel}</dt>
+                <dd className="font-semibold text-ink">{uiText.quizInfo.questionsValue}</dd>
+              </div>
+              <div className="flex items-center justify-between gap-4">
+                <dt className="font-medium text-slate-600">{uiText.quizInfo.timeLabel}</dt>
+                <dd className="font-semibold text-ink">{uiText.quizInfo.timeValue}</dd>
+              </div>
+            </dl>
+            <div className="mt-5 border-t border-line pt-5">
+              <p className="text-sm font-medium text-slate-600">{uiText.categoryResults.title}</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {includedTopics.map((topic) => (
+                  <span key={topic} className="rounded-full border border-line bg-paper px-3 py-1 text-sm font-medium text-slate-700">
+                    {topic}
+                  </span>
+                ))}
+              </div>
+            </div>
             <p className="mt-5 border-t border-line pt-5 text-sm leading-6 text-slate-600">{uiText.editorial.sourcesText}</p>
           </div>
         </details>

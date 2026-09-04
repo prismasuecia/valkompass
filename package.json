@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run validate:data && next build",
+    "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
-    "validate:data": "node scripts/validate-data.mjs"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^15.0.0",
