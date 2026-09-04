@@ -62,6 +62,9 @@ test('current content has a dynamic question count and correct overlap reference
   const home=fs.readFileSync(new URL('../app/page.tsx',import.meta.url),'utf8');
   assert.ok(home.includes('{questions.length}'));
   assert.ok(!home.includes('quizInfo.questionsValue'));
+  const start=fs.readFileSync(new URL('../components/StartQuizLink.tsx',import.meta.url),'utf8');
+  assert.ok(start.includes('question_count: questions.length'));
+  assert.ok(!start.includes('question_count: 5'));
   for(const id of ['RS26-N01','RS26-N03']) assert.ok(data.questions.find(q=>q.id===id).comparisonNote);
   assert.doesNotMatch(JSON.stringify(data.questions.find(q=>q.id==='RS26-N01')),/ätstörningsfrågan|trastornos alimentarios/);
 });

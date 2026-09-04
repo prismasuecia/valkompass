@@ -1,5 +1,13 @@
 # Ti frågors lokala releasekandidat — 2026-09-03
 
+## Slutkontroll 2026-09-04
+
+Hela den isolerade regionvarianten kontrollerades åter på branch `region-stockholm-2026` från commit 0514552. Alla tio frågor genomfördes i samma session med vanlig femgradig skala, skattenivå, privatandel, kategoriska svar, neutralitet och informationsskip. Framåt/bakåt bevarade valt svar. Omladdning mitt i frågeflödet återställde fråga 3, informationsskip och viktmarkering efter klientens hydrering. Den korta initiala serverrenderingen visar fråga 1 innan lagrad klientstatus har lästs in; ingen inmatning kan göras under den automatiserade omladdningen, men detta är en känd visuell hydreringsegenskap och inte dataförlust.
+
+Både N03 och N01 visar överlappningsinformationen och saknar viktreglage. Tangentbordsfokus nådde svarsalternativ; mellanslag valde svar och aktiverade nästa knapp. Resultatsidan visade endast den avsedda publiceringsspärren. Startsidan kontrollerades vid 320, 390, 768 och 1366 CSS-pixlar utan horisontell överströmning. Quiz kontrollerades visuellt i smal mobil- och bred desktoplayout. Webbläsarens zoomkortkommando gav ingen mätbar zoomförändring i testmiljön; faktisk 200-procentszoom är därför inte verifierad som en separat webbläsarinställning. Reflow vid 320 pixlar är verifierat och är strängare i tillgänglig bredd än 200 procent på normal desktop, men är inte samma test.
+
+Slutkontrollen hittade ett kvarvarande hårdkodat analysvärde: `quiz_started` rapporterade fem frågor. Det använder nu `questions.length`; regressionstest tillagt. Inga konsolfel eller varningar registrerades under slutflödet. Publiceringsspärren förblir stängd.
+
 ## Uppföljning av Claudes granskning
 
 ### Genomförd webbläsarkontroll efter rättningarna

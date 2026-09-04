@@ -4,13 +4,14 @@ import Link from 'next/link';
 import {trackEvent} from '@/lib/analytics';
 import {useQuizStore} from '@/store/quizStore';
 import uiText from '@/uiText.json';
+import {questions} from '@/lib/valkompasData';
 
 export function StartQuizLink() {
   const reset = useQuizStore((state) => state.reset);
 
   function handleStart() {
     reset();
-    trackEvent('quiz_started', {question_count: 5});
+    trackEvent('quiz_started', {question_count: questions.length});
   }
 
   return (
