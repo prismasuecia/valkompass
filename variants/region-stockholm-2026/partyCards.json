@@ -1,0 +1,50 @@
+{
+  "S": {
+    "name": "Partido Socialdemócrata",
+    "shortName": "Socialdemócratas",
+    "ideology": "Centroizquierda",
+    "description": "Partido de centroizquierda. Generalmente defiende un Estado de bienestar fuerte, servicios públicos financiados con impuestos y una política migratoria más regulada que en el pasado."
+  },
+  "M": {
+    "name": "Moderados",
+    "shortName": "Moderados",
+    "ideology": "Centroderecha",
+    "description": "Partido de centroderecha. Generalmente defiende impuestos más bajos, energía nuclear y una política migratoria más estricta."
+  },
+  "SD": {
+    "name": "Demócratas de Suecia",
+    "shortName": "Demócratas de Suecia",
+    "ideology": "Nacional-conservador",
+    "description": "Partido nacional-conservador. Generalmente defiende una inmigración más reducida, mayores requisitos para la ciudadanía y castigos más duros contra el crimen."
+  },
+  "V": {
+    "name": "Partido de Izquierda",
+    "shortName": "Partido de Izquierda",
+    "ideology": "Izquierda",
+    "description": "Partido de izquierda. Generalmente defiende impuestos más altos para los ingresos elevados, un Estado fuerte y restricciones a las ganancias en servicios financiados con dinero público."
+  },
+  "C": {
+    "name": "Partido de Centro",
+    "shortName": "Partido de Centro",
+    "ideology": "Centro liberal",
+    "description": "Partido liberal de centro. Generalmente defiende el emprendimiento, la descentralización, la cooperación europea y una política migratoria relativamente abierta."
+  },
+  "KD": {
+    "name": "Demócratas Cristianos",
+    "shortName": "Demócratas Cristianos",
+    "ideology": "Centroderecha",
+    "description": "Partido de centroderecha con raíces democristianas. Generalmente defiende políticas familiares, castigos más duros contra el crimen y una política migratoria más estricta."
+  },
+  "L": {
+    "name": "Liberales",
+    "shortName": "Liberales",
+    "ideology": "Liberal",
+    "description": "Partido liberal. Generalmente defiende la educación, la integración, la cooperación europea y una economía de mercado."
+  },
+  "MP": {
+    "name": "Partido Verde",
+    "shortName": "Partido Verde",
+    "ideology": "Ecologista",
+    "description": "Partido ecologista. Generalmente defiende políticas climáticas más ambiciosas, energías renovables y una política migratoria más abierta."
+  }
+}

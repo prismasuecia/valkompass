@@ -1,0 +1,194 @@
+{
+  "app": {
+    "name": "Brújula regional 2026",
+    "title": "Brújula electoral: Región de Estocolmo 2026",
+    "subtitle": "Versión de prueba de la brújula regional. Puedes explorar el cuestionario, pero las preguntas y las posiciones siguen en revisión y todavía no se muestran resultados."
+  },
+
+  "intro": {
+    "title": "Antes de comenzar",
+    "text": "Suecia tiene tres niveles políticos: nacional, regional y municipal. Esta brújula trata exclusivamente de las elecciones de la Región de Estocolmo.\n\nLa región es responsable principalmente de la atención sanitaria, el transporte público y el impuesto regional. No decide sobre cuestiones nacionales como las pensiones o la policía, ni sobre servicios municipales como las escuelas y el cuidado de personas mayores.\n\nCada pregunta explica la situación actual, qué podría cambiar y los principales argumentos políticos. No necesitas seguir las noticias suecas para participar."
+  },
+
+  "home": {
+    "partiesIncluded": "Partidos incluidos"
+  },
+
+  "importantInfo": {
+    "title": "Información importante",
+    "parliament": "Esta brújula electoral se refiere únicamente a las elecciones de la Región de Estocolmo.",
+    "local": "No incluye las elecciones al Parlamento sueco ni las elecciones municipales.",
+    "recommendation": "El resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
+  },
+
+  "votingRights": {
+    "title": "¿Quién puede votar en las elecciones regionales?",
+    "text": "Pueden votar quienes tengan derecho a voto en las elecciones regionales y estén inscritos en un municipio del condado de Estocolmo. Las reglas no son las mismas que para las elecciones al Parlamento sueco."
+  },
+
+  "quizInfo": {
+    "questionsLabel": "Número de preguntas",
+    "timeLabel": "Duración",
+    "timeValue": "A tu ritmo; puedes consultar las explicaciones"
+  },
+
+  "categories": {
+    "regionalEmployment": "Empleo en los servicios regionales",
+    "regionalTax": "Impuesto regional",
+    "psychiatryProcurement": "Contratación de psiquiatría",
+    "childYouthPsychiatry": "Psiquiatría infantil y juvenil",
+    "healthcareOperations": "Gestión sanitaria",
+    "publicTransport": "Transporte público",
+    "healthcareAccess": "Acceso a la sanidad",
+    "cultureInvestment": "Cultura e inversiones"
+  },
+
+  "buttons": {
+    "start": "Comenzar ahora",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Ver resultado",
+    "restart": "Empezar de nuevo",
+    "showExplanation": "▼ Entender la propuesta",
+    "hideExplanation": "▲ Ocultar contexto y explicación",
+    "explanationPrompt": "Entender la propuesta antes de responder",
+    "explanationCardTitle": "Contexto para tomar una posición",
+    "mobileShowExplanation": "▶ Entender la propuesta",
+    "mobileHideExplanation": "▼ Ocultar contexto y explicación",
+    "showMatches": "Ver coincidencias",
+    "showDifferences": "Ver diferencias",
+    "readMore": "Leer más",
+    "readMoreAbout": "Leer más sobre"
+  },
+
+  "answers": {
+    "stronglyAgree": "Totalmente de acuerdo",
+    "agree": "Más bien de acuerdo",
+    "neutral": "Ni de acuerdo ni en desacuerdo",
+    "disagree": "Más bien en desacuerdo",
+    "stronglyDisagree": "Totalmente en desacuerdo",
+    "insufficientInformation": "No tengo suficiente información"
+  },
+
+  "progress": {
+    "question": "Pregunta",
+    "of": "de",
+    "important": "Esta pregunta es importante para mí",
+    "importantCard": "Esta pregunta es importante para mí",
+    "importantSubtext": "Tu respuesta contará el doble en la comparación.",
+    "estimatedTime": "Tiempo restante aproximado",
+    "answerInstruction": "Responde según tu propia opinión sobre la propuesta. Si no tienes suficiente información, esa pregunta no se incluirá en el cálculo."
+  },
+
+  "explanationSections": {
+    "currentSituation": "Situación actual",
+    "discussion": "¿Qué se discute?",
+    "example": "Ejemplo concreto"
+  },
+
+  "results": {
+    "title": "Coincidencia con las posiciones documentadas de los partidos",
+    "description": "La comparación utiliza las mismas preguntas revisadas para todos los partidos. Las preguntas excluidas se indican por separado.",
+    "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
+    "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
+    "importantQuestionsUsed": "Preguntas que contaron el doble en este resultado",
+    "comparedQuestions": "Preguntas comparadas para este partido",
+    "noResults": "No hay respuestas suficientes para calcular una coincidencia.",
+    "answerQuestions": "Responde al menos una pregunta con una posición para obtener una comparación.",
+    "yourAnswer": "Tu respuesta",
+    "scoreLabel": "Resultado",
+    "scoreExplanation": "El porcentaje se refiere solo a las preguntas que pudieron compararse. No representa toda la política del partido ni indica qué partido deberías votar."
+  },
+
+  "highMatch": {
+    "title": "Coincidencia alta",
+    "text": "Tus respuestas muestran una coincidencia especialmente alta con este partido."
+  },
+
+  "mixedMatch": {
+    "title": "Resultado equilibrado",
+    "text": "Tus respuestas muestran similitudes con varios partidos. Esto puede significar que compartes opiniones de diferentes corrientes políticas."
+  },
+
+  "noClearMatch": {
+    "title": "Sin coincidencia clara",
+    "text": "No existe una coincidencia clara con un solo partido. Tus respuestas se encuentran repartidas entre varias posiciones políticas."
+  },
+
+  "whyResult": {
+    "title": "¿Por qué obtuve este resultado?",
+    "intro": "Tus respuestas coinciden especialmente con este partido en algunos temas importantes."
+  },
+
+  "matches": {
+    "title": "Coincidencias principales",
+    "text": "Estos son algunos temas en los que tus respuestas se parecen más a las posiciones de este partido."
+  },
+
+  "differences": {
+    "title": "Diferencias principales",
+    "text": "Estos son algunos temas en los que tus respuestas se diferencian más de las posiciones de este partido."
+  },
+
+  "categoryResults": {
+    "title": "Tus resultados por tema",
+    "text": "Es posible estar más cerca de un partido en algunos temas y más lejos en otros."
+  },
+
+  "methodology": {
+    "title": "¿Cómo se construyó esta brújula electoral?",
+    "text": "Esta es una versión de prueba. Estamos revisando la correspondencia entre las preguntas, las fuentes y las posiciones de cada partido.\n\nNo deducimos posiciones a partir de la ideología. Una respuesta desconocida no equivale a una posición neutral.\n\nLos porcentajes y la clasificación permanecen desactivados hasta completar la revisión del contenido y del método de comparación."
+  },
+
+  "sourcesPage": {
+    "title": "Fuentes y metodología",
+    "intro": "Las posiciones de los partidos se basan en información pública disponible.",
+    "basedOnTitle": "Las posiciones se basan en:",
+    "partyPrograms": "respuestas electorales regionales enviadas por los partidos",
+    "officialPolicyProposals": "presupuestos y propuestas regionales oficiales",
+    "officialPartyWebsites": "páginas regionales oficiales de los partidos",
+    "parliamentaryProposals": "decisiones y documentos de la Región de Estocolmo",
+    "leadershipStatements": "declaraciones públicas identificables de representantes regionales",
+    "disclaimer": "Las posiciones pueden actualizarse cuando los partidos cambian sus propuestas o presentan nuevas políticas.",
+    "notAffiliated": "Esta brújula electoral no está afiliada a ningún partido político.",
+    "globalLastReviewed": "Revisión en curso — 3 de septiembre de 2026. Las fuentes no implican que todas las preguntas y posiciones estén aprobadas.",
+    "partySourcesTitle": "Fuentes por partido",
+    "source1": "Fuente 1",
+    "source2": "Fuente 2",
+    "source3": "Fuente 3",
+    "lastReviewed": "Última revisión",
+    "officialPartyProgram": "Programa oficial del partido",
+    "officialPolicyPages": "Páginas oficiales de políticas",
+    "officialElectionPlatform": "Respuestas electorales regionales",
+    "back": "Volver"
+  },
+
+  "editorial": {
+    "title": "Principios editoriales",
+    "neutrality": "Neutralidad política",
+    "neutralityText": "Esta brújula electoral no favorece a ningún partido político.",
+    "transparency": "Transparencia",
+    "transparencyText": "Las posiciones se basan en información pública y pueden actualizarse cuando los partidos cambian de postura.",
+    "language": "Lenguaje claro",
+    "languageText": "Los textos están escritos para personas que hablan español y viven en Suecia, independientemente de su nivel educativo.",
+    "sources": "Fuentes públicas",
+    "sourcesText": "Las posiciones se basan en respuestas electorales regionales, propuestas oficiales y documentos públicos.",
+    "updates": "Actualización continua",
+    "updatesText": "La política cambia con el tiempo. Por eso esta brújula electoral puede actualizarse antes de las elecciones.",
+    "recommendation": "No es una recomendación de voto",
+    "recommendationText": "El resultado muestra similitudes políticas, pero la decisión final corresponde siempre al votante."
+  },
+
+  "errors": {
+    "generic": "Ha ocurrido un error. Inténtalo nuevamente.",
+    "loadFailed": "No se pudo cargar la información.",
+    "tryAgain": "Por favor, inténtalo nuevamente."
+  },
+
+  "footer": {
+    "createdBy": "Creado por Prisma Suecia",
+    "tagline": "Información sobre Suecia en español.",
+    "sourcesLink": "Fuentes y metodología",
+    "betaBadge": "Versión beta"
+  }
+}
