@@ -13,10 +13,14 @@ const labels: {value: AnswerValue; label: string}[] = [
 
 export function AnswerButtons({
   selectedValue,
-  onSelect
+  skipped,
+  onSelect,
+  onSkip
 }: {
   selectedValue?: AnswerValue;
+  skipped: boolean;
   onSelect: (value: AnswerValue) => void;
+  onSkip: () => void;
 }) {
   return (
     <div className="grid gap-2 sm:gap-3">
@@ -41,6 +45,16 @@ export function AnswerButtons({
           </span>
         </button>
       ))}
+      <button
+        type="button"
+        aria-pressed={skipped}
+        onClick={onSkip}
+        className={`mt-1 min-h-[52px] w-full rounded-2xl border px-4 py-3 text-left text-sm font-medium transition-colors sm:min-h-14 sm:px-5 sm:py-4 ${
+          skipped ? 'border-ink bg-slate-100 text-ink shadow-sm' : 'border-dashed border-slate-300 bg-paper text-slate-700 hover:border-slate-400'
+        }`}
+      >
+        {uiText.answers.insufficientInformation}
+      </button>
     </div>
   );
 }

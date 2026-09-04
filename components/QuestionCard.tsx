@@ -159,8 +159,10 @@ export function QuestionCard({
   explanation,
   language,
   selectedValue,
+  skipped,
   important,
   onAnswer,
+  onSkip,
   onToggleImportant,
   onExplanationOpened
 }: {
@@ -168,8 +170,10 @@ export function QuestionCard({
   explanation?: Explanation;
   language: Language;
   selectedValue?: AnswerValue;
+  skipped: boolean;
   important: boolean;
   onAnswer: (value: AnswerValue) => void;
+  onSkip: () => void;
   onToggleImportant: () => void;
   onExplanationOpened: () => void;
 }) {
@@ -187,7 +191,7 @@ export function QuestionCard({
           </div>
         ) : null}
         <div className="mt-3 sm:mt-6">
-          <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+          <AnswerButtons selectedValue={selectedValue} skipped={skipped} onSelect={onAnswer} onSkip={onSkip} />
         </div>
       </article>
 
@@ -196,7 +200,7 @@ export function QuestionCard({
           <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
           <div className="mt-7">
-            <AnswerButtons selectedValue={selectedValue} onSelect={onAnswer} />
+            <AnswerButtons selectedValue={selectedValue} skipped={skipped} onSelect={onAnswer} onSkip={onSkip} />
           </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">
