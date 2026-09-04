@@ -3,6 +3,7 @@ const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
   outputFileTracingRoot: process.cwd(),
   basePath: isGitHubActions ? '/valkompass' : '',
   assetPrefix: isGitHubActions ? '/valkompass/' : '',
