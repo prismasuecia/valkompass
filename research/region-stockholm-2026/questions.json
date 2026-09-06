@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "jurisdiction": "region-stockholm",
+  "electionYear": 2026,
+  "reviewedAt": "2026-09-03",
+  "status": "preview-under-revision-not-publication-ready",
+  "auditRef": "review-12-questions.md",
+  "scale": {"min": -2, "max": 2, "missing": null},
+  "parties": ["S", "M", "SD", "V", "C", "KD", "L", "MP"],
+  "questions": [
+    {"id": "RS26-Q01", "statementSv": "Bör regionskatten sänkas, vara oförändrad eller höjas jämfört med dagens nivå?", "answerScale": "tax-level", "positions": {"S": 0, "M": 2, "SD": 2, "V": -1, "C": 1, "KD": 1, "L": 1, "MP": 0}, "coverage": "8/8"},
+    {"id": "RS26-Q02", "statementSv": "Vid upphandling av specialistpsykiatri bör pris inte vara det enda kriteriet som skiljer mellan godkända anbud.", "positions": {"S": null, "M": 2, "SD": null, "V": null, "C": null, "KD": 2, "L": 2, "MP": -2}, "coverage": "4/8"},
+    {"id": "RS26-Q03", "statementSv": "Bör Region Stockholm stoppa ytterligare avveckling och omvandling av vårdval inom specialiserad öppenvård?", "positions": {"S": -2, "M": 2, "SD": null, "V": -2, "C": -2, "KD": 2, "L": null, "MP": -2}, "coverage": "6/8"},
+    {"id": "RS26-Q04", "statementSv": "Bör Region Stockholm sänka den ordinarie prisnivån i SL-trafiken?", "positions": {"S": 0, "M": -2, "SD": null, "V": 2, "C": null, "KD": null, "L": null, "MP": null}, "coverage": "3/8"},
+    {"id": "RS26-Q05", "statementSv": "Bör Region Stockholm även fortsättningsvis erbjuda kostnadsfri språktolk i vården när det behövs för att patienten och vårdpersonalen ska förstå varandra?", "positions": {"S": 1, "M": -1, "SD": -2, "V": 2, "C": 2, "KD": -1, "L": 2, "MP": 2}, "coverage": "8/8", "legalNote": "Eventuella avgifter eller begränsningar måste följa nationell lag och får inte äventyra patientsäkerheten."},
+    {"id": "RS26-Q06", "statementSv": "Bör barn och ungdomar få resa gratis med SL året runt?", "positions": {"S": 2, "M": -1, "SD": 2, "V": 2, "C": 1, "KD": -1, "L": 2, "MP": 2}, "coverage": "8/8", "currentState": "Under 2026 har länets unga födda 2008–2014 kostnadsfri lovbiljett; barn under 12 kan resa gratis med biljettbetalande vuxen. I andra fall används normalt rabatterad biljett."}
+  ],
+  "excludedAfterAudit": [
+    {"topic": "privata BUP-mottagningar", "reason": "full partitäckning kunde inte verifieras"},
+    {"topic": "specialiserad ätstörningsvård", "reason": "dubblett av vårdvalsfrågan"},
+    {"topic": "enprocentsprincipen för konst", "reason": "tidigare granskning saknade tillräcklig källspårning; kan återöppnas efter den nya SVT-publiceringen"}
+  ]
+}

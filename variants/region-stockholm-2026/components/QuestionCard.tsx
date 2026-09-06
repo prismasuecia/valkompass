@@ -1,0 +1,216 @@
+'use client';
+
+import {AnswerButtons} from '@/components/AnswerButtons';
+import type {AnswerSelection, Explanation, Language, Question} from '@/types';
+import uiText from '@/uiText.json';
+
+const categoryLabels: Record<Question['category'], string> = {
+  regionalEmployment: uiText.categories.regionalEmployment,
+  regionalTax: uiText.categories.regionalTax,
+  psychiatryProcurement: uiText.categories.psychiatryProcurement,
+  childYouthPsychiatry: uiText.categories.childYouthPsychiatry,
+  healthcareOperations: uiText.categories.healthcareOperations,
+  publicTransport: uiText.categories.publicTransport,
+  healthcareAccess: uiText.categories.healthcareAccess,
+  cultureInvestment: uiText.categories.cultureInvestment
+};
+
+function ExplanationSections({explanation, language}: {explanation: Explanation; language: Language}) {
+  return (
+    <div className="mt-5 grid gap-4">
+      {explanation.sections.map((section) => (
+        <section key={section.title[language]} className="border-t border-amber-200 pt-4 first:border-t-0 first:pt-0">
+          <h3 className="text-sm font-semibold text-ink">{section.title[language]}</h3>
+          <p className="mt-2 text-sm leading-6 text-slate-700">{section.content[language]}</p>
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function ExplanationControl({
+  explanation,
+  language,
+  onOpened,
+  desktopCard = false
+}: {
+  explanation?: Explanation;
+  language: Language;
+  onOpened: () => void;
+  desktopCard?: boolean;
+}) {
+  if (!explanation) return null;
+
+  return (
+    <details
+      onToggle={(event) => {
+        if (event.currentTarget.open) onOpened();
+      }}
+      className={`group ${desktopCard ? 'rounded-2xl border-2 border-amber-300 bg-amber-50 p-5 shadow-sm' : ''}`}
+    >
+      <summary className={`cursor-pointer list-none ${desktopCard ? '' : 'py-1'}`}>
+        <span className="flex items-start gap-3">
+          <span aria-hidden="true" className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-300 text-sm font-bold text-ink">i</span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-base font-semibold leading-5 text-ink group-open:hidden">{uiText.buttons.explanationHelpTitle}</span>
+            <span className="hidden text-base font-semibold leading-5 text-ink group-open:block">Explicación</span>
+            <span className="mt-1 block text-sm font-semibold leading-5 text-slate-700 group-open:hidden">{uiText.buttons.explanationHelpAction}</span>
+            <span className="mt-1 hidden text-sm font-semibold leading-5 text-slate-700 group-open:block">{uiText.buttons.hideExplanation}</span>
+            <span className="mt-2 block text-sm font-normal leading-5 text-slate-600 group-open:hidden">{uiText.buttons.explanationHelpNote}</span>
+          </span>
+          <span aria-hidden="true" className="shrink-0 text-xl text-slate-700 group-open:rotate-180">⌄</span>
+        </span>
+      </summary>
+      <div className="mt-5 border-t border-amber-200 pt-4">
+        <ExplanationSections explanation={explanation} language={language} />
+        <button
+          type="button"
+          onClick={(event) => {
+            const details = event.currentTarget.closest('details');
+            if (details) details.open = false;
+          }}
+          className="mt-5 min-h-11 w-full rounded-xl border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-ink"
+        >
+          {uiText.buttons.hideExplanation}
+        </button>
+      </div>
+    </details>
+  );
+}
+
+function ImportantSetting({important, onToggleImportant}: {important: boolean; onToggleImportant: () => void}) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={important}
+      onClick={onToggleImportant}
+      className={`flex w-full items-center justify-between gap-4 rounded-2xl border-2 p-4 text-left transition-colors ${
+        important ? 'border-amber-500 bg-amber-50' : 'border-amber-200 bg-amber-50/60 hover:border-amber-400'
+      }`}
+    >
+      <span className="min-w-0">
+        <span className="block text-base font-semibold leading-5 text-ink">{uiText.progress.important}</span>
+        <span className="mt-1 block text-sm leading-5 text-slate-700">{uiText.progress.importantSubtext}</span>
+      </span>
+      <span
+        aria-hidden="true"
+        className={`flex h-6 w-11 shrink-0 items-center rounded-full border p-0.5 ${
+          important ? 'justify-end border-ink bg-ink' : 'justify-start border-slate-400 bg-slate-200'
+        }`}
+      >
+        <span className="block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
+      </span>
+    </button>
+  );
+}
+
+function MobileExplanationControl({
+  explanation,
+  language,
+  onOpened
+}: {
+  explanation?: Explanation;
+  language: Language;
+  onOpened: () => void;
+}) {
+  if (!explanation) return null;
+
+  return (
+    <details
+      onToggle={(event) => {
+        if (event.currentTarget.open) onOpened();
+      }}
+      className="group rounded-2xl border-2 border-amber-300 bg-amber-50 p-4 shadow-sm"
+    >
+      <summary className="cursor-pointer list-none text-ink">
+        <span className="flex items-start gap-3">
+          <span aria-hidden="true" className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-300 text-sm font-bold text-ink">i</span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-base font-semibold leading-5 group-open:hidden">{uiText.buttons.explanationHelpTitle}</span>
+            <span className="hidden text-base font-semibold leading-5 group-open:block">Explicación</span>
+            <span className="mt-1 block text-sm font-semibold leading-5 text-slate-700 group-open:hidden">{uiText.buttons.explanationHelpAction}</span>
+            <span className="mt-1 hidden text-sm font-semibold leading-5 text-slate-700 group-open:block">{uiText.buttons.mobileHideExplanation}</span>
+            <span className="mt-2 block text-sm font-normal leading-5 text-slate-600 group-open:hidden">{uiText.buttons.explanationHelpNote}</span>
+          </span>
+          <span aria-hidden="true" className="shrink-0 text-xl text-slate-700 group-open:rotate-180">⌄</span>
+        </span>
+      </summary>
+      <div className="mt-5 border-t border-amber-200 pt-4">
+        <ExplanationSections explanation={explanation} language={language} />
+        <button
+          type="button"
+          onClick={(event) => {
+            const details = event.currentTarget.closest('details');
+            if (details) details.open = false;
+          }}
+          className="mt-5 min-h-11 w-full rounded-xl border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-ink"
+        >
+          {uiText.buttons.mobileHideExplanation}
+        </button>
+      </div>
+    </details>
+  );
+}
+
+export function QuestionCard({
+  question,
+  explanation,
+  language,
+  selectedValue,
+  important,
+  onAnswer,
+  onToggleImportant,
+  onExplanationOpened
+}: {
+  question: Question;
+  explanation?: Explanation;
+  language: Language;
+  selectedValue?: AnswerSelection;
+  important: boolean;
+  onAnswer: (value: AnswerSelection) => void;
+  onToggleImportant: () => void;
+  onExplanationOpened: () => void;
+}) {
+  return (
+    <>
+      <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-6 min-[1200px]:hidden">
+        <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
+        <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
+        <div className="mt-4">
+          <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
+        </div>
+        <p className="mt-4 text-sm leading-6 text-slate-600">{question.context[language]}</p>
+        {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
+        <div className="mt-3 sm:mt-6">
+          <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
+        </div>
+        {question.importanceAllowed ? (
+          <div className="mt-4">
+            <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+          </div>
+        ) : null}
+      </article>
+
+      <article className="hidden w-full grid-cols-[minmax(0,1.35fr)_minmax(340px,0.65fr)] gap-8 rounded-2xl border border-line bg-white p-8 shadow-sm min-[1200px]:grid">
+        <section className="min-w-0">
+          <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
+          <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
+          <p className="mt-4 text-base leading-7 text-slate-600">{question.context[language]}</p>
+          {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
+          <div className="mt-7">
+            <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
+          </div>
+          {question.importanceAllowed ? (
+            <div className="mt-6">
+              <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+            </div>
+          ) : null}
+        </section>
+        <aside className="min-w-0 border-l border-line pl-8">
+          <ExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} desktopCard />
+        </aside>
+      </article>
+    </>
+  );
+}

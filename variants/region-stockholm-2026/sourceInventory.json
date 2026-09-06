@@ -1,0 +1,10 @@
+{
+  "S": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Socialdemokraterna Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/"}]},
+  "M": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Moderaterna Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/"}]},
+  "SD": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Sverigedemokraterna Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/"}]},
+  "V": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Vänsterpartiet Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/"}]},
+  "C": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Centerpartiet Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/"}]},
+  "KD": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Kristdemokraterna Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/"}]},
+  "L": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Liberalerna Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/"}]},
+  "MP": {"lastReviewed": "2026-08-31", "sources": [{"type": "officialElectionPlatform", "title": "Miljöpartiet Region Stockholm – Valkompass 2026", "url": "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/"}]}
+}

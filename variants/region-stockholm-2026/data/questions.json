@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 2,
+  "jurisdiction": "region-stockholm",
+  "electionYear": 2026,
+  "reviewedAt": "2026-09-03",
+  "status": "publication-approved",
+  "questions": [
+    {
+      "id": "RS26-Q01",
+      "category": "regionalTax",
+      "answerScale": "tax-level",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Bör regionskatten sänkas, vara oförändrad eller höjas jämfört med dagens nivå?",
+        "es": "¿Qué debería pasar con el impuesto regional en Estocolmo: debería bajar, mantenerse igual o subir?"
+      },
+      "context": {
+        "sv": "Regionskatten 2026 är 12,33 kronor per hundralapp beskattningsbar inkomst. Den är bara en del av inkomstskatten.",
+        "es": "En 2026, de cada 100 coronas de ingresos sujetos a impuestos, 12,33 corresponden al impuesto de la Región de Estocolmo. Este dinero ayuda a financiar, entre otras cosas, la atención médica y el transporte público. El impuesto regional es solo una parte del impuesto total sobre la renta."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Regionskatten 2026 är 12,33 kronor per hundralapp beskattningsbar inkomst. Den är bara en del av inkomstskatten.",
+              "es": "En 2026, de cada 100 coronas de ingresos sujetos a impuestos, 12,33 corresponden al impuesto de la Región de Estocolmo. Este dinero ayuda a financiar, entre otras cosas, la atención médica y el transporte público. El impuesto regional es solo una parte del impuesto total sobre la renta."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Lägre, oförändrad eller högre regionskatt, inte kommunal eller statlig skatt.",
+              "es": "La pregunta es si el impuesto regional debería bajar, mantenerse en 12,33 coronas por cada 100 o subir. No se refiere al impuesto municipal ni al impuesto estatal."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "C vill inte skada vård eller trafik; M uttrycker ett långsiktigt mål.",
+              "es": "C condiciona una rebaja a que no perjudique la atención médica ni el transporte público. M expresa un objetivo a largo plazo."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 0,
+        "M": 2,
+        "SD": 2,
+        "V": -1,
+        "C": 1,
+        "KD": 1,
+        "L": 1,
+        "MP": 0
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://www.regionstockholm.se/nyheter/2025/11/region-stockholms-budget-for-2026-beslutad/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-N03",
+      "category": "childYouthPsychiatry",
+      "answerScale": "agreement",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Privata vårdgivare ska få öppna psykiatrimottagningar för barn och unga.",
+        "es": "¿Debería la Región permitir que empresas privadas gestionen nuevos centros de psiquiatría para niños y adolescentes?"
+      },
+      "context": {
+        "sv": "Det finns redan offentliga och privata BUP-mottagningar som arbetar på regionens uppdrag, exempelvis PRIMA Handen.",
+        "es": "En Suecia, la atención psiquiátrica especializada para niños y adolescentes se conoce como BUP. En Estocolmo ya hay centros gestionados directamente por la Región y otros gestionados por empresas privadas por encargo de la Región, como PRIMA Handen."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Det finns redan offentliga och privata BUP-mottagningar som arbetar på regionens uppdrag, exempelvis PRIMA Handen.",
+              "es": "En Suecia, la atención psiquiátrica especializada para niños y adolescentes se conoce como BUP. En Estocolmo ya hay centros gestionados directamente por la Región y otros gestionados por empresas privadas por encargo de la Región, como PRIMA Handen."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Frågan gäller att privata vårdgivare ska få öppna mottagningar. Den anger inte fri etableringsrätt utan krav eller ett visst antal nya mottagningar.",
+              "es": "La propuesta permitiría abrir más centros gestionados por empresas privadas dentro del sistema regional. Esto no significa que puedan abrir sin autorización o sin cumplir los requisitos establecidos, ni fija un número concreto de nuevos centros."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "MP stöder skalfrågan men avvisar vårdval/fri etablering och accepterar upphandlad vård. V motsätter sig privata vårdval. S fokuserar på snabbare hjälp. SD kräver kvalitet och uppföljning.",
+              "es": "MP apoya la propuesta, pero rechaza que los centros puedan establecerse libremente y acepta servicios contratados por la Región. V rechaza el modelo en el que el paciente elige entre distintos proveedores privados dentro de BUP. S destaca la rapidez de la atención. SD exige calidad y supervisión."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 1,
+        "M": 2,
+        "SD": 1,
+        "V": -2,
+        "C": 2,
+        "KD": 2,
+        "L": 2,
+        "MP": 1
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://www.1177.se/hitta-vard/kontaktkort/PRIMA-barn-och-ungdomspsykiatri-Handen/"
+      ],
+      "comparisonNote": "Esta pregunta y la pregunta sobre la gestión privada de la atención médica tratan en parte sobre el mismo tema. Ambas cuentan en el resultado, pero ninguna puede tener peso doble."
+    },
+    {
+      "id": "RS26-Q05",
+      "category": "healthcareAccess",
+      "answerScale": "agreement",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Bör regionen erbjuda språktolk utan avgift för patienten när tolk behövs i vården?",
+        "es": "Cuando un paciente necesita un intérprete para comunicarse con el personal de salud, ¿debería recibir ese servicio sin tener que pagar?"
+      },
+      "context": {
+        "sv": "Regionen och avtalsanslutna vårdgivare ska tillhandahålla kostnadsfri språktolk när patienten behöver det för kommunikationen.",
+        "es": "Actualmente, si un paciente necesita un intérprete para comunicarse con el personal de salud, la Región —o el centro que presta atención por encargo suyo— debe organizarlo. El paciente no paga por este servicio. Esta pregunta se refiere a la interpretación entre idiomas hablados."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Regionen och avtalsanslutna vårdgivare ska tillhandahålla kostnadsfri språktolk när patienten behöver det för kommunikationen.",
+              "es": "Actualmente, si un paciente necesita un intérprete para comunicarse con el personal de salud, la Región —o el centro que presta atención por encargo suyo— debe organizarlo. El paciente no paga por este servicio. Esta pregunta se refiere a la interpretación entre idiomas hablados."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Avgiftsfri tolk vid behov eller avgifter i vissa fall. Gäller talade språk, inte teckenspråk.",
+              "es": "La pregunta es si este servicio debe seguir siendo gratuito para todas las personas que lo necesiten o si algunos pacientes deberían tener que pagarlo. No se refiere a la interpretación en lengua de signos."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "KD föreslår fem år efter uppehållstillstånd med dispenser för ålder, hälsa eller funktionsnedsättning och patientsäkerheten först. M gäller lång bosättningstid; SD undantar minoritetsspråk och teckenspråk.",
+              "es": "KD propone un límite de cinco años desde la concesión del permiso de residencia, con excepciones por edad, salud o discapacidad y con prioridad para la seguridad del paciente. M se refiere a residentes de larga duración. SD excluye de su propuesta las lenguas minoritarias y la lengua de signos."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 1,
+        "M": -1,
+        "SD": -2,
+        "V": 2,
+        "C": 2,
+        "KD": -1,
+        "L": 2,
+        "MP": 2
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://www.transkulturelltcentrum.se/vara-kunskapsomraden/tolkade-samtal-i-varden/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-Q06",
+      "category": "publicTransport",
+      "answerScale": "agreement",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Kollektivtrafiken ska vara gratis för barn och ungdomar.",
+        "es": "¿Debería la Región ampliar los viajes gratuitos en transporte público para niños y jóvenes?"
+      },
+      "context": {
+        "sv": "Barn under 7 reser gratis med någon som har giltig biljett. Person över 18 med SL-biljett kan ta med sex barn 7–11 gratis. Länsbor födda 2008–2014 får lovbiljett 2026.",
+        "es": "Los menores de 7 años viajan gratis si van acompañados de una persona con un billete válido. Una persona mayor de 18 años con billete de SL puede llevar gratuitamente hasta seis niños de entre 7 y 11 años. En 2026, quienes nacieron entre 2008 y 2014 y están registrados como residentes en el condado tienen además un abono gratuito durante las vacaciones escolares, pero no durante todo el año."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Barn under 7 reser gratis med någon som har giltig biljett. Person över 18 med SL-biljett kan ta med sex barn 7–11 gratis. Länsbor födda 2008–2014 får lovbiljett 2026.",
+              "es": "Los menores de 7 años viajan gratis si van acompañados de una persona con un billete válido. Una persona mayor de 18 años con billete de SL puede llevar gratuitamente hasta seis niños de entre 7 y 11 años. En 2026, quienes nacieron entre 2008 y 2014 y están registrados como residentes en el condado tienen además un abono gratuito durante las vacaciones escolares, pero no durante todo el año."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Gratis resor för barn och unga; partiernas åldrar, tider och finansieringsvillkor skiljer sig.",
+              "es": "La pregunta es si los viajes gratuitos deberían ampliarse más allá de las reglas actuales. Los partidos proponen distintas edades, periodos y formas de financiación. Por eso, apoyar una ampliación no significa necesariamente ofrecer transporte gratuito a todos los menores durante todo el año."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "L föreslår fritidskort med statlig medfinansiering. C försvarar befintliga undantag. S vill utöka med statsbidrag. Inte alla lovar gratis resor hela året.",
+              "es": "L propone un abono para los desplazamientos durante el tiempo libre, financiado también por el Estado. C defiende las excepciones actuales y S quiere ampliarlas con apoyo económico del Estado. Ninguna de estas posiciones significa automáticamente transporte gratuito para todos los menores durante todo el año."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 2,
+        "M": -1,
+        "SD": 2,
+        "V": 2,
+        "C": 1,
+        "KD": -1,
+        "L": 2,
+        "MP": 2
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://sl.se/reseplanering/att-resa-med-sl/barns-resor-och-res-med-barn",
+        "https://sl.se/biljetter/lovbiljett-for-unga"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-N05",
+      "category": "healthcareAccess",
+      "answerScale": "agreement",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Regionen ska öppna ett specialistcentrum för kvinnosjukvård.",
+        "es": "¿Debería la Región crear un centro que reúna atención especializada, conocimiento e investigación sobre la salud de las mujeres?"
+      },
+      "context": {
+        "sv": "Det finns redan gynekologi, mödra- och förlossningsvård. Regionen beslutade i december 2025 om mer sammanhållen kvinnosjukvård. Detta är inte belägg för att det föreslagna specialistcentrumet redan har öppnat.",
+        "es": "Ya existen servicios relacionados con la ginecología, el embarazo y el parto. En diciembre de 2025, la Región decidió mejorar la coordinación de esta atención. Esa decisión no significa que el centro especializado propuesto ya exista."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Det finns redan gynekologi, mödra- och förlossningsvård. Regionen beslutade i december 2025 om mer sammanhållen kvinnosjukvård. Detta är inte belägg för att det föreslagna specialistcentrumet redan har öppnat.",
+              "es": "Ya existen servicios relacionados con la ginecología, el embarazo y el parto. En diciembre de 2025, la Región decidió mejorar la coordinación de esta atención. Esa decisión no significa que el centro especializado propuesto ya exista."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Förslaget gäller ett specialistcentrum, inte att kvinnosjukvård skulle saknas i dag. Partierna nämner bland annat vård, kunskapsutveckling och forskning.",
+              "es": "La propuesta no parte de cero ni sustituiría todos los servicios existentes. Plantea reunir en un centro especializado parte de la atención, el conocimiento y la investigación que hoy se encuentran repartidos en distintos lugares."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "Alla åtta stöder förslaget: sju mycket bra, SD ganska bra med villkor om utformningen. Frågan visar främst samsyn och skiljer partierna åt lite. Ingen motsättning till kvinnors vård får tillskrivas SD.",
+              "es": "Los ocho partidos apoyan la propuesta. Siete la consideran muy buena y SD bastante buena, aunque con condiciones sobre cómo debería organizarse. En esta pregunta hay principalmente acuerdo entre los partidos, por lo que sirve poco para diferenciarlos."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 2,
+        "M": 2,
+        "SD": 1,
+        "V": 2,
+        "C": 2,
+        "KD": 2,
+        "L": 2,
+        "MP": 2
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://www.regionstockholm.se/nyheter/2025/12/beslut-om-en-mer-sammanhallen-kvinnosjukvard/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-N04",
+      "category": "regionalEmployment",
+      "answerScale": "categorical",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Bör Region Stockholm satsa på arbetsdelning för att skapa fler arbetstillfällen för personer med funktionsnedsättning inom regionens verksamheter?",
+        "es": "¿Debería la Región crear más empleos para personas con discapacidad dividiendo algunos puestos en tareas más concretas?"
+      },
+      "context": {
+        "sv": "Regionen är själv arbetsgivare. I enkäten beskriver S och C ett pågående uppdrag för en mer inkluderande arbetsplats. Det är deras redogörelse, inte ett verifierat resultat av en färdig arbetsdelningssatsning.",
+        "es": "La Región no solo organiza servicios públicos: también emplea a personal de salud, administrativo y de otras áreas. La propuesta consiste en identificar tareas concretas dentro de puestos más amplios y convertirlas en empleos adaptados. Actualmente no existe un programa de este tipo aplicado en todos los servicios de la Región."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Regionen är själv arbetsgivare. I enkäten beskriver S och C ett pågående uppdrag för en mer inkluderande arbetsplats. Det är deras redogörelse, inte ett verifierat resultat av en färdig arbetsdelningssatsning.",
+              "es": "La Región no solo organiza servicios públicos: también emplea a personal de salud, administrativo y de otras áreas. La propuesta consiste en identificar tareas concretas dentro de puestos más amplios y convertirlas en empleos adaptados. Actualmente no existe un programa de este tipo aplicado en todos los servicios de la Región."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Frågan gäller arbetsdelning som metod att skapa arbetstillfällen i regionens verksamheter. Inte en generell förkortning av alla anställdas arbetstid eller ändrad nationell LSS-lag.",
+              "es": "La pregunta es si la Región debería utilizar esta forma de organizar el trabajo para contratar a más personas con discapacidad en sus propios servicios. No se propone reducir la jornada de todo el personal ni cambiar la legislación nacional."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "C, MP, M, V aktivt stöd; KD och S stöd. L föredrar individuellt stöd och anpassningar via LSS. SD föredrar uppgiftsväxling och ändrade kompetenskrav. Nej betyder här annan metod, inte motstånd mot arbete för målgruppen.",
+              "es": "C, MP, M y V quieren impulsar la medida; KD y S también la apoyan. L prefiere medidas de apoyo individual y adaptaciones en el trabajo. SD propone redistribuir funciones y revisar los requisitos de contratación. Estas alternativas no significan que esos partidos se opongan a contratar a personas con discapacidad."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 1,
+        "M": 1,
+        "SD": -1,
+        "V": 1,
+        "C": 1,
+        "KD": 1,
+        "L": -1,
+        "MP": 1
+      },
+      "sourceUrls": [
+        "https://funktionsrattstockholmslan.se/intressepolitik/temaar/regionvalet-2026/valenkat-till-regionpolitikerna/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-K03",
+      "category": "healthcareAccess",
+      "answerScale": "categorical",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Bör gränsen mellan hjälpmedel och fritidshjälpmedel tas bort för att öka förskrivningen för fritidsaktiviteter?",
+        "es": "¿Debería la Región poder prescribir ayudas técnicas también para actividades de tiempo libre?"
+      },
+      "context": {
+        "sv": "Hjälpmedel för fritid förskrivs normalt inte, med vissa undantag för barns lek och utveckling.",
+        "es": "Las ayudas técnicas son productos adaptados que ayudan a una persona con discapacidad a realizar actividades que de otro modo serían difíciles o imposibles. Pueden ser, por ejemplo, equipos adaptados para desplazarse o practicar una actividad. En Estocolmo se prescriben principalmente para necesidades de la vida diaria. Las destinadas sobre todo al tiempo libre suelen quedar fuera, aunque existen algunas excepciones para niños."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Hjälpmedel för fritid förskrivs normalt inte, med vissa undantag för barns lek och utveckling.",
+              "es": "Las ayudas técnicas son productos adaptados que ayudan a una persona con discapacidad a realizar actividades que de otro modo serían difíciles o imposibles. Pueden ser, por ejemplo, equipos adaptados para desplazarse o practicar una actividad. En Estocolmo se prescriben principalmente para necesidades de la vida diaria. Las destinadas sobre todo al tiempo libre suelen quedar fuera, aunque existen algunas excepciones para niños."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Fritidsanvändning ska inte i sig utesluta förskrivning; inte automatiskt alla produkter gratis.",
+              "es": "La pregunta es si una ayuda técnica debería poder prescribirse aunque su finalidad principal sea una actividad de tiempo libre. La propuesta no daría automáticamente derecho a cualquier producto: seguiría siendo necesaria una evaluación individual de las necesidades de cada persona."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "M vill bedöma kostnader; C prioriterar barn; SD kommenterar redan förskrivna hjälpmedel. S föreslår bättre låneutbud.",
+              "es": "M pide tener en cuenta el coste. C da prioridad a los menores. SD se refiere al uso de ayudas que ya han sido prescritas. S propone mejorar la oferta de ayudas disponibles para préstamo."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": -1,
+        "M": 1,
+        "SD": 1,
+        "V": 1,
+        "C": 1,
+        "KD": 1,
+        "L": 1,
+        "MP": 1
+      },
+      "sourceUrls": [
+        "https://funktionsrattstockholmslan.se/intressepolitik/temaar/regionvalet-2026/valenkat-till-regionpolitikerna/",
+        "https://www.1177.se/Stockholm/undersokning-behandling/hjalpmedel/sa-far-du-ett-hjalpmedel/fritidshjalpmedel/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-K04",
+      "category": "healthcareAccess",
+      "answerScale": "categorical",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Bör vårdcentralerna delta i funkisdiplomering, utbildning för bättre bemötande av personer med funktionsnedsättning?",
+        "es": "¿Deberían los centros de salud formar a su personal para atender mejor a las personas con discapacidad?"
+      },
+      "context": {
+        "sv": "Utbildningen har använts på ungdomsmottagningar för bättre förståelse och bemötande.",
+        "es": "La propuesta se refiere a un programa sueco llamado «funkisdiplomering». Es una formación para el personal sobre diferentes discapacidades, accesibilidad y atención a los pacientes. La Región ya ha utilizado este modelo en algunos centros para jóvenes, pero no en todos los centros de salud."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Utbildningen har använts på ungdomsmottagningar för bättre förståelse och bemötande.",
+              "es": "La propuesta se refiere a un programa sueco llamado «funkisdiplomering». Es una formación para el personal sobre diferentes discapacidades, accesibilidad y atención a los pacientes. La Región ya ha utilizado este modelo en algunos centros para jóvenes, pero no en todos los centros de salud."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Deltagande i detta utbildningsprogram, inte teknisk certifiering av byggnader.",
+              "es": "La pregunta es si los centros de salud deberían utilizar específicamente este programa de formación. Un partido puede rechazar este programa concreto y, al mismo tiempo, apoyar otras formas de mejorar la atención."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "C tillåter frivilligt deltagande. Andra föredrar andra program. Detta är inte teknisk tillgänglighetscertifiering.",
+              "es": "C acepta que la participación sea voluntaria y otros partidos prefieren otros programas. Aunque el nombre sueco hace referencia a un «diploma», no se trata de una inspección ni de una certificación técnica de la accesibilidad del edificio."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": -1,
+        "M": 1,
+        "SD": 1,
+        "V": 1,
+        "C": -1,
+        "KD": -1,
+        "L": 1,
+        "MP": -1
+      },
+      "sourceUrls": [
+        "https://funktionsrattstockholmslan.se/intressepolitik/temaar/regionvalet-2026/valenkat-till-regionpolitikerna/",
+        "https://www.mfd.se/utgangspunkter/funktionshinderspolitiken/arbeta-med-funktionshinderspolitiken/forebygga-och-motverka-diskriminering/arbeta-mot-diskriminering/"
+      ],
+      "comparisonNote": null
+    },
+    {
+      "id": "RS26-N01",
+      "category": "healthcareOperations",
+      "answerScale": "private-share",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Hur mycket av sjukvården ska drivas av privata företag?",
+        "es": "En comparación con hoy, ¿deberían las empresas privadas gestionar una parte menor, igual o mayor de la atención médica financiada por la Región?"
+      },
+      "context": {
+        "sv": "Regionen har både offentligt driven vård och privata vårdgivare som arbetar på dess uppdrag.",
+        "es": "La atención médica regional se financia principalmente con fondos públicos, pero no todos los centros son gestionados por la propia Región. Algunos pertenecen a empresas privadas que prestan asistencia por encargo y con financiación de la Región."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Regionen har både offentligt driven vård och privata vårdgivare som arbetar på dess uppdrag.",
+              "es": "La atención médica regional se financia principalmente con fondos públicos, pero no todos los centros son gestionados por la propia Región. Algunos pertenecen a empresas privadas que prestan asistencia por encargo y con financiación de la Región."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Andelen privat drift i vården, inte krav på privat försäkring.",
+              "es": "La pregunta trata de quién gestiona la asistencia financiada por la Región. No propone que el paciente contrate un seguro privado y tampoco decide el futuro de una consulta concreta."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "Inga exakta andelar tillskrivs partierna. Frågan överlappar delvis den om privata BUP-mottagningar, men gäller vården som helhet.",
+              "es": "No se atribuye un porcentaje concreto a ningún partido. Esta pregunta comparte parte del tema con la de consultas privadas de psiquiatría infantil y juvenil, pero se refiere al conjunto de la atención médica."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": 0,
+        "M": 0,
+        "SD": 0,
+        "V": -2,
+        "C": 0,
+        "KD": 1,
+        "L": 1,
+        "MP": -1
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/",
+        "https://vard.regionstockholm.se/om-var-vard/"
+      ],
+      "comparisonNote": "Esta pregunta y la de consultas privadas de psiquiatría infantil y juvenil comparten parte del tema. Ambas cuentan en el resultado, pero ninguna permite duplicar su peso."
+    },
+    {
+      "id": "RS26-N02",
+      "category": "publicTransport",
+      "answerScale": "agreement",
+      "scoringApproved": true,
+      "statement": {
+        "sv": "Regionen ska prioritera kollektivtrafik i glesbygd före fler avgångar i tätorter.",
+        "es": "Si hay que elegir dónde mejorar primero el transporte público, ¿deberían tener prioridad las zonas menos pobladas frente a las zonas urbanas?"
+      },
+      "context": {
+        "sv": "Länet innehåller både tätorter och glesare befolkade områden. Frågan gäller var trafikförbättringar ska prioriteras.",
+        "es": "El condado de Estocolmo incluye el centro urbano, municipios periféricos, localidades pequeñas, zonas rurales y parte del archipiélago. La frecuencia y las alternativas de transporte varían mucho entre esos lugares."
+      },
+      "explanation": {
+        "title": {
+          "sv": "Förstå förslaget",
+          "es": "Entender la propuesta"
+        },
+        "sections": [
+          {
+            "title": {
+              "sv": "Nuläge",
+              "es": "Cómo funciona hoy"
+            },
+            "content": {
+              "sv": "Länet innehåller både tätorter och glesare befolkade områden. Frågan gäller var trafikförbättringar ska prioriteras.",
+              "es": "El condado de Estocolmo incluye el centro urbano, municipios periféricos, localidades pequeñas, zonas rurales y parte del archipiélago. La frecuencia y las alternativas de transporte varían mucho entre esos lugares."
+            }
+          },
+          {
+            "title": {
+              "sv": "Vad avgörs?",
+              "es": "Qué cambiaría"
+            },
+            "content": {
+              "sv": "Prioritering av förbättringar, inte nedläggning av tätortslinjer. Vissa partier avvisar motsättningen.",
+              "es": "La pregunta obliga a elegir una prioridad si los recursos no alcanzan para mejorar todo al mismo tiempo: reforzar primero el servicio en zonas menos pobladas o aumentar primero la frecuencia en las zonas urbanas. No propone cerrar líneas urbanas. Algunos partidos rechazan esta disyuntiva y quieren mejorar ambos tipos de zona."
+            }
+          },
+          {
+            "title": {
+              "sv": "Partiernas förbehåll",
+              "es": "Matices importantes"
+            },
+            "content": {
+              "sv": "S, V och MP avvisar motsättningen mellan stad och landsbygd. Både skalval och förklaring behålls.",
+              "es": "S, V y MP rechazan enfrentar las necesidades rurales y urbanas; conservamos tanto su respuesta como esa explicación."
+            }
+          }
+        ]
+      },
+      "positions": {
+        "S": -1,
+        "M": -1,
+        "SD": 2,
+        "V": -1,
+        "C": 1,
+        "KD": -1,
+        "L": -1,
+        "MP": 1
+      },
+      "sourceUrls": [
+        "https://valkompass.svt.se/2026/parti/socialdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/moderaterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/sverigedemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/vansterpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/centerpartiet-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/kristdemokraterna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/liberalerna-region-stockholm/",
+        "https://valkompass.svt.se/2026/parti/miljopartiet-region-stockholm/"
+      ],
+      "comparisonNote": null
+    }
+  ]
+}
