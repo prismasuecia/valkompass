@@ -9,9 +9,10 @@ test('unknown and draft statuses cannot expose a result', () => {
   }
   assert.equal(canShowResults('publication-approved'), true);
 });
-test('current dataset is explicitly held for review', () => {
+test('current release dataset is explicitly approved', () => {
   const data = JSON.parse(fs.readFileSync(new URL('../data/questions.json', import.meta.url)));
-  assert.equal(canShowResults(data.status), false);
+  assert.equal(data.questions.length, 10);
+  assert.equal(canShowResults(data.status), true);
 });
 test('result route checks approval before computing results', () => {
   const source = fs.readFileSync(new URL('../app/result/page.tsx', import.meta.url), 'utf8');

@@ -79,7 +79,7 @@ export default function SourcesPage() {
 
       <section className="mt-8 grid gap-4">
         <h2 className="text-xl font-semibold text-ink">Fuentes de las diez preguntas actuales</h2>
-        <p className="text-sm leading-6 text-slate-600">Las diez preguntas tienen respuestas de los ocho partidos. No todas marcan grandes diferencias: la del centro de salud de las mujeres refleja principalmente acuerdo. La publicación del resultado continúa bloqueada mientras terminamos la revisión.</p>
+        <p className="text-sm leading-6 text-slate-600">Las diez preguntas tienen respuestas de los ocho partidos. No todas marcan grandes diferencias: la del centro de salud de las mujeres refleja principalmente acuerdo. El resultado compara únicamente estas propuestas documentadas y no resume toda la política regional.</p>
         {questionData.questions.map(question => (
           <details key={question.id} className="rounded-2xl border border-line bg-white p-5">
             <summary className="cursor-pointer font-semibold">{question.statement.es}</summary>

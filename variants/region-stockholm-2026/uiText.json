@@ -2,7 +2,7 @@
   "app": {
     "name": "Brújula regional 2026",
     "title": "Brújula electoral: Región de Estocolmo 2026",
-    "subtitle": "Versión de prueba de la brújula regional. Puedes explorar el cuestionario, pero las preguntas y las posiciones siguen en revisión y todavía no se muestran resultados."
+    "subtitle": "Compara tus opiniones con las posiciones documentadas de los partidos en diez propuestas de la Región de Estocolmo."
   },
 
   "intro": {
@@ -137,7 +137,7 @@
 
   "methodology": {
     "title": "¿Cómo se construyó esta brújula electoral?",
-    "text": "Esta es una versión de prueba. Estamos revisando la correspondencia entre las preguntas, las fuentes y las posiciones de cada partido.\n\nNo deducimos posiciones a partir de la ideología. Una respuesta desconocida no equivale a una posición neutral.\n\nLos porcentajes y la clasificación permanecen desactivados hasta completar la revisión del contenido y del método de comparación."
+    "text": "Las preguntas, las fuentes y las posiciones de los partidos se han revisado antes de la publicación.\n\nNo deducimos posiciones a partir de la ideología. Una respuesta desconocida no equivale a una posición neutral.\n\nEl porcentaje compara tus respuestas con las posiciones documentadas en las mismas preguntas para todos los partidos. No resume toda la política de un partido ni constituye una recomendación de voto."
   },
 
   "sourcesPage": {
@@ -189,6 +189,6 @@
     "createdBy": "Creado por Prisma Suecia",
     "tagline": "Información sobre Suecia en español.",
     "sourcesLink": "Fuentes y metodología",
-    "betaBadge": "Versión beta"
+    "betaBadge": "Edición regional 2026"
   }
 }

@@ -1,5 +1,11 @@
 # Ti frågors lokala releasekandidat — 2026-09-03
 
+## Publiceringsbeslut 2026-09-06
+
+Efter slutförd data-, metod-, kod- och gränssnittsgranskning har datasetstatus ändrats till `publication-approved`. Förhandsformuleringar på startsidan, metodsidan, källsidan och sidfoten har ersatts med korrekt releaseinformation. Resultatspärrens fail-closed-kod finns kvar: okända eller framtida utkaststatusar visar inga resultat.
+
+Separat manuellt GitHub Actions-flöde publicerar endast `variants/region-stockholm-2026/out` till katalogen `region-stockholm-2026` på befintlig `gh-pages`-branch. Bygget använder base path `/valkompass/region-stockholm-2026`, `destination_dir: region-stockholm-2026` och `keep_files: true`. Det nationella rotbygget körs inte av regionflödet. Flödet kör datavalidering och 19 tester före statisk export. Ingen merge till main krävs för den separata lanseringen.
+
 ## Slutkontroll 2026-09-04
 
 ### Isolerat test av aktiverad resultatvy

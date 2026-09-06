@@ -5,8 +5,8 @@ const partyIds = ['S', 'M', 'SD', 'V', 'C', 'KD', 'L', 'MP'];
 const validCategories = new Set(['regionalTax', 'regionalEmployment', 'childYouthPsychiatry', 'cultureInvestment', 'healthcareOperations', 'publicTransport', 'healthcareAccess']);
 const ids = new Set();
 
-if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 10) throw new Error('Expected ten draft Region Stockholm questions');
-if (data.status !== 'preview-under-revision-not-publication-ready') throw new Error('Dataset must remain under review until publication audit');
+if (data.jurisdiction !== 'region-stockholm' || data.questions.length !== 10) throw new Error('Expected ten Region Stockholm questions');
+if (!['preview-under-revision-not-publication-ready', 'publication-approved'].includes(data.status)) throw new Error('Unknown publication status');
 if (!/^2026-09-\d{2}$/.test(data.reviewedAt)) throw new Error('Expected a September 2026 review date');
 for (const question of data.questions) {
   if (ids.has(question.id)) throw new Error(`Duplicate question id: ${question.id}`);
@@ -29,6 +29,9 @@ for (const question of data.questions) {
     const value = question.positions[partyId];
     if (value !== null && ![-2, -1, 0, 1, 2].includes(value)) throw new Error(`${question.id}/${partyId} has invalid value`);
     if (value !== null && question.answerScale === 'categorical' && Math.abs(value) > 1) throw new Error('Invalid categorical strength');
+  }
+  if (data.status === 'publication-approved' && (!question.scoringApproved || Object.values(question.positions).some(value => value === null))) {
+    throw new Error(`Publication-approved question is incomplete: ${question.id}`);
   }
 }
 console.log(`Validated ${data.questions.length} isolated Region Stockholm questions.`);
