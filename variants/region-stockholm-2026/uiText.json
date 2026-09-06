@@ -2,12 +2,12 @@
   "app": {
     "name": "Brújula regional 2026",
     "title": "Brújula electoral: Región de Estocolmo 2026",
-    "subtitle": "Descubre qué partidos de la Región de Estocolmo se acercan más a tus opiniones en diez cuestiones concretas."
+    "subtitle": "Descubre qué partidos de la Región de Estocolmo están más cerca de tus opiniones en diez temas concretos."
   },
 
   "intro": {
     "title": "Antes de comenzar",
-    "text": "En Suecia se vota en tres niveles: nacional, regional y municipal. Esta brújula se ocupa únicamente de las elecciones a la Región de Estocolmo.\n\nLa Región toma decisiones sobre buena parte de la sanidad y el transporte público, y fija el impuesto regional. No decide sobre asuntos nacionales como las pensiones o la policía, ni sobre servicios municipales como las escuelas o la atención a las personas mayores.\n\nEn cada pregunta encontrarás primero una explicación de lo que ocurre hoy y de lo que cambiaría con la propuesta. No hace falta que sigas habitualmente la política sueca para responder."
+    "text": "En Suecia se vota en tres niveles: nacional, regional y municipal. Esta brújula se centra únicamente en las elecciones a la Región de Estocolmo.\n\nLa Región decide sobre gran parte de la atención médica y el transporte público, y también fija el impuesto regional. No decide sobre asuntos nacionales, como las pensiones o la policía, ni sobre servicios municipales, como las escuelas o la atención a las personas mayores.\n\nEn cada pregunta podrás ver qué ocurre hoy y qué cambiaría con la propuesta. No necesitas seguir habitualmente la política sueca para responder."
   },
 
   "home": {
@@ -16,20 +16,20 @@
 
   "importantInfo": {
     "title": "Información importante",
-    "parliament": "Esta brújula electoral se refiere únicamente a las elecciones de la Región de Estocolmo.",
+    "parliament": "Esta brújula electoral trata únicamente sobre las elecciones a la Región de Estocolmo.",
     "local": "No incluye las elecciones al Parlamento sueco ni las elecciones municipales.",
-    "recommendation": "El resultado muestra similitudes políticas, pero no constituye una recomendación de voto."
+    "recommendation": "El resultado muestra qué partidos están más cerca de tus respuestas, pero no es una recomendación de voto."
   },
 
   "votingRights": {
     "title": "¿Quién puede votar en las elecciones regionales?",
-    "text": "Pueden votar quienes tengan derecho a voto en las elecciones regionales y estén inscritos en un municipio del condado de Estocolmo. Las reglas no son las mismas que para las elecciones al Parlamento sueco."
+    "text": "Pueden votar las personas que tengan derecho a voto en las elecciones regionales y estén registradas como residentes en un municipio del condado de Estocolmo. Las reglas no son las mismas que para las elecciones al Parlamento sueco."
   },
 
   "quizInfo": {
     "questionsLabel": "Número de preguntas",
     "timeLabel": "Duración",
-    "timeValue": "Sin límite de tiempo; cada pregunta incluye una explicación"
+    "timeValue": "Sin límite de tiempo. Cada pregunta incluye una explicación."
   },
 
   "categories": {
@@ -37,24 +37,24 @@
     "regionalTax": "Impuesto regional",
     "psychiatryProcurement": "Contratación de psiquiatría",
     "childYouthPsychiatry": "Psiquiatría infantil y juvenil",
-    "healthcareOperations": "Gestión sanitaria",
+    "healthcareOperations": "Gestión de la atención médica",
     "publicTransport": "Transporte público",
-    "healthcareAccess": "Acceso a la sanidad",
+    "healthcareAccess": "Acceso a la atención médica",
     "cultureInvestment": "Cultura e inversiones"
   },
 
   "buttons": {
-    "start": "Comenzar ahora",
+    "start": "Comenzar",
     "back": "Atrás",
     "next": "Siguiente",
     "finish": "Ver resultado",
     "restart": "Empezar de nuevo",
     "showExplanation": "▼ Ver qué ocurre hoy y qué cambiaría",
-    "hideExplanation": "▲ Ocultar la explicación",
-    "explanationPrompt": "Consulta el contexto antes de responder",
+    "hideExplanation": "▲ Ocultar explicación",
+    "explanationPrompt": "Lee el contexto antes de responder",
     "explanationCardTitle": "Lo que necesitas saber para responder",
     "mobileShowExplanation": "▶ Ver qué ocurre hoy y qué cambiaría",
-    "mobileHideExplanation": "▼ Ocultar la explicación",
+    "mobileHideExplanation": "▲ Ocultar explicación",
     "showMatches": "Ver coincidencias",
     "showDifferences": "Ver diferencias",
     "readMore": "Leer más",
@@ -77,13 +77,13 @@
     "importantCard": "Esta pregunta es importante para mí",
     "importantSubtext": "Tu respuesta contará el doble en la comparación.",
     "estimatedTime": "Tiempo restante aproximado",
-    "answerInstruction": "Elige la opción que mejor refleje tu opinión. Si prefieres no pronunciarte, marca «No tengo suficiente información»: esa pregunta no contará en el resultado."
+    "answerInstruction": "Elige la opción que mejor refleje tu opinión. Si no tienes suficiente información para responder, marca «No tengo suficiente información». Esa pregunta no contará en el resultado."
   },
 
   "explanationSections": {
     "currentSituation": "Situación actual",
-    "discussion": "¿Qué se discute?",
-    "example": "Ejemplo concreto"
+    "discussion": "Qué cambiaría",
+    "example": "Matices importantes"
   },
 
   "results": {
@@ -180,9 +180,9 @@
   },
 
   "errors": {
-    "generic": "Ha ocurrido un error. Inténtalo nuevamente.",
+    "generic": "Ha ocurrido un error. Inténtalo de nuevo.",
     "loadFailed": "No se pudo cargar la información.",
-    "tryAgain": "Por favor, inténtalo nuevamente."
+    "tryAgain": "Por favor, inténtalo de nuevo."
   },
 
   "footer": {

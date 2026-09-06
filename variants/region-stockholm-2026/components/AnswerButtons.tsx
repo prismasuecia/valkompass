@@ -21,7 +21,7 @@ export function AnswerButtons({
   selectedValue?: AnswerSelection;
   onSelect: (value: AnswerSelection) => void;
 }) {
-  const taxLabels: Record<number, string> = {2: 'Bajar mucho', 1: 'Bajar algo', 0: 'Mantenerse', [-1]: 'Subir algo', [-2]: 'Subir mucho'};
+  const taxLabels: Record<number, string> = {2: 'Bajar mucho', 1: 'Bajar algo', 0: 'Mantenerse igual', [-1]: 'Subir algo', [-2]: 'Subir mucho'};
   const shareLabels: Record<number, string> = {2: 'Mucho mayor', 1: 'Algo mayor', 0: 'La misma', [-1]: 'Algo menor', [-2]: 'Mucho menor'};
   const categoricalLabels: Record<number, string> = {1: 'A favor', 0: 'Ni a favor ni en contra', [-1]: 'En contra'};
   const options = answerScale === 'tax-level'

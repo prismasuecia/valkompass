@@ -54,7 +54,7 @@ function getMatchClassification(score: number) {
 
 function comparisonLabel(questionId: string, value: AnswerValue) {
   const scale = questions.find(q => q.id === questionId)?.answerScale;
-  if (scale === 'tax-level') return ({2:'Bajar mucho',1:'Bajar algo',0:'Mantenerse',[-1]:'Subir algo',[-2]:'Subir mucho'})[value];
+  if (scale === 'tax-level') return ({2:'Bajar mucho',1:'Bajar algo',0:'Mantenerse igual',[-1]:'Subir algo',[-2]:'Subir mucho'})[value];
   if (scale === 'private-share') return ({2:'Mucho mayor',1:'Algo mayor',0:'La misma',[-1]:'Algo menor',[-2]:'Mucho menor'})[value];
   if (scale === 'categorical') return value === 1 ? 'A favor' : value === -1 ? 'En contra' : 'Ni a favor ni en contra';
   return answerLabels[value];
