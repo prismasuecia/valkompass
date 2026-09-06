@@ -78,8 +78,6 @@ export default function ResultPage() {
   if (!hydrated) return <main className="mx-auto min-h-screen max-w-2xl px-5 py-10 text-slate-700">Cargando tu resultado…</main>;
   const results = calculateResults({answers, importantQuestions, parties, positions, questions});
   const comparableResults = results.filter((result) => result.matchedQuestions > 0);
-  const topResults = comparableResults.filter(result => result.rank <= 3);
-  const remainingResults = comparableResults.filter(result => result.rank > 3);
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl overflow-x-hidden px-5 py-10">
@@ -91,89 +89,81 @@ export default function ResultPage() {
       <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
         {uiText.results.importantQuestionsUsed}: {importantQuestions.length}
       </p>
-      {topResults.length === 0 ? (
+      {comparableResults.length === 0 ? (
         <section className="mt-8 rounded-2xl border border-line bg-white p-6">
           <h2 className="text-xl font-semibold text-ink">{uiText.results.noResults}</h2>
           <p className="mt-3 leading-7 text-slate-700">Necesitamos al menos seis preguntas respondidas por ti, revisadas y con posiciones verificadas de todos los partidos. Marcar una pregunta como importante no aumenta ese número.</p>
         </section>
       ) : null}
 
-      <div className="mt-8 grid gap-5 md:grid-cols-2">
-        {topResults.map((result) => {
+      <div className="mt-8 grid gap-3">
+        {comparableResults.map((result) => {
           const party = parties.find((item) => item.id === result.partyId);
           if (!party) return null;
           const categories = result.matchingCategories.map((category) => categoryLabels[category]);
           const classification = getMatchClassification(result.score);
-          const isUniqueFirst = result.rank === 1 && !result.tied;
 
           return (
-            <article
+            <details
               key={result.partyId}
-              className={`min-w-0 rounded-2xl bg-white shadow-sm ${
-                isUniqueFirst ? 'border-2 border-slate-300 p-6 sm:p-8 md:col-span-2' : 'border border-line p-5 sm:p-6'
-              }`}
+              className={`group min-w-0 rounded-2xl bg-white shadow-sm ${result.rank === 1 ? 'border-2 border-slate-400' : 'border border-line'}`}
             >
-              <div className="flex flex-wrap items-start justify-between gap-3">
+              <summary className="flex min-h-20 cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 sm:px-5">
                 <div className="flex min-w-0 items-center gap-3">
-                  <span aria-hidden="true" className={`${isUniqueFirst ? 'h-5 w-5' : 'h-4 w-4'} shrink-0 rounded-full`} style={{backgroundColor: party.color}} />
-                  <h2 className={`min-w-0 break-words font-semibold text-ink ${isUniqueFirst ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'}`}>
-                    {party.name[language]}
-                  </h2>
-                </div>
-                <p
-                  aria-label={`${uiText.results.scoreLabel}: ${result.score}%`}
-                  className={`shrink-0 font-semibold text-slate-700 ${isUniqueFirst ? 'text-xl sm:text-2xl' : 'text-base'}`}
-                >
-                  {result.score}%
-                </p>
-              </div>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.scoreExplanation}</p>
-              <p className="mt-3 text-sm font-semibold text-slate-700">
-                {result.rank === 1 ? (result.tied ? 'Empate en el primer puesto' : 'Primer puesto') : `Puesto ${result.rank}`}
-              </p>
-              <p className="mt-5 text-sm font-semibold text-slate-600">{classification.title}</p>
-              <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                {uiText.results.comparedQuestions}: {result.matchedQuestions} {uiText.progress.of} {displayedQuestionCount}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {categories.map((category) => (
-                  <span key={category} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">
-                    {category}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-6 grid gap-3">
-                <details className="min-w-0 rounded-xl border border-line p-4">
-                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.matches.title}</summary>
-                  <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.matches.text}</p>
-                  <ResultQuestionList items={result.strongestAgreements} marker="✓" />
-                </details>
-                <details className="min-w-0 rounded-xl border border-line p-4">
-                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.differences.title}</summary>
-                  <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.differences.text}</p>
-                  <ResultQuestionList items={result.strongestDisagreements} marker="×" />
-                </details>
-                <details className="min-w-0 rounded-xl border border-line p-4">
-                  <summary className="block min-h-6 cursor-pointer font-semibold text-ink">
-                    {uiText.buttons.readMoreAbout} {party.name[language]}
-                  </summary>
-                  <div className="mt-4 grid gap-4">
-                    {result.comparisons.map((item) => (
-                      <div key={item.questionId} className="min-w-0 rounded-xl bg-paper p-4 text-sm leading-6 text-slate-700">
-                        <p className="font-semibold text-ink">{uiText.progress.question}:</p>
-                        <p className="mt-1">{item.statement.es}</p>
-                        <p className="mt-3 font-semibold text-ink">{uiText.results.yourAnswer}:</p>
-                        <p>{comparisonLabel(item.questionId, item.userValue)}</p>
-                        <p className="mt-3 font-semibold text-ink">{party.name[language]}:</p>
-                        <p>{comparisonLabel(item.questionId, item.partyValue)}</p>
-                      </div>
-                    ))}
+                  <span className="w-8 shrink-0 text-center text-lg font-semibold text-slate-500">{result.rank}</span>
+                  <span aria-hidden="true" className="h-4 w-4 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
+                  <div className="min-w-0">
+                    <h2 className="break-words text-base font-semibold text-ink sm:text-lg">{party.name[language]}</h2>
+                    {result.tied && <p className="mt-1 text-xs font-semibold text-slate-500">{result.rank === 1 ? 'Empate en el primer puesto' : `Empate · puesto ${result.rank}`}</p>}
                   </div>
-                </details>
+                </div>
+                <div className="flex shrink-0 items-center gap-3">
+                  <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="text-xl font-semibold text-slate-700">{result.score}%</p>
+                  <span aria-hidden="true" className="text-lg text-slate-500 transition-transform group-open:rotate-180">⌄</span>
+                </div>
+              </summary>
+
+              <div className="border-t border-line px-4 pb-5 pt-4 sm:px-5">
+                <p className="text-sm font-semibold text-slate-600">{classification.title}</p>
+                <p className="mt-2 leading-7 text-slate-700">{classification.text}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{uiText.results.scoreExplanation}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  {uiText.results.comparedQuestions}: {result.matchedQuestions} {uiText.progress.of} {displayedQuestionCount}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {categories.map((category) => (
+                    <span key={category} className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-slate-700">{category}</span>
+                  ))}
+                </div>
+                <div className="mt-6 grid gap-3">
+                  <details className="min-w-0 rounded-xl border border-line p-4">
+                    <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.matches.title}</summary>
+                    <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.matches.text}</p>
+                    <ResultQuestionList items={result.strongestAgreements} marker="✓" />
+                  </details>
+                  <details className="min-w-0 rounded-xl border border-line p-4">
+                    <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.differences.title}</summary>
+                    <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.differences.text}</p>
+                    <ResultQuestionList items={result.strongestDisagreements} marker="×" />
+                  </details>
+                  <details className="min-w-0 rounded-xl border border-line p-4">
+                    <summary className="block min-h-6 cursor-pointer font-semibold text-ink">{uiText.buttons.readMoreAbout} {party.name[language]}</summary>
+                    <div className="mt-4 grid gap-4">
+                      {result.comparisons.map((item) => (
+                        <div key={item.questionId} className="min-w-0 rounded-xl bg-paper p-4 text-sm leading-6 text-slate-700">
+                          <p className="font-semibold text-ink">{uiText.progress.question}:</p>
+                          <p className="mt-1">{item.statement.es}</p>
+                          <p className="mt-3 font-semibold text-ink">{uiText.results.yourAnswer}:</p>
+                          <p>{comparisonLabel(item.questionId, item.userValue)}</p>
+                          <p className="mt-3 font-semibold text-ink">{party.name[language]}:</p>
+                          <p>{comparisonLabel(item.questionId, item.partyValue)}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                </div>
               </div>
-            </article>
+            </details>
           );
         })}
       </div>
@@ -182,30 +172,6 @@ export default function ResultPage() {
         <summary className="block min-h-6 cursor-pointer text-base font-semibold text-ink">{uiText.whyResult.title}</summary>
         <p className="mt-3 text-sm leading-6 text-slate-700">{uiText.whyResult.intro}</p>
       </details>
-
-      {remainingResults.length > 0 ? (
-        <div className="mt-5 grid gap-2 md:grid-cols-2">
-          {remainingResults.map((result) => {
-            const party = parties.find((item) => item.id === result.partyId);
-            if (!party) return null;
-
-            return (
-              <article key={result.partyId} className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-line bg-white px-4 py-3">
-                <div className="min-w-0">
-                  <p className="text-xs font-semibold text-slate-500">{result.tied ? `Empate · puesto ${result.rank}` : `Puesto ${result.rank}`}</p>
-                  <div className="mt-1 flex min-w-0 items-center gap-3">
-                  <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{backgroundColor: party.color}} />
-                  <h2 className="min-w-0 break-words text-sm font-semibold text-ink">{party.name[language]}</h2>
-                  </div>
-                </div>
-                <p aria-label={`${uiText.results.scoreLabel}: ${result.score}%`} className="shrink-0 text-sm font-semibold text-slate-700">
-                  {result.score}%
-                </p>
-              </article>
-            );
-          })}
-        </div>
-      ) : null}
 
       <section className="mt-8 rounded-2xl border border-line bg-white p-6">
         <h2 className="text-xl font-semibold text-ink">{uiText.categoryResults.title}</h2>

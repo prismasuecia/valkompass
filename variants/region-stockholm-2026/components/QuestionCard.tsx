@@ -46,7 +46,7 @@ function ExplanationControl({
       onToggle={(event) => {
         if (event.currentTarget.open) onOpened();
       }}
-      className={`group ${desktopCard ? 'rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-4' : ''}`}
+      className={`group ${desktopCard ? 'rounded-2xl border-2 border-blue-400 bg-blue-50 p-5 shadow-sm' : ''}`}
     >
       <summary className={`cursor-pointer list-none ${desktopCard ? '' : 'py-1'}`}>
         <span className={`block leading-5 ${desktopCard ? 'text-base font-semibold text-ink' : 'text-sm font-normal text-[#64748B]'}`}>
@@ -106,9 +106,9 @@ function MobileExplanationControl({
       onToggle={(event) => {
         if (event.currentTarget.open) onOpened();
       }}
-      className="group"
+      className="group rounded-2xl border-2 border-blue-400 bg-blue-50 p-4 shadow-sm"
     >
-      <summary className="cursor-pointer list-none rounded-xl border border-[#BFDBFE] bg-[#EFF6FF] p-[14px] text-base font-semibold leading-5 text-ink">
+      <summary className="cursor-pointer list-none text-base font-semibold leading-5 text-ink">
         <span className="block group-open:hidden">{uiText.buttons.mobileShowExplanation}</span>
         <span className="hidden group-open:block">{uiText.buttons.mobileHideExplanation}</span>
       </summary>
@@ -146,17 +146,17 @@ export function QuestionCard({
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
         <p className="mt-3 text-sm leading-6 text-slate-600">{question.context[language]}</p>
         {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
-        {question.importanceAllowed ? (
-          <div className="mt-4">
-            <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
-          </div>
-        ) : null}
         <div className="mt-4">
           <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
         <div className="mt-3 sm:mt-6">
           <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
         </div>
+        {question.importanceAllowed ? (
+          <div className="mt-4">
+            <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
+          </div>
+        ) : null}
       </article>
 
       <article className="hidden w-full grid-cols-[minmax(0,1.35fr)_minmax(340px,0.65fr)] gap-8 rounded-2xl border border-line bg-white p-8 shadow-sm min-[1200px]:grid">
@@ -165,14 +165,14 @@ export function QuestionCard({
           <h1 className="mt-4 text-3xl font-semibold leading-tight text-ink">{question.statement[language]}</h1>
           <p className="mt-4 text-base leading-7 text-slate-600">{question.context[language]}</p>
           {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
+          <div className="mt-7">
+            <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
+          </div>
           {question.importanceAllowed ? (
             <div className="mt-6">
               <ImportantSetting important={important} onToggleImportant={onToggleImportant} />
             </div>
           ) : null}
-          <div className="mt-7">
-            <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
-          </div>
         </section>
         <aside className="min-w-0 border-l border-line pl-8">
           <ExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} desktopCard />
