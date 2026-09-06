@@ -4,7 +4,11 @@
 
 Efter slutförd data-, metod-, kod- och gränssnittsgranskning har datasetstatus ändrats till `publication-approved`. Förhandsformuleringar på startsidan, metodsidan, källsidan och sidfoten har ersatts med korrekt releaseinformation. Resultatspärrens fail-closed-kod finns kvar: okända eller framtida utkaststatusar visar inga resultat.
 
-Separat manuellt GitHub Actions-flöde publicerar endast `variants/region-stockholm-2026/out` till katalogen `region-stockholm-2026` på befintlig `gh-pages`-branch. Bygget använder base path `/valkompass/region-stockholm-2026`, `destination_dir: region-stockholm-2026` och `keep_files: true`. Det nationella rotbygget körs inte av regionflödet. Flödet kör datavalidering och 19 tester före statisk export. Ingen merge till main krävs för den separata lanseringen.
+Den verifierade statiska exporten publicerades den 6 september 2026 på `https://prismasuecia.github.io/valkompass/region-stockholm-2026/`. Publiceringscommit `47465d7` på `gh-pages` lägger endast till den separata katalogen `region-stockholm-2026/`; den nationella appens rotfiler byggdes inte om eller ändrades. Bygget använde base path `/valkompass/region-stockholm-2026` och passerade datavalidering, 19 tester, typkontroll och produktionsbuild före publicering. Ingen merge till `main` gjordes.
+
+GitHub-inloggningen saknade behörigheten `workflow`, så inget nytt GitHub Actions-flöde lades till. Framtida uppdateringar av regionvarianten publiceras därför manuellt med samma isolerade katalogmetod tills ett separat flöde har konfigurerats med rätt behörighet.
+
+Den publicerade adressen genomgicks därefter i webbläsare från startsida genom alla tio frågor till den aktiva resultatsidan. Resultatet visade alla åtta partier och källsidan hade rätt separata sökväg. Avsnitten nedan bevarar daterad granskningshistorik; påståenden där om en då stängd spärr beskriver tidigare kontrollsteg och ersätter inte publiceringsbeslutet ovan.
 
 ## Slutkontroll 2026-09-04
 
