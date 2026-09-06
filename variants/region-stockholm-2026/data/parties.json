@@ -3,7 +3,7 @@
     "id": "S",
     "name": {
       "sv": "Socialdemokraterna",
-      "es": "Partido Socialdemócrata"
+      "es": "Partido Socialdemócrata (S)"
     },
     "color": "#E8112d"
   },
@@ -11,7 +11,7 @@
     "id": "M",
     "name": {
       "sv": "Moderaterna",
-      "es": "Moderados"
+      "es": "Moderados (M)"
     },
     "color": "#006AB3"
   },
@@ -19,7 +19,7 @@
     "id": "SD",
     "name": {
       "sv": "Sverigedemokraterna",
-      "es": "Demócratas de Suecia"
+      "es": "Demócratas de Suecia (SD)"
     },
     "color": "#DDDD00"
   },
@@ -27,7 +27,7 @@
     "id": "V",
     "name": {
       "sv": "Vänsterpartiet",
-      "es": "Partido de Izquierda"
+      "es": "Partido de Izquierda (V)"
     },
     "color": "#B00000"
   },
@@ -35,7 +35,7 @@
     "id": "C",
     "name": {
       "sv": "Centerpartiet",
-      "es": "Partido de Centro"
+      "es": "Partido de Centro (C)"
     },
     "color": "#009933"
   },
@@ -43,7 +43,7 @@
     "id": "KD",
     "name": {
       "sv": "Kristdemokraterna",
-      "es": "Demócratas Cristianos"
+      "es": "Demócratas Cristianos (KD)"
     },
     "color": "#003366"
   },
@@ -51,7 +51,7 @@
     "id": "L",
     "name": {
       "sv": "Liberalerna",
-      "es": "Liberales"
+      "es": "Liberales (L)"
     },
     "color": "#0066CC"
   },
@@ -59,7 +59,7 @@
     "id": "MP",
     "name": {
       "sv": "Miljöpartiet",
-      "es": "Partido Verde"
+      "es": "Partido Verde (MP)"
     },
     "color": "#83CF39"
   }

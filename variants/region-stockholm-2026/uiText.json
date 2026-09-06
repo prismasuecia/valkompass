@@ -2,12 +2,12 @@
   "app": {
     "name": "Brújula regional 2026",
     "title": "Brújula electoral: Región de Estocolmo 2026",
-    "subtitle": "Compara tus opiniones con las posiciones documentadas de los partidos en diez propuestas de la Región de Estocolmo."
+    "subtitle": "Descubre qué partidos de la Región de Estocolmo se acercan más a tus opiniones en diez cuestiones concretas."
   },
 
   "intro": {
     "title": "Antes de comenzar",
-    "text": "Suecia tiene tres niveles políticos: nacional, regional y municipal. Esta brújula trata exclusivamente de las elecciones de la Región de Estocolmo.\n\nLa región es responsable principalmente de la atención sanitaria, el transporte público y el impuesto regional. No decide sobre cuestiones nacionales como las pensiones o la policía, ni sobre servicios municipales como las escuelas y el cuidado de personas mayores.\n\nCada pregunta explica la situación actual, qué podría cambiar y los principales argumentos políticos. No necesitas seguir las noticias suecas para participar."
+    "text": "En Suecia se vota en tres niveles: nacional, regional y municipal. Esta brújula se ocupa únicamente de las elecciones a la Región de Estocolmo.\n\nLa Región toma decisiones sobre buena parte de la sanidad y el transporte público, y fija el impuesto regional. No decide sobre asuntos nacionales como las pensiones o la policía, ni sobre servicios municipales como las escuelas o la atención a las personas mayores.\n\nEn cada pregunta encontrarás primero una explicación de lo que ocurre hoy y de lo que cambiaría con la propuesta. No hace falta que sigas habitualmente la política sueca para responder."
   },
 
   "home": {
@@ -29,7 +29,7 @@
   "quizInfo": {
     "questionsLabel": "Número de preguntas",
     "timeLabel": "Duración",
-    "timeValue": "A tu ritmo; puedes consultar las explicaciones"
+    "timeValue": "Sin límite de tiempo; cada pregunta incluye una explicación"
   },
 
   "categories": {
@@ -49,12 +49,12 @@
     "next": "Siguiente",
     "finish": "Ver resultado",
     "restart": "Empezar de nuevo",
-    "showExplanation": "▼ Entender la propuesta",
-    "hideExplanation": "▲ Ocultar contexto y explicación",
-    "explanationPrompt": "Entender la propuesta antes de responder",
-    "explanationCardTitle": "Contexto para tomar una posición",
-    "mobileShowExplanation": "▶ Entender la propuesta",
-    "mobileHideExplanation": "▼ Ocultar contexto y explicación",
+    "showExplanation": "▼ Ver qué ocurre hoy y qué cambiaría",
+    "hideExplanation": "▲ Ocultar la explicación",
+    "explanationPrompt": "Consulta el contexto antes de responder",
+    "explanationCardTitle": "Lo que necesitas saber para responder",
+    "mobileShowExplanation": "▶ Ver qué ocurre hoy y qué cambiaría",
+    "mobileHideExplanation": "▼ Ocultar la explicación",
     "showMatches": "Ver coincidencias",
     "showDifferences": "Ver diferencias",
     "readMore": "Leer más",
@@ -62,11 +62,11 @@
   },
 
   "answers": {
-    "stronglyAgree": "Totalmente de acuerdo",
-    "agree": "Más bien de acuerdo",
+    "stronglyAgree": "Muy de acuerdo",
+    "agree": "De acuerdo",
     "neutral": "Ni de acuerdo ni en desacuerdo",
-    "disagree": "Más bien en desacuerdo",
-    "stronglyDisagree": "Totalmente en desacuerdo",
+    "disagree": "En desacuerdo",
+    "stronglyDisagree": "Muy en desacuerdo",
     "insufficientInformation": "No tengo suficiente información"
   },
 
@@ -77,7 +77,7 @@
     "importantCard": "Esta pregunta es importante para mí",
     "importantSubtext": "Tu respuesta contará el doble en la comparación.",
     "estimatedTime": "Tiempo restante aproximado",
-    "answerInstruction": "Responde según tu propia opinión sobre la propuesta. Si no tienes suficiente información, esa pregunta no se incluirá en el cálculo."
+    "answerInstruction": "Elige la opción que mejor refleje tu opinión. Si prefieres no pronunciarte, marca «No tengo suficiente información»: esa pregunta no contará en el resultado."
   },
 
   "explanationSections": {
@@ -88,7 +88,7 @@
 
   "results": {
     "title": "Coincidencia con las posiciones documentadas de los partidos",
-    "description": "La comparación utiliza las mismas preguntas revisadas para todos los partidos. Las preguntas excluidas se indican por separado.",
+    "description": "Tus respuestas se comparan con las posiciones documentadas de todos los partidos en las mismas preguntas.",
     "recommendation": "No es una recomendación de voto. Su objetivo es ayudarte a entender mejor las diferencias entre los partidos políticos suecos.",
     "sameAnswers": "Las preguntas marcadas como importantes cuentan el doble. Las respuestas «No tengo suficiente información» se excluyen del cálculo.",
     "importantQuestionsUsed": "Preguntas que contaron el doble en este resultado",
@@ -151,7 +151,7 @@
     "leadershipStatements": "declaraciones públicas identificables de representantes regionales",
     "disclaimer": "Las posiciones pueden actualizarse cuando los partidos cambian sus propuestas o presentan nuevas políticas.",
     "notAffiliated": "Esta brújula electoral no está afiliada a ningún partido político.",
-    "globalLastReviewed": "Revisión en curso — 3 de septiembre de 2026. Las fuentes no implican que todas las preguntas y posiciones estén aprobadas.",
+    "globalLastReviewed": "Contenido revisado por última vez el 6 de septiembre de 2026.",
     "partySourcesTitle": "Fuentes por partido",
     "source1": "Fuente 1",
     "source2": "Fuente 2",
@@ -170,7 +170,7 @@
     "transparency": "Transparencia",
     "transparencyText": "Las posiciones se basan en información pública y pueden actualizarse cuando los partidos cambian de postura.",
     "language": "Lenguaje claro",
-    "languageText": "Los textos están escritos para personas que hablan español y viven en Suecia, independientemente de su nivel educativo.",
+    "languageText": "Los textos explican el contexto sueco en un español natural y preciso, sin dar por hecho que el lector sigue habitualmente la política.",
     "sources": "Fuentes públicas",
     "sourcesText": "Las posiciones se basan en respuestas electorales regionales, propuestas oficiales y documentos públicos.",
     "updates": "Actualización continua",

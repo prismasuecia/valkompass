@@ -12,49 +12,6 @@ const sourceBasis = [
   uiText.sourcesPage.parliamentaryProposals,
   uiText.sourcesPage.leadershipStatements
 ];
-const thematicSources = [
-  {
-    title: 'Socialdemokraterna: presupuesto 2026 y precio ordinario de SL',
-    url: 'https://socialdemokraternaistockholm.se/stockholm/nyheter/artiklar/2025-10-13-en-budget-som-bygger-stockholmsregionen-starkare',
-    note: 'Documenta la decisión de mantener sin cambios los precios ordinarios de SL durante 2026.'
-  },
-  {
-    title: 'Region Stockholm: presupuesto regional para 2026',
-    url: 'https://www.regionstockholm.se/nyheter/2025/10/regionstyrelsens-forslag-till-budget-2026-for-region-stockholm/',
-    note: 'Documenta el nivel del impuesto regional y los precios ordinarios de SL para 2026.'
-  },
-  {
-    title: 'Region Stockholm: plan de transformación del sistema de libre elección sanitaria',
-    url: 'https://www.regionstockholm.se/nyheter/2023/06/forslag-till-omstallningsplan-vardval-klar/',
-    note: 'Describe qué sistemas de libre elección se modifican y cómo funciona el proceso regional.'
-  },
-  {
-    title: 'Läkartidningen: criterios en la contratación de psiquiatría especializada',
-    url: 'https://lakartidningen.se/nyheter/psykiatriupphandling-sagas-av-oppositionen-dumpade-priser/',
-    note: 'Explica la diferencia entre los requisitos mínimos de calidad y el precio como criterio de selección.'
-  },
-  {
-    title: 'SVT: respuestas de los partidos de la Región de Estocolmo sobre intérpretes',
-    url: 'https://valkompass.svt.se/2026/stockholm/start-region/',
-    note: 'Da acceso a las respuestas de los ocho partidos a la misma propuesta sobre interpretación gratuita.'
-  },
-  {
-    title: 'Socialstyrelsen: responsabilidad de proporcionar un intérprete',
-    url: 'https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/vem-far-gora-vad/tolk/',
-    note: 'Describe la obligación de la región o del proveedor sanitario de disponer de un intérprete cuando sea necesario.'
-  },
-  {
-    title: 'Region Stockholm: billete gratuito para jóvenes durante las vacaciones escolares de 2026',
-    url: 'https://www.regionstockholm.se/nyheter/2026/01/sls-lovbiljett-till-unga-har-borjat-skickas-ut/',
-    note: 'Documenta quién puede viajar gratis durante las vacaciones escolares y en qué fechas se aplica.'
-  },
-  {
-    title: 'SVT: respuestas de los ocho partidos sobre viajes gratuitos para niños y jóvenes',
-    url: 'https://valkompass.svt.se/2026/stockholm/start-region/',
-    note: 'Reúne las respuestas directas de los partidos a la misma propuesta regional.'
-  }
-];
-
 const sourceTypeLabels = {
   officialPartyProgram: uiText.sourcesPage.officialPartyProgram,
   officialPolicyPages: uiText.sourcesPage.officialPolicyPages,
@@ -99,18 +56,6 @@ export default function SourcesPage() {
           ))}
         </ul>
         <p className="mt-5 text-sm leading-6 text-slate-600">{uiText.sourcesPage.disclaimer}</p>
-      </section>
-
-      <section className="mt-8 border-t border-line pt-6">
-        <h2 className="text-xl font-semibold text-ink">Archivo de investigación — no todas estas propuestas siguen en el cuestionario</h2>
-        <div className="mt-5 grid gap-4">
-          {thematicSources.map((source) => (
-            <article key={source.url} className="rounded-2xl border border-line bg-white p-5">
-              <a href={source.url} className="font-semibold text-ink underline underline-offset-4">{source.title}</a>
-              <p className="mt-2 text-sm leading-6 text-slate-600">{source.note}</p>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section className="mt-8 border-t border-line pt-6">

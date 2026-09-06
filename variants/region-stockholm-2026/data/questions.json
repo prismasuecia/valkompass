@@ -12,11 +12,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Bör regionskatten sänkas, vara oförändrad eller höjas jämfört med dagens nivå?",
-        "es": "¿El impuesto regional debería bajar, mantenerse o subir respecto al nivel actual?"
+        "es": "¿Qué debería ocurrir con el impuesto que cobra la Región de Estocolmo: bajar, mantenerse como está o subir?"
       },
       "context": {
         "sv": "Regionskatten 2026 är 12,33 kronor per hundralapp beskattningsbar inkomst. Den är bara en del av inkomstskatten.",
-        "es": "Una parte del impuesto sobre tus ingresos va a la Región de Estocolmo, responsable de servicios como la sanidad y el transporte público. En 2026 son 12,33 coronas por cada 100 coronas de ingresos sujetos a este impuesto. No es la totalidad del impuesto sobre tus ingresos."
+        "es": "De cada 100 coronas de ingresos sujetos a impuestos, 12,33 van a la Región de Estocolmo en 2026. Es el impuesto regional, que ayuda a financiar, entre otras cosas, la sanidad y el transporte público. Es solo una parte del impuesto total sobre la renta."
       },
       "explanation": {
         "title": {
@@ -31,7 +31,7 @@
             },
             "content": {
               "sv": "Regionskatten 2026 är 12,33 kronor per hundralapp beskattningsbar inkomst. Den är bara en del av inkomstskatten.",
-              "es": "Una parte del impuesto sobre tus ingresos va a la Región de Estocolmo, responsable de servicios como la sanidad y el transporte público. En 2026 son 12,33 coronas por cada 100 coronas de ingresos sujetos a este impuesto. No es la totalidad del impuesto sobre tus ingresos."
+              "es": "De cada 100 coronas de ingresos sujetos a impuestos, 12,33 van a la Región de Estocolmo en 2026. Es el impuesto regional, que ayuda a financiar, entre otras cosas, la sanidad y el transporte público. Es solo una parte del impuesto total sobre la renta."
             }
           },
           {
@@ -41,7 +41,7 @@
             },
             "content": {
               "sv": "Lägre, oförändrad eller högre regionskatt, inte kommunal eller statlig skatt.",
-              "es": "Si esa parte del impuesto debe bajar, mantenerse o subir. No se pregunta por el impuesto municipal."
+              "es": "La decisión es si el impuesto regional debe bajar, mantenerse en 12,33 coronas por cada 100 o subir. La pregunta no se refiere al impuesto municipal ni al impuesto estatal."
             }
           },
           {
@@ -86,11 +86,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Privata vårdgivare ska få öppna psykiatrimottagningar för barn och unga.",
-        "es": "¿Deberían poder abrir consultas de psiquiatría infantil y juvenil los proveedores privados?"
+        "es": "¿Debería la Región permitir que empresas privadas gestionen nuevas consultas de psiquiatría para niños y adolescentes?"
       },
       "context": {
         "sv": "Det finns redan offentliga och privata BUP-mottagningar som arbetar på regionens uppdrag, exempelvis PRIMA Handen.",
-        "es": "BUP es la atención especializada en salud mental para menores. Ya hay consultas públicas y privadas que trabajan por encargo de la región, como PRIMA Handen."
+        "es": "En Suecia, la atención psiquiátrica especializada para menores se conoce como BUP. En Estocolmo ya existen consultas públicas y otras gestionadas por empresas privadas por encargo de la Región, como PRIMA Handen."
       },
       "explanation": {
         "title": {
@@ -105,7 +105,7 @@
             },
             "content": {
               "sv": "Det finns redan offentliga och privata BUP-mottagningar som arbetar på regionens uppdrag, exempelvis PRIMA Handen.",
-              "es": "BUP es la atención especializada en salud mental para menores. Ya hay consultas públicas y privadas que trabajan por encargo de la región, como PRIMA Handen."
+              "es": "En Suecia, la atención psiquiátrica especializada para menores se conoce como BUP. En Estocolmo ya existen consultas públicas y otras gestionadas por empresas privadas por encargo de la Región, como PRIMA Handen."
             }
           },
           {
@@ -115,7 +115,7 @@
             },
             "content": {
               "sv": "Frågan gäller att privata vårdgivare ska få öppna mottagningar. Den anger inte fri etableringsrätt utan krav eller ett visst antal nya mottagningar.",
-              "es": "La propuesta permite que proveedores privados abran consultas. No dice que puedan hacerlo sin requisitos, ni fija cuántas deben abrir."
+              "es": "La propuesta plantea que puedan abrirse más consultas gestionadas por empresas privadas dentro del sistema regional. No significa que puedan abrir sin autorización o sin cumplir requisitos, y tampoco establece un número concreto de consultas."
             }
           },
           {
@@ -160,11 +160,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Bör regionen erbjuda språktolk utan avgift för patienten när tolk behövs i vården?",
-        "es": "Cuando un paciente necesita un intérprete para entenderse con el personal sanitario, ¿debería la Región ofrecerlo sin cobrarle por ese servicio?"
+        "es": "Cuando un paciente necesita interpretación para comunicarse con el personal sanitario, ¿debería recibirla sin pagar?"
       },
       "context": {
         "sv": "Regionen och avtalsanslutna vårdgivare ska tillhandahålla kostnadsfri språktolk när patienten behöver det för kommunikationen.",
-        "es": "Si necesitas un intérprete para entenderte con el personal sanitario, la región y los centros que trabajan por encargo suyo deben facilitarlo sin cobrarte por la interpretación. Pídelo al reservar la cita."
+        "es": "Actualmente, si un paciente necesita interpretación para poder comunicarse con el personal sanitario, la Región o el centro que atiende por encargo suyo debe organizarla. El paciente no paga por ese servicio. Esta pregunta se refiere a la interpretación entre idiomas hablados."
       },
       "explanation": {
         "title": {
@@ -179,7 +179,7 @@
             },
             "content": {
               "sv": "Regionen och avtalsanslutna vårdgivare ska tillhandahålla kostnadsfri språktolk när patienten behöver det för kommunikationen.",
-              "es": "Si necesitas un intérprete para entenderte con el personal sanitario, la región y los centros que trabajan por encargo suyo deben facilitarlo sin cobrarte por la interpretación. Pídelo al reservar la cita."
+              "es": "Actualmente, si un paciente necesita interpretación para poder comunicarse con el personal sanitario, la Región o el centro que atiende por encargo suyo debe organizarla. El paciente no paga por ese servicio. Esta pregunta se refiere a la interpretación entre idiomas hablados."
             }
           },
           {
@@ -189,7 +189,7 @@
             },
             "content": {
               "sv": "Avgiftsfri tolk vid behov eller avgifter i vissa fall. Gäller talade språk, inte teckenspråk.",
-              "es": "Si esa ayuda debe ofrecerse sin coste para quien la necesita o si debe cobrarse en determinados casos. Se trata de interpretación entre idiomas hablados, no de lengua de signos."
+              "es": "Se decide si la interpretación debe seguir siendo gratuita para toda persona que la necesite o si determinados pacientes deberían pagar por ella. No se pregunta por la interpretación en lengua de signos."
             }
           },
           {
@@ -234,7 +234,7 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Kollektivtrafiken ska vara gratis för barn och ungdomar.",
-        "es": "¿Debería el transporte público ser gratuito para niños y jóvenes?"
+        "es": "¿Debería la Región ampliar los viajes gratuitos en transporte público para niños y jóvenes?"
       },
       "context": {
         "sv": "Barn under 7 reser gratis med någon som har giltig biljett. Person över 18 med SL-biljett kan ta med sex barn 7–11 gratis. Länsbor födda 2008–2014 får lovbiljett 2026.",
@@ -263,7 +263,7 @@
             },
             "content": {
               "sv": "Gratis resor för barn och unga; partiernas åldrar, tider och finansieringsvillkor skiljer sig.",
-              "es": "Si el transporte para niños y jóvenes debe ser gratuito. Los partidos difieren sobre edades, horarios y financiación; apoyar la propuesta no equivale a prometer todos los viajes gratis durante todo el año."
+              "es": "Se decide si debe ampliarse la gratuidad más allá de las reglas actuales. Los partidos proponen edades, periodos y formas de financiación diferentes. Por eso, apoyar la idea no significa necesariamente ofrecer viajes gratuitos a todos los menores durante todo el año."
             }
           },
           {
@@ -273,7 +273,7 @@
             },
             "content": {
               "sv": "L föreslår fritidskort med statlig medfinansiering. C försvarar befintliga undantag. S vill utöka med statsbidrag. Inte alla lovar gratis resor hela året.",
-              "es": "L propone un abono de ocio con cofinanciación estatal. C defiende las excepciones actuales; S propone ampliarlas con ayuda estatal. No todos prometen viajes gratis todo el año."
+              "es": "L propone un abono para desplazamientos durante el tiempo libre, financiado también por el Estado. C defiende las excepciones actuales y S quiere ampliarlas con ayuda estatal. Ninguna de estas posiciones equivale automáticamente a viajes gratuitos para todos durante todo el año."
             }
           }
         ]
@@ -309,7 +309,7 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Regionen ska öppna ett specialistcentrum för kvinnosjukvård.",
-        "es": "¿Debería la Región abrir un centro especializado en la salud de las mujeres?"
+        "es": "¿Debería la Región crear un centro que reúna atención especializada, conocimiento e investigación sobre la salud de las mujeres?"
       },
       "context": {
         "sv": "Det finns redan gynekologi, mödra- och förlossningsvård. Regionen beslutade i december 2025 om mer sammanhållen kvinnosjukvård. Detta är inte belägg för att det föreslagna specialistcentrumet redan har öppnat.",
@@ -338,7 +338,7 @@
             },
             "content": {
               "sv": "Förslaget gäller ett specialistcentrum, inte att kvinnosjukvård skulle saknas i dag. Partierna nämner bland annat vård, kunskapsutveckling och forskning.",
-              "es": "Se propone un centro especializado, no empezar a atender la salud de las mujeres desde cero. Los partidos hablan de reunir atención, conocimiento e investigación."
+              "es": "La propuesta no parte de cero ni sustituye todos los servicios existentes. Plantea reunir en un centro especializado parte de la atención, el conocimiento y la investigación que hoy se encuentran repartidos."
             }
           },
           {
@@ -383,11 +383,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Bör Region Stockholm satsa på arbetsdelning för att skapa fler arbetstillfällen för personer med funktionsnedsättning inom regionens verksamheter?",
-        "es": "¿Debería la Región apostar por repartir tareas de trabajo para crear más empleos para personas con discapacidad en sus propios servicios?"
+        "es": "¿Debería la Región crear más puestos para personas con discapacidad dividiendo algunos empleos en tareas más concretas?"
       },
       "context": {
         "sv": "Regionen är själv arbetsgivare. I enkäten beskriver S och C ett pågående uppdrag för en mer inkluderande arbetsplats. Det är deras redogörelse, inte ett verifierat resultat av en färdig arbetsdelningssatsning.",
-        "es": "La Región también es empleadora. En la encuesta, S y C describen un trabajo en marcha para hacerla más inclusiva. Eso no demuestra que ya exista un programa de reparto de tareas implantado en todos sus servicios."
+        "es": "La Región no solo organiza servicios públicos: también emplea a personal sanitario, administrativo y de otras áreas. La propuesta consiste en identificar tareas concretas dentro de puestos más amplios y convertirlas en empleos adaptados. No existe hoy un programa de este tipo implantado en todos los servicios regionales."
       },
       "explanation": {
         "title": {
@@ -402,7 +402,7 @@
             },
             "content": {
               "sv": "Regionen är själv arbetsgivare. I enkäten beskriver S och C ett pågående uppdrag för en mer inkluderande arbetsplats. Det är deras redogörelse, inte ett verifierat resultat av en färdig arbetsdelningssatsning.",
-              "es": "La Región también es empleadora. En la encuesta, S y C describen un trabajo en marcha para hacerla más inclusiva. Eso no demuestra que ya exista un programa de reparto de tareas implantado en todos sus servicios."
+              "es": "La Región no solo organiza servicios públicos: también emplea a personal sanitario, administrativo y de otras áreas. La propuesta consiste en identificar tareas concretas dentro de puestos más amplios y convertirlas en empleos adaptados. No existe hoy un programa de este tipo implantado en todos los servicios regionales."
             }
           },
           {
@@ -412,7 +412,7 @@
             },
             "content": {
               "sv": "Frågan gäller arbetsdelning som metod att skapa arbetstillfällen i regionens verksamheter. Inte en generell förkortning av alla anställdas arbetstid eller ändrad nationell LSS-lag.",
-              "es": "Se pregunta por repartir tareas como vía para crear empleos en los servicios de la Región. No por reducir la jornada de toda la plantilla ni por cambiar la legislación nacional sobre discapacidad."
+              "es": "Se pregunta si la Región debe utilizar esta forma de organizar el trabajo para contratar a más personas con discapacidad en sus propios servicios. No se propone reducir la jornada de toda la plantilla ni modificar la legislación nacional."
             }
           },
           {
@@ -449,11 +449,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Bör gränsen mellan hjälpmedel och fritidshjälpmedel tas bort för att öka förskrivningen för fritidsaktiviteter?",
-        "es": "¿Debería la Región eliminar la distinción entre ayudas técnicas para la vida diaria y para el ocio, para que se puedan recetar más ayudas destinadas al ocio?"
+        "es": "¿Debería la Región poder recetar ayudas técnicas también para actividades de tiempo libre?"
       },
       "context": {
         "sv": "Hjälpmedel för fritid förskrivs normalt inte, med vissa undantag för barns lek och utveckling.",
-        "es": "Las ayudas técnicas son productos que facilitan actividades a personas con discapacidad. En Estocolmo, las destinadas al ocio normalmente no se recetan, con algunas excepciones para el juego y desarrollo infantil."
+        "es": "Las ayudas técnicas son productos adaptados que permiten a una persona con discapacidad realizar actividades que de otro modo serían difíciles o imposibles. Pueden ser, por ejemplo, equipos adaptados para moverse o practicar una actividad. En Estocolmo se prescriben principalmente para necesidades de la vida diaria; las destinadas al tiempo libre suelen quedar fuera, salvo algunas excepciones para niños."
       },
       "explanation": {
         "title": {
@@ -468,7 +468,7 @@
             },
             "content": {
               "sv": "Hjälpmedel för fritid förskrivs normalt inte, med vissa undantag för barns lek och utveckling.",
-              "es": "Las ayudas técnicas son productos que facilitan actividades a personas con discapacidad. En Estocolmo, las destinadas al ocio normalmente no se recetan, con algunas excepciones para el juego y desarrollo infantil."
+              "es": "Las ayudas técnicas son productos adaptados que permiten a una persona con discapacidad realizar actividades que de otro modo serían difíciles o imposibles. Pueden ser, por ejemplo, equipos adaptados para moverse o practicar una actividad. En Estocolmo se prescriben principalmente para necesidades de la vida diaria; las destinadas al tiempo libre suelen quedar fuera, salvo algunas excepciones para niños."
             }
           },
           {
@@ -478,7 +478,7 @@
             },
             "content": {
               "sv": "Fritidsanvändning ska inte i sig utesluta förskrivning; inte automatiskt alla produkter gratis.",
-              "es": "Si el uso para el ocio debe dejar de ser una razón para excluir una ayuda de la prescripción sanitaria. No significa entregar cualquier producto automáticamente ni garantizar que todos sean gratuitos."
+              "es": "Se decide si una ayuda debe poder prescribirse aunque su finalidad principal sea una actividad de tiempo libre. La propuesta no da derecho automático a cualquier producto: seguiría siendo necesaria una evaluación individual de la necesidad."
             }
           },
           {
@@ -516,11 +516,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Bör vårdcentralerna delta i funkisdiplomering, utbildning för bättre bemötande av personer med funktionsnedsättning?",
-        "es": "¿Deberían los centros de salud participar en «funkisdiplomering», un programa de formación para mejorar la atención a personas con discapacidad?"
+        "es": "¿Deberían los centros de salud formar a su personal para atender mejor a las personas con discapacidad?"
       },
       "context": {
         "sv": "Utbildningen har använts på ungdomsmottagningar för bättre förståelse och bemötande.",
-        "es": "Este trabajo de formación ya se ha utilizado en consultas para jóvenes de la región. Ayuda al personal a comprender las necesidades de las personas con discapacidad y mejorar el trato."
+        "es": "La propuesta se refiere a un programa sueco llamado «funkisdiplomering». El personal recibe formación sobre distintas discapacidades, accesibilidad y trato a los pacientes. La Región ya ha utilizado este modelo en algunas consultas para jóvenes, pero no en todos los centros de salud."
       },
       "explanation": {
         "title": {
@@ -535,7 +535,7 @@
             },
             "content": {
               "sv": "Utbildningen har använts på ungdomsmottagningar för bättre förståelse och bemötande.",
-              "es": "Este trabajo de formación ya se ha utilizado en consultas para jóvenes de la región. Ayuda al personal a comprender las necesidades de las personas con discapacidad y mejorar el trato."
+              "es": "La propuesta se refiere a un programa sueco llamado «funkisdiplomering». El personal recibe formación sobre distintas discapacidades, accesibilidad y trato a los pacientes. La Región ya ha utilizado este modelo en algunas consultas para jóvenes, pero no en todos los centros de salud."
             }
           },
           {
@@ -545,7 +545,7 @@
             },
             "content": {
               "sv": "Deltagande i detta utbildningsprogram, inte teknisk certifiering av byggnader.",
-              "es": "Si los centros de salud deben participar en este programa concreto. Otros partidos proponen diferentes formas de mejorar la atención."
+              "es": "Se decide si los centros de salud deben utilizar precisamente este programa de formación. Un partido puede rechazar el programa concreto y, al mismo tiempo, apoyar otras medidas para mejorar la atención."
             }
           },
           {
@@ -555,7 +555,7 @@
             },
             "content": {
               "sv": "C tillåter frivilligt deltagande. Andra föredrar andra program. Detta är inte teknisk tillgänglighetscertifiering.",
-              "es": "C admite participación voluntaria. Otros partidos prefieren programas distintos. No es una certificación técnica de accesibilidad física."
+              "es": "C acepta que la participación sea voluntaria y otros partidos prefieren programas diferentes. Aunque el nombre sueco contiene una referencia a un «diploma», no se trata de una inspección ni de una certificación técnica de la accesibilidad del edificio."
             }
           }
         ]
@@ -583,11 +583,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Hur mycket av sjukvården ska drivas av privata företag?",
-        "es": "Comparado con hoy, ¿qué parte de la atención sanitaria debería estar gestionada por empresas privadas: menor, igual o mayor?"
+        "es": "En comparación con hoy, ¿deberían las empresas privadas gestionar una parte menor, igual o mayor de la sanidad financiada por la Región?"
       },
       "context": {
         "sv": "Regionen har både offentligt driven vård och privata vårdgivare som arbetar på dess uppdrag.",
-        "es": "En la región hay servicios sanitarios gestionados públicamente y otros gestionados por proveedores privados."
+        "es": "La sanidad regional se financia principalmente con fondos públicos, pero no todos los centros son gestionados por la propia Región. Algunos pertenecen a empresas privadas que prestan asistencia por encargo y con financiación de la Región."
       },
       "explanation": {
         "title": {
@@ -602,7 +602,7 @@
             },
             "content": {
               "sv": "Regionen har både offentligt driven vård och privata vårdgivare som arbetar på dess uppdrag.",
-              "es": "En la región hay servicios sanitarios gestionados públicamente y otros gestionados por proveedores privados."
+              "es": "La sanidad regional se financia principalmente con fondos públicos, pero no todos los centros son gestionados por la propia Región. Algunos pertenecen a empresas privadas que prestan asistencia por encargo y con financiación de la Región."
             }
           },
           {
@@ -612,7 +612,7 @@
             },
             "content": {
               "sv": "Andelen privat drift i vården, inte krav på privat försäkring.",
-              "es": "Quién gestiona los servicios, no si cada paciente debe contratar un seguro privado. La pregunta trata de la proporción general, no de cerrar una consulta concreta."
+              "es": "La pregunta trata de quién gestiona la asistencia financiada por la Región. No propone que el paciente contrate un seguro privado y tampoco decide el futuro de una consulta concreta."
             }
           },
           {
@@ -657,11 +657,11 @@
       "scoringApproved": true,
       "statement": {
         "sv": "Regionen ska prioritera kollektivtrafik i glesbygd före fler avgångar i tätorter.",
-        "es": "¿Debería la Región dar prioridad al transporte público en zonas poco pobladas antes que aumentar las salidas en zonas urbanas?"
+        "es": "Si hay que elegir dónde mejorar primero el transporte público, ¿deberían tener prioridad las zonas menos pobladas frente a las zonas urbanas?"
       },
       "context": {
         "sv": "Länet innehåller både tätorter och glesare befolkade områden. Frågan gäller var trafikförbättringar ska prioriteras.",
-        "es": "La Región de Estocolmo incluye tanto zonas urbanas como localidades y áreas rurales con menos habitantes. La pregunta compara dónde dar prioridad a las mejoras del transporte público."
+        "es": "El condado de Estocolmo incluye el centro urbano, municipios periféricos, localidades pequeñas, zonas rurales y parte del archipiélago. La frecuencia y las alternativas de transporte varían mucho entre esos lugares."
       },
       "explanation": {
         "title": {
@@ -676,7 +676,7 @@
             },
             "content": {
               "sv": "Länet innehåller både tätorter och glesare befolkade områden. Frågan gäller var trafikförbättringar ska prioriteras.",
-              "es": "La Región de Estocolmo incluye tanto zonas urbanas como localidades y áreas rurales con menos habitantes. La pregunta compara dónde dar prioridad a las mejoras del transporte público."
+              "es": "El condado de Estocolmo incluye el centro urbano, municipios periféricos, localidades pequeñas, zonas rurales y parte del archipiélago. La frecuencia y las alternativas de transporte varían mucho entre esos lugares."
             }
           },
           {
@@ -686,7 +686,7 @@
             },
             "content": {
               "sv": "Prioritering av förbättringar, inte nedläggning av tätortslinjer. Vissa partier avvisar motsättningen.",
-              "es": "Qué priorizar: el servicio en zonas poco pobladas o más salidas en zonas urbanas. No propone cerrar líneas urbanas. Algunos partidos defienden mejoras en ambas y rechazan plantearlas como una elección entre dos necesidades."
+              "es": "La pregunta obliga a elegir una prioridad si los recursos no alcanzan para mejorar todo al mismo tiempo: reforzar primero el servicio en zonas menos pobladas o aumentar primero la frecuencia en las zonas urbanas. No propone cerrar líneas urbanas. Algunos partidos rechazan esta disyuntiva y quieren mejorar ambos tipos de zona."
             }
           },
           {
