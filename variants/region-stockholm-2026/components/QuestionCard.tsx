@@ -17,9 +17,9 @@ const categoryLabels: Record<Question['category'], string> = {
 
 function ExplanationSections({explanation, language}: {explanation: Explanation; language: Language}) {
   return (
-    <div className="mt-4 grid gap-3">
+    <div className="mt-5 grid gap-4">
       {explanation.sections.map((section) => (
-        <section key={section.title[language]} className="rounded-xl border border-line bg-white p-4">
+        <section key={section.title[language]} className="border-t border-amber-200 pt-4 first:border-t-0 first:pt-0">
           <h3 className="text-sm font-semibold text-ink">{section.title[language]}</h3>
           <p className="mt-2 text-sm leading-6 text-slate-700">{section.content[language]}</p>
         </section>
@@ -46,18 +46,33 @@ function ExplanationControl({
       onToggle={(event) => {
         if (event.currentTarget.open) onOpened();
       }}
-      className={`group ${desktopCard ? 'rounded-2xl border-2 border-blue-400 bg-blue-50 p-5 shadow-sm' : ''}`}
+      className={`group ${desktopCard ? 'rounded-2xl border-2 border-amber-300 bg-amber-50 p-5 shadow-sm' : ''}`}
     >
       <summary className={`cursor-pointer list-none ${desktopCard ? '' : 'py-1'}`}>
-        <span className={`block leading-5 ${desktopCard ? 'text-base font-semibold text-ink' : 'text-sm font-normal text-[#64748B]'}`}>
-          {desktopCard ? uiText.buttons.explanationCardTitle : uiText.buttons.explanationPrompt}
+        <span className="flex items-start gap-3">
+          <span aria-hidden="true" className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-300 text-sm font-bold text-ink">i</span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-base font-semibold leading-5 text-ink group-open:hidden">{uiText.buttons.explanationHelpTitle}</span>
+            <span className="hidden text-base font-semibold leading-5 text-ink group-open:block">Explicación</span>
+            <span className="mt-1 block text-sm font-semibold leading-5 text-slate-700 group-open:hidden">{uiText.buttons.explanationHelpAction}</span>
+            <span className="mt-1 hidden text-sm font-semibold leading-5 text-slate-700 group-open:block">{uiText.buttons.hideExplanation}</span>
+            <span className="mt-2 block text-sm font-normal leading-5 text-slate-600 group-open:hidden">{uiText.buttons.explanationHelpNote}</span>
+          </span>
+          <span aria-hidden="true" className="shrink-0 text-xl text-slate-700 group-open:rotate-180">⌄</span>
         </span>
-        <span className="mt-1 block text-base font-semibold leading-5 text-ink group-open:hidden">{uiText.buttons.showExplanation}</span>
-        <span className="mt-1 hidden text-base font-semibold leading-5 text-ink group-open:block">{uiText.buttons.hideExplanation}</span>
       </summary>
-      <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
-        <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
+      <div className="mt-5 border-t border-amber-200 pt-4">
         <ExplanationSections explanation={explanation} language={language} />
+        <button
+          type="button"
+          onClick={(event) => {
+            const details = event.currentTarget.closest('details');
+            if (details) details.open = false;
+          }}
+          className="mt-5 min-h-11 w-full rounded-xl border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-ink"
+        >
+          {uiText.buttons.hideExplanation}
+        </button>
       </div>
     </details>
   );
@@ -106,15 +121,33 @@ function MobileExplanationControl({
       onToggle={(event) => {
         if (event.currentTarget.open) onOpened();
       }}
-      className="group rounded-2xl border-2 border-blue-400 bg-blue-50 p-4 shadow-sm"
+      className="group rounded-2xl border-2 border-amber-300 bg-amber-50 p-4 shadow-sm"
     >
-      <summary className="cursor-pointer list-none text-base font-semibold leading-5 text-ink">
-        <span className="block group-open:hidden">{uiText.buttons.mobileShowExplanation}</span>
-        <span className="hidden group-open:block">{uiText.buttons.mobileHideExplanation}</span>
+      <summary className="cursor-pointer list-none text-ink">
+        <span className="flex items-start gap-3">
+          <span aria-hidden="true" className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-300 text-sm font-bold text-ink">i</span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-base font-semibold leading-5 group-open:hidden">{uiText.buttons.explanationHelpTitle}</span>
+            <span className="hidden text-base font-semibold leading-5 group-open:block">Explicación</span>
+            <span className="mt-1 block text-sm font-semibold leading-5 text-slate-700 group-open:hidden">{uiText.buttons.explanationHelpAction}</span>
+            <span className="mt-1 hidden text-sm font-semibold leading-5 text-slate-700 group-open:block">{uiText.buttons.mobileHideExplanation}</span>
+            <span className="mt-2 block text-sm font-normal leading-5 text-slate-600 group-open:hidden">{uiText.buttons.explanationHelpNote}</span>
+          </span>
+          <span aria-hidden="true" className="shrink-0 text-xl text-slate-700 group-open:rotate-180">⌄</span>
+        </span>
       </summary>
-      <div className="mt-3 rounded-2xl border border-[#BFDBFE] bg-paper p-4">
-        <h2 className="text-sm font-semibold text-ink">{explanation.title[language]}</h2>
+      <div className="mt-5 border-t border-amber-200 pt-4">
         <ExplanationSections explanation={explanation} language={language} />
+        <button
+          type="button"
+          onClick={(event) => {
+            const details = event.currentTarget.closest('details');
+            if (details) details.open = false;
+          }}
+          className="mt-5 min-h-11 w-full rounded-xl border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-ink"
+        >
+          {uiText.buttons.mobileHideExplanation}
+        </button>
       </div>
     </details>
   );
@@ -144,11 +177,11 @@ export function QuestionCard({
       <article className="mx-auto w-full max-w-2xl rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-6 min-[1200px]:hidden">
         <p className="text-sm font-medium uppercase tracking-wide text-slate-600">{categoryLabels[question.category]}</p>
         <h1 className="mt-3 text-2xl font-semibold leading-tight text-ink sm:mt-5 sm:text-3xl">{question.statement[language]}</h1>
-        <p className="mt-3 text-sm leading-6 text-slate-600">{question.context[language]}</p>
-        {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
         <div className="mt-4">
           <MobileExplanationControl explanation={explanation} language={language} onOpened={onExplanationOpened} />
         </div>
+        <p className="mt-4 text-sm leading-6 text-slate-600">{question.context[language]}</p>
+        {question.comparisonNote && <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">{question.comparisonNote}</p>}
         <div className="mt-3 sm:mt-6">
           <AnswerButtons answerScale={question.answerScale} selectedValue={selectedValue} onSelect={onAnswer} />
         </div>

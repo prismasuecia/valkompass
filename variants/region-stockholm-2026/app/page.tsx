@@ -29,6 +29,9 @@ export default function HomePage() {
       />
       <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink">{uiText.app.title}</h1>
       <p className="mt-3 text-base leading-7 text-slate-600">{uiText.app.subtitle}</p>
+      <p className="mt-6 rounded-2xl border border-line bg-white px-5 py-4 text-sm leading-6 text-slate-700">
+        {uiText.progress.answerInstruction}
+      </p>
       <StartQuizLink />
 
       <section className="mt-8 grid gap-3">

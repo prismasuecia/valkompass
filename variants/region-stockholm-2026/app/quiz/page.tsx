@@ -64,15 +64,7 @@ export default function QuizPage() {
         <p className="text-sm font-semibold text-slate-700">{progressPercent}%</p>
       </div>
       <ProgressBar current={safeIndex + 1} total={questions.length} />
-      <p className="mt-2 text-sm text-slate-600">
-        {uiText.quizInfo.timeValue}
-      </p>
-      {currentQuestionIndex === 0 ? (
-        <p className="mt-3 rounded-xl border border-line bg-white px-4 py-3 text-sm leading-6 text-slate-600">
-          {uiText.progress.answerInstruction}
-        </p>
-      ) : null}
-      <div className="mt-4 sm:mt-8">
+      <div className="mt-3 sm:mt-6">
         <QuestionCard
           question={question}
           explanation={explanation}
